@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import {
+  Image,
   Pressable,
   ScrollView,
   StyleSheet,
@@ -62,7 +63,22 @@ export function HomeScreen({ navigation }: Props) {
         contentContainerStyle={styles.content}
         keyboardShouldPersistTaps="handled"
       >
-        <Text style={styles.kicker}>Parts Finder</Text>
+        <View style={styles.brandRowHeader}>
+          <Image
+            source={require('../../assets/logo.png')}
+            style={styles.logo}
+            resizeMode="cover"
+            accessibilityLabel="Parts Finder"
+          />
+          <View style={styles.brandText}>
+            <Text style={styles.brandName}>
+              <Text style={styles.brandParts}>PARTS</Text>
+              <Text style={styles.brandFinder}> FINDER</Text>
+            </Text>
+            <Text style={styles.brandTagline}>Find. Match. Repair.</Text>
+          </View>
+        </View>
+
         <Text style={styles.heading}>Find compatible{'\n'}spare parts</Text>
         <Text style={styles.lede}>
           Search by phone model or part number — works both ways.
@@ -120,13 +136,38 @@ const styles = StyleSheet.create({
     paddingBottom: 32,
     paddingTop: 8,
   },
-  kicker: {
-    fontSize: 13,
-    fontWeight: '700',
-    color: colors.accent,
+  brandRowHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 12,
+    marginBottom: 20,
+  },
+  logo: {
+    width: 56,
+    height: 56,
+    borderRadius: 14,
+  },
+  brandText: {
+    flex: 1,
+  },
+  brandName: {
+    fontSize: 18,
+    fontWeight: '800',
+    letterSpacing: 0.5,
+  },
+  brandParts: {
+    color: colors.brandBlue,
+  },
+  brandFinder: {
+    color: colors.brandGreen,
+  },
+  brandTagline: {
+    marginTop: 2,
+    fontSize: 12,
+    fontWeight: '600',
     letterSpacing: 1,
     textTransform: 'uppercase',
-    marginBottom: 8,
+    color: colors.textMuted,
   },
   heading: {
     fontSize: 32,
