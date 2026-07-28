@@ -1,0 +1,19 @@
+{
+  "name": "mobile-parts-finder",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "mobile": "npm run start --workspace=@mpf/mobile",
+    "mobile:android": "npm run android --workspace=@mpf/mobile",
+    "mobile:ios": "npm run ios --workspace=@mpf/mobile",
+    "mobile:web": "npm run web --workspace=@mpf/mobile",
+    "typecheck": "npm run typecheck --workspaces --if-present"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
