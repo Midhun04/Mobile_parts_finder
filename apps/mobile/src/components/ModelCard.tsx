@@ -1,6 +1,6 @@
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import type { MobileModelWithBrand } from '@mpf/shared';
-import { formatModelName } from '../services/compatibilityService';
+import { formatModelName } from '../utils/format';
 import { colors } from '../theme/colors';
 
 type Props = {

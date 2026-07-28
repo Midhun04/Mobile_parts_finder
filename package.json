@@ -11,6 +11,11 @@
     "mobile:android": "npm run android --workspace=@mpf/mobile",
     "mobile:ios": "npm run ios --workspace=@mpf/mobile",
     "mobile:web": "npm run web --workspace=@mpf/mobile",
+    "api": "npm run dev --workspace=@mpf/api",
+    "db:up": "docker compose up -d postgres",
+    "db:down": "docker compose down",
+    "db:setup": "npm run db:setup --workspace=@mpf/api",
+    "db:seed": "npm run db:seed --workspace=@mpf/api",
     "typecheck": "npm run typecheck --workspaces --if-present"
   },
   "engines": {

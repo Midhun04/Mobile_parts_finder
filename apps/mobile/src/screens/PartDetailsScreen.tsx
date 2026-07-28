@@ -1,21 +1,40 @@
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
+import { useQuery } from '@tanstack/react-query';
 import type { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { ModelCard } from '../components/ModelCard';
-import type { RootStackParamList } from '../navigation/types';
-import {
-  getCompatibleModelsForPart,
-  getCompatibilityMeta,
-  getPartById,
-} from '../services/compatibilityService';
 import { PART_TYPE_ICONS, PART_TYPE_LABELS } from '@mpf/shared';
+import { getCompatibleModelsForPart, getPartById } from '../api/compatibilityApi';
+import { ModelCard } from '../components/ModelCard';
+import { ErrorState, LoadingState } from '../components/QueryState';
+import type { RootStackParamList } from '../navigation/types';
 import { colors } from '../theme/colors';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'PartDetails'>;
 
 export function PartDetailsScreen({ navigation, route }: Props) {
-  const part = getPartById(route.params.partId);
+  const partId = route.params.partId;
 
+  const partQuery = useQuery({
+    queryKey: ['parts', partId],
+    queryFn: () => getPartById(partId),
+  });
+
+  const modelsQuery = useQuery({
+    queryKey: ['parts', partId, 'compatible-models'],
+    queryFn: () => getCompatibleModelsForPart(partId),
+  });
+
+  if (partQuery.isLoading || modelsQuery.isLoading) {
+    return <LoadingState />;
+  }
+
+  if (partQuery.isError || modelsQuery.isError) {
+    return (
+      <ErrorState message={partQuery.error?.message || modelsQuery.error?.message} />
+    );
+  }
+
+  const part = partQuery.data;
   if (!part) {
     return (
       <SafeAreaView style={styles.safe}>
@@ -26,7 +45,7 @@ export function PartDetailsScreen({ navigation, route }: Props) {
     );
   }
 
-  const models = getCompatibleModelsForPart(part.id);
+  const rows = modelsQuery.data ?? [];
 
   return (
     <SafeAreaView style={styles.safe} edges={['bottom']}>
@@ -44,38 +63,39 @@ export function PartDetailsScreen({ navigation, route }: Props) {
         </View>
 
         <Text style={styles.sectionTitle}>Compatible models</Text>
-        {models.length === 0 ? (
+        {rows.length === 0 ? (
           <View style={styles.empty}>
             <Text style={styles.emptyText}>No compatible models linked yet.</Text>
           </View>
         ) : (
-          models.map((model) => {
-            const meta = getCompatibilityMeta(model.id, part.id);
-            return (
-              <View key={model.id}>
-                <ModelCard
-                  model={model}
-                  onPress={() => navigation.navigate('ModelDetails', { modelId: model.id })}
-                />
-                <View
+          rows.map((row) => (
+            <View key={row.model.id}>
+              <ModelCard
+                model={row.model}
+                onPress={() =>
+                  navigation.navigate('ModelDetails', { modelId: row.model.id })
+                }
+              />
+              <View
+                style={[
+                  styles.status,
+                  row.verified ? styles.verified : styles.unverified,
+                ]}
+              >
+                <Text
                   style={[
-                    styles.status,
-                    meta?.verified ? styles.verified : styles.unverified,
+                    styles.statusText,
+                    row.verified ? styles.verifiedText : styles.unverifiedText,
                   ]}
                 >
-                  <Text
-                    style={[
-                      styles.statusText,
-                      meta?.verified ? styles.verifiedText : styles.unverifiedText,
-                    ]}
-                  >
-                    {meta?.verified ? 'Verified compatibility' : 'Unverified — review recommended'}
-                    {meta?.notes ? ` · ${meta.notes}` : ''}
-                  </Text>
-                </View>
+                  {row.verified
+                    ? 'Verified compatibility'
+                    : 'Unverified — review recommended'}
+                  {row.notes ? ` · ${row.notes}` : ''}
+                </Text>
               </View>
-            );
-          })
+            </View>
+          ))
         )}
       </ScrollView>
     </SafeAreaView>

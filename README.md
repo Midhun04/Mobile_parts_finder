@@ -13,7 +13,7 @@ Mobile_parts_finder/
 ├── apps/
 │   ├── mobile/          # Expo React Native app (@mpf/mobile)
 │   ├── admin/           # Next.js admin dashboard (@mpf/admin) — planned
-│   └── api/             # Node.js / Express API (@mpf/api) — planned
+│   └── api/             # Node.js / Express API (@mpf/api) — PostgreSQL
 ├── packages/
 │   └── shared/          # Shared types & constants (@mpf/shared)
 ├── package.json         # npm workspaces root
@@ -152,11 +152,20 @@ Shared domain types live in `packages/shared` (`@mpf/shared`).
 # install all workspaces
 npm install
 
-# start mobile app (mock data)
+# start PostgreSQL (Docker)
+npm run db:up
+
+# push schema + seed catalog
+npm run db:setup
+
+# terminal 1 — API (http://localhost:3001, LAN-reachable)
+npm run api
+
+# terminal 2 — Expo app
 npm run mobile
 ```
 
-Then open in Expo Go, or press `a` / `i` for emulator.
+For a physical phone, set `EXPO_PUBLIC_API_URL` in `apps/mobile/.env` to your PC LAN IP (e.g. `http://192.168.0.86:3001`).
 
 ---
 
@@ -166,8 +175,9 @@ Then open in Expo Go, or press `a` / `i` for emulator.
 |-----------|------|--------|
 | Documentation | `README.md` | Done |
 | Shared types | `packages/shared` | Done |
-| Mobile app (mock data) | `apps/mobile` | Done (Phase 1) |
-| Backend API | `apps/api` | Planned |
+| Mobile app (API-backed) | `apps/mobile` | Done |
+| Backend API (PostgreSQL) | `apps/api` | Done |
+| PostgreSQL (Docker) | `docker-compose.yml` | Done |
 | Admin dashboard | `apps/admin` | Planned |
 
 ---
@@ -271,7 +281,7 @@ GET /api/parts/:id/compatible-models
 
 ## MVP Phases
 
-1. **Basic mobile app** — search, model details, display/battery/OCA compatibility (mock data) ✅
+1. **Basic mobile app + API** — search, model/part details, PostgreSQL seed ✅
 2. **Database management** — API + admin CRUD
 3. **More part types** — pouch, charging board, camera, speaker, etc.
 4. **Advanced** — barcode scanner, offline, favourites, submissions

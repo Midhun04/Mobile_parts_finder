@@ -1,24 +1,59 @@
 import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { useQueries, useQuery } from '@tanstack/react-query';
 import type { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import type { RootStackParamList } from '../navigation/types';
-import {
-  formatModelName,
-  getCompatibleModelsForPart,
-  getCompatibilityMeta,
-  getModelById,
-  getPartsForModelByType,
-} from '../services/compatibilityService';
 import { PART_TYPE_LABELS } from '@mpf/shared';
+import {
+  getCompatibleModelsForPart,
+  getModelById,
+  getPartsForModel,
+} from '../api/compatibilityApi';
+import { ErrorState, LoadingState } from '../components/QueryState';
+import type { RootStackParamList } from '../navigation/types';
+import { formatModelName } from '../utils/format';
 import { colors } from '../theme/colors';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Compatibility'>;
 
 export function CompatibilityScreen({ navigation, route }: Props) {
   const { modelId, partType } = route.params;
-  const model = getModelById(modelId);
-  const parts = getPartsForModelByType(modelId, partType);
 
+  const modelQuery = useQuery({
+    queryKey: ['mobile-models', modelId],
+    queryFn: () => getModelById(modelId),
+  });
+
+  const partsQuery = useQuery({
+    queryKey: ['mobile-models', modelId, 'parts', partType],
+    queryFn: () => getPartsForModel(modelId, partType),
+  });
+
+  const parts = partsQuery.data ?? [];
+
+  const compatibleQueries = useQueries({
+    queries: parts.map((part) => ({
+      queryKey: ['parts', part.id, 'compatible-models'],
+      queryFn: () => getCompatibleModelsForPart(part.id),
+      enabled: partsQuery.isSuccess,
+    })),
+  });
+
+  const loading =
+    modelQuery.isLoading ||
+    partsQuery.isLoading ||
+    compatibleQueries.some((q) => q.isLoading);
+
+  if (loading) {
+    return <LoadingState />;
+  }
+
+  if (modelQuery.isError || partsQuery.isError) {
+    return (
+      <ErrorState message={modelQuery.error?.message || partsQuery.error?.message} />
+    );
+  }
+
+  const model = modelQuery.data;
   if (!model) {
     return (
       <SafeAreaView style={styles.safe}>
@@ -35,8 +70,8 @@ export function CompatibilityScreen({ navigation, route }: Props) {
         <Text style={styles.kicker}>{PART_TYPE_LABELS[partType]} compatibility</Text>
         <Text style={styles.heading}>Selected: {formatModelName(model)}</Text>
 
-        {parts.map((part) => {
-          const compatibleModels = getCompatibleModelsForPart(part.id);
+        {parts.map((part, index) => {
+          const compatibleModels = compatibleQueries[index]?.data ?? [];
           return (
             <View key={part.id} style={styles.card}>
               <Pressable onPress={() => navigation.navigate('PartDetails', { partId: part.id })}>
@@ -47,39 +82,36 @@ export function CompatibilityScreen({ navigation, route }: Props) {
               </Pressable>
 
               <Text style={styles.subheading}>Compatible models</Text>
-              {compatibleModels.map((item) => {
-                const meta = getCompatibilityMeta(item.id, part.id);
-                return (
-                  <Pressable
-                    key={item.id}
-                    onPress={() => navigation.navigate('ModelDetails', { modelId: item.id })}
-                    style={styles.modelRow}
+              {compatibleModels.map((row) => (
+                <Pressable
+                  key={row.model.id}
+                  onPress={() =>
+                    navigation.navigate('ModelDetails', { modelId: row.model.id })
+                  }
+                  style={styles.modelRow}
+                >
+                  <Text style={styles.check}>✓</Text>
+                  <View style={styles.modelInfo}>
+                    <Text style={styles.modelName}>{formatModelName(row.model)}</Text>
+                    {row.notes ? <Text style={styles.note}>{row.notes}</Text> : null}
+                  </View>
+                  <View
+                    style={[
+                      styles.badge,
+                      row.verified ? styles.verified : styles.unverified,
+                    ]}
                   >
-                    <Text style={styles.check}>✓</Text>
-                    <View style={styles.modelInfo}>
-                      <Text style={styles.modelName}>{formatModelName(item)}</Text>
-                      {meta?.notes ? (
-                        <Text style={styles.note}>{meta.notes}</Text>
-                      ) : null}
-                    </View>
-                    <View
+                    <Text
                       style={[
-                        styles.badge,
-                        meta?.verified ? styles.verified : styles.unverified,
+                        styles.badgeText,
+                        row.verified ? styles.verifiedText : styles.unverifiedText,
                       ]}
                     >
-                      <Text
-                        style={[
-                          styles.badgeText,
-                          meta?.verified ? styles.verifiedText : styles.unverifiedText,
-                        ]}
-                      >
-                        {meta?.verified ? 'Verified' : 'Unverified'}
-                      </Text>
-                    </View>
-                  </Pressable>
-                );
-              })}
+                      {row.verified ? 'Verified' : 'Unverified'}
+                    </Text>
+                  </View>
+                </Pressable>
+              ))}
             </View>
           );
         })}

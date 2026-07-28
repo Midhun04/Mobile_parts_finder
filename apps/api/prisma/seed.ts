@@ -1,10 +1,8 @@
-/**
- * Reference catalog used to seed the API (`apps/api/prisma/seed.ts`).
- * The mobile app loads live data from the API — do not import this in screens.
- */
-import type { Brand, Compatibility, MobileModel, Part } from '@mpf/shared';
+import { PrismaClient, type PartType } from '@prisma/client';
 
-export const brands: Brand[] = [
+const prisma = new PrismaClient();
+
+const brands = [
   { id: 1, name: 'Samsung' },
   { id: 2, name: 'Xiaomi' },
   { id: 3, name: 'Redmi' },
@@ -15,7 +13,7 @@ export const brands: Brand[] = [
   { id: 8, name: 'OnePlus' },
 ];
 
-export const mobileModels: MobileModel[] = [
+const mobileModels = [
   { id: 1, brandId: 1, name: 'Galaxy A50', modelNumber: 'SM-A505F', releaseYear: 2019 },
   { id: 2, brandId: 1, name: 'Galaxy A50s', modelNumber: 'SM-A507F', releaseYear: 2019 },
   { id: 3, brandId: 1, name: 'Galaxy A50 5G', modelNumber: 'SM-A5050', releaseYear: 2020 },
@@ -35,7 +33,13 @@ export const mobileModels: MobileModel[] = [
   { id: 17, brandId: 8, name: 'Nord CE 2', modelNumber: 'IV2201', releaseYear: 2022 },
 ];
 
-export const parts: Part[] = [
+const parts: Array<{
+  id: number;
+  name: string;
+  type: PartType;
+  partNumber: string;
+  description: string;
+}> = [
   {
     id: 1,
     name: 'A50 AMOLED Display',
@@ -164,57 +168,81 @@ export const parts: Part[] = [
   },
 ];
 
-export const compatibilities: Compatibility[] = [
-  // A50 display shared across A50 / A50s / A50 5G
+const compatibilities = [
   { id: 1, mobileModelId: 1, partId: 1, verified: true },
   { id: 2, mobileModelId: 2, partId: 1, verified: true },
-  { id: 3, mobileModelId: 3, partId: 1, verified: false, notes: 'Needs physical verification' },
-
-  // BN-59 battery — A50 / A50s
+  {
+    id: 3,
+    mobileModelId: 3,
+    partId: 1,
+    verified: false,
+    notes: 'Needs physical verification',
+  },
   { id: 4, mobileModelId: 1, partId: 2, verified: true },
   { id: 5, mobileModelId: 2, partId: 2, verified: true },
-
-  // A50 OCA
   { id: 6, mobileModelId: 1, partId: 3, verified: true },
   { id: 7, mobileModelId: 2, partId: 3, verified: true },
-
-  // A50 pouch / charging / camera / speaker
   { id: 8, mobileModelId: 1, partId: 4, verified: true },
   { id: 9, mobileModelId: 1, partId: 5, verified: true },
   { id: 10, mobileModelId: 2, partId: 5, verified: false },
   { id: 11, mobileModelId: 1, partId: 17, verified: true },
   { id: 12, mobileModelId: 1, partId: 18, verified: true },
   { id: 13, mobileModelId: 2, partId: 18, verified: true },
-
-  // A51
   { id: 14, mobileModelId: 4, partId: 6, verified: true },
-
-  // Redmi Note 10 / 10S shared display & OCA
   { id: 15, mobileModelId: 6, partId: 7, verified: true },
   { id: 16, mobileModelId: 7, partId: 7, verified: true },
   { id: 17, mobileModelId: 6, partId: 8, verified: true },
   { id: 18, mobileModelId: 7, partId: 8, verified: true },
-  { id: 19, mobileModelId: 8, partId: 8, verified: false, notes: 'Different capacity — confirm before use' },
+  {
+    id: 19,
+    mobileModelId: 8,
+    partId: 8,
+    verified: false,
+    notes: 'Different capacity — confirm before use',
+  },
   { id: 20, mobileModelId: 6, partId: 9, verified: true },
   { id: 21, mobileModelId: 7, partId: 9, verified: true },
-
-  // Note 10 Pro display
   { id: 22, mobileModelId: 8, partId: 10, verified: true },
-
-  // iPhone
   { id: 23, mobileModelId: 14, partId: 11, verified: true },
   { id: 24, mobileModelId: 14, partId: 12, verified: true },
-
-  // Vivo
   { id: 25, mobileModelId: 10, partId: 13, verified: true },
   { id: 26, mobileModelId: 10, partId: 14, verified: true },
-
-  // Oppo
   { id: 27, mobileModelId: 12, partId: 15, verified: true },
-
-  // S21
   { id: 28, mobileModelId: 5, partId: 16, verified: true },
 ];
 
-export const popularBrandIds = [1, 3, 6, 4, 5, 7];
-export const recentlyAddedModelIds = [8, 5, 13, 17, 16];
+async function main() {
+  await prisma.compatibility.deleteMany();
+  await prisma.part.deleteMany();
+  await prisma.mobileModel.deleteMany();
+  await prisma.brand.deleteMany();
+
+  for (const brand of brands) {
+    await prisma.brand.create({ data: brand });
+  }
+
+  for (const model of mobileModels) {
+    await prisma.mobileModel.create({ data: model });
+  }
+
+  for (const part of parts) {
+    await prisma.part.create({ data: part });
+  }
+
+  for (const item of compatibilities) {
+    await prisma.compatibility.create({ data: item });
+  }
+
+  console.log(
+    `Seeded ${brands.length} brands, ${mobileModels.length} models, ${parts.length} parts, ${compatibilities.length} compatibilities`,
+  );
+}
+
+main()
+  .catch((error) => {
+    console.error(error);
+    process.exit(1);
+  })
+  .finally(async () => {
+    await prisma.$disconnect();
+  });

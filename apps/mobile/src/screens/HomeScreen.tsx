@@ -6,29 +6,55 @@ import {
   Text,
   View,
 } from 'react-native';
+import { useQuery } from '@tanstack/react-query';
 import type { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { getPopularBrands, getRecentlyAddedModels } from '../api/compatibilityApi';
 import { ModelCard } from '../components/ModelCard';
+import { ErrorState, LoadingState } from '../components/QueryState';
 import { SearchBar } from '../components/SearchBar';
 import type { RootStackParamList } from '../navigation/types';
-import {
-  getPopularBrands,
-  getRecentlyAddedModels,
-} from '../services/compatibilityService';
 import { colors } from '../theme/colors';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Home'>;
 
 export function HomeScreen({ navigation }: Props) {
   const [query, setQuery] = useState('');
-  const popularBrands = getPopularBrands();
-  const recentModels = getRecentlyAddedModels();
+
+  const brandsQuery = useQuery({
+    queryKey: ['brands', 'popular'],
+    queryFn: getPopularBrands,
+  });
+
+  const recentQuery = useQuery({
+    queryKey: ['mobile-models', 'recent'],
+    queryFn: getRecentlyAddedModels,
+  });
 
   const handleSearch = () => {
     const trimmed = query.trim();
     if (!trimmed) return;
     navigation.navigate('SearchResults', { query: trimmed });
   };
+
+  if (brandsQuery.isLoading || recentQuery.isLoading) {
+    return <LoadingState />;
+  }
+
+  if (brandsQuery.isError || recentQuery.isError) {
+    return (
+      <ErrorState
+        message={
+          brandsQuery.error?.message ||
+          recentQuery.error?.message ||
+          'Unable to reach the API.'
+        }
+      />
+    );
+  }
+
+  const popularBrands = brandsQuery.data ?? [];
+  const recentModels = recentQuery.data ?? [];
 
   return (
     <SafeAreaView style={styles.safe} edges={['top']}>

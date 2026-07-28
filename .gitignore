@@ -25,6 +25,10 @@ expo-env.d.ts
 .env.*
 !.env.example
 
+# SQLite leftovers (removed; using PostgreSQL)
+*.db
+*.db-journal
+
 # Logs / debug
 npm-debug.*
 yarn-debug.*

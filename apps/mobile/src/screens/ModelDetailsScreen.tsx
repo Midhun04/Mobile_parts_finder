@@ -1,21 +1,43 @@
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
+import { useQuery } from '@tanstack/react-query';
 import type { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import type { PartType } from '@mpf/shared';
+import { getModelById, getPartsForModel } from '../api/compatibilityApi';
+import { ErrorState, LoadingState } from '../components/QueryState';
 import { PartCategoryRow } from '../components/PartCategoryRow';
 import type { RootStackParamList } from '../navigation/types';
-import {
-  formatModelName,
-  getModelById,
-  getPartsForModel,
-} from '../services/compatibilityService';
-import type { PartType } from '@mpf/shared';
+import { formatModelName } from '../utils/format';
 import { colors } from '../theme/colors';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'ModelDetails'>;
 
 export function ModelDetailsScreen({ navigation, route }: Props) {
-  const model = getModelById(route.params.modelId);
+  const modelId = route.params.modelId;
 
+  const modelQuery = useQuery({
+    queryKey: ['mobile-models', modelId],
+    queryFn: () => getModelById(modelId),
+  });
+
+  const partsQuery = useQuery({
+    queryKey: ['mobile-models', modelId, 'parts'],
+    queryFn: () => getPartsForModel(modelId),
+  });
+
+  if (modelQuery.isLoading || partsQuery.isLoading) {
+    return <LoadingState />;
+  }
+
+  if (modelQuery.isError || partsQuery.isError) {
+    return (
+      <ErrorState
+        message={modelQuery.error?.message || partsQuery.error?.message}
+      />
+    );
+  }
+
+  const model = modelQuery.data;
   if (!model) {
     return (
       <SafeAreaView style={styles.safe}>
@@ -26,12 +48,11 @@ export function ModelDetailsScreen({ navigation, route }: Props) {
     );
   }
 
-  const parts = getPartsForModel(model.id);
+  const parts = partsQuery.data ?? [];
   const grouped = parts.reduce<Partial<Record<PartType, number>>>((acc, part) => {
     acc[part.type] = (acc[part.type] ?? 0) + 1;
     return acc;
   }, {});
-
   const categories = Object.entries(grouped) as [PartType, number][];
 
   return (

@@ -1,16 +1,32 @@
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
+import { useQuery } from '@tanstack/react-query';
 import type { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { SafeAreaView } from 'react-native-safe-area-context';
+import { getModelsByBrand } from '../api/compatibilityApi';
 import { ModelCard } from '../components/ModelCard';
+import { ErrorState, LoadingState } from '../components/QueryState';
 import type { RootStackParamList } from '../navigation/types';
-import { getModelsByBrand } from '../services/compatibilityService';
 import { colors } from '../theme/colors';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'BrandModels'>;
 
 export function BrandModelsScreen({ navigation, route }: Props) {
   const { brandId, brandName } = route.params;
-  const models = getModelsByBrand(brandId);
+
+  const modelsQuery = useQuery({
+    queryKey: ['brands', brandId, 'models'],
+    queryFn: () => getModelsByBrand(brandId),
+  });
+
+  if (modelsQuery.isLoading) {
+    return <LoadingState />;
+  }
+
+  if (modelsQuery.isError) {
+    return <ErrorState message={modelsQuery.error.message} />;
+  }
+
+  const models = modelsQuery.data ?? [];
 
   return (
     <SafeAreaView style={styles.safe} edges={['bottom']}>
