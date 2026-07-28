@@ -7,29 +7,14 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-enum PartType {
-  DISPLAY
-  BATTERY
-  OCA
-  POUCH
-  CHARGING_BOARD
-  CAMERA
-  SPEAKER
-  MICROPHONE
-  FINGERPRINT
-  HOUSING
-  BACK_GLASS
-  OTHER
-}
-
 model Brand {
-  id     Int           @id @default(autoincrement())
+  id     Int           @id
   name   String        @unique
   models MobileModel[]
 }
 
 model MobileModel {
-  id              Int             @id @default(autoincrement())
+  id              Int             @id
   name            String
   modelNumber     String?
   releaseYear     Int?
@@ -40,11 +25,22 @@ model MobileModel {
   updatedAt       DateTime        @updatedAt
 }
 
+model PartCategory {
+  id    Int    @id
+  name  String @unique
+  code  String @unique
+  parts Part[]
+
+  @@map("PartType")
+}
+
 model Part {
-  id              Int             @id @default(autoincrement())
+  id              Int             @id
   name            String
-  type            PartType
+  partTypeId      Int
+  partCategory    PartCategory    @relation(fields: [partTypeId], references: [id])
   partNumber      String?
+  manufacturer    String?
   description     String?
   compatibilities Compatibility[]
   createdAt       DateTime        @default(now())
@@ -52,7 +48,7 @@ model Part {
 }
 
 model Compatibility {
-  id            Int         @id @default(autoincrement())
+  id            Int         @id
   mobileModelId Int
   partId        Int
   mobileModel   MobileModel @relation(fields: [mobileModelId], references: [id])

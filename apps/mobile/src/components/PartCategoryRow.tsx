@@ -1,5 +1,5 @@
 import { Pressable, StyleSheet, Text } from 'react-native';
-import { PART_TYPE_ICONS, PART_TYPE_LABELS, type PartType } from '@mpf/shared';
+import { getPartTypeIcon, getPartTypeLabel, type PartType } from '@mpf/shared';
 import { colors } from '../theme/colors';
 
 type Props = {
@@ -14,8 +14,8 @@ export function PartCategoryRow({ type, count, onPress }: Props) {
       onPress={onPress}
       style={({ pressed }) => [styles.row, pressed && styles.pressed]}
     >
-      <Text style={styles.icon}>{PART_TYPE_ICONS[type]}</Text>
-      <Text style={styles.label}>{PART_TYPE_LABELS[type]}</Text>
+      <Text style={styles.icon}>{getPartTypeIcon(type)}</Text>
+      <Text style={styles.label}>{getPartTypeLabel(type)}</Text>
       <Text style={styles.count}>{count}</Text>
       <Text style={styles.chevron}>›</Text>
     </Pressable>

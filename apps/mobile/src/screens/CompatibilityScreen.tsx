@@ -2,7 +2,7 @@ import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useQueries, useQuery } from '@tanstack/react-query';
 import type { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { PART_TYPE_LABELS } from '@mpf/shared';
+import { getPartTypeLabel } from '@mpf/shared';
 import {
   getCompatibleModelsForPart,
   getModelById,
@@ -67,7 +67,7 @@ export function CompatibilityScreen({ navigation, route }: Props) {
   return (
     <SafeAreaView style={styles.safe} edges={['bottom']}>
       <ScrollView contentContainerStyle={styles.content}>
-        <Text style={styles.kicker}>{PART_TYPE_LABELS[partType]} compatibility</Text>
+        <Text style={styles.kicker}>{getPartTypeLabel(partType)} compatibility</Text>
         <Text style={styles.heading}>Selected: {formatModelName(model)}</Text>
 
         {parts.map((part, index) => {

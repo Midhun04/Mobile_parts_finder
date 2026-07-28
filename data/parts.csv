@@ -1,0 +1,6 @@
+id,part_type_id,part_name,part_number,manufacturer
+1,1,Samsung Galaxy A50 AMOLED Display,A50-DISP-01,Samsung
+2,2,EB-BA505ABU Battery,EB-BA505ABU,Samsung
+3,3,Galaxy A50 OCA Glass,A50-OCA-01,Generic
+4,4,Galaxy A50 Back Panel,A50-PCH-01,Generic
+5,5,Galaxy A50 Charging Board,A50-CB-01,Samsung

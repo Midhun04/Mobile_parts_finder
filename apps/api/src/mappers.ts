@@ -1,6 +1,8 @@
-import type { Brand, MobileModel, Part, PartType } from '@prisma/client';
+import type { Brand, MobileModel, Part, PartCategory } from '@prisma/client';
+import type { PartType as SharedPartType } from '@mpf/shared';
 
 export type MobileModelWithBrand = MobileModel & { brand: Brand };
+export type PartWithCategory = Part & { partCategory: PartCategory };
 
 export function mapModel(model: MobileModelWithBrand) {
   return {
@@ -16,12 +18,14 @@ export function mapModel(model: MobileModelWithBrand) {
   };
 }
 
-export function mapPart(part: Part) {
+export function mapPart(part: PartWithCategory) {
   return {
     id: part.id,
     name: part.name,
-    type: part.type as PartType,
+    type: part.partCategory.code as SharedPartType,
+    partTypeId: part.partTypeId,
     partNumber: part.partNumber ?? undefined,
+    manufacturer: part.manufacturer ?? undefined,
     description: part.description ?? undefined,
   };
 }

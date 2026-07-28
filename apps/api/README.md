@@ -8,9 +8,11 @@ Express + Prisma API for Mobile Parts Compatibility Finder.
 # from repo root
 npm install
 npm run db:up        # start Postgres via Docker
-npm run db:setup     # prisma db push + seed
+npm run db:setup     # prisma db push + seed from data/*.csv
 npm run api
 ```
+
+Catalog CSVs live in repo-root `data/` (`brands`, `mobile_models`, `part_types`, `parts`, `compatibility`). Edit those files and re-run `npm run db:seed` to reload.
 
 API runs at `http://localhost:3001` (bound to `0.0.0.0` for Expo Go on LAN).
 

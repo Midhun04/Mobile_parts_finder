@@ -1,25 +1,11 @@
 import { Router } from 'express';
-import type { PartType } from '@prisma/client';
 import { POPULAR_BRAND_IDS, RECENT_MODEL_IDS } from '../constants.js';
 import { prisma } from '../db.js';
 import { mapCompatibilityMeta, mapModel, mapPart } from '../mappers.js';
 
 export const apiRouter = Router();
 
-const PART_TYPES: PartType[] = [
-  'DISPLAY',
-  'BATTERY',
-  'OCA',
-  'POUCH',
-  'CHARGING_BOARD',
-  'CAMERA',
-  'SPEAKER',
-  'MICROPHONE',
-  'FINGERPRINT',
-  'HOUSING',
-  'BACK_GLASS',
-  'OTHER',
-];
+const partInclude = { partCategory: true } as const;
 
 apiRouter.get('/search', async (req, res) => {
   const q = String(req.query.q ?? '').trim();
@@ -28,8 +14,15 @@ apiRouter.get('/search', async (req, res) => {
     return;
   }
 
-  const maybeType = q.toUpperCase().replace(/[\s-]/g, '_') as PartType;
-  const typeFilter = PART_TYPES.includes(maybeType) ? ({ type: maybeType } as const) : null;
+  const maybeCode = q.toUpperCase().replace(/[\s-]/g, '_');
+  const matchedType = await prisma.partCategory.findFirst({
+    where: {
+      OR: [
+        { code: maybeCode },
+        { name: { equals: q, mode: 'insensitive' } },
+      ],
+    },
+  });
 
   const [models, parts] = await Promise.all([
     prisma.mobileModel.findMany({
@@ -49,9 +42,11 @@ apiRouter.get('/search', async (req, res) => {
           { name: { contains: q, mode: 'insensitive' } },
           { partNumber: { contains: q, mode: 'insensitive' } },
           { description: { contains: q, mode: 'insensitive' } },
-          ...(typeFilter ? [typeFilter] : []),
+          { manufacturer: { contains: q, mode: 'insensitive' } },
+          ...(matchedType ? [{ partTypeId: matchedType.id }] : []),
         ],
       },
+      include: partInclude,
       orderBy: { name: 'asc' },
     }),
   ]);
@@ -147,10 +142,10 @@ apiRouter.get('/mobile-models/:id/parts', async (req, res) => {
   const links = await prisma.compatibility.findMany({
     where: {
       mobileModelId: id,
-      ...(typeParam ? { part: { type: typeParam as PartType } } : {}),
+      ...(typeParam ? { part: { partCategory: { code: typeParam } } } : {}),
     },
-    include: { part: true },
-    orderBy: { part: { type: 'asc' } },
+    include: { part: { include: partInclude } },
+    orderBy: { part: { partTypeId: 'asc' } },
   });
 
   res.json(links.map((link) => mapPart(link.part)));
@@ -163,7 +158,10 @@ apiRouter.get('/parts/:id', async (req, res) => {
     return;
   }
 
-  const part = await prisma.part.findUnique({ where: { id } });
+  const part = await prisma.part.findUnique({
+    where: { id },
+    include: partInclude,
+  });
   if (!part) {
     res.status(404).json({ error: 'Part not found' });
     return;

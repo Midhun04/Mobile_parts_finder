@@ -6,10 +6,14 @@ export type PartType =
   | 'CHARGING_BOARD'
   | 'CAMERA'
   | 'SPEAKER'
+  | 'EARPIECE'
   | 'MICROPHONE'
   | 'FINGERPRINT'
   | 'HOUSING'
   | 'BACK_GLASS'
+  | 'VOLUME_FLEX'
+  | 'POWER_FLEX'
+  | 'VIBRATOR'
   | 'OTHER';
 
 export interface Brand {
@@ -29,7 +33,9 @@ export interface Part {
   id: number;
   name: string;
   type: PartType;
+  partTypeId: number;
   partNumber?: string;
+  manufacturer?: string;
   description?: string;
 }
 
@@ -62,10 +68,14 @@ export const PART_TYPE_LABELS: Record<PartType, string> = {
   CHARGING_BOARD: 'Charging Board',
   CAMERA: 'Camera',
   SPEAKER: 'Speaker',
+  EARPIECE: 'Earpiece',
   MICROPHONE: 'Microphone',
   FINGERPRINT: 'Fingerprint Sensor',
   HOUSING: 'Housing',
   BACK_GLASS: 'Back Glass',
+  VOLUME_FLEX: 'Volume Flex',
+  POWER_FLEX: 'Power Flex',
+  VIBRATOR: 'Vibrator',
   OTHER: 'Other',
 };
 
@@ -77,9 +87,21 @@ export const PART_TYPE_ICONS: Record<PartType, string> = {
   CHARGING_BOARD: '🔌',
   CAMERA: '📷',
   SPEAKER: '🔊',
+  EARPIECE: '🎧',
   MICROPHONE: '🎤',
   FINGERPRINT: '👆',
   HOUSING: '🧰',
   BACK_GLASS: '🪟',
+  VOLUME_FLEX: '🔊',
+  POWER_FLEX: '⚡',
+  VIBRATOR: '📳',
   OTHER: '🔧',
 };
+
+export function getPartTypeLabel(type: string): string {
+  return PART_TYPE_LABELS[type as PartType] ?? type;
+}
+
+export function getPartTypeIcon(type: string): string {
+  return PART_TYPE_ICONS[type as PartType] ?? PART_TYPE_ICONS.OTHER;
+}

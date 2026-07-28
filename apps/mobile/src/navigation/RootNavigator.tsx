@@ -8,7 +8,7 @@ import { ModelDetailsScreen } from '../screens/ModelDetailsScreen';
 import { PartDetailsScreen } from '../screens/PartDetailsScreen';
 import { SearchResultsScreen } from '../screens/SearchResultsScreen';
 import { SplashScreen } from '../screens/SplashScreen';
-import { PART_TYPE_LABELS } from '@mpf/shared';
+import { getPartTypeLabel } from '@mpf/shared';
 import { colors } from '../theme/colors';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -50,7 +50,7 @@ export function RootNavigator() {
           name="Compatibility"
           component={CompatibilityScreen}
           options={({ route }) => ({
-            title: PART_TYPE_LABELS[route.params.partType],
+            title: getPartTypeLabel(route.params.partType),
           })}
         />
         <Stack.Screen

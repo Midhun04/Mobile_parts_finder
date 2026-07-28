@@ -1,5 +1,5 @@
 import { Pressable, StyleSheet, Text, View } from 'react-native';
-import { PART_TYPE_ICONS, PART_TYPE_LABELS, type Part } from '@mpf/shared';
+import { getPartTypeIcon, getPartTypeLabel, type Part } from '@mpf/shared';
 import { colors } from '../theme/colors';
 
 type Props = {
@@ -14,12 +14,12 @@ export function PartCard({ part, onPress }: Props) {
       style={({ pressed }) => [styles.card, pressed && styles.pressed]}
     >
       <View style={styles.icon}>
-        <Text style={styles.iconText}>{PART_TYPE_ICONS[part.type]}</Text>
+        <Text style={styles.iconText}>{getPartTypeIcon(part.type)}</Text>
       </View>
       <View style={styles.content}>
         <Text style={styles.title}>{part.name}</Text>
         <Text style={styles.subtitle}>
-          {PART_TYPE_LABELS[part.type]}
+          {getPartTypeLabel(part.type)}
           {part.partNumber ? ` · ${part.partNumber}` : ''}
         </Text>
       </View>

@@ -1,0 +1,7 @@
+id,mobile_model_id,part_id,verified,notes
+1,1,1,TRUE,Original compatible display
+2,1,2,TRUE,Original battery
+3,1,3,TRUE,OCA compatible
+4,1,4,TRUE,Back panel
+5,1,5,TRUE,Charging board
+6,2,1,TRUE,Same display as A50

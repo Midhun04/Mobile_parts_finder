@@ -2,7 +2,7 @@ import { ScrollView, StyleSheet, Text, View } from 'react-native';
 import { useQuery } from '@tanstack/react-query';
 import type { NativeStackScreenProps } from '@react-navigation/native-stack';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import { PART_TYPE_ICONS, PART_TYPE_LABELS } from '@mpf/shared';
+import { getPartTypeIcon, getPartTypeLabel } from '@mpf/shared';
 import { getCompatibleModelsForPart, getPartById } from '../api/compatibilityApi';
 import { ModelCard } from '../components/ModelCard';
 import { ErrorState, LoadingState } from '../components/QueryState';
@@ -51,11 +51,14 @@ export function PartDetailsScreen({ navigation, route }: Props) {
     <SafeAreaView style={styles.safe} edges={['bottom']}>
       <ScrollView contentContainerStyle={styles.content}>
         <View style={styles.hero}>
-          <Text style={styles.icon}>{PART_TYPE_ICONS[part.type]}</Text>
-          <Text style={styles.type}>{PART_TYPE_LABELS[part.type]}</Text>
+          <Text style={styles.icon}>{getPartTypeIcon(part.type)}</Text>
+          <Text style={styles.type}>{getPartTypeLabel(part.type)}</Text>
           <Text style={styles.title}>{part.name}</Text>
           {part.partNumber ? (
             <Text style={styles.meta}>Part number: {part.partNumber}</Text>
+          ) : null}
+          {part.manufacturer ? (
+            <Text style={styles.meta}>Manufacturer: {part.manufacturer}</Text>
           ) : null}
           {part.description ? (
             <Text style={styles.description}>{part.description}</Text>
