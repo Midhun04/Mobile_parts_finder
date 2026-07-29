@@ -12,6 +12,7 @@ The application allows users to search for a mobile phone model and find all com
 Mobile_parts_finder/
 ├── apps/
 │   ├── mobile/          # Expo React Native app (@mpf/mobile)
+│   ├── web/             # Next.js Parts Finder web app (@mpf/web)
 │   ├── admin/           # Next.js admin dashboard (@mpf/admin) — planned
 │   └── api/             # Node.js / Express API (@mpf/api) — PostgreSQL
 ├── packages/
@@ -87,7 +88,16 @@ Used by mobile shop owners and technicians.
 - Expo
 - TypeScript
 
-### 2. Admin Web Dashboard (`apps/admin`)
+### 2. Web Application (`apps/web`)
+
+Same parts-finder experience in the browser.
+
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+
+### 3. Admin Web Dashboard (`apps/admin`)
 
 Used to manage the compatibility database.
 
@@ -96,7 +106,7 @@ Used to manage the compatibility database.
 - TypeScript
 - Tailwind CSS
 
-### 3. Backend API (`apps/api`)
+### 4. Backend API (`apps/api`)
 
 - Node.js / Express
 - TypeScript
@@ -108,27 +118,28 @@ Used to manage the compatibility database.
 ## System Architecture
 
 ```text
-                    ┌─────────────────────┐
-                    │   React Native App  │
-                    │    (apps/mobile)    │
-                    └──────────┬──────────┘
-                               │ API Requests
-                               ▼
-                    ┌─────────────────────┐
-                    │     Backend API     │
-                    │     (apps/api)      │
-                    │ Node.js / Express   │
-                    └──────────┬──────────┘
-                               ▼
-                    ┌─────────────────────┐
-                    │     PostgreSQL      │
-                    └─────────────────────┘
-                               ▲
-                    ┌──────────┴──────────┐
-                    │   Admin Dashboard   │
-                    │    (apps/admin)     │
-                    │      Next.js        │
-                    └─────────────────────┘
+        ┌──────────────────┐     ┌──────────────────┐
+        │ React Native App │     │   Web App        │
+        │  (apps/mobile)   │     │  (apps/web)      │
+        └────────┬─────────┘     └────────┬─────────┘
+                 │ API Requests           │
+                 └───────────┬────────────┘
+                             ▼
+                  ┌─────────────────────┐
+                  │     Backend API     │
+                  │     (apps/api)      │
+                  │ Node.js / Express   │
+                  └──────────┬──────────┘
+                             ▼
+                  ┌─────────────────────┐
+                  │     PostgreSQL      │
+                  └─────────────────────┘
+                             ▲
+                  ┌──────────┴──────────┐
+                  │   Admin Dashboard   │
+                  │    (apps/admin)     │
+                  │      Next.js        │
+                  └─────────────────────┘
 ```
 
 Shared domain types live in `packages/shared` (`@mpf/shared`).
@@ -140,6 +151,7 @@ Shared domain types live in `packages/shared` (`@mpf/shared`).
 | Area | Stack |
 |------|--------|
 | Mobile | React Native, Expo, TypeScript, React Navigation, TanStack Query, Axios |
+| Web | Next.js, React, TypeScript, Tailwind CSS |
 | Backend | Node.js, Express.js, TypeScript, REST API |
 | Database | PostgreSQL, Prisma ORM |
 | Admin | Next.js, React, TypeScript, Tailwind CSS |
@@ -164,6 +176,9 @@ npm run api
 
 # terminal 2 — Expo app
 npm run mobile
+
+# or — web app (http://localhost:3000)
+npm run web
 ```
 
 For a physical phone, set `EXPO_PUBLIC_API_URL` in `apps/mobile/.env` to your PC LAN IP (e.g. `http://192.168.0.86:3001`).
@@ -177,6 +192,7 @@ For a physical phone, set `EXPO_PUBLIC_API_URL` in `apps/mobile/.env` to your PC
 | Documentation | `README.md` | Done |
 | Shared types | `packages/shared` | Done |
 | Mobile app (API-backed) | `apps/mobile` | Done |
+| Web app (API-backed) | `apps/web` | Done |
 | Backend API (PostgreSQL) | `apps/api` | Done |
 | PostgreSQL (Docker) | `docker-compose.yml` | Done |
 | Admin dashboard | `apps/admin` | Planned |
@@ -294,7 +310,7 @@ GET /api/parts/:id/compatible-models
 This project is a **mobile spare-parts compatibility database and search application**.
 
 ```text
-React Native Mobile App  +  Node.js Backend API  +  PostgreSQL  +  Next.js Admin
+React Native Mobile  +  Next.js Web  +  Node.js API  +  PostgreSQL  +  Next.js Admin
 ```
 
 Core value: **Accurate data + simple search + fast compatibility results.**

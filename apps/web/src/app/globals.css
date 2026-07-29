@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f4f7f5;
+  --surface: #ffffff;
+  --surface-muted: #e8eeea;
+  --primary: #1b5e4b;
+  --primary-dark: #124036;
+  --primary-light: #2a8f72;
+  --accent: #c45c26;
+  --brand-navy: #000f22;
+  --brand-blue: #0099ff;
+  --brand-green: #66cc33;
+  --text: #1a2421;
+  --text-secondary: #5a6b64;
+  --text-muted: #8a9a93;
+  --border: #d5ded9;
+  --verified: #1b7a4e;
+  --verified-bg: #e3f5eb;
+  --unverified: #9a6b1f;
+  --unverified-bg: #fff4de;
+  --danger: #b42318;
+  --white: #ffffff;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-muted: var(--surface-muted);
+  --color-primary: var(--primary);
+  --color-primary-dark: var(--primary-dark);
+  --color-primary-light: var(--primary-light);
+  --color-accent: var(--accent);
+  --color-brand-navy: var(--brand-navy);
+  --color-brand-blue: var(--brand-blue);
+  --color-brand-green: var(--brand-green);
+  --color-foreground: var(--text);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-muted: var(--text-muted);
+  --color-border: var(--border);
+  --color-verified: var(--verified);
+  --color-verified-bg: var(--verified-bg);
+  --color-unverified: var(--unverified);
+  --color-unverified-bg: var(--unverified-bg);
+  --color-danger: var(--danger);
+  --font-sans: var(--font-plus-jakarta);
+}
+
+body {
+  background:
+    radial-gradient(ellipse 80% 50% at 100% -20%, rgba(0, 153, 255, 0.08), transparent),
+    radial-gradient(ellipse 60% 40% at -10% 10%, rgba(102, 204, 51, 0.1), transparent),
+    var(--background);
+  color: var(--text);
+  font-family: var(--font-plus-jakarta), system-ui, sans-serif;
+  min-height: 100vh;
+}
