@@ -1,0 +1,777 @@
+[
+  {
+    "id": "oppo_1",
+    "brand": "Oppo",
+    "models": "Oppo F19 = Oppo F19S = Oppo A74 4G = Oppo A94 4G = Oppo Reno 6 Lite"
+  },
+  {
+    "id": "oppo_2",
+    "brand": "Realme",
+    "models": "Realme 2 = Oppo A5"
+  },
+  {
+    "id": "oppo_3",
+    "brand": "Oppo",
+    "models": "Oppo F11 = Oppo A9"
+  },
+  {
+    "id": "oppo_4",
+    "brand": "Realme",
+    "models": "Realme X = Oppo K3"
+  },
+  {
+    "id": "oppo_5",
+    "brand": "Oppo",
+    "models": "Oppo A9 2020 = Oppo A5 2020"
+  },
+  {
+    "id": "oppo_6",
+    "brand": "Oppo",
+    "models": "Oppo K10 4G = Realme 9i = Oppo A96"
+  },
+  {
+    "id": "oppo_7",
+    "brand": "Oppo",
+    "models": "Oppo F19 = Oppo A94 4G"
+  },
+  {
+    "id": "oppo_8",
+    "brand": "Oppo",
+    "models": "Oppo A53 2020 = Oppo A32"
+  },
+  {
+    "id": "oppo_9",
+    "brand": "Oppo",
+    "models": "Oppo F17 = Oppo A93"
+  },
+  {
+    "id": "oppo_10",
+    "brand": "Oppo",
+    "models": "Oppo A17 = Oppo A17K"
+  },
+  {
+    "id": "oppo_11",
+    "brand": "Oppo",
+    "models": "Oppo A74 5G = Oppo A54 5G"
+  },
+  {
+    "id": "oppo_12",
+    "brand": "Oppo",
+    "models": "Oppo A3 Pro 5G = Oppo K12X"
+  },
+  {
+    "id": "oppo_13",
+    "brand": "Oppo",
+    "models": "Oppo A3S = Oppo A5 = Realme C1"
+  },
+  {
+    "id": "oppo_14",
+    "brand": "Realme",
+    "models": "Realme C2 = Oppo A1K"
+  },
+  {
+    "id": "oppo_15",
+    "brand": "Oppo",
+    "models": "Oppo K11X 5G = OnePlus Nord CE Lite 5G = OnePlus Nord N30 5G"
+  },
+  {
+    "id": "oppo_16",
+    "brand": "Oppo",
+    "models": "Oppo A16K = Oppo A16E"
+  },
+  {
+    "id": "oppo_17",
+    "brand": "Oppo",
+    "models": "Oppo A16 = Oppo A55 = Oppo A54"
+  },
+  {
+    "id": "oppo_18",
+    "brand": "Oppo",
+    "models": "Oppo A15 = Oppo A15S"
+  },
+  {
+    "id": "oppo_19",
+    "brand": "Oppo",
+    "models": "Oppo A52 = Oppo A72 = Oppo A92"
+  },
+  {
+    "id": "oppo_20",
+    "brand": "Oppo",
+    "models": "Oppo A31 2020 = Oppo A8"
+  },
+  {
+    "id": "oppo_21",
+    "brand": "Oppo",
+    "models": "Oppo F15 = Oppo A91 = Oppo Reno 3"
+  },
+  {
+    "id": "oppo_22",
+    "brand": "Oppo",
+    "models": "Oppo A18 = Oppo A38"
+  },
+  {
+    "id": "oppo_23",
+    "brand": "Oppo",
+    "models": "Oppo A5S = Oppo A12 = Oppo A11K = Oppo A7 = Oppo F9 = Oppo F9 Pro = Realme 2 Pro"
+  },
+  {
+    "id": "oppo_24",
+    "brand": "Oppo",
+    "models": "Oppo A57 = Oppo K10 5G = Oppo A77"
+  },
+  {
+    "id": "oppo_25",
+    "brand": "OnePlus",
+    "models": "OnePlus Nord CE 2 = Oppo Reno 7 5G"
+  },
+  {
+    "id": "oppo_26",
+    "brand": "Realme",
+    "models": "Realme 10 = Realme 10 Pro 5G"
+  },
+  {
+    "id": "oppo_27",
+    "brand": "Realme",
+    "models": "Realme 3 = Realme 3i"
+  },
+  {
+    "id": "oppo_28",
+    "brand": "Realme",
+    "models": "Realme X2 = Realme XT"
+  },
+  {
+    "id": "oppo_29",
+    "brand": "Realme",
+    "models": "Realme 6 = Realme 6i"
+  },
+  {
+    "id": "oppo_30",
+    "brand": "Realme",
+    "models": "Realme 9 Pro Plus = Realme Narzo 50 Pro = Realme 9 4G"
+  },
+  {
+    "id": "oppo_31",
+    "brand": "Realme",
+    "models": "Realme C20 = Realme C11 2021 = Realme Narzo 50i"
+  },
+  {
+    "id": "oppo_32",
+    "brand": "Realme",
+    "models": "Realme C55 = Realme Narzo N55"
+  },
+  {
+    "id": "oppo_33",
+    "brand": "Realme",
+    "models": "Realme 8i = Realme Narzo 50"
+  },
+  {
+    "id": "oppo_34",
+    "brand": "Realme",
+    "models": "Realme C21Y = Realme C25Y"
+  },
+  {
+    "id": "oppo_35",
+    "brand": "Realme",
+    "models": "Realme 7i = Realme C17"
+  },
+  {
+    "id": "oppo_36",
+    "brand": "Realme",
+    "models": "Realme 11 Pro = Realme 11 Pro Plus"
+  },
+  {
+    "id": "oppo_37",
+    "brand": "Realme",
+    "models": "Realme C53 4G = Realme C51 4G = Realme Narzo N53 = Realme Note 50 4G"
+  },
+  {
+    "id": "oppo_38",
+    "brand": "Realme",
+    "models": "Realme C35 = Realme Narzo 50A Prime"
+  },
+  {
+    "id": "oppo_39",
+    "brand": "Realme",
+    "models": "Realme C30 = Realme Narzo 50i Prime"
+  },
+  {
+    "id": "oppo_40",
+    "brand": "Realme",
+    "models": "Realme C65 5G = Realme Narzo N65 5G = Realme 12 5G = Realme 12X"
+  },
+  {
+    "id": "oppo_41",
+    "brand": "Realme",
+    "models": "Realme 7 = Realme Narzo 20 Pro = Realme Narzo 30 4G"
+  },
+  {
+    "id": "oppo_42",
+    "brand": "Realme",
+    "models": "Realme Narzo 10A = Realme Narzo 20A"
+  },
+  {
+    "id": "oppo_43",
+    "brand": "Realme",
+    "models": "Realme 8 5G = Realme Narzo 30 5G = Realme 9 5G"
+  },
+  {
+    "id": "oppo_44",
+    "brand": "Realme",
+    "models": "Realme 8 4G = Realme 8 Pro"
+  },
+  {
+    "id": "oppo_45",
+    "brand": "Realme",
+    "models": "Realme 5 = Realme 5i = Realme 5S = Realme Narzo 10 = Realme Narzo 10A = Realme Narzo 20A"
+  },
+  {
+    "id": "oppo_46",
+    "brand": "Realme",
+    "models": "Realme 12 Plus 5G = Realme Narzo 70 Pro"
+  },
+  {
+    "id": "oppo_47",
+    "brand": "Realme",
+    "models": "Realme 9 Pro = OnePlus Nord CE 2 Lite"
+  },
+  {
+    "id": "oppo_48",
+    "brand": "Realme",
+    "models": "Realme GT Master = OnePlus Nord CE"
+  },
+  {
+    "id": "oppo_49",
+    "brand": "Realme",
+    "models": "Realme C12 = Realme C15 = Realme C25 = Realme Narzo 20 = Realme Narzo 30A = Realme Narzo 50A"
+  },
+  {
+    "id": "oppo_50",
+    "brand": "Realme",
+    "models": "Realme 11 5G = Realme 11X 5G = Realme C67 5G = Realme Narzo 60X 5G"
+  },
+  {
+    "id": "oppo_51",
+    "brand": "Realme",
+    "models": "Realme 9i 4G = Oppo A76 = Oppo A96"
+  },
+  {
+    "id": "oppo_52",
+    "brand": "Realme",
+    "models": "Realme 14 Pro 5G = Realme Narzo 80 Pro"
+  },
+  {
+    "id": "oppo_53",
+    "brand": "Realme",
+    "models": "Realme 13 5G = Realme 12 5G = Realme 12X = Realme C65"
+  },
+  {
+    "id": "redmi_1",
+    "brand": "Redmi",
+    "models": "Redmi Note 13 Pro 5G = Poco X6 5G"
+  },
+  {
+    "id": "redmi_2",
+    "brand": "Redmi",
+    "models": "Redmi 13C 5G = Poco M6 5G"
+  },
+  {
+    "id": "redmi_3",
+    "brand": "Redmi",
+    "models": "Poco C65 4G = Redmi 13C 4G"
+  },
+  {
+    "id": "redmi_4",
+    "brand": "Redmi",
+    "models": "Redmi 12 5G = Poco M6 Pro 5G"
+  },
+  {
+    "id": "redmi_5",
+    "brand": "Redmi",
+    "models": "Redmi 12C 4G = Poco C55 4G = Redmi 11A"
+  },
+  {
+    "id": "redmi_6",
+    "brand": "Redmi",
+    "models": "Redmi A1 2022 = Redmi A2 2023"
+  },
+  {
+    "id": "redmi_7",
+    "brand": "Redmi",
+    "models": "Redmi A1 Plus = Redmi A2 Plus"
+  },
+  {
+    "id": "redmi_8",
+    "brand": "Redmi",
+    "models": "Redmi 10C = Redmi 10 = Redmi 10 Power"
+  },
+  {
+    "id": "redmi_9",
+    "brand": "Redmi",
+    "models": "Redmi Note 10 = Redmi Note 10S"
+  },
+  {
+    "id": "redmi_10",
+    "brand": "Redmi",
+    "models": "Redmi 9 Prime = Poco M2"
+  },
+  {
+    "id": "redmi_11",
+    "brand": "Redmi",
+    "models": "Redmi 9A = Redmi 9i"
+  },
+  {
+    "id": "redmi_12",
+    "brand": "Redmi",
+    "models": "Redmi 9 = Redmi 9C = Redmi 10A = Poco C31"
+  },
+  {
+    "id": "redmi_13",
+    "brand": "Redmi",
+    "models": "Redmi 10T = Redmi 10T Pro"
+  },
+  {
+    "id": "redmi_14",
+    "brand": "Redmi",
+    "models": "Redmi Note 11 Pro = Redmi Note 11i = Redmi Note 11 Pro Plus"
+  },
+  {
+    "id": "redmi_15",
+    "brand": "Redmi",
+    "models": "Redmi Note 11T = Poco M4 Pro 5G"
+  },
+  {
+    "id": "redmi_16",
+    "brand": "Redmi",
+    "models": "Redmi Note 12 Pro = Poco X5 Pro"
+  },
+  {
+    "id": "redmi_17",
+    "brand": "Redmi",
+    "models": "Redmi Note 9 Pro = Redmi Note 9 Pro Max = Poco M2 Pro"
+  },
+  {
+    "id": "redmi_18",
+    "brand": "Redmi",
+    "models": "Redmi 7 = Redmi Y3"
+  },
+  {
+    "id": "redmi_19",
+    "brand": "Redmi",
+    "models": "Redmi Note 7 = Redmi Note 7 Pro = Redmi Note 7S"
+  },
+  {
+    "id": "redmi_20",
+    "brand": "Redmi",
+    "models": "Redmi Note 6 = Redmi Note 6 Pro"
+  },
+  {
+    "id": "redmi_21",
+    "brand": "Redmi",
+    "models": "Redmi K20 = Redmi K20 Pro"
+  },
+  {
+    "id": "redmi_22",
+    "brand": "Redmi",
+    "models": "Redmi A3 4G = Redmi A3X 4G = Poco C61 4G"
+  },
+  {
+    "id": "redmi_23",
+    "brand": "Redmi",
+    "models": "Redmi K30 = Poco X2"
+  },
+  {
+    "id": "redmi_24",
+    "brand": "Redmi",
+    "models": "Redmi Note 10 5G = Redmi Note 10T 5G = Poco M3 Pro 5G"
+  },
+  {
+    "id": "redmi_25",
+    "brand": "Redmi",
+    "models": "Redmi 11X = Redmi 11X Pro = Redmi K40"
+  },
+  {
+    "id": "redmi_26",
+    "brand": "Redmi",
+    "models": "Redmi Note 10 = Redmi Note 10 Pro Max"
+  },
+  {
+    "id": "redmi_27",
+    "brand": "Redmi",
+    "models": "Poco X3 = Poco X3 Pro"
+  },
+  {
+    "id": "redmi_28",
+    "brand": "Redmi",
+    "models": "Redmi 8 = Redmi 8A = Redmi 8A Dual"
+  },
+  {
+    "id": "redmi_29",
+    "brand": "Redmi",
+    "models": "Redmi A3 2024 = Poco C61"
+  },
+  {
+    "id": "sam_1",
+    "brand": "Samsung",
+    "models": "Samsung M55 5G = Samsung F55 5G"
+  },
+  {
+    "id": "sam_2",
+    "brand": "Samsung",
+    "models": "Samsung F15 5G = Samsung M15 5G"
+  },
+  {
+    "id": "sam_3",
+    "brand": "Samsung",
+    "models": "Samsung A35 5G = Samsung A55 5G"
+  },
+  {
+    "id": "sam_4",
+    "brand": "Samsung",
+    "models": "Samsung A15 = Samsung A25 = Samsung A24"
+  },
+  {
+    "id": "sam_5",
+    "brand": "Samsung",
+    "models": "Samsung F54 = Samsung M54"
+  },
+  {
+    "id": "sam_6",
+    "brand": "Samsung",
+    "models": "Samsung A10 = Samsung M10"
+  },
+  {
+    "id": "sam_7",
+    "brand": "Samsung",
+    "models": "Samsung A50 = Samsung A50S = Samsung A30S"
+  },
+  {
+    "id": "sam_8",
+    "brand": "Samsung",
+    "models": "Samsung A22 4G = Samsung M22 = Samsung F22 = Samsung M32"
+  },
+  {
+    "id": "sam_9",
+    "brand": "Samsung",
+    "models": "Samsung A42 5G = Samsung M42 5G = Samsung F42"
+  },
+  {
+    "id": "sam_10",
+    "brand": "Samsung",
+    "models": "Samsung M02S = Samsung F02S = Samsung A03S"
+  },
+  {
+    "id": "sam_11",
+    "brand": "Samsung",
+    "models": "Samsung M12 = Samsung A12 = Samsung F12"
+  },
+  {
+    "id": "sam_12",
+    "brand": "Samsung",
+    "models": "Samsung A32 4G = Samsung M32 5G"
+  },
+  {
+    "id": "sam_13",
+    "brand": "Samsung",
+    "models": "Samsung F62 = Samsung M62"
+  },
+  {
+    "id": "sam_14",
+    "brand": "Samsung",
+    "models": "Samsung M14 5G = Samsung F23 5G = Samsung M13 4G"
+  },
+  {
+    "id": "sam_15",
+    "brand": "Samsung",
+    "models": "Samsung A04E = Samsung M04 = Samsung F04"
+  },
+  {
+    "id": "sam_16",
+    "brand": "Samsung",
+    "models": "Samsung A20 = Samsung A30 = Samsung M10S"
+  },
+  {
+    "id": "sam_17",
+    "brand": "Samsung",
+    "models": "Samsung M30S = Samsung M21"
+  },
+  {
+    "id": "sam_18",
+    "brand": "Samsung",
+    "models": "Samsung M11 = Samsung A11"
+  },
+  {
+    "id": "sam_19",
+    "brand": "Samsung",
+    "models": "Samsung A01 = Samsung M01"
+  },
+  {
+    "id": "sam_20",
+    "brand": "Samsung",
+    "models": "Samsung F41 = Samsung M31"
+  },
+  {
+    "id": "sam_21",
+    "brand": "Samsung",
+    "models": "Samsung M40 = Samsung A60"
+  },
+  {
+    "id": "sam_22",
+    "brand": "Samsung",
+    "models": "Samsung M40 = Samsung A22"
+  },
+  {
+    "id": "sam_23",
+    "brand": "Samsung",
+    "models": "Samsung A03 = Samsung A04 Core"
+  },
+  {
+    "id": "vivo_1",
+    "brand": "Vivo",
+    "models": "Vivo Y20 = Vivo Y20S = Vivo Y20L = Vivo Y12S = Vivo Y20i = Vivo Y11S = Vivo Y20A = iQOO U1x"
+  },
+  {
+    "id": "vivo_2",
+    "brand": "Vivo",
+    "models": "Vivo Y11S = iQOO U1X"
+  },
+  {
+    "id": "vivo_3",
+    "brand": "Vivo",
+    "models": "Vivo V40 = Vivo V40 Pro = Vivo T3 Ultra"
+  },
+  {
+    "id": "vivo_4",
+    "brand": "Vivo",
+    "models": "Vivo Y12 = Vivo Y15 = Vivo Y17 = Vivo U10"
+  },
+  {
+    "id": "vivo_6",
+    "brand": "Vivo",
+    "models": "Vivo Y91 = Vivo Y93 = Vivo Y95"
+  },
+  {
+    "id": "vivo_7",
+    "brand": "Vivo",
+    "models": "Vivo Y18 = Vivo Y28S = Vivo Y18E = Vivo Y03 = Vivo T3 Lite"
+  },
+  {
+    "id": "vivo_8",
+    "brand": "Vivo",
+    "models": "Vivo T3X = Vivo Y38 = Vivo Y58 5G = Vivo Y200T"
+  },
+  {
+    "id": "vivo_9",
+    "brand": "Vivo",
+    "models": "Vivo T3 5G = Vivo Y200E"
+  },
+  {
+    "id": "vivo_10",
+    "brand": "Vivo",
+    "models": "Vivo V23E = Vivo Y75 4G"
+  },
+  {
+    "id": "vivo_11",
+    "brand": "Vivo",
+    "models": "Vivo V40E = iQOO Z9S"
+  },
+  {
+    "id": "vivo_12",
+    "brand": "Vivo",
+    "models": "Vivo V30 = Vivo V30 Pro"
+  },
+  {
+    "id": "vivo_13",
+    "brand": "Vivo",
+    "models": "Vivo Y28 5G = Vivo Y17S"
+  },
+  {
+    "id": "vivo_14",
+    "brand": "Vivo",
+    "models": "Vivo T2 Pro = iQOO Z7 Pro"
+  },
+  {
+    "id": "vivo_15",
+    "brand": "Vivo",
+    "models": "Vivo V15S = Vivo Y01"
+  },
+  {
+    "id": "vivo_16",
+    "brand": "Vivo",
+    "models": "Vivo Y02 = Vivo Y02T"
+  },
+  {
+    "id": "vivo_17",
+    "brand": "Vivo",
+    "models": "Vivo T1X = Vivo Y21 = Vivo Y33S"
+  },
+  {
+    "id": "vivo_18",
+    "brand": "Vivo",
+    "models": "Vivo Y22 = Vivo Y35 = Vivo Y22S"
+  },
+  {
+    "id": "vivo_19",
+    "brand": "Vivo",
+    "models": "Vivo Y30 = Vivo Y50"
+  },
+  {
+    "id": "vivo_20",
+    "brand": "Vivo",
+    "models": "Vivo V5 = Vivo Y69"
+  },
+  {
+    "id": "vivo_21",
+    "brand": "Vivo",
+    "models": "Vivo Y73S = Vivo V21E 4G = Vivo V20"
+  },
+  {
+    "id": "vivo_22",
+    "brand": "Vivo",
+    "models": "Vivo Y36 = Vivo Y78"
+  },
+  {
+    "id": "vivo_23",
+    "brand": "Vivo",
+    "models": "Vivo S1 = Vivo Z1X"
+  },
+  {
+    "id": "vivo_24",
+    "brand": "Vivo",
+    "models": "Vivo Z1 Pro = Vivo Z5X"
+  },
+  {
+    "id": "vivo_25",
+    "brand": "Vivo",
+    "models": "Vivo Y83 Pro = Vivo Y85 = Vivo V9"
+  },
+  {
+    "id": "vivo_26",
+    "brand": "Vivo",
+    "models": "Vivo Y81 = Vivo Y83"
+  },
+  {
+    "id": "vivo_27",
+    "brand": "Vivo",
+    "models": "Vivo Y19 = Vivo U20"
+  },
+  {
+    "id": "vivo_28",
+    "brand": "Vivo",
+    "models": "Vivo Y90 = Vivo Y91C = Vivo Y91I"
+  },
+  {
+    "id": "vivo_29",
+    "brand": "Vivo",
+    "models": "Vivo V20 = Vivo V20 Pro"
+  },
+  {
+    "id": "vivo_30",
+    "brand": "Vivo",
+    "models": "Vivo V20 SE = Vivo Y70"
+  },
+  {
+    "id": "vivo_31",
+    "brand": "Vivo",
+    "models": "Vivo V29 5G = Vivo V29 Pro 5G"
+  },
+  {
+    "id": "vivo_32",
+    "brand": "Vivo",
+    "models": "Vivo Y72 5G = iQOO Z3 5G"
+  },
+  {
+    "id": "vivo_33",
+    "brand": "Vivo",
+    "models": "Vivo T1 5G = Vivo Y75 5G = iQOO Z6 5G"
+  },
+  {
+    "id": "vivo_34",
+    "brand": "Vivo",
+    "models": "Vivo Y100 = Vivo T2 5G"
+  },
+  {
+    "id": "vivo_35",
+    "brand": "Vivo",
+    "models": "Vivo Y31 = Vivo Y51 = Vivo Y53S"
+  },
+  {
+    "id": "vivo_36",
+    "brand": "Vivo",
+    "models": "Vivo Y77 5G = iQOO Z6 Lite"
+  },
+  {
+    "id": "vivo_37",
+    "brand": "Vivo",
+    "models": "Vivo T2X = Vivo Y16 = Vivo Y56"
+  },
+  {
+    "id": "vivo_38",
+    "brand": "Vivo",
+    "models": "Vivo V50 5G = Vivo V50E 5G"
+  },
+  {
+    "id": "vivo_39",
+    "brand": "Vivo",
+    "models": "Vivo Y19S = Vivo Y29"
+  },
+  {
+    "id": "vivo_40",
+    "brand": "Vivo",
+    "models": "Vivo Y12 = Vivo Y15 = Vivo Y17"
+  },
+  {
+    "id": "vivo_41",
+    "brand": "Vivo",
+    "models": "Vivo Y93 = Vivo Y91 = Vivo Y95 = Vivo Y97"
+  },
+  {
+    "id": "vivo_42",
+    "brand": "Vivo",
+    "models": "Vivo Y21 2021 = Vivo Y33S = Vivo T1X"
+  },
+  {
+    "id": "vivo_43",
+    "brand": "Vivo",
+    "models": "Vivo Y17S = Vivo Y28S"
+  },
+  {
+    "id": "vivo_44",
+    "brand": "Vivo",
+    "models": "Vivo V27 = Vivo V27 Pro"
+  },
+  {
+    "id": "vivo_45",
+    "brand": "Vivo",
+    "models": "Vivo V29 = Vivo V29 Pro"
+  },
+  {
+    "id": "vivo_46",
+    "brand": "Vivo",
+    "models": "Vivo T4R = iQOO Z10R = Vivo V50 = Vivo V50E"
+  },
+  {
+    "id": "vivo_47",
+    "brand": "Vivo",
+    "models": "Vivo Y19E = Vivo T4 Lite = iQOO Z10 Lite"
+  },
+  {
+    "id": "vivo_48",
+    "brand": "Vivo",
+    "models": "Vivo T4 5G = iQOO Z10 5G"
+  },
+  {
+    "id": "vivo_49",
+    "brand": "Vivo",
+    "models": "Vivo T4X = iQOO Z10X = Vivo Y29 4G"
+  },
+  {
+    "id": "vivo_50",
+    "brand": "Vivo",
+    "models": "Vivo Y29 = Vivo Y19S = Vivo Y19S Pro"
+  },
+  {
+    "id": "vivo_51",
+    "brand": "Vivo",
+    "models": "Vivo Y85 = Vivo Y89 = Vivo Z3X = Vivo Z1 = Vivo Z1 Lite"
+  }
+]

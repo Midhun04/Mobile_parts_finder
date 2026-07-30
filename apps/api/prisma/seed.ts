@@ -36,6 +36,7 @@ const PART_TYPE_CODES: Record<string, string> = {
   Vibrator: 'VIBRATOR',
   'Tempered Glass': 'TEMPERED_GLASS',
   'UV Glass': 'UV_GLASS',
+  'Display Connector': 'DISPLAY_CONNECTOR',
 };
 
 function parseCsv(fileName: string): Record<string, string>[] {

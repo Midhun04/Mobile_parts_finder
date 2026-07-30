@@ -18,6 +18,7 @@ DATA = ROOT / "data"
 
 PART_COLS = [
     ("Display_Combo", "Display"),
+    ("Display_Connector", "Display Connector"),
     ("Battery", "Battery"),
     ("OCA_Glass", "OCA Glass"),
     ("Pouch_BackPanel", "Pouch"),

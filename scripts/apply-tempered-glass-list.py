@@ -1,10 +1,9 @@
-"""Apply Universal Tempered / UV / OCA Glass supplier lists into model_part_matrix.csv.
+"""Apply Universal Tempered / UV / OCA / Display supplier lists into model_part_matrix.csv.
 
-Each model is assigned to at most one group per glass kind (first listing wins)
+Each model is assigned to at most one group per part kind (first listing wins)
 so overlapping supplier lists do not union-find merge.
 
-OCA groups are loaded from data/universal_oca_glass.json (built by
-scripts/_build_oca_groups.py).
+OCA / Display groups load from data/universal_*.json (built by scripts/_build_*.py).
 """
 from __future__ import annotations
 
@@ -18,6 +17,10 @@ ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
 MATRIX = DATA / "model_part_matrix.csv"
 OCA_JSON = DATA / "universal_oca_glass.json"
+DISPLAY_JSON = DATA / "universal_display_groups.json"
+DISPLAY_CONNECTOR_JSON = DATA / "universal_display_connector_groups.json"
+POUCH_JSON = DATA / "universal_pouch_groups.json"
+BATTERY_JSON = DATA / "universal_battery_groups.json"
 
 NOT_RESEARCHED = "Not researched yet — add from supplier catalog"
 
@@ -330,6 +333,7 @@ def ensure_blank_row(fieldnames: list[str]) -> dict[str, str]:
     row = {c: "" for c in fieldnames}
     for prefix in (
         "Display_Combo",
+        "Display_Connector",
         "Battery",
         "OCA_Glass",
         "Pouch_BackPanel",
@@ -374,8 +378,22 @@ def apply_kind(
     added_models = 0
     updated = 0
     for gid, members in group_members.items():
-        if len(members) < 2:
-            print(f"WARN {prefix} group {gid} has <2 models: {members}")
+        if len(members) == 0:
+            continue
+        if len(members) == 1:
+            brand, model = members[0]
+            key = matrix_key(brand, model)
+            if key not in index:
+                row = ensure_blank_row(fieldnames)
+                row["Brand"] = brand
+                row["Model"] = model
+                rows.append(row)
+                index[key] = row
+                added_models += 1
+            row = index[key]
+            row[count_col] = "1"
+            row[shared_col] = "Not shared — model-specific part"
+            updated += 1
             continue
         count = str(len(members))
         for brand, model in members:
@@ -400,8 +418,8 @@ def apply_kind(
     return len(group_members), updated, added_models, conflicts
 
 
-def load_oca_groups() -> tuple[dict[str, str], dict[str, str]]:
-    raw = json.loads(OCA_JSON.read_text(encoding="utf-8"))
+def load_json_groups(path: Path) -> tuple[dict[str, str], dict[str, str]]:
+    raw = json.loads(path.read_text(encoding="utf-8"))
     groups: dict[str, str] = {}
     brands: dict[str, str] = {}
     for item in raw:
@@ -412,13 +430,36 @@ def load_oca_groups() -> tuple[dict[str, str], dict[str, str]]:
 
 
 def main() -> None:
-    if not OCA_JSON.exists():
+    missing = [
+        p
+        for p in (
+            OCA_JSON,
+            DISPLAY_JSON,
+            DISPLAY_CONNECTOR_JSON,
+            POUCH_JSON,
+            BATTERY_JSON,
+        )
+        if not p.exists()
+    ]
+    if missing:
         raise SystemExit(
-            f"Missing {OCA_JSON}. Run: python scripts/_build_oca_groups.py"
+            "Missing "
+            + ", ".join(str(p) for p in missing)
+            + ". Run scripts/_build_*_groups.py builders first."
         )
 
-    oca_groups, oca_brands = load_oca_groups()
-    kinds = list(GLASS_KINDS) + [("OCA_Glass", oca_groups, oca_brands)]
+    oca_groups, oca_brands = load_json_groups(OCA_JSON)
+    disp_groups, disp_brands = load_json_groups(DISPLAY_JSON)
+    conn_groups, conn_brands = load_json_groups(DISPLAY_CONNECTOR_JSON)
+    pouch_groups, pouch_brands = load_json_groups(POUCH_JSON)
+    batt_groups, batt_brands = load_json_groups(BATTERY_JSON)
+    kinds = list(GLASS_KINDS) + [
+        ("OCA_Glass", oca_groups, oca_brands),
+        ("Display_Combo", disp_groups, disp_brands),
+        ("Display_Connector", conn_groups, conn_brands),
+        ("Pouch_BackPanel", pouch_groups, pouch_brands),
+        ("Battery", batt_groups, batt_brands),
+    ]
 
     with MATRIX.open(encoding="utf-8-sig", newline="") as f:
         rows = list(csv.DictReader(f))

@@ -623,3 +623,1088 @@ id,part_type_id,part_name,part_number,manufacturer
 622,3,[matrix] OCA Glass shared (Redmi Note 13; Redmi Note 14),,Redmi
 623,3,[matrix] OCA Glass shared (Redmi Note 7; Redmi Note 7 Pro; Redmi Note 7s),,Redmi
 624,3,[matrix] OCA Glass shared (Redmi S2; Redmi Y2),,Redmi
+625,1,[matrix] Display shared (Infinix Hot 10; Infinix Hot 10i; Tecno Pova (+14)),,Infinix
+626,1,[matrix] Display shared (Infinix Smart 5; Infinix Hot 10 Lite; Infinix Smart 5A (+9)),,Infinix
+627,1,[matrix] Display shared (Infinix Hot 10 PLAY; Infinix Hot 11 PLAY; Infinix X688 (+11)),,Infinix
+628,1,[matrix] Display shared (Infinix Hot 11; Infinix Hot 10S; Infinix Hot 10T (+11)),,Infinix
+629,1,[matrix] Display shared (Infinix Hot 11 2022; Infinix X675),,Infinix
+630,1,[matrix] Display shared (Infinix Hot 11S; Infinix Hot 20 Pro; Infinix X6812B (+17)),,Infinix
+631,1,[matrix] Display shared (Infinix Hot 12; Infinix Hot 12 Pro; Infinix X668 (+19)),,Infinix
+632,1,[matrix] Display shared (Infinix Hot 12 Play; Infinix Hot 20; Infinix Hot 20 Play (+14)),,Infinix
+633,1,[matrix] Display shared (Infinix HOT 12i; Infinix Hot 20i; Infinix Smart 6 HD (+4)),,Infinix
+634,1,[matrix] Display shared (Infinix Hot 20 5G; Infinix X666; Infinix X666B),,Infinix
+635,1,[matrix] Display shared (Infinix Hot 30 5G; Infinix Hot 40; Infinix Hot 40 Pro (+24)),,Infinix
+636,1,[matrix] Display shared (Infinix HOT 30i; Tecno SPARK 10C; Tecno Spark GO 2023 (+31)),,Infinix
+637,1,[matrix] Display shared (Infinix Hot 40i; Infinix Smart 8; Infinix Smart 8 HD (+20)),,Infinix
+638,1,[matrix] Display shared (Infinix Hot 50 5G; Infinix Hot 50i; Infinix Hot 60i (+32)),,Infinix
+639,1,[matrix] Display shared (Infinix Hot 50 Pro Plus; Tecno Spark 20 Pro Plus; Infinix Note 40 Pro 4G (+11)),,Infinix
+640,1,[matrix] Display shared (Infinix Hot 60 5G; Infinix Smart 10; Infinix Smart 10 NFC (+3)),,Infinix
+641,1,[matrix] Display shared (Infinix Hot 60i 5G; Infinix X6730B; Infinix X7730 (+8)),,Infinix
+642,1,[matrix] Display shared (Infinix Hot 6X; Infinix Hot S3X; Infinix X622 (+1)),,Infinix
+643,1,[matrix] Display shared (Infinix Hot 7; Infinix Hot 7 Pro; Infinix X625C (+1)),,Infinix
+644,1,[matrix] Display shared (Infinix Hot 8; Infinix Hot 8 Lite; Infinix Hot 8 Pro (+11)),,Infinix
+645,1,[matrix] Display shared (Infinix Hot 9; Tecno Camon 15; Tecno Spark 5 (+14)),,Infinix
+646,1,[matrix] Display shared (Infinix Hot 9 PLAY; Infinix Smart 4 Plus; Infinix X680 (+3)),,Infinix
+647,1,[matrix] Display shared (Infinix Note 10; Infinix Note 11 Pro; Infinix Note 11i (+10)),,Infinix
+648,1,[matrix] Display shared (Infinix Note 10 Pro; Infinix X695),,Infinix
+649,1,[matrix] Display shared (Infinix Note 11; Infinix Note 12 5G; Infinix Note 12 Pro (+23)),,Infinix
+650,1,[matrix] Display shared (Tecno Camon 30; Infinix Note 40 5G; Infinix X6852 (+9)),,Tecno
+651,1,[matrix] Display shared (Infinix Note 7; Infinix X690; Infinix X690B),,Infinix
+652,1,[matrix] Display shared (Infinix S4; Infinix Smart 3 Plus; Infinix X626 (+1)),,Infinix
+653,1,[matrix] Display shared (Infinix S5; Infinix S5 Lite; Infinix X652 (+3)),,Infinix
+654,1,[matrix] Display shared (Infinix Smart 4; Infinix X653; Infinix X653C (+3)),,Infinix
+655,1,[matrix] Display shared (Infinix Smart 6 Plus; Tecno Spark 8; Infinix X6511G (+8)),,Infinix
+656,1,[matrix] Display shared (Infinix Smart HD; Infinix Smart HD 2021; Infinix X612 (+1)),,Infinix
+657,1,[matrix] Display shared (Infinix X5515; Tecno IN1),,Infinix
+658,1,[matrix] Display shared (Infinix X5516; Tecno iACE2X; Tecno KB2),,Infinix
+659,1,[matrix] Display shared (Infinix X6511; Infinix X6511D; Infinix X6511E),,Infinix
+660,1,[matrix] Display shared (Infinix X6524; Infinix X652B; Tecno CC6 (+2)),,Infinix
+661,1,[matrix] Display shared (Infinix X658; Infinix X659; Tecno KF6 (+4)),,Infinix
+662,1,[matrix] Display shared (Infinix X662; Tecno KG6P; Tecno KG7 (+6)),,Infinix
+663,1,[matrix] Display shared (Infinix X6710; Infinix X6739; Infinix X678B (+9)),,Infinix
+664,1,[matrix] Display shared (Infinix X6810; Infinix Zero X Neo; Tecno Camon 17 Pro (+1)),,Infinix
+665,1,[matrix] Display shared (Infinix X6811; Infinix X6811B; Infinix Zero X (+1)),,Infinix
+666,1,[matrix] Display shared (Infinix X687; Infinix Zero 8i; Tecno CE9),,Infinix
+667,1,[matrix] Display shared (iQOO 5 5G; iQOO Z5 5G),,iQOO
+668,1,[matrix] Display shared (iQOO Neo 5; iQOO 7; iQOO Neo 5s (+1)),,iQOO
+669,1,[matrix] Display shared (Vivo Y21; Vivo Y22; Vivo Y16 (+56)),,Vivo
+670,1,[matrix] Display shared (iQOO Z9X; Vivo Y19s PRO; Vivo Y39 5G (+10)),,iQOO
+671,1,[matrix] Display shared (Vivo Y19; iQOO Z5i; Vivo U20 (+2)),,Vivo
+672,1,[matrix] Display shared (Vivo V20; Vivo V21E 5G; Vivo V23E (+6)),,Vivo
+673,1,[matrix] Display shared (iQOO Z6 5G; Vivo T3; Vivo Y200 5G (+2)),,iQOO
+674,1,[matrix] Display shared (Vivo T1 5G; Vivo Y55s; iQOO Z6 Lite 5G (+3)),,Vivo
+675,1,[matrix] Display shared (Vivo T2 5G; Vivo Y100; iQOO Z7 5G (+1)),,Vivo
+676,1,[matrix] Display shared (Vivo V29E; Vivo S16; Vivo S16 Pro (+12)),,Vivo
+677,1,[matrix] Display shared (iQOO Z7X; iQOO Z8; iQOO Z8X (+5)),,iQOO
+678,1,[matrix] Display shared (Vivo Y03; Vivo Y18; Vivo Y18E (+7)),,Vivo
+679,1,[matrix] Display shared (iQOO Z9S; iQOO Z9S Pro; Vivo T3 Pro (+1)),,iQOO
+680,1,[matrix] Display shared (Itel A06; Itel A50C; Itel A669L (+1)),,Itel
+681,1,[matrix] Display shared (Itel A26; Itel A37),,Itel
+682,1,[matrix] Display shared (Itel L6503; Itel S16 Pro; Itel Vision 2),,Itel
+683,1,[matrix] Display shared (Itel P36 Play; Itel Vision 1),,Itel
+684,1,[matrix] Display shared (Lava 03; Lava LZG409; Lava Smart (+1)),,Lava
+685,1,[matrix] Display shared (Lava 03 Pro; Lava Blaze 2 5G; Lava LXX507 (+4)),,Lava
+686,1,[matrix] Display shared (Lava 88; Lava Z61; Lava Z61 2GB),,Lava
+687,1,[matrix] Display shared (Lava Blaze 4G; Lava Blaze Nxt; Lava Blaze Pro 4G (+7)),,Lava
+688,1,[matrix] Display shared (Lava Bold N1; Lava LXX517; Lava LXX522 (+3)),,Lava
+689,1,[matrix] Display shared (Lava X2; Lava X2 Pro; Lava Z2 (+6)),,Lava
+690,1,[matrix] Display shared (Micromax In 2b; Micromax Z32),,Micromax
+691,1,[matrix] Display shared (Motorola E14; Motorola G04; Motorola G24 (+1)),,Motorola
+692,1,[matrix] Display shared (Motorola E30; Motorola E40),,Motorola
+693,1,[matrix] Display shared (Motorola E32s; Motorola G22; Motorola G32),,Motorola
+694,1,[matrix] Display shared (Motorola E7; Motorola E7 Power; Motorola E7i),,Motorola
+695,1,[matrix] Display shared (Motorola E7 Plus; Motorola G9; Motorola G9 Play),,Motorola
+696,1,[matrix] Display shared (Motorola G52; Motorola G71s; Motorola Edge 30 (+1)),,Motorola
+697,1,[matrix] Display shared (Motorola Edge 30 Fusion; Motorola S30 Pro),,Motorola
+698,1,[matrix] Display shared (Motorola EDGE 50 Fusion; Motorola G85),,Motorola
+699,1,[matrix] Display shared (Motorola G10; Motorola G10 Power; Motorola G20 (+1)),,Motorola
+700,1,[matrix] Display shared (Motorola G13; Motorola G23),,Motorola
+701,1,[matrix] Display shared (Motorola G14; Motorola G54; Motorola G54 5G (+2)),,Motorola
+702,1,[matrix] Display shared (Motorola G31; Motorola G41; Motorola G71),,Motorola
+703,1,[matrix] Display shared (Motorola G34; Motorola G45 5G; Motorola G53),,Motorola
+704,1,[matrix] Display shared (Motorola G40 Fusion; Motorola G51 5G; Motorola G60 (+1)),,Motorola
+705,1,[matrix] Display shared (Motorola G7; Motorola G7 Plus),,Motorola
+706,1,[matrix] Display shared (OnePlus 10R 5G; OnePlus 10T 5G; OnePlus ACE (+2)),,OnePlus
+707,1,[matrix] Display shared (OnePlus 11R; OnePlus ACE 2; Oppo Find X6),,OnePlus
+708,1,[matrix] Display shared (OnePlus 6T; OnePlus 7; Oppo K1 (+5)),,OnePlus
+709,1,[matrix] Display shared (OnePlus 8; Oppo Find X2 Neo 5G; Oppo Reno 3 Pro 5G (+1)),,OnePlus
+710,1,[matrix] Display shared (OnePlus 8T; OnePlus 9R),,OnePlus
+711,1,[matrix] Display shared (OnePlus 9RT; Oppo K10 Pro; Oppo Reno 8 Pro (+3)),,OnePlus
+712,1,[matrix] Display shared (OnePlus ACE 4; OnePlus Nord CE 3; OnePlus Nord CE 4 (+4)),,OnePlus
+713,1,[matrix] Display shared (OnePlus Nord; Realme X50 Pro),,OnePlus
+714,1,[matrix] Display shared (Oppo Reno 5; OnePlus Nord 2),,Oppo
+715,1,[matrix] Display shared (OnePlus Nord 2 5G; OnePlus Nord 2T 5G; OnePlus Nord CE 5G (+12)),,OnePlus
+716,1,[matrix] Display shared (Realme Narzo 50; Oppo A36; Oppo A76 (+9)),,Realme
+717,1,[matrix] Display shared (Oppo Reno 8T; Oppo A78 4G; Oppo F21 Pro 4G (+12)),,Oppo
+718,1,[matrix] Display shared (Realme C55; OnePlus Nord CE3 Lite 5G; Oppo A1 5G (+58)),,Realme
+719,1,[matrix] Display shared (OnePlus Nord CE4 Lite; Realme 12 4G; Oppo F27 (+21)),,OnePlus
+720,1,[matrix] Display shared (Realme 13 Pro; OnePlus Nord CE4 Lite 5G; Oppo Reno 12F (+3)),,Realme
+721,1,[matrix] Display shared (Oppo A53; Oppo A53S; Oppo A11S (+10)),,Oppo
+722,1,[matrix] Display shared (Oppo A17; OnePlus NORD N20 SE; Oppo A17K (+23)),,Oppo
+723,1,[matrix] Display shared (Oppo A54 5G; Oppo A74 5G; Oppo A93 5G (+2)),,Oppo
+724,1,[matrix] Display shared (Oppo A1 Pro 5G; Oppo F27 Pro Plus 5G; Oppo Reno 10 5G (+13)),,Oppo
+725,1,[matrix] Display shared (Oppo A5S; Oppo A11K; Oppo A12 (+11)),,Oppo
+726,1,[matrix] Display shared (Oppo A12e; Oppo A3s; Oppo A5 (+3)),,Oppo
+727,1,[matrix] Display shared (Oppo A16s; Realme C15; Realme Narzo 30A (+15)),,Oppo
+728,1,[matrix] Display shared (Realme C2; Oppo A1k),,Realme
+729,1,[matrix] Display shared (Realme C3; Oppo A5 2020; Oppo A9 2020 (+6)),,Realme
+730,1,[matrix] Display shared (Oppo A52; Oppo A72; Oppo A92 (+3)),,Oppo
+731,1,[matrix] Display shared (Oppo A72 5G; Oppo A73 5G; Oppo A53 5G (+2)),,Oppo
+732,1,[matrix] Display shared (Oppo A59; Oppo F1s),,Oppo
+733,1,[matrix] Display shared (Oppo A6 5G; Realme 15x 5G; Realme C85 5G (+5)),,Oppo
+734,1,[matrix] Display shared (Oppo A6 Pro 5G; Oppo A6i Plus 5G; Oppo A6s 5G (+6)),,Oppo
+735,1,[matrix] Display shared (Oppo A73; Oppo A91; Oppo F15 (+5)),,Oppo
+736,1,[matrix] Display shared (Oppo A74 4G; Oppo A94 4G; Oppo A94 5G (+24)),,Oppo
+737,1,[matrix] Display shared (Oppo F11; Oppo A9; Oppo A9x),,Oppo
+738,1,[matrix] Display shared (Oppo A92S; Oppo Reno 4Z 5G; Realme 6 Pro),,Oppo
+739,1,[matrix] Display shared (Oppo A93; Oppo A93S 5G; Realme 6 (+15)),,Oppo
+740,1,[matrix] Display shared (Realme 1; Oppo F5 Youth),,Realme
+741,1,[matrix] Display shared (Oppo F9; Oppo F9 Pro; Realme 2 Pro (+1)),,Oppo
+742,1,[matrix] Display shared (Oppo K3; Oppo Reno 2F; Oppo Reno 2Z (+1)),,Oppo
+743,1,[matrix] Display shared (Oppo Reno 5 Pro; Oppo Reno 6 Pro),,Oppo
+744,1,[matrix] Display shared (Poco C31; Redmi 10A; Redmi 9A (+7)),,Poco
+745,1,[matrix] Display shared (Poco C55; Redmi 11A; Redmi 12C (+4)),,Poco
+746,1,[matrix] Display shared (Redmi A1; Redmi A2; Poco C50 (+4)),,Redmi
+747,1,[matrix] Display shared (Poco C61; Redmi A3 New; Redmi A3X),,Poco
+748,1,[matrix] Display shared (Redmi 13C; Poco C65; Poco M6 5g (+2)),,Redmi
+749,1,[matrix] Display shared (Poco C71; Redmi A5 New),,Poco
+750,1,[matrix] Display shared (Poco C75; Redmi 14C; Redmi 14R (+3)),,Poco
+751,1,[matrix] Display shared (Poco C85 5G; Redmi 15C 5G),,Poco
+752,1,[matrix] Display shared (Redmi K30; Poco X2; Poco F2 (+2)),,Redmi
+753,1,[matrix] Display shared (Poco F3; Poco F3 Pro; Poco F4 (+7)),,Poco
+754,1,[matrix] Display shared (Poco F5; Redmi Note 12 Turbo; Redmi Note 13 5G),,Poco
+755,1,[matrix] Display shared (Poco F5 Pro; Redmi K60; Redmi K60 Pro),,Poco
+756,1,[matrix] Display shared (Poco M2; Redmi 9; Redmi 9 Prime),,Poco
+757,1,[matrix] Display shared (Poco M2 Pro; Redmi Note 10 Lite; Redmi Note 9 Pro (+1)),,Poco
+758,1,[matrix] Display shared (Poco M3; Redmi 9T; Redmi Note 9 4G (+1)),,Poco
+759,1,[matrix] Display shared (Poco M3 Pro 5G; Redmi Note 10 5G; Redmi Note 10T 5G (+1)),,Poco
+760,1,[matrix] Display shared (Poco M4 5G; Poco M5; Redmi 10 5G (+6)),,Poco
+761,1,[matrix] Display shared (Redmi Note 10; Redmi Note 11; Poco M4 Pro 4G (+6)),,Redmi
+762,1,[matrix] Display shared (Redmi 12; Redmi 12 5G; Poco M6 4G (+8)),,Redmi
+763,1,[matrix] Display shared (Poco M7 Pro 5G; Redmi Note 13 4G; Redmi Note 14 4G (+1)),,Poco
+764,1,[matrix] Display shared (Poco X3; Poco X3 Pro; Xiaomi Mi 10i (+1)),,Poco
+765,1,[matrix] Display shared (Redmi Note 10 Pro; Poco X4 Pro 5G; Xiaomi Mi 11i 5G (+4)),,Redmi
+766,1,[matrix] Display shared (Redmi Note 12; Poco X5 5G; Redmi Note 12 4G (+1)),,Redmi
+767,1,[matrix] Display shared (Redmi Note 12 Pro; Poco X5 Pro; Redmi Note 12 Pro Plus),,Redmi
+768,1,[matrix] Display shared (Poco X6 5G; Poco X6 Pro 5G; Redmi K70E (+1)),,Poco
+769,1,[matrix] Display shared (Realme 10 5G; Realme 10S; Realme 9i 5G),,Realme
+770,1,[matrix] Display shared (Realme C11 2021; Realme C20; Realme C21 (+1)),,Realme
+771,1,[matrix] Display shared (Realme C21Y; Realme C25Y),,Realme
+772,1,[matrix] Display shared (Realme C30; Realme C30S; Realme C33 (+2)),,Realme
+773,1,[matrix] Display shared (Realme C51; Realme C53; Realme Narzo N53 (+1)),,Realme
+774,1,[matrix] Display shared (Realme C61; Realme C63 4G; Realme Narzo N63),,Realme
+775,1,[matrix] Display shared (Realme C71; Realme Note 70; Realme Note 70i),,Realme
+776,1,[matrix] Display shared (Realme P4x 4G; Realme P4x 5G),,Realme
+777,1,[matrix] Display shared (Realme X3; Realme X50 5G; Realme X Super Zoom),,Realme
+778,1,[matrix] Display shared (Samsung Galaxy A01; Samsung Galaxy M01; Samsung Galaxy A015 (+1)),,Samsung
+779,1,[matrix] Display shared (Samsung Galaxy A01 Core; Samsung Galaxy M01 Core; Samsung Galaxy A013 (+1)),,Samsung
+780,1,[matrix] Display shared (Samsung Galaxy A02; Samsung Galaxy A12; Samsung Galaxy A32 5G (+10)),,Samsung
+781,1,[matrix] Display shared (Samsung Galaxy A02s; Samsung Galaxy A03; Samsung Galaxy A03s (+5)),,Samsung
+782,1,[matrix] Display shared (Samsung Galaxy A13 5G; Samsung Galaxy A23; Samsung Galaxy A04S (+3)),,Samsung
+783,1,[matrix] Display shared (Samsung Galaxy A057; Samsung Galaxy A05s; Samsung Galaxy M14 4G),,Samsung
+784,1,[matrix] Display shared (Samsung Galaxy A06 5G; Samsung Galaxy A066B; Samsung Galaxy E066B (+3)),,Samsung
+785,1,[matrix] Display shared (Samsung Galaxy A10; Samsung Galaxy M10),,Samsung
+786,1,[matrix] Display shared (Samsung Galaxy A11; Samsung Galaxy M11),,Samsung
+787,1,[matrix] Display shared (Samsung Galaxy A13; Samsung Galaxy F13; Samsung Galaxy M13 (+4)),,Samsung
+788,1,[matrix] Display shared (Samsung Galaxy A14 5G; Samsung Galaxy A14 4G; Samsung Galaxy A145F (+2)),,Samsung
+789,1,[matrix] Display shared (Samsung Galaxy A15; Samsung Galaxy A15 5G; Samsung Galaxy F15 (+1)),,Samsung
+790,1,[matrix] Display shared (Samsung Galaxy A15 4G; Samsung Galaxy F15 5G; Samsung Galaxy M15 5G),,Samsung
+791,1,[matrix] Display shared (Samsung Galaxy A16 4G; Samsung Galaxy A16 5G; Samsung Galaxy A166P (+1)),,Samsung
+792,1,[matrix] Display shared (Samsung Galaxy A20; Samsung Galaxy A20s),,Samsung
+793,1,[matrix] Display shared (Samsung Galaxy A22 4G; Samsung Galaxy F22; Samsung Galaxy M22),,Samsung
+794,1,[matrix] Display shared (Samsung Galaxy A22 5G; Samsung Galaxy A22s 5G; Samsung Galaxy F42 5G),,Samsung
+795,1,[matrix] Display shared (Samsung Galaxy A23 5G; Samsung Galaxy F23 5G; Samsung Galaxy A23 4G (+1)),,Samsung
+796,1,[matrix] Display shared (Samsung Galaxy M34; Samsung Galaxy A24; Samsung Galaxy A25 (+1)),,Samsung
+797,1,[matrix] Display shared (Samsung Galaxy A25 5G; Samsung Galaxy M34 5G),,Samsung
+798,1,[matrix] Display shared (Samsung Galaxy A50; Samsung Galaxy A50s; Samsung Galaxy A30 (+1)),,Samsung
+799,1,[matrix] Display shared (Samsung Galaxy A32 4G; Samsung Galaxy M32 4G),,Samsung
+800,1,[matrix] Display shared (Samsung Galaxy A35 5G; Samsung Galaxy A55 5G; Samsung Galaxy M35 5G),,Samsung
+801,1,[matrix] Display shared (Samsung Galaxy A36; Samsung Galaxy A56; Samsung Galaxy S24 FE),,Samsung
+802,1,[matrix] Display shared (Samsung Galaxy A51; Samsung Galaxy M31S; Samsung Galaxy A51 5G),,Samsung
+803,1,[matrix] Display shared (Samsung Galaxy A52 5G; Samsung Galaxy A52 4G; Samsung Galaxy A52s 4G),,Samsung
+804,1,[matrix] Display shared (Samsung Galaxy A53; Samsung Galaxy A53 4G),,Samsung
+805,1,[matrix] Display shared (Samsung Galaxy A60; Samsung Galaxy M40),,Samsung
+806,1,[matrix] Display shared (Samsung Galaxy A70; Samsung Galaxy A705; Samsung Galaxy A707 (+1)),,Samsung
+807,1,[matrix] Display shared (Samsung Galaxy A71 4G; Samsung Galaxy A71 5G; Samsung Galaxy F62 (+2)),,Samsung
+808,1,[matrix] Display shared (Samsung Galaxy C55 5G; Samsung Galaxy F55 5G; Samsung Galaxy M55 5G (+1)),,Samsung
+809,1,[matrix] Display shared (Samsung Galaxy E146B; Samsung Galaxy F14 5G; Samsung Galaxy M14 5G (+1)),,Samsung
+810,1,[matrix] Display shared (Samsung Galaxy F41; Samsung Galaxy F415; Samsung Galaxy M21 (+7)),,Samsung
+811,1,[matrix] Display shared (Samsung Galaxy F54 5G; Samsung Galaxy M52; Samsung Galaxy M52 5G (+4)),,Samsung
+812,1,[matrix] Display shared (Samsung Galaxy J4 Plus; Samsung Galaxy J6 Plus),,Samsung
+813,1,[matrix] Display shared (Samsung Galaxy S20 FE 4G; Samsung Galaxy S20 FE 5G),,Samsung
+814,1,[matrix] Display shared (Tecno Spark GO 2022; Tecno BD4; Tecno BD4A (+8)),,Tecno
+815,1,[matrix] Display shared (Tecno Camon 17; Tecno Spark 7 Pro; Tecno CG6 (+2)),,Tecno
+816,1,[matrix] Display shared (Tecno Camon 18 Premier; Tecno CH9),,Tecno
+817,1,[matrix] Display shared (Tecno Camon 19 Pro; Tecno Camon 19; Tecno Camon 19 Pro 5G (+6)),,Tecno
+818,1,[matrix] Display shared (Tecno Camon i Air 2 Plus; Tecno Camon i2; Tecno Camon i2x (+5)),,Tecno
+819,1,[matrix] Display shared (Tecno iSky 3; Tecno KB3; Tecno KB8 (+1)),,Tecno
+820,1,[matrix] Display shared (Tecno Spark Go; Tecno KC1; Tecno KC6 (+1)),,Tecno
+821,1,[matrix] Display shared (Tecno LC7; Tecno Pouvoir 4; Tecno Pouvoir 4 Pro (+9)),,Tecno
+822,1,[matrix] Display shared (Tecno SPARK 6 GO; Tecno SPARK GO 2020; Tecno KE5 (+3)),,Tecno
+823,1,[matrix] Display shared (Vivo S10E; Vivo Y71T; Vivo Y73s (+4)),,Vivo
+824,1,[matrix] Display shared (Vivo S1; Vivo S1 Pro; Vivo Y7s (+1)),,Vivo
+825,1,[matrix] Display shared (Vivo S10; Vivo S10 Pro; Vivo S12 Pro (+2)),,Vivo
+826,1,[matrix] Display shared (Vivo S15e; Vivo S9e; Vivo T1 Pro (+3)),,Vivo
+827,1,[matrix] Display shared (Vivo S18; Vivo S18 Pro; Vivo V30 (+3)),,Vivo
+828,1,[matrix] Display shared (Vivo S7; Vivo S7T; Vivo V20 Pro),,Vivo
+829,1,[matrix] Display shared (Vivo V40 Lite; Vivo T3 5G; Vivo V30 Lite (+1)),,Vivo
+830,1,[matrix] Display shared (Vivo Y1s; Vivo Y90; Vivo Y91 (+5)),,Vivo
+831,1,[matrix] Display shared (Vivo Y11; Vivo Y12; Vivo Y15 (+3)),,Vivo
+832,1,[matrix] Display shared (Vivo V11; Vivo V11i; Vivo Y97 (+2)),,Vivo
+833,1,[matrix] Display shared (Vivo V11 Pro; Vivo X23),,Vivo
+834,1,[matrix] Display shared (Vivo X27; Vivo V15 Pro),,Vivo
+835,1,[matrix] Display shared (Vivo V17; Vivo V19 Neo),,Vivo
+836,1,[matrix] Display shared (Vivo Y51 OLED; Vivo V20 OLED; Vivo V21e OLED (+5)),,Vivo
+837,1,[matrix] Display shared (Vivo V2045; Vivo X60; Vivo X70),,Vivo
+838,1,[matrix] Display shared (Vivo V23E 5G; Vivo Y75 4G; Vivo V28),,Vivo
+839,1,[matrix] Display shared (Vivo V5; Vivo Y67),,Vivo
+840,1,[matrix] Display shared (Vivo V7 Plus; Vivo Y79; Vivo Y79a),,Vivo
+841,1,[matrix] Display shared (Vivo V9; Vivo V9 Pro; Vivo V9 Youth (+2)),,Vivo
+842,1,[matrix] Display shared (Vivo X30 5G; Vivo X30 Pro 5G),,Vivo
+843,1,[matrix] Display shared (Vivo Y02; Vivo Y02A; Vivo Y02 New (+1)),,Vivo
+844,1,[matrix] Display shared (Vivo Y04; Vivo Y19 5G; Vivo Y19E (+1)),,Vivo
+845,1,[matrix] Display shared (Vivo Y05; Vivo Y11 5G; Vivo Y11D (+1)),,Vivo
+846,1,[matrix] Display shared (Vivo Y19s; Vivo Y28 4G; Vivo Y38 5G),,Vivo
+847,1,[matrix] Display shared (Vivo Y27s; Vivo Y27 4G; Vivo Y27 5G (+3)),,Vivo
+848,1,[matrix] Display shared (Vivo Y50; Vivo Y70T; Vivo Y30 4G (+2)),,Vivo
+849,1,[matrix] Display shared (Vivo Y31D 4G; Vivo Y31D Pro 4G; Vivo Y500i 5G (+1)),,Vivo
+850,1,[matrix] Display shared (Vivo Y35; Vivo Y35 New),,Vivo
+851,1,[matrix] Display shared (Vivo Y51; Vivo Y52s; Vivo Y72),,Vivo
+852,1,[matrix] Display shared (Vivo Y71; Vivo Y71i),,Vivo
+853,1,[matrix] Display shared (Vivo Y81; Vivo Y83; Vivo Y81i (+2)),,Vivo
+854,1,[matrix] Display shared (Vivo Z1 Pro; Vivo Z5X),,Vivo
+855,1,[matrix] Display shared (Redmi K30S; Xiaomi Mi 10T; Xiaomi Mi 10T Pro),,Redmi
+856,1,[matrix] Display shared (Xiaomi Mi 9T; Xiaomi Mi 9T Pro; Redmi K20 (+1)),,Xiaomi
+857,1,[matrix] Display shared (Redmi 10 4G; Redmi 10 Prime),,Redmi
+858,1,[matrix] Display shared (Redmi 11 Lite; Redmi 11 Lite 4G; Redmi 11 Lite 5G (+1)),,Redmi
+859,1,[matrix] Display shared (Redmi 11T; Redmi 11T Pro),,Redmi
+860,1,[matrix] Display shared (Redmi 13T; Redmi 13T Pro; Redmi K60 Ultra),,Redmi
+861,1,[matrix] Display shared (Redmi 5a; Redmi Go),,Redmi
+862,1,[matrix] Display shared (Redmi 6; Redmi 6a),,Redmi
+863,1,[matrix] Display shared (Redmi 6 Pro; Redmi A2 Lite),,Redmi
+864,1,[matrix] Display shared (Redmi 7; Redmi Y3),,Redmi
+865,1,[matrix] Display shared (Redmi 8; Redmi 8A; Redmi 8A Dual),,Redmi
+866,1,[matrix] Display shared (Redmi K50; Redmi K50 Pro; Redmi K60E),,Redmi
+867,1,[matrix] Display shared (Redmi Note 13; Redmi Note 14),,Redmi
+868,1,[matrix] Display shared (Redmi Note 7; Redmi Note 7 Pro; Redmi Note 7s),,Redmi
+869,1,[matrix] Display shared (Redmi S2; Redmi Y2),,Redmi
+870,18,[matrix] Display Connector shared (Infinix Hot 10; Infinix Hot 10i; Tecno Pova (+14)),,Infinix
+871,18,[matrix] Display Connector shared (Infinix Smart 5; Infinix Hot 10 Lite; Infinix Smart 5A (+9)),,Infinix
+872,18,[matrix] Display Connector shared (Infinix Hot 10 PLAY; Infinix Hot 11 PLAY; Infinix X688 (+11)),,Infinix
+873,18,[matrix] Display Connector shared (Infinix Hot 11; Infinix Hot 10S; Infinix Hot 10T (+11)),,Infinix
+874,18,[matrix] Display Connector shared (Infinix Hot 11 2022; Infinix X675),,Infinix
+875,18,[matrix] Display Connector shared (Infinix Hot 11S; Infinix Hot 20 Pro; Infinix X6812B (+17)),,Infinix
+876,18,[matrix] Display Connector shared (Infinix Hot 12; Infinix Hot 12 Pro; Infinix X668 (+19)),,Infinix
+877,18,[matrix] Display Connector shared (Infinix Hot 12 Play; Infinix Hot 20; Infinix Hot 20 Play (+14)),,Infinix
+878,18,[matrix] Display Connector shared (Infinix HOT 12i; Infinix Hot 20i; Infinix Smart 6 HD (+4)),,Infinix
+879,18,[matrix] Display Connector shared (Infinix Hot 20 5G; Infinix X666; Infinix X666B),,Infinix
+880,18,[matrix] Display Connector shared (Infinix Hot 30 5G; Infinix Hot 40; Infinix Hot 40 Pro (+24)),,Infinix
+881,18,[matrix] Display Connector shared (Infinix HOT 30i; Tecno SPARK 10C; Tecno Spark GO 2023 (+31)),,Infinix
+882,18,[matrix] Display Connector shared (Infinix Hot 40i; Infinix Smart 8; Infinix Smart 8 HD (+20)),,Infinix
+883,18,[matrix] Display Connector shared (Infinix Hot 50 5G; Infinix Hot 50i; Infinix Hot 60i (+32)),,Infinix
+884,18,[matrix] Display Connector shared (Infinix Hot 50 Pro Plus; Tecno Spark 20 Pro Plus; Infinix Note 40 Pro 4G (+11)),,Infinix
+885,18,[matrix] Display Connector shared (Infinix Hot 60 5G; Infinix Smart 10; Infinix Smart 10 NFC (+3)),,Infinix
+886,18,[matrix] Display Connector shared (Infinix Hot 60i 5G; Infinix X6730B; Infinix X7730 (+8)),,Infinix
+887,18,[matrix] Display Connector shared (Infinix Hot 6X; Infinix Hot S3X; Infinix X622 (+1)),,Infinix
+888,18,[matrix] Display Connector shared (Infinix Hot 7; Infinix Hot 7 Pro; Infinix X625C (+1)),,Infinix
+889,18,[matrix] Display Connector shared (Infinix Hot 8; Infinix Hot 8 Lite; Infinix Hot 8 Pro (+11)),,Infinix
+890,18,[matrix] Display Connector shared (Infinix Hot 9; Tecno Camon 15; Tecno Spark 5 (+14)),,Infinix
+891,18,[matrix] Display Connector shared (Infinix Hot 9 PLAY; Infinix Smart 4 Plus; Infinix X680 (+3)),,Infinix
+892,18,[matrix] Display Connector shared (Infinix Note 10; Infinix Note 11 Pro; Infinix Note 11i (+10)),,Infinix
+893,18,[matrix] Display Connector shared (Infinix Note 10 Pro; Infinix X695),,Infinix
+894,18,[matrix] Display Connector shared (Infinix Note 11; Infinix Note 12 5G; Infinix Note 12 Pro (+23)),,Infinix
+895,18,[matrix] Display Connector shared (Tecno Camon 30; Infinix Note 40 5G; Infinix X6852 (+9)),,Tecno
+896,18,[matrix] Display Connector shared (Infinix Note 7; Infinix X690; Infinix X690B),,Infinix
+897,18,[matrix] Display Connector shared (Infinix S4; Infinix Smart 3 Plus; Infinix X626 (+1)),,Infinix
+898,18,[matrix] Display Connector shared (Infinix S5; Infinix S5 Lite; Infinix X652 (+3)),,Infinix
+899,18,[matrix] Display Connector shared (Infinix Smart 4; Infinix X653; Infinix X653C (+3)),,Infinix
+900,18,[matrix] Display Connector shared (Infinix Smart 6 Plus; Tecno Spark 8; Infinix X6511G (+8)),,Infinix
+901,18,[matrix] Display Connector shared (Infinix Smart HD; Infinix Smart HD 2021; Infinix X612 (+1)),,Infinix
+902,18,[matrix] Display Connector shared (Infinix X5515; Tecno IN1),,Infinix
+903,18,[matrix] Display Connector shared (Infinix X5516; Tecno iACE2X; Tecno KB2),,Infinix
+904,18,[matrix] Display Connector shared (Infinix X6511; Infinix X6511D; Infinix X6511E),,Infinix
+905,18,[matrix] Display Connector shared (Infinix X6524; Infinix X652B; Tecno CC6 (+2)),,Infinix
+906,18,[matrix] Display Connector shared (Infinix X658; Infinix X659; Tecno KF6 (+4)),,Infinix
+907,18,[matrix] Display Connector shared (Infinix X662; Tecno KG6P; Tecno KG7 (+6)),,Infinix
+908,18,[matrix] Display Connector shared (Infinix X6710; Infinix X6739; Infinix X678B (+9)),,Infinix
+909,18,[matrix] Display Connector shared (Infinix X6810; Infinix Zero X Neo; Tecno Camon 17 Pro (+1)),,Infinix
+910,18,[matrix] Display Connector shared (Infinix X6811; Infinix X6811B; Infinix Zero X (+1)),,Infinix
+911,18,[matrix] Display Connector shared (Infinix X687; Infinix Zero 8i; Tecno CE9),,Infinix
+912,18,[matrix] Display Connector shared (iQOO 5 5G; iQOO Z5 5G),,iQOO
+913,18,[matrix] Display Connector shared (iQOO Neo 5; iQOO 7; iQOO Neo 5s (+1)),,iQOO
+914,18,[matrix] Display Connector shared (Vivo Y21; Vivo Y22; Vivo Y16 (+56)),,Vivo
+915,18,[matrix] Display Connector shared (iQOO Z9X; Vivo Y19s PRO; Vivo Y39 5G (+10)),,iQOO
+916,18,[matrix] Display Connector shared (Vivo Y19; iQOO Z5i; Vivo U20 (+2)),,Vivo
+917,18,[matrix] Display Connector shared (Vivo V20; Vivo V21E 5G; Vivo V23E (+6)),,Vivo
+918,18,[matrix] Display Connector shared (iQOO Z6 5G; Vivo T3; Vivo Y200 5G (+2)),,iQOO
+919,18,[matrix] Display Connector shared (Vivo T1 5G; Vivo Y55s; iQOO Z6 Lite 5G (+3)),,Vivo
+920,18,[matrix] Display Connector shared (Vivo T2 5G; Vivo Y100; iQOO Z7 5G (+1)),,Vivo
+921,18,[matrix] Display Connector shared (Vivo V29E; Vivo S16; Vivo S16 Pro (+12)),,Vivo
+922,18,[matrix] Display Connector shared (iQOO Z7X; iQOO Z8; iQOO Z8X (+5)),,iQOO
+923,18,[matrix] Display Connector shared (Vivo Y03; Vivo Y18; Vivo Y18E (+7)),,Vivo
+924,18,[matrix] Display Connector shared (iQOO Z9S; iQOO Z9S Pro; Vivo T3 Pro (+1)),,iQOO
+925,18,[matrix] Display Connector shared (Itel A06; Itel A50C; Itel A669L (+1)),,Itel
+926,18,[matrix] Display Connector shared (Itel A26; Itel A37),,Itel
+927,18,[matrix] Display Connector shared (Itel L6503; Itel S16 Pro; Itel Vision 2),,Itel
+928,18,[matrix] Display Connector shared (Itel P36 Play; Itel Vision 1),,Itel
+929,18,[matrix] Display Connector shared (Lava 03; Lava LZG409; Lava Smart (+1)),,Lava
+930,18,[matrix] Display Connector shared (Lava 03 Pro; Lava Blaze 2 5G; Lava LXX507 (+4)),,Lava
+931,18,[matrix] Display Connector shared (Lava 88; Lava Z61; Lava Z61 2GB),,Lava
+932,18,[matrix] Display Connector shared (Lava Blaze 4G; Lava Blaze Nxt; Lava Blaze Pro 4G (+7)),,Lava
+933,18,[matrix] Display Connector shared (Lava Bold N1; Lava LXX517; Lava LXX522 (+3)),,Lava
+934,18,[matrix] Display Connector shared (Lava X2; Lava X2 Pro; Lava Z2 (+6)),,Lava
+935,18,[matrix] Display Connector shared (Micromax In 2b; Micromax Z32),,Micromax
+936,18,[matrix] Display Connector shared (Motorola E14; Motorola G04; Motorola G24 (+1)),,Motorola
+937,18,[matrix] Display Connector shared (Motorola E30; Motorola E40),,Motorola
+938,18,[matrix] Display Connector shared (Motorola E32s; Motorola G22; Motorola G32),,Motorola
+939,18,[matrix] Display Connector shared (Motorola E7; Motorola E7 Power; Motorola E7i),,Motorola
+940,18,[matrix] Display Connector shared (Motorola E7 Plus; Motorola G9; Motorola G9 Play),,Motorola
+941,18,[matrix] Display Connector shared (Motorola G52; Motorola G71s; Motorola Edge 30 (+1)),,Motorola
+942,18,[matrix] Display Connector shared (Motorola Edge 30 Fusion; Motorola S30 Pro),,Motorola
+943,18,[matrix] Display Connector shared (Motorola EDGE 50 Fusion; Motorola G85),,Motorola
+944,18,[matrix] Display Connector shared (Motorola G10; Motorola G10 Power; Motorola G20 (+1)),,Motorola
+945,18,[matrix] Display Connector shared (Motorola G13; Motorola G23),,Motorola
+946,18,[matrix] Display Connector shared (Motorola G14; Motorola G54; Motorola G54 5G (+2)),,Motorola
+947,18,[matrix] Display Connector shared (Motorola G31; Motorola G41; Motorola G71),,Motorola
+948,18,[matrix] Display Connector shared (Motorola G34; Motorola G45 5G; Motorola G53),,Motorola
+949,18,[matrix] Display Connector shared (Motorola G40 Fusion; Motorola G51 5G; Motorola G60 (+1)),,Motorola
+950,18,[matrix] Display Connector shared (Motorola G7; Motorola G7 Plus),,Motorola
+951,18,[matrix] Display Connector shared (OnePlus 10R 5G; OnePlus 10T 5G; OnePlus ACE (+2)),,OnePlus
+952,18,[matrix] Display Connector shared (OnePlus 11R; OnePlus ACE 2; Oppo Find X6),,OnePlus
+953,18,[matrix] Display Connector shared (OnePlus 6T; OnePlus 7; Oppo K1 (+5)),,OnePlus
+954,18,[matrix] Display Connector shared (OnePlus 8; Oppo Find X2 Neo 5G; Oppo Reno 3 Pro 5G (+1)),,OnePlus
+955,18,[matrix] Display Connector shared (OnePlus 8T; OnePlus 9R),,OnePlus
+956,18,[matrix] Display Connector shared (OnePlus 9RT; Oppo K10 Pro; Oppo Reno 8 Pro (+3)),,OnePlus
+957,18,[matrix] Display Connector shared (OnePlus ACE 4; OnePlus Nord CE 3; OnePlus Nord CE 4 (+4)),,OnePlus
+958,18,[matrix] Display Connector shared (OnePlus Nord; Realme X50 Pro),,OnePlus
+959,18,[matrix] Display Connector shared (Oppo Reno 5; OnePlus Nord 2),,Oppo
+960,18,[matrix] Display Connector shared (OnePlus Nord 2 5G; OnePlus Nord 2T 5G; OnePlus Nord CE 5G (+12)),,OnePlus
+961,18,[matrix] Display Connector shared (Realme Narzo 50; Oppo A36; Oppo A76 (+9)),,Realme
+962,18,[matrix] Display Connector shared (Oppo Reno 8T; Oppo A78 4G; Oppo F21 Pro 4G (+12)),,Oppo
+963,18,[matrix] Display Connector shared (Realme C55; OnePlus Nord CE3 Lite 5G; Oppo A1 5G (+58)),,Realme
+964,18,[matrix] Display Connector shared (OnePlus Nord CE4 Lite; Oppo A3x; Oppo A80 (+4)),,OnePlus
+965,18,[matrix] Display Connector shared (Realme 13 Pro; OnePlus Nord CE4 Lite 5G; Oppo Reno 12F (+3)),,Realme
+966,18,[matrix] Display Connector shared (Oppo A53; Oppo A53S; Oppo A11S (+10)),,Oppo
+967,18,[matrix] Display Connector shared (Oppo A17; OnePlus NORD N20 SE; Oppo A17K (+23)),,Oppo
+968,18,[matrix] Display Connector shared (Oppo A54 5G; Oppo A74 5G; Oppo A93 5G (+2)),,Oppo
+969,18,[matrix] Display Connector shared (Oppo A1 Pro 5G; Oppo F27 Pro Plus 5G; Oppo Reno 10 5G (+13)),,Oppo
+970,18,[matrix] Display Connector shared (Oppo A5S; Oppo A11K; Oppo A12 (+11)),,Oppo
+971,18,[matrix] Display Connector shared (Oppo A12e; Oppo A3s; Oppo A5 (+3)),,Oppo
+972,18,[matrix] Display Connector shared (Oppo A16s; Realme C15; Realme Narzo 30A (+15)),,Oppo
+973,18,[matrix] Display Connector shared (Realme C2; Oppo A1k),,Realme
+974,18,[matrix] Display Connector shared (Realme C3; Oppo A5 2020; Oppo A9 2020 (+6)),,Realme
+975,18,[matrix] Display Connector shared (Oppo A52; Oppo A72; Oppo A92 (+3)),,Oppo
+976,18,[matrix] Display Connector shared (Oppo A72 5G; Oppo A73 5G; Oppo A53 5G (+2)),,Oppo
+977,18,[matrix] Display Connector shared (Oppo A59; Oppo F1s),,Oppo
+978,18,[matrix] Display Connector shared (Oppo A6 5G; Realme 15x 5G; Realme C85 5G (+5)),,Oppo
+979,18,[matrix] Display Connector shared (Oppo A6 Pro 5G; Oppo A6i Plus 5G; Oppo A6s 5G (+6)),,Oppo
+980,18,[matrix] Display Connector shared (Oppo A73; Oppo A91; Oppo F15 (+5)),,Oppo
+981,18,[matrix] Display Connector shared (Oppo A74 4G; Oppo A94 4G; Oppo A94 5G (+24)),,Oppo
+982,18,[matrix] Display Connector shared (Oppo F11; Oppo A9; Oppo A9x),,Oppo
+983,18,[matrix] Display Connector shared (Oppo A92S; Oppo Reno 4Z 5G; Realme 6 Pro),,Oppo
+984,18,[matrix] Display Connector shared (Oppo A93; Oppo A93S 5G; Realme 6 (+15)),,Oppo
+985,18,[matrix] Display Connector shared (Oppo F27; Oppo F27 5G; Oppo K12x (+19)),,Oppo
+986,18,[matrix] Display Connector shared (Realme 1; Oppo F5 Youth),,Realme
+987,18,[matrix] Display Connector shared (Oppo F9; Oppo F9 Pro; Realme 2 Pro (+1)),,Oppo
+988,18,[matrix] Display Connector shared (Oppo K3; Oppo Reno 2F; Oppo Reno 2Z (+1)),,Oppo
+989,18,[matrix] Display Connector shared (Oppo Reno 5 Pro; Oppo Reno 6 Pro),,Oppo
+990,18,[matrix] Display Connector shared (Poco C31; Redmi 10A; Redmi 9A (+7)),,Poco
+991,18,[matrix] Display Connector shared (Poco C55; Redmi 11A; Redmi 12C (+4)),,Poco
+992,18,[matrix] Display Connector shared (Redmi A1; Redmi A2; Poco C50 (+4)),,Redmi
+993,18,[matrix] Display Connector shared (Poco C61; Redmi A3 New; Redmi A3X),,Poco
+994,18,[matrix] Display Connector shared (Redmi 13C; Poco C65; Poco M6 5g (+2)),,Redmi
+995,18,[matrix] Display Connector shared (Poco C71; Redmi A5 New),,Poco
+996,18,[matrix] Display Connector shared (Poco C75; Redmi 14C; Redmi 14R (+3)),,Poco
+997,18,[matrix] Display Connector shared (Poco C85 5G; Redmi 15C 5G),,Poco
+998,18,[matrix] Display Connector shared (Redmi K30; Poco X2; Poco F2 (+2)),,Redmi
+999,18,[matrix] Display Connector shared (Poco F3; Poco F3 Pro; Poco F4 (+7)),,Poco
+1000,18,[matrix] Display Connector shared (Poco F5; Redmi Note 12 Turbo; Redmi Note 13 5G),,Poco
+1001,18,[matrix] Display Connector shared (Poco F5 Pro; Redmi K60; Redmi K60 Pro),,Poco
+1002,18,[matrix] Display Connector shared (Poco M2; Redmi 9; Redmi 9 Prime),,Poco
+1003,18,[matrix] Display Connector shared (Poco M2 Pro; Redmi Note 10 Lite; Redmi Note 9 Pro (+1)),,Poco
+1004,18,[matrix] Display Connector shared (Poco M3; Redmi 9T; Redmi Note 9 4G (+1)),,Poco
+1005,18,[matrix] Display Connector shared (Poco M3 Pro 5G; Redmi Note 10 5G; Redmi Note 10T 5G (+1)),,Poco
+1006,18,[matrix] Display Connector shared (Poco M4 5G; Poco M5; Redmi 10 5G (+6)),,Poco
+1007,18,[matrix] Display Connector shared (Redmi Note 11; Poco M4 Pro 4G; Redmi Note 11s (+2)),,Redmi
+1008,18,[matrix] Display Connector shared (Poco M4 Pro 5G; Redmi Note 11 5G; Redmi Note 11s 5G (+1)),,Poco
+1009,18,[matrix] Display Connector shared (Redmi Note 10; Poco M5s; Redmi Note 10s 4G (+1)),,Redmi
+1010,18,[matrix] Display Connector shared (Redmi 12; Redmi 12 5G; Poco M6 4G (+8)),,Redmi
+1011,18,[matrix] Display Connector shared (Poco M7 Pro 5G; Redmi Note 13 4G; Redmi Note 14 4G (+1)),,Poco
+1012,18,[matrix] Display Connector shared (Poco X3; Poco X3 Pro; Xiaomi Mi 10i (+1)),,Poco
+1013,18,[matrix] Display Connector shared (Redmi Note 10 Pro; Poco X4 Pro 5G; Xiaomi Mi 11i 5G (+4)),,Redmi
+1014,18,[matrix] Display Connector shared (Redmi Note 12; Poco X5 5G; Redmi Note 12 4G (+1)),,Redmi
+1015,18,[matrix] Display Connector shared (Redmi Note 12 Pro; Poco X5 Pro; Redmi Note 12 Pro Plus),,Redmi
+1016,18,[matrix] Display Connector shared (Poco X6 5G; Poco X6 Pro 5G; Redmi K70E (+1)),,Poco
+1017,18,[matrix] Display Connector shared (Realme 10 5G; Realme 10S; Realme 9i 5G),,Realme
+1018,18,[matrix] Display Connector shared (Realme P3X; Realme 14x),,Realme
+1019,18,[matrix] Display Connector shared (Realme C11 2021; Realme C20; Realme C21 (+1)),,Realme
+1020,18,[matrix] Display Connector shared (Realme C21Y; Realme C25Y),,Realme
+1021,18,[matrix] Display Connector shared (Realme C30; Realme C30S; Realme C33 (+2)),,Realme
+1022,18,[matrix] Display Connector shared (Realme C51; Realme C53; Realme Narzo N53 (+1)),,Realme
+1023,18,[matrix] Display Connector shared (Realme C61; Realme C63 4G; Realme Narzo N63),,Realme
+1024,18,[matrix] Display Connector shared (Realme C71; Realme Note 70; Realme Note 70i),,Realme
+1025,18,[matrix] Display Connector shared (Realme P4x 4G; Realme P4x 5G),,Realme
+1026,18,[matrix] Display Connector shared (Realme X3; Realme X50 5G; Realme X Super Zoom),,Realme
+1027,18,[matrix] Display Connector shared (Samsung Galaxy A01; Samsung Galaxy M01; Samsung Galaxy A015 (+1)),,Samsung
+1028,18,[matrix] Display Connector shared (Samsung Galaxy A01 Core; Samsung Galaxy M01 Core; Samsung Galaxy A013 (+1)),,Samsung
+1029,18,[matrix] Display Connector shared (Samsung Galaxy A02; Samsung Galaxy A12; Samsung Galaxy A32 5G (+10)),,Samsung
+1030,18,[matrix] Display Connector shared (Samsung Galaxy A02s; Samsung Galaxy A03; Samsung Galaxy A03s (+5)),,Samsung
+1031,18,[matrix] Display Connector shared (Samsung Galaxy A13 5G; Samsung Galaxy A23; Samsung Galaxy A04S (+3)),,Samsung
+1032,18,[matrix] Display Connector shared (Samsung Galaxy A057; Samsung Galaxy A05s; Samsung Galaxy M14 4G),,Samsung
+1033,18,[matrix] Display Connector shared (Samsung Galaxy A06 5G; Samsung Galaxy A066B; Samsung Galaxy E066B (+3)),,Samsung
+1034,18,[matrix] Display Connector shared (Samsung Galaxy A10; Samsung Galaxy M10),,Samsung
+1035,18,[matrix] Display Connector shared (Samsung Galaxy A11; Samsung Galaxy M11),,Samsung
+1036,18,[matrix] Display Connector shared (Samsung Galaxy A13; Samsung Galaxy F13; Samsung Galaxy M13 (+4)),,Samsung
+1037,18,[matrix] Display Connector shared (Samsung Galaxy A14 5G; Samsung Galaxy A14 4G; Samsung Galaxy A145F (+2)),,Samsung
+1038,18,[matrix] Display Connector shared (Samsung Galaxy A15; Samsung Galaxy A15 5G; Samsung Galaxy F15 (+1)),,Samsung
+1039,18,[matrix] Display Connector shared (Samsung Galaxy A15 4G; Samsung Galaxy F15 5G; Samsung Galaxy M15 5G),,Samsung
+1040,18,[matrix] Display Connector shared (Samsung Galaxy A16 4G; Samsung Galaxy A16 5G; Samsung Galaxy A166P (+1)),,Samsung
+1041,18,[matrix] Display Connector shared (Samsung Galaxy A20; Samsung Galaxy A20s),,Samsung
+1042,18,[matrix] Display Connector shared (Samsung Galaxy A22 4G; Samsung Galaxy F22; Samsung Galaxy M22),,Samsung
+1043,18,[matrix] Display Connector shared (Samsung Galaxy A22 5G; Samsung Galaxy A22s 5G; Samsung Galaxy F42 5G),,Samsung
+1044,18,[matrix] Display Connector shared (Samsung Galaxy A23 5G; Samsung Galaxy F23 5G; Samsung Galaxy A23 4G (+1)),,Samsung
+1045,18,[matrix] Display Connector shared (Samsung Galaxy M34; Samsung Galaxy A24; Samsung Galaxy A25 (+1)),,Samsung
+1046,18,[matrix] Display Connector shared (Samsung Galaxy A25 5G; Samsung Galaxy M34 5G),,Samsung
+1047,18,[matrix] Display Connector shared (Samsung Galaxy A50; Samsung Galaxy A50s; Samsung Galaxy A30 (+1)),,Samsung
+1048,18,[matrix] Display Connector shared (Samsung Galaxy A32 4G; Samsung Galaxy M32 4G),,Samsung
+1049,18,[matrix] Display Connector shared (Samsung Galaxy A35 5G; Samsung Galaxy A55 5G; Samsung Galaxy M35 5G),,Samsung
+1050,18,[matrix] Display Connector shared (Samsung Galaxy A36; Samsung Galaxy A56; Samsung Galaxy S24 FE),,Samsung
+1051,18,[matrix] Display Connector shared (Samsung Galaxy A51; Samsung Galaxy M31S; Samsung Galaxy A51 5G),,Samsung
+1052,18,[matrix] Display Connector shared (Samsung Galaxy A52 5G; Samsung Galaxy A52 4G; Samsung Galaxy A52s 4G),,Samsung
+1053,18,[matrix] Display Connector shared (Samsung Galaxy A53; Samsung Galaxy A53 4G),,Samsung
+1054,18,[matrix] Display Connector shared (Samsung Galaxy A60; Samsung Galaxy M40),,Samsung
+1055,18,[matrix] Display Connector shared (Samsung Galaxy A70; Samsung Galaxy A705; Samsung Galaxy A707 (+1)),,Samsung
+1056,18,[matrix] Display Connector shared (Samsung Galaxy A71 4G; Samsung Galaxy A71 5G; Samsung Galaxy F62 (+2)),,Samsung
+1057,18,[matrix] Display Connector shared (Samsung Galaxy C55 5G; Samsung Galaxy F55 5G; Samsung Galaxy M55 5G (+1)),,Samsung
+1058,18,[matrix] Display Connector shared (Samsung Galaxy E146B; Samsung Galaxy F14 5G; Samsung Galaxy M14 5G (+1)),,Samsung
+1059,18,[matrix] Display Connector shared (Samsung Galaxy F41; Samsung Galaxy F415; Samsung Galaxy M21 (+7)),,Samsung
+1060,18,[matrix] Display Connector shared (Samsung Galaxy F54 5G; Samsung Galaxy M52; Samsung Galaxy M52 5G (+4)),,Samsung
+1061,18,[matrix] Display Connector shared (Samsung Galaxy J4 Plus; Samsung Galaxy J6 Plus),,Samsung
+1062,18,[matrix] Display Connector shared (Samsung Galaxy S20 FE 4G; Samsung Galaxy S20 FE 5G),,Samsung
+1063,18,[matrix] Display Connector shared (Tecno Spark GO 2022; Tecno BD4; Tecno BD4A (+8)),,Tecno
+1064,18,[matrix] Display Connector shared (Tecno Camon 17; Tecno Spark 7 Pro; Tecno CG6 (+2)),,Tecno
+1065,18,[matrix] Display Connector shared (Tecno Camon 18 Premier; Tecno CH9),,Tecno
+1066,18,[matrix] Display Connector shared (Tecno Camon 19 Pro; Tecno Camon 19; Tecno Camon 19 Pro 5G (+6)),,Tecno
+1067,18,[matrix] Display Connector shared (Tecno Camon i Air 2 Plus; Tecno Camon i2; Tecno Camon i2x (+5)),,Tecno
+1068,18,[matrix] Display Connector shared (Tecno iSky 3; Tecno KB3; Tecno KB8 (+1)),,Tecno
+1069,18,[matrix] Display Connector shared (Tecno Spark Go; Tecno KC1; Tecno KC6 (+1)),,Tecno
+1070,18,[matrix] Display Connector shared (Tecno LC7; Tecno Pouvoir 4; Tecno Pouvoir 4 Pro (+9)),,Tecno
+1071,18,[matrix] Display Connector shared (Tecno SPARK 6 GO; Tecno SPARK GO 2020; Tecno KE5 (+3)),,Tecno
+1072,18,[matrix] Display Connector shared (Vivo S10E; Vivo Y71T; Vivo Y73s (+4)),,Vivo
+1073,18,[matrix] Display Connector shared (Vivo S1; Vivo S1 Pro; Vivo Y7s (+1)),,Vivo
+1074,18,[matrix] Display Connector shared (Vivo S10; Vivo S10 Pro; Vivo S12 Pro (+2)),,Vivo
+1075,18,[matrix] Display Connector shared (Vivo S15e; Vivo S9e; Vivo T1 Pro (+3)),,Vivo
+1076,18,[matrix] Display Connector shared (Vivo S18; Vivo S18 Pro; Vivo V30 (+3)),,Vivo
+1077,18,[matrix] Display Connector shared (Vivo S7; Vivo S7T; Vivo V20 Pro),,Vivo
+1078,18,[matrix] Display Connector shared (Vivo V40 Lite; Vivo T3 5G; Vivo V30 Lite (+1)),,Vivo
+1079,18,[matrix] Display Connector shared (Vivo Y1s; Vivo Y90; Vivo Y91 (+5)),,Vivo
+1080,18,[matrix] Display Connector shared (Vivo Y11; Vivo Y12; Vivo Y15 (+3)),,Vivo
+1081,18,[matrix] Display Connector shared (Vivo V11; Vivo V11i; Vivo Y97 (+2)),,Vivo
+1082,18,[matrix] Display Connector shared (Vivo V11 Pro; Vivo X23),,Vivo
+1083,18,[matrix] Display Connector shared (Vivo X27; Vivo V15 Pro),,Vivo
+1084,18,[matrix] Display Connector shared (Vivo V17; Vivo V19 Neo),,Vivo
+1085,18,[matrix] Display Connector shared (Vivo Y51 OLED; Vivo V20 OLED; Vivo V21e OLED (+5)),,Vivo
+1086,18,[matrix] Display Connector shared (Vivo V2045; Vivo X60; Vivo X70),,Vivo
+1087,18,[matrix] Display Connector shared (Vivo V23E 5G; Vivo Y75 4G; Vivo V28),,Vivo
+1088,18,[matrix] Display Connector shared (Vivo V5; Vivo Y67),,Vivo
+1089,18,[matrix] Display Connector shared (Vivo V7 Plus; Vivo Y79; Vivo Y79a),,Vivo
+1090,18,[matrix] Display Connector shared (Vivo V9; Vivo V9 Pro; Vivo V9 Youth (+2)),,Vivo
+1091,18,[matrix] Display Connector shared (Vivo X30 5G; Vivo X30 Pro 5G),,Vivo
+1092,18,[matrix] Display Connector shared (Vivo Y02; Vivo Y02A; Vivo Y02 New (+1)),,Vivo
+1093,18,[matrix] Display Connector shared (Vivo Y04; Vivo Y19 5G; Vivo Y19E (+1)),,Vivo
+1094,18,[matrix] Display Connector shared (Vivo Y05; Vivo Y11 5G; Vivo Y11D (+1)),,Vivo
+1095,18,[matrix] Display Connector shared (Vivo Y19s; Vivo Y28 4G; Vivo Y38 5G),,Vivo
+1096,18,[matrix] Display Connector shared (Vivo Y27s; Vivo Y27 4G; Vivo Y27 5G (+3)),,Vivo
+1097,18,[matrix] Display Connector shared (Vivo Y50; Vivo Y70T; Vivo Y30 4G (+2)),,Vivo
+1098,18,[matrix] Display Connector shared (Vivo Y31D 4G; Vivo Y31D Pro 4G; Vivo Y500i 5G (+1)),,Vivo
+1099,18,[matrix] Display Connector shared (Vivo Y35; Vivo Y35 New),,Vivo
+1100,18,[matrix] Display Connector shared (Vivo Y51; Vivo Y52s; Vivo Y72),,Vivo
+1101,18,[matrix] Display Connector shared (Vivo Y71; Vivo Y71i),,Vivo
+1102,18,[matrix] Display Connector shared (Vivo Y81; Vivo Y83; Vivo Y81i (+2)),,Vivo
+1103,18,[matrix] Display Connector shared (Vivo Z1 Pro; Vivo Z5X),,Vivo
+1104,18,[matrix] Display Connector shared (Redmi K30S; Xiaomi Mi 10T; Xiaomi Mi 10T Pro),,Redmi
+1105,18,[matrix] Display Connector shared (Xiaomi Mi 9T; Xiaomi Mi 9T Pro; Redmi K20 (+1)),,Xiaomi
+1106,18,[matrix] Display Connector shared (Redmi 10 4G; Redmi 10 Prime),,Redmi
+1107,18,[matrix] Display Connector shared (Redmi 11 Lite; Redmi 11 Lite 4G; Redmi 11 Lite 5G (+1)),,Redmi
+1108,18,[matrix] Display Connector shared (Redmi 11T; Redmi 11T Pro),,Redmi
+1109,18,[matrix] Display Connector shared (Redmi 13T; Redmi 13T Pro; Redmi K60 Ultra),,Redmi
+1110,18,[matrix] Display Connector shared (Redmi 5a; Redmi Go),,Redmi
+1111,18,[matrix] Display Connector shared (Redmi 6; Redmi 6a),,Redmi
+1112,18,[matrix] Display Connector shared (Redmi 6 Pro; Redmi A2 Lite),,Redmi
+1113,18,[matrix] Display Connector shared (Redmi 7; Redmi Y3),,Redmi
+1114,18,[matrix] Display Connector shared (Redmi 8; Redmi 8A; Redmi 8A Dual),,Redmi
+1115,18,[matrix] Display Connector shared (Redmi K50; Redmi K50 Pro; Redmi K60E),,Redmi
+1116,18,[matrix] Display Connector shared (Redmi Note 13; Redmi Note 14),,Redmi
+1117,18,[matrix] Display Connector shared (Redmi Note 7; Redmi Note 7 Pro; Redmi Note 7s),,Redmi
+1118,18,[matrix] Display Connector shared (Redmi S2; Redmi Y2),,Redmi
+1119,4,[matrix] Pouch shared (Vivo Y12s; Vivo Y20; Vivo Y20s (+5)),,Vivo
+1120,4,[matrix] Pouch shared (iQOO Z10 5G; Vivo T4 5G),,iQOO
+1121,4,[matrix] Pouch shared (iQOO Z10 LITE; Vivo T4 LITE; Vivo Y19E),,iQOO
+1122,4,[matrix] Pouch shared (iQOO Z10R; Vivo T4R; Vivo V50 (+1)),,iQOO
+1123,4,[matrix] Pouch shared (iQOO Z10X; Vivo T4X; Vivo Y29 4G),,iQOO
+1124,4,[matrix] Pouch shared (Vivo Y72 5G; iQOO Z3 5G),,Vivo
+1125,4,[matrix] Pouch shared (Vivo T1 5G; iQOO Z6 5G; Vivo Y75 5G),,Vivo
+1126,4,[matrix] Pouch shared (Vivo Y77 5G; iQOO Z6 Lite),,Vivo
+1127,4,[matrix] Pouch shared (Vivo T2 Pro; iQOO Z7 Pro),,Vivo
+1128,4,[matrix] Pouch shared (iQOO Z9S; Vivo V40E),,iQOO
+1129,4,[matrix] Pouch shared (Realme GT Master; OnePlus Nord CE),,Realme
+1130,4,[matrix] Pouch shared (OnePlus Nord CE 2; Oppo Reno 7 5G),,OnePlus
+1131,4,[matrix] Pouch shared (Realme 9 Pro; OnePlus Nord CE 2 Lite),,Realme
+1132,4,[matrix] Pouch shared (OnePlus Nord N30 5G; OnePlus Nord CE Lite 5G; Oppo K11X 5G),,OnePlus
+1133,4,[matrix] Pouch shared (Oppo A5S; Oppo F9; Oppo A11K (+4)),,Oppo
+1134,4,[matrix] Pouch shared (Oppo A15; Oppo A15S),,Oppo
+1135,4,[matrix] Pouch shared (Oppo A16; Oppo A54; Oppo A55),,Oppo
+1136,4,[matrix] Pouch shared (Oppo A16E; Oppo A16K),,Oppo
+1137,4,[matrix] Pouch shared (Oppo A17; Oppo A17K),,Oppo
+1138,4,[matrix] Pouch shared (Oppo A18; Oppo A38),,Oppo
+1139,4,[matrix] Pouch shared (Realme C2; Oppo A1k),,Realme
+1140,4,[matrix] Pouch shared (Oppo A3 Pro 5G; Oppo K12x),,Oppo
+1141,4,[matrix] Pouch shared (Oppo A31 2020; Oppo A8),,Oppo
+1142,4,[matrix] Pouch shared (Oppo A32; Oppo A53 2020),,Oppo
+1143,4,[matrix] Pouch shared (Oppo A3s; Realme C1),,Oppo
+1144,4,[matrix] Pouch shared (Oppo A5; Realme 2),,Oppo
+1145,4,[matrix] Pouch shared (Oppo A5 2020; Oppo A9 2020),,Oppo
+1146,4,[matrix] Pouch shared (Oppo A52; Oppo A72; Oppo A92),,Oppo
+1147,4,[matrix] Pouch shared (Oppo A54 5G; Oppo A74 5G),,Oppo
+1148,4,[matrix] Pouch shared (Oppo A57; Oppo A77; Oppo K10 5G),,Oppo
+1149,4,[matrix] Pouch shared (Oppo A74 4G; Oppo A94 4G; Oppo F19 (+2)),,Oppo
+1150,4,[matrix] Pouch shared (Oppo A76; Realme 9i 4G),,Oppo
+1151,4,[matrix] Pouch shared (Oppo F11; Oppo A9),,Oppo
+1152,4,[matrix] Pouch shared (Oppo A91; Oppo F15; Oppo Reno 3),,Oppo
+1153,4,[matrix] Pouch shared (Oppo A93; Oppo F17),,Oppo
+1154,4,[matrix] Pouch shared (Oppo A96; Oppo K10 4G; Realme 9i),,Oppo
+1155,4,[matrix] Pouch shared (Oppo K3; Realme X),,Oppo
+1156,4,[matrix] Pouch shared (Poco C31; Redmi 10A; Redmi 9 (+1)),,Poco
+1157,4,[matrix] Pouch shared (Redmi 11A; Poco C55 4G; Redmi 12C 4G),,Redmi
+1158,4,[matrix] Pouch shared (Poco C61; Redmi A3 2024),,Poco
+1159,4,[matrix] Pouch shared (Redmi A3 4G; Redmi A3X 4G; Poco C61 4G),,Redmi
+1160,4,[matrix] Pouch shared (Redmi 13c 4g; Poco C65 4G),,Redmi
+1161,4,[matrix] Pouch shared (Poco M2; Redmi 9 Prime),,Poco
+1162,4,[matrix] Pouch shared (Poco M2 Pro; Redmi Note 9 Pro; Redmi Note 9 Pro Max),,Poco
+1163,4,[matrix] Pouch shared (Poco M3 Pro 5G; Redmi Note 10 5G; Redmi Note 10T 5G),,Poco
+1164,4,[matrix] Pouch shared (Poco M4 Pro 5G; Redmi Note 11T),,Poco
+1165,4,[matrix] Pouch shared (Poco M6 5g; Redmi 13c 5g),,Poco
+1166,4,[matrix] Pouch shared (Redmi 12 5G; Poco M6 Pro 5G),,Redmi
+1167,4,[matrix] Pouch shared (Redmi K30; Poco X2),,Redmi
+1168,4,[matrix] Pouch shared (Poco X3; Poco X3 Pro),,Poco
+1169,4,[matrix] Pouch shared (Redmi Note 12 Pro; Poco X5 Pro),,Redmi
+1170,4,[matrix] Pouch shared (Poco X6 5G; Redmi Note 13 Pro 5G),,Poco
+1171,4,[matrix] Pouch shared (Realme 10; Realme 10 Pro 5G),,Realme
+1172,4,[matrix] Pouch shared (Realme 11 5G; Realme 11x 5G; Realme C67 5G (+1)),,Realme
+1173,4,[matrix] Pouch shared (Realme 11 Pro; Realme 11 Pro Plus),,Realme
+1174,4,[matrix] Pouch shared (Realme 12 5G; Realme 12X; Realme C65 5G (+1)),,Realme
+1175,4,[matrix] Pouch shared (Realme 12 Plus 5G; Realme Narzo 70 Pro),,Realme
+1176,4,[matrix] Pouch shared (Realme 13 5G; Realme C65),,Realme
+1177,4,[matrix] Pouch shared (Realme Narzo 80 Pro; Realme 14 Pro 5G),,Realme
+1178,4,[matrix] Pouch shared (Realme 3; Realme 3i),,Realme
+1179,4,[matrix] Pouch shared (Realme 5; Realme 5i; Realme 5S (+1)),,Realme
+1180,4,[matrix] Pouch shared (Realme 6; Realme 6i),,Realme
+1181,4,[matrix] Pouch shared (Realme Narzo 20 Pro; Realme 7; Realme Narzo 30 4G),,Realme
+1182,4,[matrix] Pouch shared (Realme 7i; Realme C17),,Realme
+1183,4,[matrix] Pouch shared (Realme 8 Pro; Realme 8 4G),,Realme
+1184,4,[matrix] Pouch shared (Realme 8 5G; Realme 9 5G; Realme Narzo 30 5G),,Realme
+1185,4,[matrix] Pouch shared (Realme Narzo 50; Realme 8i),,Realme
+1186,4,[matrix] Pouch shared (Realme 9 4G; Realme 9 Pro Plus; Realme Narzo 50 Pro),,Realme
+1187,4,[matrix] Pouch shared (Realme C11 2021; Realme C20; Realme Narzo 50i),,Realme
+1188,4,[matrix] Pouch shared (Realme C15; Realme Narzo 30A; Realme C12 (+3)),,Realme
+1189,4,[matrix] Pouch shared (Realme C21Y; Realme C25Y),,Realme
+1190,4,[matrix] Pouch shared (Realme C30; Realme Narzo 50i Prime),,Realme
+1191,4,[matrix] Pouch shared (Realme C35; Realme Narzo 50A Prime),,Realme
+1192,4,[matrix] Pouch shared (Realme Narzo N53; Realme C51 4G; Realme C53 4G (+1)),,Realme
+1193,4,[matrix] Pouch shared (Realme C55; Realme Narzo N55),,Realme
+1194,4,[matrix] Pouch shared (Realme Narzo 10A; Realme Narzo 20A),,Realme
+1195,4,[matrix] Pouch shared (Realme X2; Realme XT),,Realme
+1196,4,[matrix] Pouch shared (Samsung Galaxy A01; Samsung Galaxy M01),,Samsung
+1197,4,[matrix] Pouch shared (Samsung Galaxy A03; Samsung Galaxy A04 CORE),,Samsung
+1198,4,[matrix] Pouch shared (Samsung Galaxy A03s; Samsung Galaxy F02S; Samsung Galaxy M02S),,Samsung
+1199,4,[matrix] Pouch shared (Samsung Galaxy A04e; Samsung Galaxy F04; Samsung Galaxy M04),,Samsung
+1200,4,[matrix] Pouch shared (Samsung Galaxy A10; Samsung Galaxy M10),,Samsung
+1201,4,[matrix] Pouch shared (Samsung Galaxy A11; Samsung Galaxy M11),,Samsung
+1202,4,[matrix] Pouch shared (Samsung Galaxy A12; Samsung Galaxy F12; Samsung Galaxy M12),,Samsung
+1203,4,[matrix] Pouch shared (Samsung Galaxy A15; Samsung Galaxy A24; Samsung Galaxy A25),,Samsung
+1204,4,[matrix] Pouch shared (Samsung Galaxy A20; Samsung Galaxy A30; Samsung Galaxy M10S),,Samsung
+1205,4,[matrix] Pouch shared (Samsung Galaxy A22 4G; Samsung Galaxy F22; Samsung Galaxy M22 (+1)),,Samsung
+1206,4,[matrix] Pouch shared (Samsung Galaxy A50; Samsung Galaxy A50s; Samsung Galaxy A30s),,Samsung
+1207,4,[matrix] Pouch shared (Samsung Galaxy A32 4G; Samsung Galaxy M32 5G),,Samsung
+1208,4,[matrix] Pouch shared (Samsung Galaxy A35 5G; Samsung Galaxy A55 5G),,Samsung
+1209,4,[matrix] Pouch shared (Samsung Galaxy A42 5G; Samsung Galaxy F42; Samsung Galaxy M42 5G),,Samsung
+1210,4,[matrix] Pouch shared (Samsung Galaxy A60; Samsung Galaxy M40),,Samsung
+1211,4,[matrix] Pouch shared (Samsung Galaxy F15 5G; Samsung Galaxy M15 5G),,Samsung
+1212,4,[matrix] Pouch shared (Samsung Galaxy F23 5G; Samsung Galaxy M14 5G; Samsung Galaxy M13 4G),,Samsung
+1213,4,[matrix] Pouch shared (Samsung Galaxy F41; Samsung Galaxy M31),,Samsung
+1214,4,[matrix] Pouch shared (Samsung Galaxy M54; Samsung Galaxy F54),,Samsung
+1215,4,[matrix] Pouch shared (Samsung Galaxy F55 5G; Samsung Galaxy M55 5G),,Samsung
+1216,4,[matrix] Pouch shared (Samsung Galaxy F62; Samsung Galaxy M62),,Samsung
+1217,4,[matrix] Pouch shared (Samsung Galaxy M21; Samsung Galaxy M30s),,Samsung
+1218,4,[matrix] Pouch shared (Vivo S1; Vivo Z1x),,Vivo
+1219,4,[matrix] Pouch shared (Vivo Y21; Vivo Y33s; Vivo T1X),,Vivo
+1220,4,[matrix] Pouch shared (Vivo T2 5G; Vivo Y100),,Vivo
+1221,4,[matrix] Pouch shared (Vivo Y16; Vivo T2x; Vivo Y56),,Vivo
+1222,4,[matrix] Pouch shared (Vivo T3 5G; Vivo Y200e),,Vivo
+1223,4,[matrix] Pouch shared (Vivo T3 LITE; Vivo Y03; Vivo Y18 (+2)),,Vivo
+1224,4,[matrix] Pouch shared (Vivo T3 Ultra; Vivo V40; Vivo V40 Pro),,Vivo
+1225,4,[matrix] Pouch shared (Vivo T3X; Vivo Y38; Vivo Y58 5G (+1)),,Vivo
+1226,4,[matrix] Pouch shared (Vivo Y12; Vivo Y15; Vivo Y17 (+1)),,Vivo
+1227,4,[matrix] Pouch shared (Vivo Y19; Vivo U20),,Vivo
+1228,4,[matrix] Pouch shared (Vivo Y01; Vivo V15S),,Vivo
+1229,4,[matrix] Pouch shared (Vivo V20; Vivo Y73s; Vivo V21e 4G),,Vivo
+1230,4,[matrix] Pouch shared (Vivo Y70; Vivo V20 SE),,Vivo
+1231,4,[matrix] Pouch shared (Vivo V23E; Vivo Y75 4G),,Vivo
+1232,4,[matrix] Pouch shared (Vivo V27; Vivo V27 Pro),,Vivo
+1233,4,[matrix] Pouch shared (Vivo V29; Vivo V29 Pro),,Vivo
+1234,4,[matrix] Pouch shared (Vivo V29 5G; Vivo V29 Pro 5G),,Vivo
+1235,4,[matrix] Pouch shared (Vivo V30; Vivo V30 Pro),,Vivo
+1236,4,[matrix] Pouch shared (Vivo V5; Vivo Y69),,Vivo
+1237,4,[matrix] Pouch shared (Vivo V50 5G; Vivo V50E 5G),,Vivo
+1238,4,[matrix] Pouch shared (Vivo V9; Vivo Y83 Pro; Vivo Y85),,Vivo
+1239,4,[matrix] Pouch shared (Vivo Y02; Vivo Y02t),,Vivo
+1240,4,[matrix] Pouch shared (Vivo Y28 5G; Vivo Y17s),,Vivo
+1241,4,[matrix] Pouch shared (Vivo Y19s; Vivo Y29),,Vivo
+1242,4,[matrix] Pouch shared (Vivo Y22; Vivo Y35; Vivo Y22s),,Vivo
+1243,4,[matrix] Pouch shared (Vivo Y30; Vivo Y50),,Vivo
+1244,4,[matrix] Pouch shared (Vivo Y53s; Vivo Y31; Vivo Y51),,Vivo
+1245,4,[matrix] Pouch shared (Vivo Y36; Vivo Y78),,Vivo
+1246,4,[matrix] Pouch shared (Vivo Y81; Vivo Y83),,Vivo
+1247,4,[matrix] Pouch shared (Vivo Z1; Vivo Y89; Vivo Z1 Lite (+1)),,Vivo
+1248,4,[matrix] Pouch shared (Vivo Y90; Vivo Y91C; Vivo Y91i),,Vivo
+1249,4,[matrix] Pouch shared (Vivo Y91; Vivo Y93; Vivo Y95),,Vivo
+1250,4,[matrix] Pouch shared (Vivo Z1 Pro; Vivo Z5X),,Vivo
+1251,4,[matrix] Pouch shared (Redmi 10 POWER; Redmi 10C; Redmi 10),,Redmi
+1252,4,[matrix] Pouch shared (Redmi 10T; Redmi 10T Pro),,Redmi
+1253,4,[matrix] Pouch shared (Redmi 11X Pro; Redmi K40; Redmi 11X),,Redmi
+1254,4,[matrix] Pouch shared (Redmi 7; Redmi Y3),,Redmi
+1255,4,[matrix] Pouch shared (Redmi 8; Redmi 8A; Redmi 8A Dual),,Redmi
+1256,4,[matrix] Pouch shared (Redmi 9A; Redmi 9i),,Redmi
+1257,4,[matrix] Pouch shared (Redmi A1 2022; Redmi A2 2023),,Redmi
+1258,4,[matrix] Pouch shared (Redmi A1 plus; Redmi A2 Plus),,Redmi
+1259,4,[matrix] Pouch shared (Redmi K20; Redmi K20 Pro),,Redmi
+1260,4,[matrix] Pouch shared (Redmi Note 10; Redmi Note 10s),,Redmi
+1261,4,[matrix] Pouch shared (Redmi Note 11 Pro; Redmi Note 11 Pro Plus; Redmi Note 11i),,Redmi
+1262,4,[matrix] Pouch shared (Redmi Note 6; Redmi Note 6 Pro),,Redmi
+1263,4,[matrix] Pouch shared (Redmi Note 7; Redmi Note 7 Pro; Redmi Note 7s),,Redmi
+1264,2,[matrix] Battery shared (Honor 5X; Honor 5X Play),,Honor
+1265,2,[matrix] Battery shared (Honor 8; Honor 8 Lite; Honor 9 Lite (+3)),,Honor
+1266,2,[matrix] Battery shared (Infinix Hot 10i; Tecno SPARK 7),,Infinix
+1267,2,[matrix] Battery shared (Infinix Hot 9; Infinix Hot 9 PLAY),,Infinix
+1268,2,[matrix] Battery shared (Infinix Note 10 Pro; Infinix Note 11S; Infinix Zero 5G),,Infinix
+1269,2,[matrix] Battery shared (Vivo T1 5G; iQOO Z6 5G),,Vivo
+1270,2,[matrix] Battery shared (Lenovo G5 Plus; Lenovo K6 Note; Lenovo K8 Note),,Lenovo
+1271,2,[matrix] Battery shared (Lenovo K5 Pro; Lenovo Z6 Lite; Lenovo Z6 Youth),,Lenovo
+1272,2,[matrix] Battery shared (Lenovo P70; Lenovo P70A; Lenovo P70T (+1)),,Lenovo
+1273,2,[matrix] Battery shared (Lenovo S60; Lenovo S60T),,Lenovo
+1274,2,[matrix] Battery shared (Lenovo Z2 Plus; Lenovo Zuk Z2),,Lenovo
+1275,2,[matrix] Battery shared (Motorola G10 Power; Motorola G60),,Motorola
+1276,2,[matrix] Battery shared (Motorola G5S; Motorola G5S Plus; Motorola G6),,Motorola
+1277,2,[matrix] Battery shared (Motorola G7 Power; Motorola One Power; Motorola P30 Note),,Motorola
+1278,2,[matrix] Battery shared (Nokia 2; Nokia 2.1),,Nokia
+1279,2,[matrix] Battery shared (Nokia 3.1 Plus; Nokia 8.1; Nokia X7),,Nokia
+1280,2,[matrix] Battery shared (Nokia 5.1 Plus; Nokia 6.1 Plus),,Nokia
+1281,2,[matrix] Battery shared (OnePlus Nord 2 5G; OnePlus 9RT),,OnePlus
+1282,2,[matrix] Battery shared (Oppo F21 Pro; Oppo F21S Pro; Oppo Reno 7 4G (+3)),,Oppo
+1283,2,[matrix] Battery shared (OnePlus X; Oppo A30),,OnePlus
+1284,2,[matrix] Battery shared (Realme C3; Oppo A5 2020; Oppo A9 2020 (+20)),,Realme
+1285,2,[matrix] Battery shared (Oppo A5S; Oppo A7N; Oppo A11K (+9)),,Oppo
+1286,2,[matrix] Battery shared (Oppo A15; Oppo A15S),,Oppo
+1287,2,[matrix] Battery shared (Realme C2; Oppo A1k),,Realme
+1288,2,[matrix] Battery shared (Oppo A3; Oppo F7),,Oppo
+1289,2,[matrix] Battery shared (Oppo A35; Oppo A33; Oppo A33T (+1)),,Oppo
+1290,2,[matrix] Battery shared (Oppo A51; Oppo A51K; Oppo A51T (+1)),,Oppo
+1291,2,[matrix] Battery shared (Oppo A52; Oppo A72; Oppo A92),,Oppo
+1292,2,[matrix] Battery shared (Oppo A53; Realme 7i),,Oppo
+1293,2,[matrix] Battery shared (Oppo A77; Oppo F5; Oppo F5 Youth (+1)),,Oppo
+1294,2,[matrix] Battery shared (Oppo A77 5G; Oppo A97 5G),,Oppo
+1295,2,[matrix] Battery shared (Oppo A83; Oppo A83T; Oppo A88M),,Oppo
+1296,2,[matrix] Battery shared (Oppo A9; Oppo A9S),,Oppo
+1297,2,[matrix] Battery shared (Oppo A91; Oppo F15),,Oppo
+1298,2,[matrix] Battery shared (Oppo A92S; Oppo F17 Pro; Oppo Reno 4 (+1)),,Oppo
+1299,2,[matrix] Battery shared (Oppo F9; Oppo F9 Pro; Oppo R17 (+2)),,Oppo
+1300,2,[matrix] Battery shared (Oppo Reno 3; Oppo Reno 3 Pro; Oppo Reno 3 Pro 5G (+3)),,Oppo
+1301,2,[matrix] Battery shared (Realme 9i; Oppo K10),,Realme
+1302,2,[matrix] Battery shared (Oppo K3; Realme X),,Oppo
+1303,2,[matrix] Battery shared (Oppo R11; Oppo R11 Plus),,Oppo
+1304,2,[matrix] Battery shared (Oppo R11S; Oppo R11S Plus),,Oppo
+1305,2,[matrix] Battery shared (Oppo Reno 2F; Oppo Reno 2Z),,Oppo
+1306,2,[matrix] Battery shared (Oppo Reno 4 5G; Oppo Reno 5 5G),,Oppo
+1307,2,[matrix] Battery shared (Oppo Reno 8 Pro; Oppo Reno 8 Pro Plus),,Oppo
+1308,2,[matrix] Battery shared (Poco F3; Redmi K40 Pro),,Poco
+1309,2,[matrix] Battery shared (Redmi 9A; Poco M2; Poco M2 Pro (+1)),,Redmi
+1310,2,[matrix] Battery shared (Redmi K30; Poco X2),,Redmi
+1311,2,[matrix] Battery shared (Realme 3; Realme 3i),,Realme
+1312,2,[matrix] Battery shared (Realme 6; Realme 6 Pro; Realme 6S (+2)),,Realme
+1313,2,[matrix] Battery shared (Realme C15; Realme C12),,Realme
+1314,2,[matrix] Battery shared (Realme GT Master; Realme Q2 Pro),,Realme
+1315,2,[matrix] Battery shared (Realme Q5; Realme Q5i),,Realme
+1316,2,[matrix] Battery shared (Realme V15; Realme X7 5G),,Realme
+1317,2,[matrix] Battery shared (Realme X2; Realme XT),,Realme
+1318,2,[matrix] Battery shared (Samsung Galaxy A02s; Samsung Galaxy A03s; Samsung Galaxy M02S),,Samsung
+1319,2,[matrix] Battery shared (Samsung Galaxy M14; Samsung Galaxy A05s),,Samsung
+1320,2,[matrix] Battery shared (Samsung Galaxy A10; Samsung Galaxy M10),,Samsung
+1321,2,[matrix] Battery shared (Samsung Galaxy A11; Samsung Galaxy A20s; Samsung Galaxy A10S (+1)),,Samsung
+1322,2,[matrix] Battery shared (Samsung Galaxy A12; Samsung Galaxy M12),,Samsung
+1323,2,[matrix] Battery shared (Samsung Galaxy A50; Samsung Galaxy A20; Samsung Galaxy A30),,Samsung
+1324,2,[matrix] Battery shared (Samsung Galaxy A31; Samsung Galaxy A31s),,Samsung
+1325,2,[matrix] Battery shared (Samsung Galaxy A34 5G; Samsung Galaxy A54),,Samsung
+1326,2,[matrix] Battery shared (Samsung Galaxy M15 5G; Samsung Galaxy M35 5G),,Samsung
+1327,2,[matrix] Battery shared (Samsung Galaxy M30; Samsung Galaxy M20),,Samsung
+1328,2,[matrix] Battery shared (Samsung Galaxy M21; Samsung Galaxy M30s; Samsung Galaxy M31),,Samsung
+1329,2,[matrix] Battery shared (Samsung Galaxy M51; Samsung Galaxy M62),,Samsung
+1330,2,[matrix] Battery shared (Samsung Galaxy M52 5G; Samsung Galaxy M53 5G),,Samsung
+1331,2,[matrix] Battery shared (Tecno Camon i2; Tecno Camon i2x; Tecno Camon iAir2 Plus (+1)),,Tecno
+1332,2,[matrix] Battery shared (Tecno i3; Tecno i3 Pro),,Tecno
+1333,2,[matrix] Battery shared (Vivo S1; Vivo Y7s; Vivo V17 Neo),,Vivo
+1334,2,[matrix] Battery shared (Vivo V20; Vivo S7; Vivo V20 Pro),,Vivo
+1335,2,[matrix] Battery shared (Vivo Y02; Vivo Y56 5G; Vivo T2x 5G),,Vivo
+1336,2,[matrix] Battery shared (Vivo Y11; Vivo Y12; Vivo Y17 (+6)),,Vivo
+1337,2,[matrix] Battery shared (Vivo V11; Vivo V11 Pro),,Vivo
+1338,2,[matrix] Battery shared (Vivo V11i; Vivo Y97; Vivo V15 Pro (+1)),,Vivo
+1339,2,[matrix] Battery shared (Vivo V17; Vivo V19 Neo; Vivo V19),,Vivo
+1340,2,[matrix] Battery shared (Vivo V21; Vivo V21 Pro),,Vivo
+1341,2,[matrix] Battery shared (Vivo V5S; Vivo Y69; Vivo Y67 (+4)),,Vivo
+1342,2,[matrix] Battery shared (Vivo V5 Plus; Vivo X9; Vivo X9 Plus (+1)),,Vivo
+1343,2,[matrix] Battery shared (Vivo V7; Vivo Y75; Vivo Y75A),,Vivo
+1344,2,[matrix] Battery shared (Vivo V7 Plus; Vivo Y79; Vivo Y79a),,Vivo
+1345,2,[matrix] Battery shared (Vivo V9; Vivo V9 Youth; Vivo Y85 (+1)),,Vivo
+1346,2,[matrix] Battery shared (Vivo X20; Vivo X20A),,Vivo
+1347,2,[matrix] Battery shared (Vivo X27; Vivo X27A),,Vivo
+1348,2,[matrix] Battery shared (Vivo Y16; Vivo Y01; Vivo Y15s (+1)),,Vivo
+1349,2,[matrix] Battery shared (Vivo Y12s; Vivo Y20; Vivo Y20A (+2)),,Vivo
+1350,2,[matrix] Battery shared (Vivo Y17s; Vivo Y36),,Vivo
+1351,2,[matrix] Battery shared (Vivo Y22; Vivo Y22s),,Vivo
+1352,2,[matrix] Battery shared (Vivo Y30; Vivo Y31s; Vivo Y31 (+2)),,Vivo
+1353,2,[matrix] Battery shared (Vivo Y51; Vivo Y51L),,Vivo
+1354,2,[matrix] Battery shared (Vivo Y55s; Vivo Y55; Vivo Y55A (+1)),,Vivo
+1355,2,[matrix] Battery shared (Vivo Y81; Vivo Y83; Vivo Y81i (+3)),,Vivo
+1356,2,[matrix] Battery shared (Vivo Y90; Vivo Y91; Vivo Y91i (+5)),,Vivo
+1357,2,[matrix] Battery shared (Xiaomi 10 Pro; Xiaomi 10T),,Xiaomi
+1358,2,[matrix] Battery shared (Xiaomi Mi 10X 5G; Xiaomi Mi 10X Pro 5G),,Xiaomi
+1359,2,[matrix] Battery shared (Xiaomi Mi 5X; Redmi Note 5A; Redmi Y1),,Xiaomi
+1360,2,[matrix] Battery shared (Xiaomi Mi 6X; Xiaomi Mi A2),,Xiaomi
+1361,2,[matrix] Battery shared (Xiaomi Mi 9T Pro; Redmi K20 Pro),,Xiaomi
+1362,2,[matrix] Battery shared (Redmi 6 Pro; Xiaomi Mi A2 Lite),,Redmi
+1363,2,[matrix] Battery shared (Redmi 10A; Redmi 10C),,Redmi
+1364,2,[matrix] Battery shared (Redmi 10X 5G; Redmi 10X Pro 5G; Redmi Note 9 (+1)),,Redmi
+1365,2,[matrix] Battery shared (Redmi 3; Redmi 3S; Redmi 3S Prime),,Redmi
+1366,2,[matrix] Battery shared (Redmi 6; Redmi 6a),,Redmi
+1367,2,[matrix] Battery shared (Redmi Note 8; Redmi 7; Redmi Y3),,Redmi
+1368,2,[matrix] Battery shared (Redmi 8; Redmi 8A),,Redmi
+1369,2,[matrix] Battery shared (Redmi K50; Redmi K50i 5G),,Redmi
+1370,2,[matrix] Battery shared (Redmi Note 10; Redmi Note 10s),,Redmi
+1371,2,[matrix] Battery shared (Redmi Note 11; Redmi Note 11s),,Redmi
+1372,2,[matrix] Battery shared (Redmi Note 4; Redmi Note 4X),,Redmi
+1373,2,[matrix] Battery shared (Redmi Note 7; Redmi Note 7 Pro; Redmi Note 7s),,Redmi
+1374,2,[matrix] Honor 10 Lite Battery,,Honor
+1375,2,[matrix] Honor 6X Battery,,Honor
+1376,2,[matrix] Honor 7S Battery,,Honor
+1377,2,[matrix] Honor 7X Battery,,Honor
+1378,2,[matrix] Honor 8C Battery,,Honor
+1379,2,[matrix] Honor 8X Battery,,Honor
+1380,2,[matrix] Huawei Enjoy 6 Battery,,Huawei
+1381,2,[matrix] Huawei Holly 2 Plus Battery,,Huawei
+1382,2,[matrix] Huawei P10 Battery,,Huawei
+1383,2,[matrix] Huawei Y6 Pro Battery,,Huawei
+1384,2,[matrix] Huawei Y7 Prime Battery,,Huawei
+1385,2,[matrix] Infinix Hot 10 Battery,,Infinix
+1386,2,[matrix] Infinix Hot 11 2022 Battery,,Infinix
+1387,2,[matrix] Infinix Hot 20 5G Battery,,Infinix
+1388,2,[matrix] Infinix HOT 30i Battery,,Infinix
+1389,2,[matrix] Infinix Hot 4 Pro Battery,,Infinix
+1390,2,[matrix] Infinix Hot 8 Battery,,Infinix
+1391,2,[matrix] Infinix Hot S3 Battery,,Infinix
+1392,2,[matrix] Infinix Hot S3X Battery,,Infinix
+1393,2,[matrix] Infinix Note 12 Battery,,Infinix
+1394,2,[matrix] Infinix Note 30 5G Battery,,Infinix
+1395,2,[matrix] Infinix Note 4 Battery,,Infinix
+1396,2,[matrix] Infinix Note 5 Battery,,Infinix
+1397,2,[matrix] Infinix Smart 3 Plus Battery,,Infinix
+1398,2,[matrix] Infinix Smart HD Battery,,Infinix
+1399,2,[matrix] Infinix Zero 5 Battery,,Infinix
+1400,2,[matrix] iQOO Neo 3 Battery,,iQOO
+1401,2,[matrix] iQOO Neo 855 Battery,,iQOO
+1402,2,[matrix] iQOO Neo5 Battery,,iQOO
+1403,2,[matrix] iQOO U1 Battery,,iQOO
+1404,2,[matrix] iQOO U5x Battery,,iQOO
+1405,2,[matrix] iQOO Z1x 5G Battery,,iQOO
+1406,2,[matrix] iQOO Z3 Battery,,iQOO
+1407,2,[matrix] iQOO Z5 Battery,,iQOO
+1408,2,[matrix] iQOO Z6 4G Battery,,iQOO
+1409,2,[matrix] iQOO Z7 Pro 5G Battery,,iQOO
+1410,2,[matrix] Itel P32 Battery,,Itel
+1411,2,[matrix] Lenovo 5 Battery,,Lenovo
+1412,2,[matrix] Lenovo K4 Note Battery,,Lenovo
+1413,2,[matrix] Lenovo K5 Battery,,Lenovo
+1414,2,[matrix] Lenovo K6 Power Battery,,Lenovo
+1415,2,[matrix] Lenovo K8 Plus Battery,,Lenovo
+1416,2,[matrix] Lenovo Vibe K5 Note Battery,,Lenovo
+1417,2,[matrix] Lenovo Vibe S1 Lite Battery,,Lenovo
+1418,2,[matrix] Lenovo Zuk Z1 Battery,,Lenovo
+1419,2,[matrix] Motorola E Battery,,Motorola
+1420,1,[matrix] Motorola E32 Display,,Motorola
+1421,18,[matrix] Motorola E32 Display Connector,,Motorola
+1422,3,[matrix] Motorola E32 OCA Glass,,Motorola
+1423,2,[matrix] Motorola E4 Plus Battery,,Motorola
+1424,2,[matrix] Motorola Edge Battery,,Motorola
+1425,2,[matrix] Motorola Edge 20 Battery,,Motorola
+1426,2,[matrix] Motorola Edge 20 Lite Battery,,Motorola
+1427,2,[matrix] Motorola Edge 30 Battery,,Motorola
+1428,2,[matrix] Motorola Edge 30 Fusion Battery,,Motorola
+1429,2,[matrix] Motorola Edge 30 Pro Battery,,Motorola
+1430,2,[matrix] Motorola Edge S30 Battery,,Motorola
+1431,2,[matrix] Motorola G 5G Battery,,Motorola
+1432,2,[matrix] Motorola G Power 5G Battery,,Motorola
+1433,2,[matrix] Motorola G Pure Battery,,Motorola
+1434,2,[matrix] Motorola G Stylus Battery,,Motorola
+1435,2,[matrix] Motorola G14 Battery,,Motorola
+1436,2,[matrix] Motorola G2 Battery,,Motorola
+1437,2,[matrix] Motorola G22 Battery,,Motorola
+1438,2,[matrix] Motorola G3 Battery,,Motorola
+1439,2,[matrix] Motorola G34 5G Battery,,Motorola
+1440,2,[matrix] Motorola G4 Plus Battery,,Motorola
+1441,2,[matrix] Motorola G41 Battery,,Motorola
+1442,2,[matrix] Motorola G50 5G Battery,,Motorola
+1443,2,[matrix] Motorola G52 Battery,,Motorola
+1444,2,[matrix] Motorola G54 5G Battery,,Motorola
+1445,2,[matrix] Motorola G6 Plus Battery,,Motorola
+1446,2,[matrix] Motorola G60s Battery,,Motorola
+1447,2,[matrix] Motorola G62 5G Battery,,Motorola
+1448,2,[matrix] Motorola G7 Battery,,Motorola
+1449,2,[matrix] Motorola G71 5G Battery,,Motorola
+1450,1,[matrix] Motorola G73 Display,,Motorola
+1451,18,[matrix] Motorola G73 Display Connector,,Motorola
+1452,2,[matrix] Motorola G73 Battery,,Motorola
+1453,3,[matrix] Motorola G73 OCA Glass,,Motorola
+1454,2,[matrix] Motorola G8 Play Battery,,Motorola
+1455,2,[matrix] Motorola G8 Plus Battery,,Motorola
+1456,2,[matrix] Motorola G84 5G Battery,,Motorola
+1457,2,[matrix] Motorola G9 Plus Battery,,Motorola
+1458,2,[matrix] Motorola G9 Power Battery,,Motorola
+1459,2,[matrix] Motorola M Battery,,Motorola
+1460,2,[matrix] Motorola One 5G Battery,,Motorola
+1461,2,[matrix] Motorola One Fusion Plus Battery,,Motorola
+1462,2,[matrix] Motorola Stylus Battery,,Motorola
+1463,2,[matrix] Motorola X Play Battery,,Motorola
+1464,2,[matrix] Motorola X4 Battery,,Motorola
+1465,2,[matrix] Motorola Z Play Battery,,Motorola
+1466,2,[matrix] Motorola Z2 Play Battery,,Motorola
+1467,2,[matrix] Nokia 1.4 Battery,,Nokia
+1468,2,[matrix] Nokia 3 Battery,,Nokia
+1469,2,[matrix] Nokia 3.2 Battery,,Nokia
+1470,2,[matrix] Nokia 3.4 Battery,,Nokia
+1471,2,[matrix] Nokia 5 Battery,,Nokia
+1472,2,[matrix] Nokia 5.3 Battery,,Nokia
+1473,2,[matrix] Nokia 6 Battery,,Nokia
+1474,2,[matrix] Nokia 6.1 Battery,,Nokia
+1475,2,[matrix] Nokia 6.2 Battery,,Nokia
+1476,2,[matrix] Nokia 7 Battery,,Nokia
+1477,2,[matrix] Nokia 7 Plus Battery,,Nokia
+1478,2,[matrix] Nokia 8 Battery,,Nokia
+1479,2,[matrix] Nokia C20 Plus Battery,,Nokia
+1480,2,[matrix] Nokia C30 Battery,,Nokia
+1481,2,[matrix] Nokia G20 Battery,,Nokia
+1482,2,[matrix] Nokia G21 Battery,,Nokia
+1483,2,[matrix] Nokia G50 Battery,,Nokia
+1484,2,[matrix] OnePlus 8T Battery,,OnePlus
+1485,2,[matrix] OnePlus Nord N10 Battery,,OnePlus
+1486,2,[matrix] Oppo A1 Pro 5G Battery,,Oppo
+1487,2,[matrix] Oppo A17 Battery,,Oppo
+1488,2,[matrix] Oppo A18 4G Battery,,Oppo
+1489,2,[matrix] Oppo A32 Battery,,Oppo
+1490,2,[matrix] Oppo A37 Battery,,Oppo
+1491,2,[matrix] Oppo A54 5G Battery,,Oppo
+1492,2,[matrix] Oppo A57 Battery,,Oppo
+1493,2,[matrix] Oppo A58 4G Battery,,Oppo
+1494,2,[matrix] Oppo A71 Battery,,Oppo
+1495,2,[matrix] Oppo A76 Battery,,Oppo
+1496,2,[matrix] Oppo A78 4G Battery,,Oppo
+1497,2,[matrix] Oppo A96 Battery,,Oppo
+1498,2,[matrix] Oppo F1 Plus Battery,,Oppo
+1499,2,[matrix] Oppo F11 Battery,,Oppo
+1500,2,[matrix] Oppo F11 Pro Battery,,Oppo
+1501,2,[matrix] Oppo F1s Battery,,Oppo
+1502,2,[matrix] Oppo F25 Pro 5G Battery,,Oppo
+1503,2,[matrix] Oppo F3 Plus Battery,,Oppo
+1504,2,[matrix] Oppo Find X3 Pro Battery,,Oppo
+1505,2,[matrix] Oppo Find X5 Battery,,Oppo
+1506,2,[matrix] Oppo Find X5 Pro Battery,,Oppo
+1507,2,[matrix] Oppo K10X Battery,,Oppo
+1508,2,[matrix] Oppo R15x Battery,,Oppo
+1509,2,[matrix] Oppo R9 Plus Battery,,Oppo
+1510,2,[matrix] Oppo R9S Battery,,Oppo
+1511,2,[matrix] Oppo Reno 10 5G Battery,,Oppo
+1512,2,[matrix] Oppo Reno 10X Zoom Battery,,Oppo
+1513,2,[matrix] Oppo Reno 2 Battery,,Oppo
+1514,2,[matrix] Oppo Reno 4 4G Battery,,Oppo
+1515,2,[matrix] Oppo Reno 4 Pro 5G Battery,,Oppo
+1516,2,[matrix] Oppo Reno 4 SE Battery,,Oppo
+1517,2,[matrix] Oppo Reno 5 4G Battery,,Oppo
+1518,2,[matrix] Oppo Reno 5 Pro 5G Battery,,Oppo
+1519,2,[matrix] Oppo Reno 5 Pro Plus 5G Battery,,Oppo
+1520,2,[matrix] Oppo Reno 5F Battery,,Oppo
+1521,2,[matrix] Oppo Reno 5Z 5G Battery,,Oppo
+1522,2,[matrix] Oppo Reno 6 5G Battery,,Oppo
+1523,2,[matrix] Oppo Reno 6 Pro 5G Battery,,Oppo
+1524,2,[matrix] Oppo Reno 7 Battery,,Oppo
+1525,2,[matrix] Oppo Reno 7 Pro 5G Battery,,Oppo
+1526,2,[matrix] Oppo Reno 8T 4G Battery,,Oppo
+1527,2,[matrix] Oppo Reno Ace 2 Battery,,Oppo
+1528,2,[matrix] Oppo Reno Z Battery,,Oppo
+1529,2,[matrix] Poco C40 Battery,,Poco
+1530,2,[matrix] Poco F1 Battery,,Poco
+1531,2,[matrix] Poco F2 Pro Battery,,Poco
+1532,2,[matrix] Poco F4 5G Battery,,Poco
+1533,2,[matrix] Poco F5 Battery,,Poco
+1534,2,[matrix] Poco M3 Battery,,Poco
+1535,2,[matrix] Poco M4 Pro Battery,,Poco
+1536,2,[matrix] Poco X3 NFC Battery,,Poco
+1537,2,[matrix] Poco X3 Pro Battery,,Poco
+1538,2,[matrix] Poco X6 5G Battery,,Poco
+1539,2,[matrix] Realme 1 Battery,,Realme
+1540,2,[matrix] Realme 10 4G Battery,,Realme
+1541,2,[matrix] Realme 10 Pro 5G Battery,,Realme
+1542,2,[matrix] Realme 10 Pro Plus Battery,,Realme
+1543,2,[matrix] Realme 11 Pro 5G Battery,,Realme
+1544,2,[matrix] Realme 3 Pro Battery,,Realme
+1545,2,[matrix] Realme 5 Pro Battery,,Realme
+1546,2,[matrix] Realme 7 Battery,,Realme
+1547,2,[matrix] Realme 8 Battery,,Realme
+1548,2,[matrix] Realme 8 Pro Battery,,Realme
+1549,2,[matrix] Realme 8i Battery,,Realme
+1550,2,[matrix] Realme 8S 5G Battery,,Realme
+1551,2,[matrix] Realme 9 5G Battery,,Realme
+1552,2,[matrix] Realme C65 4G Battery,,Realme
+1553,2,[matrix] Realme GT Battery,,Realme
+1554,2,[matrix] Realme GT Neo 2 Battery,,Realme
+1555,2,[matrix] Realme GT Neo 3 Battery,,Realme
+1556,2,[matrix] Realme Narzo 10 Battery,,Realme
+1557,2,[matrix] Realme Q3S Battery,,Realme
+1558,2,[matrix] Realme X2 Pro Battery,,Realme
+1559,2,[matrix] Realme X7 Pro Battery,,Realme
+1560,2,[matrix] Samsung Galaxy A01 Battery,,Samsung
+1561,2,[matrix] Samsung Galaxy A02 Battery,,Samsung
+1562,2,[matrix] Samsung Galaxy A03 Battery,,Samsung
+1563,2,[matrix] Samsung Galaxy A03 Core Battery,,Samsung
+1564,2,[matrix] Samsung Galaxy A13 Battery,,Samsung
+1565,2,[matrix] Samsung Galaxy A21S Battery,,Samsung
+1566,4,[matrix] Samsung Galaxy A22 Pouch,,Samsung
+1567,2,[matrix] Samsung Galaxy A22 4G Battery,,Samsung
+1568,2,[matrix] Samsung Galaxy A22 5G Battery,,Samsung
+1569,2,[matrix] Samsung Galaxy A24 Battery,,Samsung
+1570,2,[matrix] Samsung Galaxy A30s Battery,,Samsung
+1571,2,[matrix] Samsung Galaxy A33 5G Battery,,Samsung
+1572,2,[matrix] Samsung Galaxy A40 Battery,,Samsung
+1573,2,[matrix] Samsung Galaxy A42 Battery,,Samsung
+1574,2,[matrix] Samsung Galaxy A51 Battery,,Samsung
+1575,2,[matrix] Samsung Galaxy A52 Battery,,Samsung
+1576,2,[matrix] Samsung Galaxy A53 Battery,,Samsung
+1577,2,[matrix] Samsung Galaxy A60 Battery,,Samsung
+1578,2,[matrix] Samsung Galaxy A70 Battery,,Samsung
+1579,2,[matrix] Samsung Galaxy A70s Battery,,Samsung
+1580,2,[matrix] Samsung Galaxy A71 Battery,,Samsung
+1581,2,[matrix] Samsung Galaxy F41 Battery,,Samsung
+1582,2,[matrix] Samsung Galaxy J5 Prime Battery,,Samsung
+1583,2,[matrix] Samsung Galaxy J6 Battery,,Samsung
+1584,2,[matrix] Samsung Galaxy J7 Pro Battery,,Samsung
+1585,2,[matrix] Samsung Galaxy J8 Battery,,Samsung
+1586,2,[matrix] Samsung Galaxy M01 Battery,,Samsung
+1587,2,[matrix] Samsung Galaxy M02 Battery,,Samsung
+1588,2,[matrix] Samsung Galaxy M11 Battery,,Samsung
+1589,2,[matrix] Samsung Galaxy M31S Battery,,Samsung
+1590,2,[matrix] Samsung Galaxy M32 Battery,,Samsung
+1591,2,[matrix] Samsung Galaxy M40 Battery,,Samsung
+1592,2,[matrix] Samsung Galaxy Note 8 Battery,,Samsung
+1593,2,[matrix] Samsung Galaxy Note 9 Battery,,Samsung
+1594,2,[matrix] Samsung Galaxy S7 Edge Battery,,Samsung
+1595,2,[matrix] Samsung Galaxy S8 Battery,,Samsung
+1596,3,[matrix] Tecno BE8i OCA Glass,,Tecno
+1597,2,[matrix] Tecno Camon 15 Battery,,Tecno
+1598,2,[matrix] Tecno Camon 16 Premier Battery,,Tecno
+1599,2,[matrix] Tecno Camon 17 Battery,,Tecno
+1600,2,[matrix] Tecno Camon 19 Battery,,Tecno
+1601,2,[matrix] Tecno i5 Battery,,Tecno
+1602,2,[matrix] Tecno i7 Battery,,Tecno
+1603,2,[matrix] Tecno Phantom 6 Plus Battery,,Tecno
+1604,2,[matrix] Tecno Phantom X2 Pro 5G Battery,,Tecno
+1605,2,[matrix] Tecno Pouvoir 4 Pro Battery,,Tecno
+1606,2,[matrix] Tecno Spark 4 Battery,,Tecno
+1607,2,[matrix] Tecno Spark 6 Battery,,Tecno
+1608,2,[matrix] Tecno Spark Go Battery,,Tecno
+1609,2,[matrix] Vivo NEX 3 Battery,,Vivo
+1610,2,[matrix] Vivo S1 Pro Battery,,Vivo
+1611,2,[matrix] Vivo S10 Battery,,Vivo
+1612,2,[matrix] Vivo S10E Battery,,Vivo
+1613,2,[matrix] Vivo S15 Battery,,Vivo
+1614,2,[matrix] Vivo S16 Battery,,Vivo
+1615,2,[matrix] Vivo S9e Battery,,Vivo
+1616,2,[matrix] Vivo T1 Pro Battery,,Vivo
+1617,2,[matrix] Vivo T2x Battery,,Vivo
+1618,2,[matrix] Vivo V15 Battery,,Vivo
+1619,2,[matrix] Vivo V17 Pro Battery,,Vivo
+1620,4,[matrix] Vivo V20 Pro Pouch,,Vivo
+1621,2,[matrix] Vivo V20 SE Battery,,Vivo
+1622,2,[matrix] Vivo V21E 5G Battery,,Vivo
+1623,2,[matrix] Vivo V23 5G Battery,,Vivo
+1624,2,[matrix] Vivo V23 Pro Battery,,Vivo
+1625,2,[matrix] Vivo V25 5G Battery,,Vivo
+1626,2,[matrix] Vivo V29 Battery,,Vivo
+1627,2,[matrix] Vivo V29E Battery,,Vivo
+1628,2,[matrix] Vivo V3 Battery,,Vivo
+1629,2,[matrix] Vivo V3 Max Battery,,Vivo
+1630,2,[matrix] Vivo V30 Battery,,Vivo
+1631,2,[matrix] Vivo X20 Plus Battery,,Vivo
+1632,2,[matrix] Vivo X23 Battery,,Vivo
+1633,2,[matrix] Vivo X27 Pro Battery,,Vivo
+1634,2,[matrix] Vivo X50 Battery,,Vivo
+1635,2,[matrix] Vivo X50 Pro Battery,,Vivo
+1636,2,[matrix] Vivo X60 Battery,,Vivo
+1637,2,[matrix] Vivo X60 Pro Battery,,Vivo
+1638,2,[matrix] Vivo X70 Battery,,Vivo
+1639,2,[matrix] Vivo Xplay 6 Battery,,Vivo
+1640,2,[matrix] Vivo Y03 4G Battery,,Vivo
+1641,2,[matrix] Vivo Y100 5G Battery,,Vivo
+1642,2,[matrix] Vivo Y19 Battery,,Vivo
+1643,4,[matrix] Vivo Y19s PRO Pouch,,Vivo
+1644,2,[matrix] Vivo Y200 5G Battery,,Vivo
+1645,4,[matrix] Vivo Y21 2021 Pouch,,Vivo
+1646,2,[matrix] Vivo Y33s Battery,,Vivo
+1647,2,[matrix] Vivo Y33T Battery,,Vivo
+1648,2,[matrix] Vivo Y35 5G Battery,,Vivo
+1649,2,[matrix] Vivo Y36 5G Battery,,Vivo
+1650,2,[matrix] Vivo Y50 Battery,,Vivo
+1651,2,[matrix] Vivo Y51s Battery,,Vivo
+1652,2,[matrix] Vivo Y53 Battery,,Vivo
+1653,2,[matrix] Vivo Y53 5G Battery,,Vivo
+1654,2,[matrix] Vivo Y53s Battery,,Vivo
+1655,2,[matrix] Vivo Y55s 5G Battery,,Vivo
+1656,2,[matrix] Vivo Y71 Battery,,Vivo
+1657,2,[matrix] Vivo Y73s Battery,,Vivo
+1658,2,[matrix] Vivo Y76 5G Battery,,Vivo
+1659,4,[matrix] Vivo Y97 Pouch,,Vivo
+1660,2,[matrix] Vivo Z1x Battery,,Vivo
+1661,2,[matrix] Xiaomi 11T 5G Battery,,Xiaomi
+1662,2,[matrix] Xiaomi 12 Pro Battery,,Xiaomi
+1663,2,[matrix] Xiaomi 13 Pro Battery,,Xiaomi
+1664,2,[matrix] Xiaomi Civi 2 Battery,,Xiaomi
+1665,2,[matrix] Xiaomi Civi 5G Battery,,Xiaomi
+1666,1,[matrix] Xiaomi Mi 10 4G Global Display,,Xiaomi
+1667,18,[matrix] Xiaomi Mi 10 4G Global Display Connector,,Xiaomi
+1668,3,[matrix] Xiaomi Mi 10 4G Global OCA Glass,,Xiaomi
+1669,2,[matrix] Xiaomi Mi 10 Lite Battery,,Xiaomi
+1670,2,[matrix] Xiaomi Mi 10 Pro Battery,,Xiaomi
+1671,2,[matrix] Xiaomi Mi 10i 5G Battery,,Xiaomi
+1672,2,[matrix] Xiaomi Mi 11 Lite Battery,,Xiaomi
+1673,2,[matrix] Xiaomi Mi 11 Ultra Battery,,Xiaomi
+1674,2,[matrix] Xiaomi Mi 11T Pro Battery,,Xiaomi
+1675,2,[matrix] Xiaomi Mi 4 Battery,,Xiaomi
+1676,2,[matrix] Xiaomi Mi 8 Battery,,Xiaomi
+1677,2,[matrix] Xiaomi Mi A3 Battery,,Xiaomi
+1678,2,[matrix] Xiaomi Mi Max Battery,,Xiaomi
+1679,2,[matrix] Xiaomi Mi Max 2 Battery,,Xiaomi
+1680,2,[matrix] Xiaomi Mi Play Battery,,Xiaomi
+1681,2,[matrix] Redmi 10 Battery,,Xiaomi
+1682,2,[matrix] Redmi 10 Prime Battery,,Xiaomi
+1683,2,[matrix] Redmi 12 5G Battery,,Xiaomi
+1684,2,[matrix] Redmi 12C Battery,,Xiaomi
+1685,2,[matrix] Redmi 13c 5g Battery,,Xiaomi
+1686,2,[matrix] Redmi 4 Battery,,Xiaomi
+1687,2,[matrix] Redmi 4A Battery,,Xiaomi
+1688,2,[matrix] Redmi 5 Battery,,Xiaomi
+1689,2,[matrix] Redmi 5a Battery,,Xiaomi
+1690,1,[matrix] Redmi 6X Display,,Xiaomi
+1691,18,[matrix] Redmi 6X Display Connector,,Xiaomi
+1692,3,[matrix] Redmi 6X OCA Glass,,Xiaomi
+1693,2,[matrix] Redmi 7a Battery,,Xiaomi
+1694,2,[matrix] Redmi A3 Battery,,Xiaomi
+1695,2,[matrix] Redmi Go Battery,,Xiaomi
+1696,2,[matrix] Redmi K30 Ultra Battery,,Xiaomi
+1697,2,[matrix] Redmi K40 Battery,,Xiaomi
+1698,2,[matrix] Redmi Note 10 5G Battery,,Xiaomi
+1699,4,[matrix] Redmi Note 10 Pro Max Pouch,,Xiaomi
+1700,2,[matrix] Redmi Note 11 Pro Battery,,Xiaomi
+1701,2,[matrix] Redmi Note 11 Pro 5G Battery,,Xiaomi
+1702,2,[matrix] Redmi Note 12 4G Battery,,Xiaomi
+1703,2,[matrix] Redmi Note 12 5G Battery,,Xiaomi
+1704,2,[matrix] Redmi Note 3 Battery,,Xiaomi
+1705,2,[matrix] Redmi Note 5 Plus Battery,,Xiaomi
+1706,2,[matrix] Redmi Note 5 PRO Battery,,Xiaomi
+1707,2,[matrix] Redmi Note 8 Pro Battery,,Xiaomi
+1708,2,[matrix] Redmi Note 9 Pro Battery,,Xiaomi
+1709,2,[matrix] Redmi Note 9S Battery,,Xiaomi

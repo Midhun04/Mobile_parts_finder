@@ -1,0 +1,2714 @@
+[
+  {
+    "id": "blp_605",
+    "brand": "Oppo",
+    "models": "Oppo A33 = Oppo A33T = Oppo F1 = Oppo A35",
+    "part_number": "BLP605"
+  },
+  {
+    "id": "blp_609",
+    "brand": "Oppo",
+    "models": "Oppo F1 Plus",
+    "part_number": "BLP609"
+  },
+  {
+    "id": "blp_611",
+    "brand": "Oppo",
+    "models": "Oppo R9 Plus",
+    "part_number": "BLP611"
+  },
+  {
+    "id": "blp_615",
+    "brand": "Oppo",
+    "models": "Oppo A37",
+    "part_number": "BLP615"
+  },
+  {
+    "id": "blp_619",
+    "brand": "Oppo",
+    "models": "Oppo A57",
+    "part_number": "BLP619"
+  },
+  {
+    "id": "blp_621",
+    "brand": "Oppo",
+    "models": "Oppo R9S",
+    "part_number": "BLP621"
+  },
+  {
+    "id": "blp_623",
+    "brand": "Oppo",
+    "models": "Oppo F3 Plus",
+    "part_number": "BLP623"
+  },
+  {
+    "id": "blp_631",
+    "brand": "Oppo",
+    "models": "Oppo A77 = Oppo F3 = Oppo F5 = Oppo F5 Youth",
+    "part_number": "BLP631"
+  },
+  {
+    "id": "blp_639",
+    "brand": "Oppo",
+    "models": "Oppo R11 = Oppo R11 Plus",
+    "part_number": "BLP639"
+  },
+  {
+    "id": "blp_641",
+    "brand": "Oppo",
+    "models": "Oppo A71",
+    "part_number": "BLP641"
+  },
+  {
+    "id": "blp_645",
+    "brand": "Oppo",
+    "models": "Oppo R11S = Oppo R11S Plus",
+    "part_number": "BLP645"
+  },
+  {
+    "id": "blp_649",
+    "brand": "Oppo",
+    "models": "Oppo A71 = Oppo A83 = Oppo A83T = Oppo A88M",
+    "part_number": "BLP649"
+  },
+  {
+    "id": "blp_661",
+    "brand": "Oppo",
+    "models": "Oppo F7 = Oppo A3",
+    "part_number": "BLP661"
+  },
+  {
+    "id": "blp_665",
+    "brand": "Realme",
+    "models": "Realme 1",
+    "part_number": "BLP665"
+  },
+  {
+    "id": "blp_673",
+    "brand": "Oppo",
+    "models": "Oppo A3S = Oppo A5 = Oppo A5S = Oppo A7 = Oppo A7N = Oppo A8 = Oppo A11K = Oppo A12 = Oppo A12S = Oppo A31 = Realme 2 = Realme C1",
+    "part_number": "BLP673"
+  },
+  {
+    "id": "blp_681",
+    "brand": "Oppo",
+    "models": "Oppo F9 = Oppo F9 Pro = Oppo R17 = Realme U1 = Realme 2 Pro",
+    "part_number": "BLP681/BLP683"
+  },
+  {
+    "id": "blp_689",
+    "brand": "Oppo",
+    "models": "Oppo R15x",
+    "part_number": "BLP689"
+  },
+  {
+    "id": "blp_693",
+    "brand": "Realme",
+    "models": "Realme 3 = Realme 3i",
+    "part_number": "BLP693"
+  },
+  {
+    "id": "blp_695",
+    "brand": "Realme",
+    "models": "Realme U1 = Realme 2 Pro",
+    "part_number": "BLP695"
+  },
+  {
+    "id": "blp_697",
+    "brand": "Oppo",
+    "models": "Oppo F11 Pro",
+    "part_number": "BLP697"
+  },
+  {
+    "id": "blp_705",
+    "brand": "Oppo",
+    "models": "Oppo Reno 10X Zoom",
+    "part_number": "BLP705"
+  },
+  {
+    "id": "blp_707",
+    "brand": "Oppo",
+    "models": "Oppo F11",
+    "part_number": "BLP707"
+  },
+  {
+    "id": "blp_709",
+    "brand": "Oppo",
+    "models": "Oppo A9 = Oppo A9S",
+    "part_number": "BLP709"
+  },
+  {
+    "id": "blp_711",
+    "brand": "Realme",
+    "models": "Realme C2 = Oppo A1K",
+    "part_number": "BLP711/BLP721"
+  },
+  {
+    "id": "blp_713",
+    "brand": "Realme",
+    "models": "Realme 3 Pro",
+    "part_number": "BLP713"
+  },
+  {
+    "id": "blp_701",
+    "brand": "Realme",
+    "models": "Realme X = Oppo K3",
+    "part_number": "BLP701/BLP715"
+  },
+  {
+    "id": "blp_717",
+    "brand": "Oppo",
+    "models": "Oppo Reno Z",
+    "part_number": "BLP717"
+  },
+  {
+    "id": "blp_723",
+    "brand": "Realme",
+    "models": "Realme X",
+    "part_number": "BLP723"
+  },
+  {
+    "id": "blp_727",
+    "brand": "Oppo",
+    "models": "Oppo A5 2020 = Oppo A9 2020 = Oppo A11 = Oppo A11X = Realme 5 = Realme 5i = Realme 5S = Realme 6i = Realme C3 = Realme C11 = Realme C11 2021 = Realme C20 = Realme C20A = Realme C21 = Realme C21Y = Realme C25Y = Realme Narzo 10A = Realme Narzo 20A = Realme Narzo 50i = Realme V3 = Realme Q2i = Realme 10S 5G = Realme Narzo 60 5G",
+    "part_number": "BLP727/BLP729"
+  },
+  {
+    "id": "blp_731",
+    "brand": "Realme",
+    "models": "Realme 5 Pro",
+    "part_number": "BLP731"
+  },
+  {
+    "id": "blp_735",
+    "brand": "Oppo",
+    "models": "Oppo Reno 2",
+    "part_number": "BLP735"
+  },
+  {
+    "id": "blp_737",
+    "brand": "Oppo",
+    "models": "Oppo Reno 2 = Oppo Reno 2Z = Oppo Reno 2F",
+    "part_number": "BLP737"
+  },
+  {
+    "id": "blp_741",
+    "brand": "Realme",
+    "models": "Realme X2 = Realme XT",
+    "part_number": "BLP741"
+  },
+  {
+    "id": "blp_749",
+    "brand": "Realme",
+    "models": "Realme X2 Pro",
+    "part_number": "BLP749"
+  },
+  {
+    "id": "blp_755",
+    "brand": "Oppo",
+    "models": "Oppo Reno 3 = Oppo Reno 3 5G = Oppo Reno 3 Pro = Oppo Reno 3 Pro 5G = Oppo Find X2 Lite = Oppo Find X2 Neo",
+    "part_number": "BLP755"
+  },
+  {
+    "id": "blp_757",
+    "brand": "Realme",
+    "models": "Realme 6 = Realme 6i = Realme 6S = Realme 6 Pro = Realme X3 = Realme X3 Super Zoom",
+    "part_number": "BLP757"
+  },
+  {
+    "id": "blp_765",
+    "brand": "Oppo",
+    "models": "Oppo Reno 3 = Oppo A91 = Oppo F15",
+    "part_number": "BLP765"
+  },
+  {
+    "id": "blp_771",
+    "brand": "Realme",
+    "models": "Realme Narzo 10",
+    "part_number": "BLP771"
+  },
+  {
+    "id": "blp_775",
+    "brand": "Realme",
+    "models": "Realme X3",
+    "part_number": "BLP775"
+  },
+  {
+    "id": "blp_779",
+    "brand": "Oppo",
+    "models": "Oppo A92S = Oppo F17 Pro = Oppo Reno 4 = Oppo Reno 4 Lite",
+    "part_number": "BLP779"
+  },
+  {
+    "id": "blp_781",
+    "brand": "Oppo",
+    "models": "Oppo A52 = Oppo A72 = Oppo A92",
+    "part_number": "BLP781"
+  },
+  {
+    "id": "blp_783",
+    "brand": "Oppo",
+    "models": "Oppo Reno Ace 2",
+    "part_number": "BLP783"
+  },
+  {
+    "id": "blp_787",
+    "brand": "Oppo",
+    "models": "Oppo Reno 4 Pro 5G",
+    "part_number": "BLP787"
+  },
+  {
+    "id": "blp_789",
+    "brand": "Oppo",
+    "models": "Oppo Reno 4 5G = Oppo Reno 5 5G",
+    "part_number": "BLP789"
+  },
+  {
+    "id": "blp_791",
+    "brand": "Oppo",
+    "models": "Oppo Reno 4 4G",
+    "part_number": "BLP791"
+  },
+  {
+    "id": "blp_793",
+    "brand": "Realme",
+    "models": "Realme C12 = Realme C15",
+    "part_number": "BLP793"
+  },
+  {
+    "id": "blp_797",
+    "brand": "Oppo",
+    "models": "Oppo A72 5G = Oppo A73 5G",
+    "part_number": "BLP797"
+  },
+  {
+    "id": "blp_799",
+    "brand": "Realme",
+    "models": "Realme X7 Pro",
+    "part_number": "BLP799"
+  },
+  {
+    "id": "blp_801",
+    "brand": "OnePlus",
+    "models": "OnePlus 8T",
+    "part_number": "BLP801"
+  },
+  {
+    "id": "blp_803",
+    "brand": "Realme",
+    "models": "Realme 7i = Oppo A53 = Realme V3",
+    "part_number": "BLP803"
+  },
+  {
+    "id": "blp_805",
+    "brand": "Oppo",
+    "models": "Oppo A32",
+    "part_number": "BLP805"
+  },
+  {
+    "id": "blp_807",
+    "brand": "Realme",
+    "models": "Realme 7",
+    "part_number": "BLP807"
+  },
+  {
+    "id": "blp_809",
+    "brand": "Realme",
+    "models": "Realme GT Master = Realme Q2 Pro",
+    "part_number": "BLP809"
+  },
+  {
+    "id": "blp_811",
+    "brand": "Oppo",
+    "models": "Oppo Reno 4 SE",
+    "part_number": "BLP811"
+  },
+  {
+    "id": "blp_815",
+    "brand": "OnePlus",
+    "models": "OnePlus Nord N10",
+    "part_number": "BLP815"
+  },
+  {
+    "id": "blp_817",
+    "brand": "Oppo",
+    "models": "Oppo A15 = Oppo A15s",
+    "part_number": "BLP817"
+  },
+  {
+    "id": "blp_819",
+    "brand": "Oppo",
+    "models": "Oppo Reno 5 4G",
+    "part_number": "BLP819"
+  },
+  {
+    "id": "blp_823",
+    "brand": "Oppo",
+    "models": "Oppo Reno 5 Pro 5G",
+    "part_number": "BLP823"
+  },
+  {
+    "id": "blp_825",
+    "brand": "Oppo",
+    "models": "Oppo Reno 5 Pro Plus 5G",
+    "part_number": "BLP825"
+  },
+  {
+    "id": "blp_831",
+    "brand": "Oppo",
+    "models": "Oppo Find X3 Pro",
+    "part_number": "BLP831"
+  },
+  {
+    "id": "blp_833",
+    "brand": "Realme",
+    "models": "Realme V15 = Realme X7 5G",
+    "part_number": "BLP833"
+  },
+  {
+    "id": "blp_835",
+    "brand": "Oppo",
+    "models": "Oppo Reno 5F",
+    "part_number": "BLP835"
+  },
+  {
+    "id": "blp_837",
+    "brand": "Realme",
+    "models": "Realme 8 Pro",
+    "part_number": "BLP837"
+  },
+  {
+    "id": "blp_839",
+    "brand": "Oppo",
+    "models": "Oppo Reno 5Z 5G",
+    "part_number": "BLP839"
+  },
+  {
+    "id": "blp_841",
+    "brand": "Realme",
+    "models": "Realme 8",
+    "part_number": "BLP841"
+  },
+  {
+    "id": "blp_849",
+    "brand": "Realme",
+    "models": "Realme GT",
+    "part_number": "BLP849"
+  },
+  {
+    "id": "blp_851",
+    "brand": "Oppo",
+    "models": "Oppo A54 5G",
+    "part_number": "BLP851"
+  },
+  {
+    "id": "blp_855",
+    "brand": "Oppo",
+    "models": "Oppo Reno 6 Pro 5G",
+    "part_number": "BLP855"
+  },
+  {
+    "id": "blp_861",
+    "brand": "OnePlus",
+    "models": "OnePlus 9RT = OnePlus Nord 2 5G",
+    "part_number": "BLP861"
+  },
+  {
+    "id": "blp_863",
+    "brand": "Oppo",
+    "models": "Oppo Reno 6 5G",
+    "part_number": "BLP863"
+  },
+  {
+    "id": "blp_875",
+    "brand": "Realme",
+    "models": "Realme Q3S",
+    "part_number": "BLP875"
+  },
+  {
+    "id": "blp_877",
+    "brand": "Realme",
+    "models": "Realme 8i",
+    "part_number": "BLP877"
+  },
+  {
+    "id": "blp_879",
+    "brand": "Oppo",
+    "models": "Oppo A96",
+    "part_number": "BLP879"
+  },
+  {
+    "id": "blp_883",
+    "brand": "Realme",
+    "models": "Realme 8S 5G",
+    "part_number": "BLP883"
+  },
+  {
+    "id": "blp_885",
+    "brand": "Oppo",
+    "models": "Oppo A76",
+    "part_number": "BLP885"
+  },
+  {
+    "id": "blp_887",
+    "brand": "Realme",
+    "models": "Realme GT Neo 2",
+    "part_number": "BLP887"
+  },
+  {
+    "id": "blp_889",
+    "brand": "Oppo",
+    "models": "Oppo Find X5 Pro",
+    "part_number": "BLP889"
+  },
+  {
+    "id": "blp_891",
+    "brand": "Oppo",
+    "models": "Oppo Find X5",
+    "part_number": "BLP891"
+  },
+  {
+    "id": "blp_893",
+    "brand": "Oppo",
+    "models": "Oppo Reno 7",
+    "part_number": "BLP893"
+  },
+  {
+    "id": "blp_905",
+    "brand": "Oppo",
+    "models": "Oppo Reno 7 Pro 5G",
+    "part_number": "BLP905"
+  },
+  {
+    "id": "blp_907",
+    "brand": "Oppo",
+    "models": "Oppo F21 Pro = Oppo F21s Pro = OnePlus Nord N20 5G = Oppo Reno 8Z = Oppo Reno 8 4G = Oppo Reno 7 4G",
+    "part_number": "BLP907"
+  },
+  {
+    "id": "blp_909",
+    "brand": "Realme",
+    "models": "Realme 9 5G",
+    "part_number": "BLP909"
+  },
+  {
+    "id": "blp_911",
+    "brand": "Realme",
+    "models": "Realme 9i = Oppo K10",
+    "part_number": "BLP911"
+  },
+  {
+    "id": "blp_915",
+    "brand": "Oppo",
+    "models": "Oppo A17",
+    "part_number": "BLP915"
+  },
+  {
+    "id": "blp_919",
+    "brand": "Realme",
+    "models": "Realme GT Neo 3",
+    "part_number": "BLP919"
+  },
+  {
+    "id": "blp_923",
+    "brand": "Oppo",
+    "models": "Oppo A97 5G = Oppo A77 5G",
+    "part_number": "BLP923"
+  },
+  {
+    "id": "blp_929",
+    "brand": "Oppo",
+    "models": "Oppo Reno 8 Pro = Oppo Reno 8 Pro Plus",
+    "part_number": "BLP929"
+  },
+  {
+    "id": "blp_933",
+    "brand": "Oppo",
+    "models": "Oppo K10",
+    "part_number": "BLP933"
+  },
+  {
+    "id": "blp_935",
+    "brand": "Realme",
+    "models": "Realme Q5 = Realme Q3S = Realme Q5i",
+    "part_number": "BLP935"
+  },
+  {
+    "id": "blp_951",
+    "brand": "Realme",
+    "models": "Realme 10 Pro Plus",
+    "part_number": "BLP951"
+  },
+  {
+    "id": "blp_957",
+    "brand": "Realme",
+    "models": "Realme 10 4G",
+    "part_number": "BLP957"
+  },
+  {
+    "id": "blp_959",
+    "brand": "Oppo",
+    "models": "Oppo Reno 8T 4G",
+    "part_number": "BLP959"
+  },
+  {
+    "id": "blp_965",
+    "brand": "Oppo",
+    "models": "Oppo K10X",
+    "part_number": "BLP965"
+  },
+  {
+    "id": "blp_981",
+    "brand": "Oppo",
+    "models": "Oppo A1 Pro 5G",
+    "part_number": "BLP981"
+  },
+  {
+    "id": "blp_983",
+    "brand": "Realme",
+    "models": "Realme 10 Pro 5G",
+    "part_number": "BLP983"
+  },
+  {
+    "id": "blpa_05",
+    "brand": "Oppo",
+    "models": "Oppo Reno 10 5G",
+    "part_number": "BLPA05"
+  },
+  {
+    "id": "blpa_07",
+    "brand": "Oppo",
+    "models": "Oppo A78 4G",
+    "part_number": "BLPA07"
+  },
+  {
+    "id": "blpa_15",
+    "brand": "Realme",
+    "models": "Realme 11 Pro 5G",
+    "part_number": "BLPA15"
+  },
+  {
+    "id": "blpa_17",
+    "brand": "Realme",
+    "models": "Realme C65 4G",
+    "part_number": "BLPA17"
+  },
+  {
+    "id": "blpa_19",
+    "brand": "Oppo",
+    "models": "Oppo A58 4G",
+    "part_number": "BLPA19"
+  },
+  {
+    "id": "blpa_21",
+    "brand": "Oppo",
+    "models": "Oppo A18 4G",
+    "part_number": "BLPA21"
+  },
+  {
+    "id": "blpa_41",
+    "brand": "Oppo",
+    "models": "Oppo F25 Pro 5G",
+    "part_number": "BLPA41"
+  },
+  {
+    "id": "blp_601",
+    "brand": "Oppo",
+    "models": "Oppo F1S",
+    "part_number": "BLP601"
+  },
+  {
+    "id": "blp_577",
+    "brand": "Oppo",
+    "models": "Oppo A51 = Oppo A51K = Oppo A51T = Oppo R3",
+    "part_number": "BLP577"
+  },
+  {
+    "id": "blp_607",
+    "brand": "Oppo",
+    "models": "Oppo A30 = OnePlus X",
+    "part_number": "BLP607"
+  },
+  {
+    "id": "vivo_ba7",
+    "brand": "Vivo",
+    "models": "Vivo V3",
+    "part_number": "BA7"
+  },
+  {
+    "id": "vivo_ba08",
+    "brand": "Vivo",
+    "models": "Vivo V29e",
+    "part_number": "BA08"
+  },
+  {
+    "id": "vivo_ba10",
+    "brand": "Vivo",
+    "models": "Vivo Y17s = Vivo Y36",
+    "part_number": "BA10"
+  },
+  {
+    "id": "vivo_ba16",
+    "brand": "Vivo",
+    "models": "Vivo Y200 5G",
+    "part_number": "BA16"
+  },
+  {
+    "id": "vivo_ba18",
+    "brand": "Vivo",
+    "models": "Vivo V30",
+    "part_number": "BA18"
+  },
+  {
+    "id": "vivo_ba33",
+    "brand": "Vivo",
+    "models": "Vivo Y03 4G",
+    "part_number": "BA33"
+  },
+  {
+    "id": "vivo_ba0",
+    "brand": "Vivo",
+    "models": "Vivo V3 Max",
+    "part_number": "BA0"
+  },
+  {
+    "id": "vivo_b95",
+    "brand": "Vivo",
+    "models": "Vivo Y51 = Vivo Y51L",
+    "part_number": "B95"
+  },
+  {
+    "id": "vivo_bb1",
+    "brand": "Vivo",
+    "models": "Vivo Y55 = Vivo Y55A = Vivo Y55L = Vivo Y55S = Vivo V3",
+    "part_number": "BB1"
+  },
+  {
+    "id": "vivo_bb2",
+    "brand": "Vivo",
+    "models": "Vivo V5S = Vivo V5 Lite = Vivo Y66 = Vivo Y66L = Vivo Y67 = Vivo Y67L = Vivo Y69",
+    "part_number": "BB2"
+  },
+  {
+    "id": "vivo_bb3",
+    "brand": "Vivo",
+    "models": "Vivo V5 Plus = Vivo X9 = Vivo X9L = Vivo X9 Plus",
+    "part_number": "BB3"
+  },
+  {
+    "id": "vivo_bb9",
+    "brand": "Vivo",
+    "models": "Vivo X9 = Vivo X9 Plus",
+    "part_number": "BB9"
+  },
+  {
+    "id": "vivo_bbo",
+    "brand": "Vivo",
+    "models": "Vivo Xplay 6",
+    "part_number": "BBO"
+  },
+  {
+    "id": "vivo_bc1",
+    "brand": "Vivo",
+    "models": "Vivo Y53",
+    "part_number": "BC1"
+  },
+  {
+    "id": "vivo_bc8",
+    "brand": "Vivo",
+    "models": "Vivo Y69",
+    "part_number": "BC8"
+  },
+  {
+    "id": "vivo_bc9",
+    "brand": "Vivo",
+    "models": "Vivo V7 Plus = Vivo Y79 = Vivo Y79A",
+    "part_number": "BC9"
+  },
+  {
+    "id": "vivo_bd1",
+    "brand": "Vivo",
+    "models": "Vivo X20 = Vivo X20A",
+    "part_number": "BD1"
+  },
+  {
+    "id": "vivo_bd2",
+    "brand": "Vivo",
+    "models": "Vivo X20 Plus",
+    "part_number": "BD2"
+  },
+  {
+    "id": "vivo_bd5",
+    "brand": "Vivo",
+    "models": "Vivo V7 = Vivo Y75 = Vivo Y75A",
+    "part_number": "BD5"
+  },
+  {
+    "id": "vivo_bd9",
+    "brand": "Vivo",
+    "models": "Vivo V9 = Vivo V9 Youth = Vivo Y85 = Vivo Z1",
+    "part_number": "BD9"
+  },
+  {
+    "id": "vivo_be1",
+    "brand": "Vivo",
+    "models": "Vivo Y71",
+    "part_number": "BE1"
+  },
+  {
+    "id": "vivo_be5",
+    "brand": "Vivo",
+    "models": "Vivo Y81 = Vivo Y81i = Vivo Y83 = Vivo Y83 Pro = Vivo Y81s = Vivo Y83A",
+    "part_number": "BE5"
+  },
+  {
+    "id": "vivo_be8",
+    "brand": "Vivo",
+    "models": "Vivo V11i = Vivo V15 Pro = Vivo Y97 = Vivo Y97A",
+    "part_number": "BE8"
+  },
+  {
+    "id": "vivo_bf0",
+    "brand": "Vivo",
+    "models": "Vivo V11 = Vivo V11 Pro",
+    "part_number": "BF0"
+  },
+  {
+    "id": "vivo_bf1",
+    "brand": "Vivo",
+    "models": "Vivo X23",
+    "part_number": "BF1"
+  },
+  {
+    "id": "vivo_bf3",
+    "brand": "Vivo",
+    "models": "Vivo Y90 = Vivo Y90i = Vivo Y91 = Vivo Y91i = Vivo Y91L = Vivo Y93 = Vivo Y93S = Vivo Y95",
+    "part_number": "BF3"
+  },
+  {
+    "id": "vivo_bg1",
+    "brand": "Vivo",
+    "models": "Vivo V15 Pro",
+    "part_number": "BG1"
+  },
+  {
+    "id": "vivo_bg2",
+    "brand": "Vivo",
+    "models": "Vivo V15",
+    "part_number": "BG2"
+  },
+  {
+    "id": "vivo_bg3",
+    "brand": "Vivo",
+    "models": "Vivo X27 Pro",
+    "part_number": "BG3"
+  },
+  {
+    "id": "vivo_bg7",
+    "brand": "Vivo",
+    "models": "Vivo Y11 = Vivo Y12 = Vivo Y15 2019 = Vivo Y17 = Vivo U10 = Vivo Z1 Pro = Vivo Z5x = Vivo Y3 = Vivo Y3s",
+    "part_number": "BG7"
+  },
+  {
+    "id": "vivo_bg9",
+    "brand": "Vivo",
+    "models": "Vivo NEX 3",
+    "part_number": "BG9"
+  },
+  {
+    "id": "vivo_bh0",
+    "brand": "Vivo",
+    "models": "Vivo V17 Neo = Vivo S1 = Vivo Y7S",
+    "part_number": "BH0"
+  },
+  {
+    "id": "vivo_bh1",
+    "brand": "Vivo",
+    "models": "Vivo V17 Pro",
+    "part_number": "BH1"
+  },
+  {
+    "id": "vivo_bh3",
+    "brand": "Vivo",
+    "models": "Vivo Z1x",
+    "part_number": "BH3"
+  },
+  {
+    "id": "vivo_bh9",
+    "brand": "Vivo",
+    "models": "Vivo Y19",
+    "part_number": "BH9"
+  },
+  {
+    "id": "vivo_bk0",
+    "brand": "iQOO",
+    "models": "iQOO Neo 855",
+    "part_number": "BK0"
+  },
+  {
+    "id": "vivo_bk3",
+    "brand": "Vivo",
+    "models": "Vivo S1 Pro",
+    "part_number": "BK3"
+  },
+  {
+    "id": "vivo_bk6",
+    "brand": "Vivo",
+    "models": "Vivo V17 = Vivo V19 = Vivo V19 Neo",
+    "part_number": "BK6"
+  },
+  {
+    "id": "vivo_bm1",
+    "brand": "Vivo",
+    "models": "Vivo V17 = Vivo V19",
+    "part_number": "BM1"
+  },
+  {
+    "id": "vivo_bm3",
+    "brand": "Vivo",
+    "models": "Vivo Y50",
+    "part_number": "BM3"
+  },
+  {
+    "id": "vivo_bm8",
+    "brand": "iQOO",
+    "models": "iQOO Neo 3",
+    "part_number": "BM8"
+  },
+  {
+    "id": "vivo_bn2",
+    "brand": "Vivo",
+    "models": "Vivo X50",
+    "part_number": "BN2"
+  },
+  {
+    "id": "vivo_bn3",
+    "brand": "Vivo",
+    "models": "Vivo X50 Pro",
+    "part_number": "BN3"
+  },
+  {
+    "id": "vivo_bn5",
+    "brand": "Vivo",
+    "models": "Vivo Y51s",
+    "part_number": "BN5"
+  },
+  {
+    "id": "vivo_bn7",
+    "brand": "Vivo",
+    "models": "Vivo X50",
+    "part_number": "BN7"
+  },
+  {
+    "id": "vivo_bn8",
+    "brand": "Vivo",
+    "models": "Vivo V20 = Vivo V20 Pro = Vivo S7",
+    "part_number": "BN8"
+  },
+  {
+    "id": "vivo_bo1",
+    "brand": "iQOO",
+    "models": "iQOO U1",
+    "part_number": "BO1"
+  },
+  {
+    "id": "vivo_bo3",
+    "brand": "Vivo",
+    "models": "Vivo Y73s",
+    "part_number": "BO3"
+  },
+  {
+    "id": "vivo_bo5",
+    "brand": "Vivo",
+    "models": "Vivo Y20 = Vivo Y12S = Vivo Y20A = Vivo Y20G = Vivo Y20i",
+    "part_number": "BO5"
+  },
+  {
+    "id": "vivo_bo6",
+    "brand": "Vivo",
+    "models": "Vivo V20 SE",
+    "part_number": "BO6"
+  },
+  {
+    "id": "vivo_bo8",
+    "brand": "Vivo",
+    "models": "Vivo Y30 = Vivo Y31 = Vivo Y31S = Vivo Y50 = Vivo Y51 = Vivo Y51S = Vivo Y52S = Vivo Y73S = Vivo Y20i = Vivo Y93S = Vivo Y76",
+    "part_number": "BO8"
+  },
+  {
+    "id": "vivo_bo9",
+    "brand": "Vivo",
+    "models": "Vivo X60",
+    "part_number": "BO9"
+  },
+  {
+    "id": "vivo_bp1",
+    "brand": "Vivo",
+    "models": "Vivo X60 Pro",
+    "part_number": "BP1"
+  },
+  {
+    "id": "vivo_bp5",
+    "brand": "iQOO",
+    "models": "iQOO Neo5",
+    "part_number": "BP5"
+  },
+  {
+    "id": "vivo_bp6",
+    "brand": "Vivo",
+    "models": "Vivo S9e",
+    "part_number": "BP6"
+  },
+  {
+    "id": "vivo_bp9",
+    "brand": "Vivo",
+    "models": "Vivo V21 = Vivo V21 Pro",
+    "part_number": "BP9"
+  },
+  {
+    "id": "vivo_bq1",
+    "brand": "iQOO",
+    "models": "iQOO Z3",
+    "part_number": "BQ1"
+  },
+  {
+    "id": "vivo_bq6",
+    "brand": "Vivo",
+    "models": "Vivo V21e 5G",
+    "part_number": "BQ6"
+  },
+  {
+    "id": "vivo_bq7",
+    "brand": "Vivo",
+    "models": "Vivo Y53s",
+    "part_number": "BQ7"
+  },
+  {
+    "id": "vivo_br0",
+    "brand": "Vivo",
+    "models": "Vivo S10",
+    "part_number": "BR0"
+  },
+  {
+    "id": "vivo_br3",
+    "brand": "iQOO",
+    "models": "iQOO Z1x 5G",
+    "part_number": "BR3"
+  },
+  {
+    "id": "vivo_br5",
+    "brand": "Vivo",
+    "models": "Vivo S10e",
+    "part_number": "BR5"
+  },
+  {
+    "id": "vivo_br6",
+    "brand": "iQOO",
+    "models": "iQOO Neo 855",
+    "part_number": "BR6"
+  },
+  {
+    "id": "vivo_br7",
+    "brand": "Vivo",
+    "models": "Vivo X70",
+    "part_number": "BR7"
+  },
+  {
+    "id": "vivo_bs1",
+    "brand": "Vivo",
+    "models": "Vivo Y33s",
+    "part_number": "BS1/BS2"
+  },
+  {
+    "id": "vivo_bs6",
+    "brand": "iQOO",
+    "models": "iQOO Z5",
+    "part_number": "BS6"
+  },
+  {
+    "id": "vivo_bs7",
+    "brand": "Vivo",
+    "models": "Vivo Y16 = Vivo Y01 = Vivo Y15A = Vivo Y15S",
+    "part_number": "BS7"
+  },
+  {
+    "id": "vivo_bt0",
+    "brand": "Vivo",
+    "models": "Vivo Y76 5G",
+    "part_number": "BT0"
+  },
+  {
+    "id": "vivo_bt2",
+    "brand": "Vivo",
+    "models": "Vivo V23 Pro",
+    "part_number": "BT2"
+  },
+  {
+    "id": "vivo_bt3",
+    "brand": "Vivo",
+    "models": "Vivo V23 5G",
+    "part_number": "BT3"
+  },
+  {
+    "id": "vivo_bt5",
+    "brand": "Vivo",
+    "models": "Vivo Y55s 5G",
+    "part_number": "BT5"
+  },
+  {
+    "id": "vivo_bt6",
+    "brand": "Vivo",
+    "models": "Vivo T1 5G = iQOO Z6 5G",
+    "part_number": "BT6"
+  },
+  {
+    "id": "vivo_bt7",
+    "brand": "Vivo",
+    "models": "Vivo Y33T",
+    "part_number": "BT7"
+  },
+  {
+    "id": "vivo_bu1",
+    "brand": "iQOO",
+    "models": "iQOO U5x",
+    "part_number": "BU1"
+  },
+  {
+    "id": "vivo_bu2",
+    "brand": "Vivo",
+    "models": "Vivo T2x",
+    "part_number": "BU2"
+  },
+  {
+    "id": "vivo_bu8",
+    "brand": "Vivo",
+    "models": "Vivo T1 Pro",
+    "part_number": "BU8"
+  },
+  {
+    "id": "vivo_bv0",
+    "brand": "iQOO",
+    "models": "iQOO Z6 4G",
+    "part_number": "BV0"
+  },
+  {
+    "id": "vivo_bv1",
+    "brand": "Vivo",
+    "models": "Vivo S15",
+    "part_number": "BV1"
+  },
+  {
+    "id": "vivo_bv7",
+    "brand": "Vivo",
+    "models": "Vivo V25 5G",
+    "part_number": "BV7"
+  },
+  {
+    "id": "vivo_bw0",
+    "brand": "Vivo",
+    "models": "Vivo Y35 5G",
+    "part_number": "BW0"
+  },
+  {
+    "id": "vivo_bw1",
+    "brand": "Vivo",
+    "models": "Vivo T2X 5G = Vivo Y56 5G = Vivo Y02",
+    "part_number": "BW1"
+  },
+  {
+    "id": "vivo_bw2",
+    "brand": "Vivo",
+    "models": "Vivo V25 5G",
+    "part_number": "BW2"
+  },
+  {
+    "id": "vivo_bw3",
+    "brand": "Vivo",
+    "models": "Vivo Y22 = Vivo Y22s",
+    "part_number": "BW3"
+  },
+  {
+    "id": "vivo_bx6",
+    "brand": "Vivo",
+    "models": "Vivo S16",
+    "part_number": "BX6"
+  },
+  {
+    "id": "vivo_bx7",
+    "brand": "iQOO",
+    "models": "iQOO Z7 Pro 5G",
+    "part_number": "BX7"
+  },
+  {
+    "id": "vivo_bx8",
+    "brand": "Vivo",
+    "models": "Vivo Y100 5G",
+    "part_number": "BX8"
+  },
+  {
+    "id": "vivo_by1",
+    "brand": "Vivo",
+    "models": "Vivo Y53 5G",
+    "part_number": "BY1"
+  },
+  {
+    "id": "vivo_bz5",
+    "brand": "Vivo",
+    "models": "Vivo Y36 5G",
+    "part_number": "BZ5"
+  },
+  {
+    "id": "vivo_bz7",
+    "brand": "Vivo",
+    "models": "Vivo V29",
+    "part_number": "BZ7"
+  },
+  {
+    "id": "vivo_bg5",
+    "brand": "Vivo",
+    "models": "Vivo X27 = Vivo X27A",
+    "part_number": "BG5"
+  },
+  {
+    "id": "mi_bn30",
+    "brand": "Xiaomi",
+    "models": "Xiaomi Redmi 4A",
+    "part_number": "BN30"
+  },
+  {
+    "id": "mi_bn31",
+    "brand": "Redmi",
+    "models": "Redmi Note 5A = Xiaomi Mi 5X = Redmi Y1",
+    "part_number": "BN31"
+  },
+  {
+    "id": "mi_bn32",
+    "brand": "Xiaomi",
+    "models": "Xiaomi Mi 4",
+    "part_number": "BN32"
+  },
+  {
+    "id": "mi_bn34",
+    "brand": "Redmi",
+    "models": "Redmi 5A",
+    "part_number": "BN34"
+  },
+  {
+    "id": "mi_bn35",
+    "brand": "Xiaomi",
+    "models": "Xiaomi Redmi 5",
+    "part_number": "BN35"
+  },
+  {
+    "id": "mi_bn36",
+    "brand": "Xiaomi",
+    "models": "Xiaomi Mi A2 = Xiaomi Mi 6X",
+    "part_number": "BN36"
+  },
+  {
+    "id": "mi_bn37",
+    "brand": "Xiaomi",
+    "models": "Xiaomi Redmi 6 = Redmi 6A",
+    "part_number": "BN37"
+  },
+  {
+    "id": "mi_bn39",
+    "brand": "Xiaomi",
+    "models": "Xiaomi Mi Play",
+    "part_number": "BN39"
+  },
+  {
+    "id": "mi_bn42",
+    "brand": "Xiaomi",
+    "models": "Xiaomi Redmi 4",
+    "part_number": "BN42"
+  },
+  {
+    "id": "mi_bn43",
+    "brand": "Xiaomi",
+    "models": "Xiaomi Redmi Note 4 = Redmi Note 4X",
+    "part_number": "BN43"
+  },
+  {
+    "id": "mi_bn44",
+    "brand": "Redmi",
+    "models": "Redmi Note 5 Plus",
+    "part_number": "BN44"
+  },
+  {
+    "id": "mi_bn45",
+    "brand": "Redmi",
+    "models": "Redmi Note 5 Pro",
+    "part_number": "BN45/BN48"
+  },
+  {
+    "id": "mi_bn46",
+    "brand": "Redmi",
+    "models": "Redmi 7 = Redmi Y3 = Redmi Note 8",
+    "part_number": "BN46"
+  },
+  {
+    "id": "mi_bn47",
+    "brand": "Redmi",
+    "models": "Redmi 6 Pro = Xiaomi Mi A2 Lite",
+    "part_number": "BN47"
+  },
+  {
+    "id": "mi_bn49",
+    "brand": "Redmi",
+    "models": "Redmi 7A",
+    "part_number": "BN49"
+  },
+  {
+    "id": "mi_bn51",
+    "brand": "Redmi",
+    "models": "Redmi 8 = Redmi 8A",
+    "part_number": "BN51"
+  },
+  {
+    "id": "mi_bn52",
+    "brand": "Redmi",
+    "models": "Redmi Note 9 Pro",
+    "part_number": "BN52"
+  },
+  {
+    "id": "mi_bn53",
+    "brand": "Redmi",
+    "models": "Redmi Note 9 Pro",
+    "part_number": "BN53"
+  },
+  {
+    "id": "mi_bn54",
+    "brand": "Redmi",
+    "models": "Redmi Note 9 = Redmi 10X 4G = Redmi 10X 5G = Redmi 10X Pro 5G",
+    "part_number": "BN54"
+  },
+  {
+    "id": "mi_bn55",
+    "brand": "Redmi",
+    "models": "Redmi Note 9S",
+    "part_number": "BN55"
+  },
+  {
+    "id": "mi_bn56",
+    "brand": "Redmi",
+    "models": "Redmi 9A = Redmi 9C = Poco M2 = Poco M2 Pro",
+    "part_number": "BN56/BN5F/BN5H"
+  },
+  {
+    "id": "mi_bn57",
+    "brand": "Redmi",
+    "models": "Poco X3 Pro",
+    "part_number": "BN57"
+  },
+  {
+    "id": "mi_bn59",
+    "brand": "Redmi",
+    "models": "Redmi Note 10 = Redmi Note 10S",
+    "part_number": "BN59"
+  },
+  {
+    "id": "mi_bn61",
+    "brand": "Redmi",
+    "models": "Poco X3 NFC",
+    "part_number": "BN61"
+  },
+  {
+    "id": "mi_bn62",
+    "brand": "Redmi",
+    "models": "Poco M3",
+    "part_number": "BN62"
+  },
+  {
+    "id": "mi_bn63",
+    "brand": "Redmi",
+    "models": "Redmi 10 Prime",
+    "part_number": "BN63"
+  },
+  {
+    "id": "mi_bn65",
+    "brand": "Redmi",
+    "models": "Redmi 10",
+    "part_number": "BN65"
+  },
+  {
+    "id": "mi_bn66",
+    "brand": "Redmi",
+    "models": "Poco C40",
+    "part_number": "BN66"
+  },
+  {
+    "id": "mi_bn3a",
+    "brand": "Redmi",
+    "models": "Redmi Go",
+    "part_number": "BN3A"
+  },
+  {
+    "id": "mi_bn4a",
+    "brand": "Redmi",
+    "models": "Redmi Note 7 = Redmi Note 7s = Redmi Note 7 Pro",
+    "part_number": "BN4A"
+  },
+  {
+    "id": "mi_bn5a",
+    "brand": "Redmi",
+    "models": "Redmi Note 10 5G",
+    "part_number": "BN5A"
+  },
+  {
+    "id": "mi_bn5c",
+    "brand": "Redmi",
+    "models": "Poco M4 Pro",
+    "part_number": "BN5C"
+  },
+  {
+    "id": "mi_bn5d",
+    "brand": "Redmi",
+    "models": "Redmi Note 11 = Redmi Note 11S",
+    "part_number": "BN5D"
+  },
+  {
+    "id": "mi_bn5e",
+    "brand": "Redmi",
+    "models": "Redmi Note 11 Pro 5G",
+    "part_number": "BN5E"
+  },
+  {
+    "id": "mi_bn5g",
+    "brand": "Redmi",
+    "models": "Redmi 10C = Redmi 10A",
+    "part_number": "BN5G"
+  },
+  {
+    "id": "mi_bn5j",
+    "brand": "Redmi",
+    "models": "Redmi Note 12 5G",
+    "part_number": "BN5J"
+  },
+  {
+    "id": "mi_bn5k",
+    "brand": "Redmi",
+    "models": "Redmi 12C",
+    "part_number": "BN5K"
+  },
+  {
+    "id": "mi_bn5m",
+    "brand": "Redmi",
+    "models": "Redmi Note 12 4G",
+    "part_number": "BN5M"
+  },
+  {
+    "id": "mi_bn5p",
+    "brand": "Redmi",
+    "models": "Redmi Note 12 5G",
+    "part_number": "BN5P"
+  },
+  {
+    "id": "mi_bn5q",
+    "brand": "Redmi",
+    "models": "Redmi 13C 5G",
+    "part_number": "BN5Q"
+  },
+  {
+    "id": "mi_bm32",
+    "brand": "Xiaomi",
+    "models": "Xiaomi Mi 4",
+    "part_number": "BM32"
+  },
+  {
+    "id": "mi_bm46",
+    "brand": "Redmi",
+    "models": "Redmi Note 3",
+    "part_number": "BM46"
+  },
+  {
+    "id": "mi_bm47",
+    "brand": "Redmi",
+    "models": "Redmi 3 = Redmi 3S = Redmi 3S Prime",
+    "part_number": "BM47"
+  },
+  {
+    "id": "mi_bm49",
+    "brand": "Xiaomi",
+    "models": "Xiaomi Mi Max",
+    "part_number": "BM49"
+  },
+  {
+    "id": "mi_bm50",
+    "brand": "Xiaomi",
+    "models": "Xiaomi Mi Max 2",
+    "part_number": "BM50"
+  },
+  {
+    "id": "mi_bm53",
+    "brand": "Xiaomi",
+    "models": "Xiaomi 10T = Xiaomi 10 Pro",
+    "part_number": "BM53"
+  },
+  {
+    "id": "mi_bm56",
+    "brand": "Redmi",
+    "models": "Redmi K40",
+    "part_number": "BM56"
+  },
+  {
+    "id": "mi_bm58",
+    "brand": "Xiaomi",
+    "models": "Xiaomi Mi 11T Pro",
+    "part_number": "BM58"
+  },
+  {
+    "id": "mi_bm59",
+    "brand": "Xiaomi",
+    "models": "Xiaomi 11T 5G",
+    "part_number": "BM59"
+  },
+  {
+    "id": "mi_bm5a",
+    "brand": "Redmi",
+    "models": "Redmi Note 11 Pro 5G",
+    "part_number": "BM5A"
+  },
+  {
+    "id": "mi_bm5g",
+    "brand": "Redmi",
+    "models": "Redmi K50 = Redmi K50i 5G",
+    "part_number": "BM5G"
+  },
+  {
+    "id": "mi_bm5r",
+    "brand": "Redmi",
+    "models": "Redmi 12 5G",
+    "part_number": "BM5R"
+  },
+  {
+    "id": "mi_bm3e",
+    "brand": "Xiaomi",
+    "models": "Xiaomi Mi 8",
+    "part_number": "BM3E"
+  },
+  {
+    "id": "mi_bm4e",
+    "brand": "Redmi",
+    "models": "Poco F1",
+    "part_number": "BM4E"
+  },
+  {
+    "id": "mi_bm4f",
+    "brand": "Xiaomi",
+    "models": "Xiaomi Mi A3",
+    "part_number": "BM4F"
+  },
+  {
+    "id": "mi_bm4j",
+    "brand": "Redmi",
+    "models": "Redmi Note 8 Pro",
+    "part_number": "BM4J"
+  },
+  {
+    "id": "mi_bm4m",
+    "brand": "Xiaomi",
+    "models": "Xiaomi Mi 10 Pro",
+    "part_number": "BM4M"
+  },
+  {
+    "id": "mi_bm4p",
+    "brand": "Redmi",
+    "models": "Redmi K30 = Poco X2",
+    "part_number": "BM4P"
+  },
+  {
+    "id": "mi_bm4q",
+    "brand": "Redmi",
+    "models": "Poco F2 Pro",
+    "part_number": "BM4Q"
+  },
+  {
+    "id": "mi_bp4k",
+    "brand": "Redmi",
+    "models": "Poco F5",
+    "part_number": "BP4K"
+  },
+  {
+    "id": "mi_bp45",
+    "brand": "Xiaomi",
+    "models": "Xiaomi 12 Pro",
+    "part_number": "BP45"
+  },
+  {
+    "id": "mi_bm55",
+    "brand": "Xiaomi",
+    "models": "Xiaomi Mi 11 Ultra",
+    "part_number": "BM55"
+  },
+  {
+    "id": "mi_bn5r",
+    "brand": "Redmi",
+    "models": "Redmi A3",
+    "part_number": "BN5R"
+  },
+  {
+    "id": "mi_bm5v",
+    "brand": "Redmi",
+    "models": "Poco X6 5G",
+    "part_number": "BM5V"
+  },
+  {
+    "id": "mi_bp4d",
+    "brand": "Xiaomi",
+    "models": "Xiaomi 13 Pro",
+    "part_number": "BP4D"
+  },
+  {
+    "id": "mi_bm4r",
+    "brand": "Xiaomi",
+    "models": "Xiaomi Mi 10 Lite",
+    "part_number": "BM4R"
+  },
+  {
+    "id": "mi_bm4s",
+    "brand": "Xiaomi",
+    "models": "Xiaomi Mi 10X 5G = Xiaomi Mi 10X Pro 5G",
+    "part_number": "BM4S"
+  },
+  {
+    "id": "mi_bm4t",
+    "brand": "Redmi",
+    "models": "Redmi 10X Pro 5G",
+    "part_number": "BM4T"
+  },
+  {
+    "id": "mi_bm4u",
+    "brand": "Redmi",
+    "models": "Redmi K30 Ultra",
+    "part_number": "BM4U"
+  },
+  {
+    "id": "mi_bm4v",
+    "brand": "Redmi",
+    "models": "Poco X6 5G",
+    "part_number": "BM4V"
+  },
+  {
+    "id": "mi_bm4w",
+    "brand": "Xiaomi",
+    "models": "Xiaomi Mi 10i 5G",
+    "part_number": "BM4W"
+  },
+  {
+    "id": "mi_bm4y",
+    "brand": "Redmi",
+    "models": "Poco F3 = Redmi K40 = Redmi K40 Pro",
+    "part_number": "BM4Y"
+  },
+  {
+    "id": "mi_bp4e",
+    "brand": "Xiaomi",
+    "models": "Xiaomi Civi 2",
+    "part_number": "BP4E"
+  },
+  {
+    "id": "mi_bp40",
+    "brand": "Redmi",
+    "models": "Redmi K20 Pro = Xiaomi Mi 9T Pro",
+    "part_number": "BP40/BP41"
+  },
+  {
+    "id": "mi_bp42",
+    "brand": "Xiaomi",
+    "models": "Xiaomi Mi 11 Lite",
+    "part_number": "BP42"
+  },
+  {
+    "id": "mi_bp44",
+    "brand": "Xiaomi",
+    "models": "Xiaomi Civi 5G",
+    "part_number": "BP44"
+  },
+  {
+    "id": "mi_bp47",
+    "brand": "Redmi",
+    "models": "Redmi Note 11 Pro",
+    "part_number": "BP47"
+  },
+  {
+    "id": "mi_bp49",
+    "brand": "Redmi",
+    "models": "Poco F4 5G",
+    "part_number": "BP49"
+  },
+  {
+    "id": "moto_el40",
+    "brand": "Motorola",
+    "models": "Moto E",
+    "part_number": "EL40"
+  },
+  {
+    "id": "moto_fl40",
+    "brand": "Motorola",
+    "models": "Moto X Play",
+    "part_number": "FL40"
+  },
+  {
+    "id": "moto_ed30",
+    "brand": "Motorola",
+    "models": "Moto G2",
+    "part_number": "ED30"
+  },
+  {
+    "id": "moto_g3",
+    "brand": "Motorola",
+    "models": "Moto G3",
+    "part_number": "G3"
+  },
+  {
+    "id": "moto_ga40",
+    "brand": "Motorola",
+    "models": "Moto G4 Plus",
+    "part_number": "GA40"
+  },
+  {
+    "id": "moto_gl40",
+    "brand": "Motorola",
+    "models": "Moto Z Play",
+    "part_number": "GL40"
+  },
+  {
+    "id": "moto_hg30",
+    "brand": "Motorola",
+    "models": "Moto G6 = Moto G5S = Moto G5S Plus",
+    "part_number": "HG30"
+  },
+  {
+    "id": "moto_hg40",
+    "brand": "Motorola",
+    "models": "Moto G5 Plus",
+    "part_number": "HG40"
+  },
+  {
+    "id": "moto_hx40",
+    "brand": "Motorola",
+    "models": "Moto X4",
+    "part_number": "HX40"
+  },
+  {
+    "id": "moto_hz40",
+    "brand": "Motorola",
+    "models": "Moto Z2 Play",
+    "part_number": "HZ40"
+  },
+  {
+    "id": "moto_he50",
+    "brand": "Motorola",
+    "models": "Moto E4 Plus",
+    "part_number": "HE50"
+  },
+  {
+    "id": "moto_jg30",
+    "brand": "Motorola",
+    "models": "Moto G7",
+    "part_number": "JG30"
+  },
+  {
+    "id": "moto_jt40",
+    "brand": "Motorola",
+    "models": "Moto G6 Plus",
+    "part_number": "JT40"
+  },
+  {
+    "id": "moto_jk50",
+    "brand": "Motorola",
+    "models": "Moto G7 Power = Moto One Power = Moto P30 Note",
+    "part_number": "JK50"
+  },
+  {
+    "id": "moto_kd40",
+    "brand": "Motorola",
+    "models": "Moto G8 Plus",
+    "part_number": "KD40"
+  },
+  {
+    "id": "moto_kg40",
+    "brand": "Motorola",
+    "models": "Moto G8 Play",
+    "part_number": "KG40"
+  },
+  {
+    "id": "moto_lg50",
+    "brand": "Motorola",
+    "models": "Moto One Fusion Plus",
+    "part_number": "LG50"
+  },
+  {
+    "id": "moto_lk50",
+    "brand": "Motorola",
+    "models": "Moto G60S",
+    "part_number": "LK50"
+  },
+  {
+    "id": "moto_lr50",
+    "brand": "Motorola",
+    "models": "Moto Edge",
+    "part_number": "LR50"
+  },
+  {
+    "id": "moto_lz50",
+    "brand": "Motorola",
+    "models": "Moto One 5G",
+    "part_number": "LZ50"
+  },
+  {
+    "id": "moto_mb40",
+    "brand": "Motorola",
+    "models": "Moto Edge 20",
+    "part_number": "MB40"
+  },
+  {
+    "id": "moto_mb50",
+    "brand": "Motorola",
+    "models": "Moto Edge S30",
+    "part_number": "MB50"
+  },
+  {
+    "id": "moto_mc50",
+    "brand": "Motorola",
+    "models": "Moto G9 Power",
+    "part_number": "MC50"
+  },
+  {
+    "id": "moto_md50",
+    "brand": "Motorola",
+    "models": "Moto Stylus",
+    "part_number": "MD50"
+  },
+  {
+    "id": "moto_mg50",
+    "brand": "Motorola",
+    "models": "Moto G9 Plus",
+    "part_number": "MG50"
+  },
+  {
+    "id": "moto_mk50",
+    "brand": "Motorola",
+    "models": "Moto G 5G",
+    "part_number": "MK50"
+  },
+  {
+    "id": "moto_ms50",
+    "brand": "Motorola",
+    "models": "Moto G50 5G",
+    "part_number": "MS50"
+  },
+  {
+    "id": "moto_mh60",
+    "brand": "Motorola",
+    "models": "Moto G60 = Moto G10 Power",
+    "part_number": "MH60"
+  },
+  {
+    "id": "moto_na50",
+    "brand": "Motorola",
+    "models": "Moto Edge 30 Pro",
+    "part_number": "NA50"
+  },
+  {
+    "id": "moto_nc50",
+    "brand": "Motorola",
+    "models": "Moto G41",
+    "part_number": "NC50"
+  },
+  {
+    "id": "moto_nd40",
+    "brand": "Motorola",
+    "models": "Moto Edge 30",
+    "part_number": "ND40"
+  },
+  {
+    "id": "moto_nd50",
+    "brand": "Motorola",
+    "models": "Moto G62 5G",
+    "part_number": "ND50"
+  },
+  {
+    "id": "moto_ne50",
+    "brand": "Motorola",
+    "models": "Moto G52",
+    "part_number": "NE50"
+  },
+  {
+    "id": "moto_ng50",
+    "brand": "Motorola",
+    "models": "Moto G71 5G",
+    "part_number": "NG50"
+  },
+  {
+    "id": "moto_nh50",
+    "brand": "Motorola",
+    "models": "Moto G22",
+    "part_number": "NH50"
+  },
+  {
+    "id": "moto_np44",
+    "brand": "Motorola",
+    "models": "Moto Edge 30 Fusion",
+    "part_number": "NP44"
+  },
+  {
+    "id": "moto_nt40",
+    "brand": "Motorola",
+    "models": "Moto G Pure",
+    "part_number": "NT40"
+  },
+  {
+    "id": "moto_nt50",
+    "brand": "Motorola",
+    "models": "Moto Edge 20 Lite",
+    "part_number": "NT50"
+  },
+  {
+    "id": "moto_pc50",
+    "brand": "Motorola",
+    "models": "Moto G14",
+    "part_number": "PC50"
+  },
+  {
+    "id": "moto_pc60",
+    "brand": "Motorola",
+    "models": "Moto G54 5G",
+    "part_number": "PC60"
+  },
+  {
+    "id": "moto_pd50",
+    "brand": "Motorola",
+    "models": "Moto G Power 5G",
+    "part_number": "PD50"
+  },
+  {
+    "id": "moto_pg50",
+    "brand": "Motorola",
+    "models": "Moto G Stylus",
+    "part_number": "PG50"
+  },
+  {
+    "id": "moto_pv50",
+    "brand": "Motorola",
+    "models": "Moto G73",
+    "part_number": "PV50"
+  },
+  {
+    "id": "moto_qb50",
+    "brand": "Motorola",
+    "models": "Moto G84 5G",
+    "part_number": "QB50"
+  },
+  {
+    "id": "moto_qf50",
+    "brand": "Motorola",
+    "models": "Moto G34 5G",
+    "part_number": "QF50"
+  },
+  {
+    "id": "sam_a01",
+    "brand": "Samsung",
+    "models": "Samsung A01",
+    "part_number": "A01"
+  },
+  {
+    "id": "sam_a02",
+    "brand": "Samsung",
+    "models": "Samsung A02",
+    "part_number": "A02"
+  },
+  {
+    "id": "sam_a02s",
+    "brand": "Samsung",
+    "models": "Samsung A02s = Samsung M02s = Samsung A03s",
+    "part_number": "A02s/M02s/A03s"
+  },
+  {
+    "id": "sam_a03",
+    "brand": "Samsung",
+    "models": "Samsung A03",
+    "part_number": "A03"
+  },
+  {
+    "id": "sam_a03core",
+    "brand": "Samsung",
+    "models": "Samsung A03 Core",
+    "part_number": "A03 Core"
+  },
+  {
+    "id": "sam_a10",
+    "brand": "Samsung",
+    "models": "Samsung A10 = Samsung M10",
+    "part_number": "A10/M10"
+  },
+  {
+    "id": "sam_a10s",
+    "brand": "Samsung",
+    "models": "Samsung A10s = Samsung A11 = Samsung A20s = Samsung A21",
+    "part_number": "A10s/A11/A20s/A21"
+  },
+  {
+    "id": "sam_a05s",
+    "brand": "Samsung",
+    "models": "Samsung A05s = Samsung M14",
+    "part_number": "A05s"
+  },
+  {
+    "id": "sam_a13",
+    "brand": "Samsung",
+    "models": "Samsung A13",
+    "part_number": "A13"
+  },
+  {
+    "id": "sam_a20",
+    "brand": "Samsung",
+    "models": "Samsung A20 = Samsung A30 = Samsung A50",
+    "part_number": "A20/A30/A50"
+  },
+  {
+    "id": "sam_a21s",
+    "brand": "Samsung",
+    "models": "Samsung A21s",
+    "part_number": "A21s"
+  },
+  {
+    "id": "sam_a22_4g",
+    "brand": "Samsung",
+    "models": "Samsung A22 4G",
+    "part_number": "A22 4G"
+  },
+  {
+    "id": "sam_a22_5g",
+    "brand": "Samsung",
+    "models": "Samsung A22 5G",
+    "part_number": "A22 5G"
+  },
+  {
+    "id": "sam_a24",
+    "brand": "Samsung",
+    "models": "Samsung A24",
+    "part_number": "A24"
+  },
+  {
+    "id": "sam_a30s",
+    "brand": "Samsung",
+    "models": "Samsung A30s",
+    "part_number": "A30s"
+  },
+  {
+    "id": "sam_a31",
+    "brand": "Samsung",
+    "models": "Samsung A31 = Samsung A31s",
+    "part_number": "A31/A31s"
+  },
+  {
+    "id": "sam_a33",
+    "brand": "Samsung",
+    "models": "Samsung A33 5G",
+    "part_number": "A33"
+  },
+  {
+    "id": "sam_a40",
+    "brand": "Samsung",
+    "models": "Samsung A40",
+    "part_number": "A40"
+  },
+  {
+    "id": "sam_a42",
+    "brand": "Samsung",
+    "models": "Samsung A42",
+    "part_number": "A42"
+  },
+  {
+    "id": "sam_a51",
+    "brand": "Samsung",
+    "models": "Samsung A51",
+    "part_number": "A51"
+  },
+  {
+    "id": "sam_a52",
+    "brand": "Samsung",
+    "models": "Samsung A52",
+    "part_number": "A52"
+  },
+  {
+    "id": "sam_a53",
+    "brand": "Samsung",
+    "models": "Samsung A53 5G",
+    "part_number": "A53"
+  },
+  {
+    "id": "sam_a54",
+    "brand": "Samsung",
+    "models": "Samsung A34 5G = Samsung A54",
+    "part_number": "A54"
+  },
+  {
+    "id": "sam_a60",
+    "brand": "Samsung",
+    "models": "Samsung A60",
+    "part_number": "A60"
+  },
+  {
+    "id": "sam_a70",
+    "brand": "Samsung",
+    "models": "Samsung A70",
+    "part_number": "A70"
+  },
+  {
+    "id": "sam_a70s",
+    "brand": "Samsung",
+    "models": "Samsung A70s",
+    "part_number": "A70s"
+  },
+  {
+    "id": "sam_a71",
+    "brand": "Samsung",
+    "models": "Samsung A71",
+    "part_number": "A71"
+  },
+  {
+    "id": "sam_f41",
+    "brand": "Samsung",
+    "models": "Samsung F41",
+    "part_number": "F41"
+  },
+  {
+    "id": "sam_m01",
+    "brand": "Samsung",
+    "models": "Samsung M01",
+    "part_number": "M01"
+  },
+  {
+    "id": "sam_m02",
+    "brand": "Samsung",
+    "models": "Samsung M02",
+    "part_number": "M02"
+  },
+  {
+    "id": "sam_m11",
+    "brand": "Samsung",
+    "models": "Samsung M11",
+    "part_number": "M11"
+  },
+  {
+    "id": "sam_m12",
+    "brand": "Samsung",
+    "models": "Samsung M12 = Samsung A12",
+    "part_number": "M12/A12"
+  },
+  {
+    "id": "sam_m15",
+    "brand": "Samsung",
+    "models": "Samsung M15 5G = Samsung M35 5G",
+    "part_number": "M15 5G"
+  },
+  {
+    "id": "sam_m20",
+    "brand": "Samsung",
+    "models": "Samsung M20 = Samsung M30",
+    "part_number": "M20/M30"
+  },
+  {
+    "id": "sam_m30s",
+    "brand": "Samsung",
+    "models": "Samsung M30s = Samsung M31 = Samsung M21",
+    "part_number": "M30s/M31"
+  },
+  {
+    "id": "sam_m31s",
+    "brand": "Samsung",
+    "models": "Samsung M31s",
+    "part_number": "M31s"
+  },
+  {
+    "id": "sam_m32",
+    "brand": "Samsung",
+    "models": "Samsung M32",
+    "part_number": "M32"
+  },
+  {
+    "id": "sam_m40",
+    "brand": "Samsung",
+    "models": "Samsung M40",
+    "part_number": "M40"
+  },
+  {
+    "id": "sam_m51",
+    "brand": "Samsung",
+    "models": "Samsung M51 = Samsung M62",
+    "part_number": "M51/M62"
+  },
+  {
+    "id": "sam_m52",
+    "brand": "Samsung",
+    "models": "Samsung M52 5G = Samsung M53 5G",
+    "part_number": "M52 5G"
+  },
+  {
+    "id": "sam_j5p",
+    "brand": "Samsung",
+    "models": "Samsung J5 Prime",
+    "part_number": "J5 Prime"
+  },
+  {
+    "id": "sam_j6",
+    "brand": "Samsung",
+    "models": "Samsung J6",
+    "part_number": "J6"
+  },
+  {
+    "id": "sam_j7p",
+    "brand": "Samsung",
+    "models": "Samsung J7 Pro",
+    "part_number": "J7 Pro 2017"
+  },
+  {
+    "id": "sam_j8",
+    "brand": "Samsung",
+    "models": "Samsung J8",
+    "part_number": "J8"
+  },
+  {
+    "id": "sam_note8",
+    "brand": "Samsung",
+    "models": "Samsung Note 8",
+    "part_number": "Note 8"
+  },
+  {
+    "id": "sam_note9",
+    "brand": "Samsung",
+    "models": "Samsung Note 9",
+    "part_number": "Note 9"
+  },
+  {
+    "id": "sam_s7",
+    "brand": "Samsung",
+    "models": "Samsung S7 Edge",
+    "part_number": "S7"
+  },
+  {
+    "id": "sam_s8",
+    "brand": "Samsung",
+    "models": "Samsung S8",
+    "part_number": "S8"
+  },
+  {
+    "id": "inf_bl34cx",
+    "brand": "Infinix",
+    "models": "Infinix Smart 3 Plus",
+    "part_number": "BL34CX"
+  },
+  {
+    "id": "inf_bl39ax",
+    "brand": "Infinix",
+    "models": "Infinix Hot 4 Pro",
+    "part_number": "BL39AX"
+  },
+  {
+    "id": "inf_bl39gx",
+    "brand": "Infinix",
+    "models": "Infinix Hot S3",
+    "part_number": "BL39GX"
+  },
+  {
+    "id": "inf_bl39jx",
+    "brand": "Infinix",
+    "models": "Infinix Hot S3x",
+    "part_number": "BL39JX"
+  },
+  {
+    "id": "inf_bl40ct",
+    "brand": "Tecno",
+    "models": "Tecno Phantom 6 Plus",
+    "part_number": "BL40CT"
+  },
+  {
+    "id": "inf_bl42ax",
+    "brand": "Infinix",
+    "models": "Infinix Note 4",
+    "part_number": "BL42AX"
+  },
+  {
+    "id": "inf_bl43ax",
+    "brand": "Infinix",
+    "models": "Infinix Zero 5",
+    "part_number": "BL43AX"
+  },
+  {
+    "id": "inf_bl43bx",
+    "brand": "Infinix",
+    "models": "Infinix Note 5",
+    "part_number": "BL43BX"
+  },
+  {
+    "id": "inf_bl48dx",
+    "brand": "Infinix",
+    "models": "Infinix Hot 11 2022",
+    "part_number": "BL48DX"
+  },
+  {
+    "id": "inf_bl49fx",
+    "brand": "Infinix",
+    "models": "Infinix Hot 8",
+    "part_number": "BL49FX"
+  },
+  {
+    "id": "inf_bl49hx",
+    "brand": "Infinix",
+    "models": "Infinix Hot 20 5G",
+    "part_number": "BL49HX"
+  },
+  {
+    "id": "inf_bl49ix",
+    "brand": "Infinix",
+    "models": "Infinix Smart HD",
+    "part_number": "BL49IX"
+  },
+  {
+    "id": "inf_bl49jx",
+    "brand": "Infinix",
+    "models": "Infinix Note 10 Pro = Infinix Note 11S = Infinix Zero 5G",
+    "part_number": "BL49JX"
+  },
+  {
+    "id": "inf_bl49kx",
+    "brand": "Infinix",
+    "models": "Infinix Note 12",
+    "part_number": "BL49KX"
+  },
+  {
+    "id": "inf_bl49nx",
+    "brand": "Infinix",
+    "models": "Infinix Hot 30i",
+    "part_number": "BL49NX"
+  },
+  {
+    "id": "inf_bl49tx",
+    "brand": "Infinix",
+    "models": "Infinix Note 30 5G",
+    "part_number": "BL49TX"
+  },
+  {
+    "id": "inf_bl51bx",
+    "brand": "Infinix",
+    "models": "Infinix Hot 10",
+    "part_number": "BL51BX"
+  },
+  {
+    "id": "inf_bl58bx",
+    "brand": "Infinix",
+    "models": "Infinix Hot 9 = Infinix Hot 9 Play",
+    "part_number": "BL58BX"
+  },
+  {
+    "id": "inf_bl38ai",
+    "brand": "Itel",
+    "models": "Itel P32",
+    "part_number": "BL38AI"
+  },
+  {
+    "id": "inf_bl39li",
+    "brand": "Tecno",
+    "models": "Tecno i7",
+    "part_number": "BL39LI"
+  },
+  {
+    "id": "inf_bl49fi",
+    "brand": "Tecno",
+    "models": "Tecno Camon 15",
+    "part_number": "BL49FI"
+  },
+  {
+    "id": "inf_30ut",
+    "brand": "Tecno",
+    "models": "Tecno i3 = Tecno i3 Pro",
+    "part_number": "30UT"
+  },
+  {
+    "id": "inf_30vt",
+    "brand": "Tecno",
+    "models": "Tecno i5",
+    "part_number": "30VT"
+  },
+  {
+    "id": "inf_36bt",
+    "brand": "Tecno",
+    "models": "Tecno Camon iAir2 Plus = Tecno Camon i2 = Tecno Camon i2x = Tecno Camon iClick2",
+    "part_number": "36BT"
+  },
+  {
+    "id": "inf_39bt",
+    "brand": "Tecno",
+    "models": "Tecno i7",
+    "part_number": "39BT"
+  },
+  {
+    "id": "inf_39ct",
+    "brand": "Tecno",
+    "models": "Tecno i5",
+    "part_number": "39CT"
+  },
+  {
+    "id": "inf_39gx",
+    "brand": "Infinix",
+    "models": "Infinix Hot S3",
+    "part_number": "39GX"
+  },
+  {
+    "id": "inf_39lt",
+    "brand": "Tecno",
+    "models": "Tecno Spark 4",
+    "part_number": "39LT"
+  },
+  {
+    "id": "inf_49gt",
+    "brand": "Tecno",
+    "models": "Tecno Camon 17",
+    "part_number": "49GT"
+  },
+  {
+    "id": "inf_49ht",
+    "brand": "Tecno",
+    "models": "Tecno Spark 6",
+    "part_number": "49HT"
+  },
+  {
+    "id": "inf_44ct",
+    "brand": "Tecno",
+    "models": "Tecno Camon 16 Premier",
+    "part_number": "44CT"
+  },
+  {
+    "id": "inf_49ft",
+    "brand": "Tecno",
+    "models": "Tecno Camon 15",
+    "part_number": "49FT"
+  },
+  {
+    "id": "inf_49lt",
+    "brand": "Tecno",
+    "models": "Tecno Camon 19",
+    "part_number": "49LT"
+  },
+  {
+    "id": "inf_49nt",
+    "brand": "Tecno",
+    "models": "Tecno Spark Go",
+    "part_number": "49NT"
+  },
+  {
+    "id": "inf_50dt",
+    "brand": "Tecno",
+    "models": "Tecno Phantom X2 Pro 5G",
+    "part_number": "50DT"
+  },
+  {
+    "id": "inf_bl58bt",
+    "brand": "Tecno",
+    "models": "Tecno Pouvoir 4 Pro",
+    "part_number": "BL58BT"
+  },
+  {
+    "id": "inf_bl58ct",
+    "brand": "Tecno",
+    "models": "Tecno Spark 7 = Infinix Hot 10i",
+    "part_number": "BL58CT/CX"
+  },
+  {
+    "id": "nok_he316",
+    "brand": "Nokia",
+    "models": "Nokia 6",
+    "part_number": "HE316/317/335/NK6"
+  },
+  {
+    "id": "nok_he319",
+    "brand": "Nokia",
+    "models": "Nokia 3",
+    "part_number": "HE319/NK3"
+  },
+  {
+    "id": "nok_he321",
+    "brand": "Nokia",
+    "models": "Nokia 5",
+    "part_number": "HE321"
+  },
+  {
+    "id": "nok_he328",
+    "brand": "Nokia",
+    "models": "Nokia 8",
+    "part_number": "HE328/NK8"
+  },
+  {
+    "id": "nok_he336",
+    "brand": "Nokia",
+    "models": "Nokia 5",
+    "part_number": "HE336"
+  },
+  {
+    "id": "nok_he338",
+    "brand": "Nokia",
+    "models": "Nokia 2 = Nokia 2.1",
+    "part_number": "HE338/HE341"
+  },
+  {
+    "id": "nok_wt240",
+    "brand": "Nokia",
+    "models": "Nokia 3.2",
+    "part_number": "WT240"
+  },
+  {
+    "id": "nok_wt340",
+    "brand": "Nokia",
+    "models": "Nokia G20",
+    "part_number": "WT340"
+  },
+  {
+    "id": "nok_wt341",
+    "brand": "Nokia",
+    "models": "Nokia G21",
+    "part_number": "WT341"
+  },
+  {
+    "id": "nok_hq430",
+    "brand": "Nokia",
+    "models": "Nokia 3.4",
+    "part_number": "HQ430"
+  },
+  {
+    "id": "nok_he340",
+    "brand": "Nokia",
+    "models": "Nokia 7",
+    "part_number": "HE340"
+  },
+  {
+    "id": "nok_he342",
+    "brand": "Nokia",
+    "models": "Nokia 5.1 Plus = Nokia 6.1 Plus",
+    "part_number": "HE342/NK6.1+"
+  },
+  {
+    "id": "nok_lc440",
+    "brand": "Nokia",
+    "models": "Nokia 5.3",
+    "part_number": "LC440"
+  },
+  {
+    "id": "nok_lc620",
+    "brand": "Nokia",
+    "models": "Nokia 6.2",
+    "part_number": "LC620"
+  },
+  {
+    "id": "nok_p660",
+    "brand": "Nokia",
+    "models": "Nokia G50",
+    "part_number": "P660"
+  },
+  {
+    "id": "nok_sp410",
+    "brand": "Nokia",
+    "models": "Nokia C20 Plus",
+    "part_number": "SP410"
+  },
+  {
+    "id": "nok_se681",
+    "brand": "Nokia",
+    "models": "Nokia C30",
+    "part_number": "SE681"
+  },
+  {
+    "id": "nok_v730",
+    "brand": "Nokia",
+    "models": "Nokia 1.4",
+    "part_number": "V730"
+  },
+  {
+    "id": "nok_he344",
+    "brand": "Nokia",
+    "models": "Nokia 6",
+    "part_number": "HE344"
+  },
+  {
+    "id": "nok_he345",
+    "brand": "Nokia",
+    "models": "Nokia 6.1",
+    "part_number": "HE345"
+  },
+  {
+    "id": "nok_he346",
+    "brand": "Nokia",
+    "models": "Nokia 7 Plus",
+    "part_number": "HE346/HE347"
+  },
+  {
+    "id": "nok_he363",
+    "brand": "Nokia",
+    "models": "Nokia 3.1 Plus = Nokia X7 = Nokia 8.1",
+    "part_number": "HE363/NK3.1+"
+  },
+  {
+    "id": "len_bl234",
+    "brand": "Lenovo",
+    "models": "Lenovo Vibe P1M = Lenovo P70 = Lenovo P70T = Lenovo P70A",
+    "part_number": "BL234"
+  },
+  {
+    "id": "len_bl245",
+    "brand": "Lenovo",
+    "models": "Lenovo S60 = Lenovo S60T",
+    "part_number": "BL245"
+  },
+  {
+    "id": "len_bl255",
+    "brand": "Lenovo",
+    "models": "Lenovo Zuk Z1",
+    "part_number": "BL255"
+  },
+  {
+    "id": "len_bl256",
+    "brand": "Lenovo",
+    "models": "Lenovo K4 Note",
+    "part_number": "BL256"
+  },
+  {
+    "id": "len_bl260",
+    "brand": "Lenovo",
+    "models": "Lenovo Vibe S1 Lite",
+    "part_number": "BL260"
+  },
+  {
+    "id": "len_bl261",
+    "brand": "Lenovo",
+    "models": "Lenovo Vibe K5 Note",
+    "part_number": "BL261"
+  },
+  {
+    "id": "len_bl265",
+    "brand": "Motorola",
+    "models": "Moto M",
+    "part_number": "BL265"
+  },
+  {
+    "id": "len_bl268",
+    "brand": "Lenovo",
+    "models": "Lenovo Zuk Z2 = Lenovo Z2 Plus",
+    "part_number": "BL268"
+  },
+  {
+    "id": "len_bl270",
+    "brand": "Lenovo",
+    "models": "Lenovo K6 Note = Lenovo K8 Note = Lenovo G5 Plus",
+    "part_number": "BL270"
+  },
+  {
+    "id": "len_bl272",
+    "brand": "Lenovo",
+    "models": "Lenovo K6 Power",
+    "part_number": "BL272"
+  },
+  {
+    "id": "len_bl273",
+    "brand": "Lenovo",
+    "models": "Lenovo K8 Plus",
+    "part_number": "BL273"
+  },
+  {
+    "id": "len_bl291",
+    "brand": "Lenovo",
+    "models": "Lenovo 5",
+    "part_number": "BL291"
+  },
+  {
+    "id": "len_bl295",
+    "brand": "Lenovo",
+    "models": "Lenovo K5",
+    "part_number": "BL295"
+  },
+  {
+    "id": "len_bl297",
+    "brand": "Lenovo",
+    "models": "Lenovo K5 Pro = Lenovo Z6 Lite = Lenovo Z6 Youth",
+    "part_number": "BL297"
+  },
+  {
+    "id": "hon_5x",
+    "brand": "Honor",
+    "models": "Honor 5X = Honor 5X Play",
+    "part_number": "5X"
+  },
+  {
+    "id": "hon_6x",
+    "brand": "Honor",
+    "models": "Honor 6X",
+    "part_number": "6X"
+  },
+  {
+    "id": "hon_7s",
+    "brand": "Honor",
+    "models": "Honor 7S",
+    "part_number": "7S"
+  },
+  {
+    "id": "hon_7x",
+    "brand": "Honor",
+    "models": "Honor 7X",
+    "part_number": "7X"
+  },
+  {
+    "id": "hon_8c",
+    "brand": "Honor",
+    "models": "Honor 8C",
+    "part_number": "8C"
+  },
+  {
+    "id": "hon_8x",
+    "brand": "Honor",
+    "models": "Honor 8X",
+    "part_number": "8X"
+  },
+  {
+    "id": "hon_7a",
+    "brand": "Honor",
+    "models": "Honor 7A = Honor 8 = Honor 8 Lite = Honor 9N = Honor 9 Lite = Huawei P20 Lite",
+    "part_number": "7A/8 Lite/9N/9 Lite"
+  },
+  {
+    "id": "hon_10lite",
+    "brand": "Honor",
+    "models": "Honor 10 Lite",
+    "part_number": "10 Lite"
+  },
+  {
+    "id": "hon_enjoy6",
+    "brand": "Huawei",
+    "models": "Huawei Enjoy 6",
+    "part_number": "Enjoy 6"
+  },
+  {
+    "id": "hon_holly2",
+    "brand": "Huawei",
+    "models": "Huawei Holly 2 Plus",
+    "part_number": "Holly 2 Plus"
+  },
+  {
+    "id": "hon_p10",
+    "brand": "Huawei",
+    "models": "Huawei P10",
+    "part_number": "P10"
+  },
+  {
+    "id": "hon_y6pro",
+    "brand": "Huawei",
+    "models": "Huawei Y6 Pro",
+    "part_number": "Y6 Pro"
+  },
+  {
+    "id": "hon_y7prime",
+    "brand": "Huawei",
+    "models": "Huawei Y7 Prime",
+    "part_number": "Y7 Prime"
+  }
+]
