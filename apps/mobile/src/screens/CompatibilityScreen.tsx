@@ -77,13 +77,6 @@ export function CompatibilityScreen({ navigation, route }: Props) {
           const compatibleModels = compatibleQueries[index]?.data ?? [];
           return (
             <View key={part.id} style={styles.card}>
-              <Pressable onPress={() => navigation.navigate('PartDetails', { partId: part.id })}>
-                <Text style={styles.partName}>{part.name}</Text>
-                {part.partNumber ? (
-                  <Text style={styles.partNumber}>Part #: {part.partNumber}</Text>
-                ) : null}
-              </Pressable>
-
               <Text style={styles.subheading}>Compatible models</Text>
               {compatibleModels.map((row) => (
                 <Pressable
@@ -154,18 +147,7 @@ const createStyles = (colors: AppColors) => StyleSheet.create({
     padding: 16,
     marginBottom: 14,
   },
-  partName: {
-    fontSize: 17,
-    fontWeight: '700',
-    color: colors.text,
-  },
-  partNumber: {
-    marginTop: 4,
-    fontSize: 13,
-    color: colors.textSecondary,
-  },
   subheading: {
-    marginTop: 16,
     marginBottom: 10,
     fontSize: 14,
     fontWeight: '700',
