@@ -270,3 +270,285 @@ id,mobile_model_id,part_id,verified,notes
 269,46,268,TRUE,iPhone 15 earpiece
 270,46,269,TRUE,iPhone 15 housing
 271,46,270,TRUE,iPhone 15 vibrator
+272,130,271,FALSE,From model_part_matrix | Display shared across 10 models
+273,206,271,FALSE,From model_part_matrix | Display shared across 10 models
+274,196,271,FALSE,From model_part_matrix | Display shared across 10 models
+275,197,271,FALSE,From model_part_matrix | Display shared across 10 models
+276,199,271,FALSE,From model_part_matrix | Display shared across 10 models
+277,200,271,FALSE,From model_part_matrix | Display shared across 10 models
+278,134,271,FALSE,From model_part_matrix | Display shared across 10 models
+279,131,271,FALSE,From model_part_matrix | Display shared across 10 models
+280,132,271,FALSE,From model_part_matrix | Display shared across 10 models
+281,133,271,FALSE,From model_part_matrix | Display shared across 10 models
+282,135,272,FALSE,From model_part_matrix | Display shared across 6 models
+283,224,272,FALSE,From model_part_matrix | Display shared across 6 models
+284,225,272,FALSE,From model_part_matrix | Display shared across 6 models
+285,226,272,FALSE,From model_part_matrix | Display shared across 6 models
+286,228,272,FALSE,From model_part_matrix | Display shared across 6 models
+287,217,272,FALSE,From model_part_matrix | Display shared across 6 models
+288,136,273,FALSE,From model_part_matrix | Display shared across 3 models
+289,223,273,FALSE,From model_part_matrix | Display shared across 3 models
+290,221,273,FALSE,From model_part_matrix | Display shared across 3 models
+291,138,274,FALSE,From model_part_matrix | Display shared across 3 models
+292,238,274,FALSE,From model_part_matrix | Display shared across 3 models
+293,227,274,FALSE,From model_part_matrix | Display shared across 3 models
+294,139,275,FALSE,From model_part_matrix | Display shared across 3 models
+295,20,275,FALSE,From model_part_matrix | Display shared across 3 models
+296,235,275,FALSE,From model_part_matrix | Display shared across 3 models
+297,141,276,FALSE,From model_part_matrix | Display shared across 2 models
+298,22,276,FALSE,From model_part_matrix | Display shared across 2 models
+299,142,277,FALSE,From model_part_matrix | Display shared across 3 models
+300,23,277,FALSE,From model_part_matrix | Display shared across 3 models
+301,236,277,FALSE,From model_part_matrix | Display shared across 3 models
+302,149,278,FALSE,From model_part_matrix | Display shared across 3 models
+303,151,278,FALSE,From model_part_matrix | Display shared across 3 models
+304,156,278,FALSE,From model_part_matrix | Display shared across 3 models
+305,152,279,FALSE,From model_part_matrix | Display shared across 9 models
+306,153,279,FALSE,From model_part_matrix | Display shared across 9 models
+307,154,279,FALSE,From model_part_matrix | Display shared across 9 models
+308,157,279,FALSE,From model_part_matrix | Display shared across 9 models
+309,158,279,FALSE,From model_part_matrix | Display shared across 9 models
+310,162,279,FALSE,From model_part_matrix | Display shared across 9 models
+311,165,279,FALSE,From model_part_matrix | Display shared across 9 models
+312,12,279,FALSE,From model_part_matrix | Display shared across 9 models
+313,166,279,FALSE,From model_part_matrix | Display shared across 9 models
+314,159,280,FALSE,From model_part_matrix | Display shared across 3 models
+315,161,280,FALSE,From model_part_matrix | Display shared across 3 models
+316,160,280,FALSE,From model_part_matrix | Display shared across 3 models
+317,1,281,FALSE,From model_part_matrix | Display shared across 2 models
+318,2,281,FALSE,From model_part_matrix | Display shared across 2 models
+319,198,282,FALSE,From model_part_matrix | Display shared across 2 models
+320,203,282,FALSE,From model_part_matrix | Display shared across 2 models
+321,218,283,FALSE,From model_part_matrix | Display shared across 2 models
+322,220,283,FALSE,From model_part_matrix | Display shared across 2 models
+323,25,284,FALSE,From model_part_matrix | Display shared across 2 models
+324,222,284,FALSE,From model_part_matrix | Display shared across 2 models
+325,229,285,FALSE,From model_part_matrix | Display shared across 4 models
+326,230,285,FALSE,From model_part_matrix | Display shared across 4 models
+327,231,285,FALSE,From model_part_matrix | Display shared across 4 models
+328,232,285,FALSE,From model_part_matrix | Display shared across 4 models
+329,7,286,FALSE,From model_part_matrix | Display shared across 2 models
+330,234,286,FALSE,From model_part_matrix | Display shared across 2 models
+331,43,287,FALSE,From model_part_matrix | Display shared across 2 models
+332,44,287,FALSE,From model_part_matrix | Display shared across 2 models
+333,49,288,FALSE,From model_part_matrix | Battery shared across 11 models
+334,52,288,FALSE,From model_part_matrix | Battery shared across 11 models
+335,53,288,FALSE,From model_part_matrix | Battery shared across 11 models
+336,63,288,FALSE,From model_part_matrix | Battery shared across 11 models
+337,64,288,FALSE,From model_part_matrix | Battery shared across 11 models
+338,60,288,FALSE,From model_part_matrix | Battery shared across 11 models
+339,59,288,FALSE,From model_part_matrix | Battery shared across 11 models
+340,57,288,FALSE,From model_part_matrix | Battery shared across 11 models
+341,54,288,FALSE,From model_part_matrix | Battery shared across 11 models
+342,61,288,FALSE,From model_part_matrix | Battery shared across 11 models
+343,58,288,FALSE,From model_part_matrix | Battery shared across 11 models
+344,86,289,FALSE,From model_part_matrix | Battery shared across 7 models
+345,91,289,FALSE,From model_part_matrix | Battery shared across 7 models
+346,92,289,FALSE,From model_part_matrix | Battery shared across 7 models
+347,105,289,FALSE,From model_part_matrix | Battery shared across 7 models
+348,106,289,FALSE,From model_part_matrix | Battery shared across 7 models
+349,87,289,FALSE,From model_part_matrix | Battery shared across 7 models
+350,88,289,FALSE,From model_part_matrix | Battery shared across 7 models
+351,94,290,FALSE,From model_part_matrix | Battery shared across 5 models
+352,95,290,FALSE,From model_part_matrix | Battery shared across 5 models
+353,96,290,FALSE,From model_part_matrix | Battery shared across 5 models
+354,98,290,FALSE,From model_part_matrix | Battery shared across 5 models
+355,101,290,FALSE,From model_part_matrix | Battery shared across 5 models
+356,97,291,FALSE,From model_part_matrix | Battery shared across 4 models
+357,104,291,FALSE,From model_part_matrix | Battery shared across 4 models
+358,99,291,FALSE,From model_part_matrix | Battery shared across 4 models
+359,100,291,FALSE,From model_part_matrix | Battery shared across 4 models
+360,109,292,FALSE,From model_part_matrix | Battery shared across 5 models
+361,113,292,FALSE,From model_part_matrix | Battery shared across 5 models
+362,121,292,FALSE,From model_part_matrix | Battery shared across 5 models
+363,115,292,FALSE,From model_part_matrix | Battery shared across 5 models
+364,110,292,FALSE,From model_part_matrix | Battery shared across 5 models
+365,111,293,FALSE,From model_part_matrix | Battery shared across 6 models
+366,114,293,FALSE,From model_part_matrix | Battery shared across 6 models
+367,112,293,FALSE,From model_part_matrix | Battery shared across 6 models
+368,116,293,FALSE,From model_part_matrix | Battery shared across 6 models
+369,117,293,FALSE,From model_part_matrix | Battery shared across 6 models
+370,124,293,FALSE,From model_part_matrix | Battery shared across 6 models
+371,119,294,FALSE,From model_part_matrix | Battery shared across 2 models
+372,120,294,FALSE,From model_part_matrix | Battery shared across 2 models
+373,163,295,FALSE,From model_part_matrix | Battery shared across 2 models
+374,1,295,FALSE,From model_part_matrix | Battery shared across 2 models
+375,182,296,FALSE,From model_part_matrix | Battery shared across 3 models
+376,213,296,FALSE,From model_part_matrix | Battery shared across 3 models
+377,195,296,FALSE,From model_part_matrix | Battery shared across 3 models
+378,4,297,FALSE,From model_part_matrix | Battery shared across 3 models
+379,239,297,FALSE,From model_part_matrix | Battery shared across 3 models
+380,240,297,FALSE,From model_part_matrix | Battery shared across 3 models
+381,130,298,FALSE,From model_part_matrix | OCA Glass shared across 10 models
+382,206,298,FALSE,From model_part_matrix | OCA Glass shared across 10 models
+383,196,298,FALSE,From model_part_matrix | OCA Glass shared across 10 models
+384,197,298,FALSE,From model_part_matrix | OCA Glass shared across 10 models
+385,199,298,FALSE,From model_part_matrix | OCA Glass shared across 10 models
+386,200,298,FALSE,From model_part_matrix | OCA Glass shared across 10 models
+387,134,298,FALSE,From model_part_matrix | OCA Glass shared across 10 models
+388,131,298,FALSE,From model_part_matrix | OCA Glass shared across 10 models
+389,132,298,FALSE,From model_part_matrix | OCA Glass shared across 10 models
+390,133,298,FALSE,From model_part_matrix | OCA Glass shared across 10 models
+391,135,299,FALSE,From model_part_matrix | OCA Glass shared across 6 models
+392,224,299,FALSE,From model_part_matrix | OCA Glass shared across 6 models
+393,225,299,FALSE,From model_part_matrix | OCA Glass shared across 6 models
+394,226,299,FALSE,From model_part_matrix | OCA Glass shared across 6 models
+395,228,299,FALSE,From model_part_matrix | OCA Glass shared across 6 models
+396,217,299,FALSE,From model_part_matrix | OCA Glass shared across 6 models
+397,136,300,FALSE,From model_part_matrix | OCA Glass shared across 3 models
+398,223,300,FALSE,From model_part_matrix | OCA Glass shared across 3 models
+399,221,300,FALSE,From model_part_matrix | OCA Glass shared across 3 models
+400,138,301,FALSE,From model_part_matrix | OCA Glass shared across 3 models
+401,238,301,FALSE,From model_part_matrix | OCA Glass shared across 3 models
+402,227,301,FALSE,From model_part_matrix | OCA Glass shared across 3 models
+403,139,302,FALSE,From model_part_matrix | OCA Glass shared across 3 models
+404,20,302,FALSE,From model_part_matrix | OCA Glass shared across 3 models
+405,235,302,FALSE,From model_part_matrix | OCA Glass shared across 3 models
+406,141,303,FALSE,From model_part_matrix | OCA Glass shared across 2 models
+407,22,303,FALSE,From model_part_matrix | OCA Glass shared across 2 models
+408,142,304,FALSE,From model_part_matrix | OCA Glass shared across 3 models
+409,23,304,FALSE,From model_part_matrix | OCA Glass shared across 3 models
+410,236,304,FALSE,From model_part_matrix | OCA Glass shared across 3 models
+411,149,305,FALSE,From model_part_matrix | OCA Glass shared across 3 models
+412,151,305,FALSE,From model_part_matrix | OCA Glass shared across 3 models
+413,156,305,FALSE,From model_part_matrix | OCA Glass shared across 3 models
+414,152,306,FALSE,From model_part_matrix | OCA Glass shared across 9 models
+415,153,306,FALSE,From model_part_matrix | OCA Glass shared across 9 models
+416,154,306,FALSE,From model_part_matrix | OCA Glass shared across 9 models
+417,157,306,FALSE,From model_part_matrix | OCA Glass shared across 9 models
+418,158,306,FALSE,From model_part_matrix | OCA Glass shared across 9 models
+419,162,306,FALSE,From model_part_matrix | OCA Glass shared across 9 models
+420,165,306,FALSE,From model_part_matrix | OCA Glass shared across 9 models
+421,12,306,FALSE,From model_part_matrix | OCA Glass shared across 9 models
+422,166,306,FALSE,From model_part_matrix | OCA Glass shared across 9 models
+423,159,307,FALSE,From model_part_matrix | OCA Glass shared across 3 models
+424,161,307,FALSE,From model_part_matrix | OCA Glass shared across 3 models
+425,160,307,FALSE,From model_part_matrix | OCA Glass shared across 3 models
+426,1,308,FALSE,From model_part_matrix | OCA Glass shared across 2 models
+427,2,308,FALSE,From model_part_matrix | OCA Glass shared across 2 models
+428,198,309,FALSE,From model_part_matrix | OCA Glass shared across 2 models
+429,203,309,FALSE,From model_part_matrix | OCA Glass shared across 2 models
+430,218,310,FALSE,From model_part_matrix | OCA Glass shared across 2 models
+431,220,310,FALSE,From model_part_matrix | OCA Glass shared across 2 models
+432,25,311,FALSE,From model_part_matrix | OCA Glass shared across 2 models
+433,222,311,FALSE,From model_part_matrix | OCA Glass shared across 2 models
+434,229,312,FALSE,From model_part_matrix | OCA Glass shared across 4 models
+435,230,312,FALSE,From model_part_matrix | OCA Glass shared across 4 models
+436,231,312,FALSE,From model_part_matrix | OCA Glass shared across 4 models
+437,232,312,FALSE,From model_part_matrix | OCA Glass shared across 4 models
+438,7,313,FALSE,From model_part_matrix | OCA Glass shared across 2 models
+439,234,313,FALSE,From model_part_matrix | OCA Glass shared across 2 models
+440,43,314,FALSE,From model_part_matrix | OCA Glass shared across 2 models
+441,44,314,FALSE,From model_part_matrix | OCA Glass shared across 2 models
+442,152,315,FALSE,From model_part_matrix | Pouch shared across 2 models
+443,153,315,FALSE,From model_part_matrix | Pouch shared across 2 models
+444,159,316,FALSE,From model_part_matrix | Pouch shared across 2 models
+445,161,316,FALSE,From model_part_matrix | Pouch shared across 2 models
+446,47,317,FALSE,From model_part_matrix | Charging Board shared across 10 models
+447,126,317,FALSE,From model_part_matrix | Charging Board shared across 10 models
+448,122,317,FALSE,From model_part_matrix | Charging Board shared across 10 models
+449,206,317,FALSE,From model_part_matrix | Charging Board shared across 10 models
+450,65,317,FALSE,From model_part_matrix | Charging Board shared across 10 models
+451,107,317,FALSE,From model_part_matrix | Charging Board shared across 10 models
+452,173,317,FALSE,From model_part_matrix | Charging Board shared across 10 models
+453,174,317,FALSE,From model_part_matrix | Charging Board shared across 10 models
+454,89,317,FALSE,From model_part_matrix | Charging Board shared across 10 models
+455,90,317,FALSE,From model_part_matrix | Charging Board shared across 10 models
+456,48,318,FALSE,From model_part_matrix | Charging Board shared across 10 models
+457,51,318,FALSE,From model_part_matrix | Charging Board shared across 10 models
+458,210,318,FALSE,From model_part_matrix | Charging Board shared across 10 models
+459,194,318,FALSE,From model_part_matrix | Charging Board shared across 10 models
+460,189,318,FALSE,From model_part_matrix | Charging Board shared across 10 models
+461,190,318,FALSE,From model_part_matrix | Charging Board shared across 10 models
+462,71,318,FALSE,From model_part_matrix | Charging Board shared across 10 models
+463,81,318,FALSE,From model_part_matrix | Charging Board shared across 10 models
+464,144,318,FALSE,From model_part_matrix | Charging Board shared across 10 models
+465,170,318,FALSE,From model_part_matrix | Charging Board shared across 10 models
+466,50,319,FALSE,From model_part_matrix | Charging Board shared across 8 models
+467,55,319,FALSE,From model_part_matrix | Charging Board shared across 8 models
+468,62,319,FALSE,From model_part_matrix | Charging Board shared across 8 models
+469,56,319,FALSE,From model_part_matrix | Charging Board shared across 8 models
+470,84,319,FALSE,From model_part_matrix | Charging Board shared across 8 models
+471,78,319,FALSE,From model_part_matrix | Charging Board shared across 8 models
+472,85,319,FALSE,From model_part_matrix | Charging Board shared across 8 models
+473,180,319,FALSE,From model_part_matrix | Charging Board shared across 8 models
+474,66,320,FALSE,From model_part_matrix | Charging Board shared across 19 models
+475,74,320,FALSE,From model_part_matrix | Charging Board shared across 19 models
+476,76,320,FALSE,From model_part_matrix | Charging Board shared across 19 models
+477,77,320,FALSE,From model_part_matrix | Charging Board shared across 19 models
+478,68,320,FALSE,From model_part_matrix | Charging Board shared across 19 models
+479,69,320,FALSE,From model_part_matrix | Charging Board shared across 19 models
+480,70,320,FALSE,From model_part_matrix | Charging Board shared across 19 models
+481,82,320,FALSE,From model_part_matrix | Charging Board shared across 19 models
+482,75,320,FALSE,From model_part_matrix | Charging Board shared across 19 models
+483,80,320,FALSE,From model_part_matrix | Charging Board shared across 19 models
+484,67,320,FALSE,From model_part_matrix | Charging Board shared across 19 models
+485,79,320,FALSE,From model_part_matrix | Charging Board shared across 19 models
+486,178,320,FALSE,From model_part_matrix | Charging Board shared across 19 models
+487,176,320,FALSE,From model_part_matrix | Charging Board shared across 19 models
+488,175,320,FALSE,From model_part_matrix | Charging Board shared across 19 models
+489,177,320,FALSE,From model_part_matrix | Charging Board shared across 19 models
+490,168,320,FALSE,From model_part_matrix | Charging Board shared across 19 models
+491,167,320,FALSE,From model_part_matrix | Charging Board shared across 19 models
+492,169,320,FALSE,From model_part_matrix | Charging Board shared across 19 models
+493,72,321,FALSE,From model_part_matrix | Charging Board shared across 7 models
+494,93,321,FALSE,From model_part_matrix | Charging Board shared across 7 models
+495,103,321,FALSE,From model_part_matrix | Charging Board shared across 7 models
+496,73,321,FALSE,From model_part_matrix | Charging Board shared across 7 models
+497,171,321,FALSE,From model_part_matrix | Charging Board shared across 7 models
+498,172,321,FALSE,From model_part_matrix | Charging Board shared across 7 models
+499,179,321,FALSE,From model_part_matrix | Charging Board shared across 7 models
+500,118,322,FALSE,From model_part_matrix | Charging Board shared across 23 models
+501,202,322,FALSE,From model_part_matrix | Charging Board shared across 23 models
+502,211,322,FALSE,From model_part_matrix | Charging Board shared across 23 models
+503,212,322,FALSE,From model_part_matrix | Charging Board shared across 23 models
+504,205,322,FALSE,From model_part_matrix | Charging Board shared across 23 models
+505,181,322,FALSE,From model_part_matrix | Charging Board shared across 23 models
+506,183,322,FALSE,From model_part_matrix | Charging Board shared across 23 models
+507,184,322,FALSE,From model_part_matrix | Charging Board shared across 23 models
+508,186,322,FALSE,From model_part_matrix | Charging Board shared across 23 models
+509,187,322,FALSE,From model_part_matrix | Charging Board shared across 23 models
+510,201,322,FALSE,From model_part_matrix | Charging Board shared across 23 models
+511,10,322,FALSE,From model_part_matrix | Charging Board shared across 23 models
+512,204,322,FALSE,From model_part_matrix | Charging Board shared across 23 models
+513,207,322,FALSE,From model_part_matrix | Charging Board shared across 23 models
+514,208,322,FALSE,From model_part_matrix | Charging Board shared across 23 models
+515,188,322,FALSE,From model_part_matrix | Charging Board shared across 23 models
+516,123,322,FALSE,From model_part_matrix | Charging Board shared across 23 models
+517,125,322,FALSE,From model_part_matrix | Charging Board shared across 23 models
+518,128,322,FALSE,From model_part_matrix | Charging Board shared across 23 models
+519,28,322,FALSE,From model_part_matrix | Charging Board shared across 23 models
+520,143,322,FALSE,From model_part_matrix | Charging Board shared across 23 models
+521,146,322,FALSE,From model_part_matrix | Charging Board shared across 23 models
+522,29,322,FALSE,From model_part_matrix | Charging Board shared across 23 models
+523,137,323,FALSE,From model_part_matrix | Charging Board shared across 10 models
+524,215,323,FALSE,From model_part_matrix | Charging Board shared across 10 models
+525,219,323,FALSE,From model_part_matrix | Charging Board shared across 10 models
+526,233,323,FALSE,From model_part_matrix | Charging Board shared across 10 models
+527,140,323,FALSE,From model_part_matrix | Charging Board shared across 10 models
+528,214,323,FALSE,From model_part_matrix | Charging Board shared across 10 models
+529,216,323,FALSE,From model_part_matrix | Charging Board shared across 10 models
+530,209,323,FALSE,From model_part_matrix | Charging Board shared across 10 models
+531,185,323,FALSE,From model_part_matrix | Charging Board shared across 10 models
+532,193,323,FALSE,From model_part_matrix | Charging Board shared across 10 models
+533,163,324,FALSE,From model_part_matrix | Charging Board shared across 3 models
+534,1,324,FALSE,From model_part_matrix | Charging Board shared across 3 models
+535,164,324,FALSE,From model_part_matrix | Charging Board shared across 3 models
+536,83,325,FALSE,From model_part_matrix | model-specific
+537,102,326,FALSE,From model_part_matrix | model-specific
+538,108,327,FALSE,From model_part_matrix | model-specific
+539,127,328,FALSE,From model_part_matrix | model-specific
+540,129,329,FALSE,From model_part_matrix | model-specific
+541,145,330,FALSE,From model_part_matrix | model-specific
+542,147,331,FALSE,From model_part_matrix | model-specific
+543,148,332,FALSE,From model_part_matrix | model-specific
+544,150,333,FALSE,From model_part_matrix | model-specific
+545,150,334,FALSE,From model_part_matrix | model-specific
+546,155,335,FALSE,From model_part_matrix | model-specific
+547,155,336,FALSE,From model_part_matrix | model-specific
+548,191,337,FALSE,From model_part_matrix | model-specific
+549,192,338,FALSE,From model_part_matrix | model-specific
+550,237,339,FALSE,From model_part_matrix | model-specific
+551,237,340,FALSE,From model_part_matrix | model-specific
+552,241,341,FALSE,From model_part_matrix | model-specific
+553,242,342,FALSE,From model_part_matrix | model-specific

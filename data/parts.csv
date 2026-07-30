@@ -269,3 +269,75 @@ id,part_type_id,part_name,part_number,manufacturer
 268,9,iPhone 15 Earpiece,IP15-EAR-01,Apple
 269,12,iPhone 15 Housing,IP15-HSG-01,Generic
 270,15,iPhone 15 Vibrator,IP15-VIB-01,Apple
+271,1,[matrix] Display shared (Oppo Y11; Oppo Y12; Oppo Y15 (+7)),,Oppo
+272,1,[matrix] Display shared (Poco C31; Redmi 10A; Redmi 9A (+3)),,Poco
+273,1,[matrix] Display shared (Poco C55; Redmi 11A; Redmi 12C),,Poco
+274,1,[matrix] Display shared (Poco M3; Redmi 9T; Redmi Note 9 4G),,Poco
+275,1,[matrix] Display shared (Redmi Note 11; Poco M4 Pro 4G; Redmi Note 11s),,Redmi
+276,1,[matrix] Display shared (Redmi Note 12; Poco X5),,Redmi
+277,1,[matrix] Display shared (Redmi Note 12 Pro; Poco X5 Pro; Redmi Note 12 Pro+),,Redmi
+278,1,[matrix] Display shared (Samsung Galaxy A01; Samsung Galaxy A02s; Samsung Galaxy A11),,Samsung
+279,1,[matrix] Display shared (Samsung Galaxy A53; Samsung Galaxy A03; Samsung Galaxy A03 Core (+6)),,Samsung
+280,1,[matrix] Display shared (Samsung Galaxy A20; Samsung Galaxy A20e; Samsung Galaxy A20s),,Samsung
+281,1,[matrix] Display shared (Samsung Galaxy A50; Samsung Galaxy A50s),,Samsung
+282,1,[matrix] Display shared (Vivo Y12s; Vivo Y20s),,Vivo
+283,1,[matrix] Display shared (Redmi 10X 5G; Redmi 10X Pro 5G),,Redmi
+284,1,[matrix] Display shared (Redmi 12; Redmi 12 5G),,Redmi
+285,1,[matrix] Display shared (Redmi A1; Redmi A1+; Redmi A2 (+1)),,Redmi
+286,1,[matrix] Display shared (Redmi Note 10; Redmi Note 10s),,Redmi
+287,1,[matrix] Display shared (Apple iPhone 13; Apple iPhone 13 Pro),,Apple
+288,2,[matrix] Battery shared (Honor 5C; Honor 8; Honor 8 Lite (+8)),,Honor
+289,2,[matrix] Battery shared (Itel 2161; Itel 2163; Itel 2190 (+4)),,Itel
+290,2,[matrix] Battery shared (Motorola G; Motorola G 2nd Gen; Motorola G 4G (+2)),,Motorola
+291,2,[matrix] Battery shared (Motorola G 5G; Motorola G Play; Motorola G Power (+1)),,Motorola
+292,2,[matrix] Battery shared (Oppo A16 4G; Oppo A16s; Oppo A53S (+2)),,Oppo
+293,2,[matrix] Battery shared (Oppo A53; Oppo A53M; Oppo A53T (+3)),,Oppo
+294,2,[matrix] Battery shared (Oppo A72 5G; Oppo A73 5G),,Oppo
+295,2,[matrix] Battery shared (Samsung Galaxy A50; Samsung Galaxy A30),,Samsung
+296,2,[matrix] Battery shared (Vivo S1 Pro; Vivo X50 Lite; Vivo Y9s),,Vivo
+297,2,[matrix] Battery shared (Apple iPhone 11; Apple iPhone 11 Pro; Apple iPhone 11 Pro Max),,Apple
+298,3,[matrix] OCA Glass shared (Oppo Y11; Oppo Y12; Oppo Y15 (+7)),,Oppo
+299,3,[matrix] OCA Glass shared (Poco C31; Redmi 10A; Redmi 9A (+3)),,Poco
+300,3,[matrix] OCA Glass shared (Poco C55; Redmi 11A; Redmi 12C),,Poco
+301,3,[matrix] OCA Glass shared (Poco M3; Redmi 9T; Redmi Note 9 4G),,Poco
+302,3,[matrix] OCA Glass shared (Redmi Note 11; Poco M4 Pro 4G; Redmi Note 11s),,Redmi
+303,3,[matrix] OCA Glass shared (Redmi Note 12; Poco X5),,Redmi
+304,3,[matrix] OCA Glass shared (Redmi Note 12 Pro; Poco X5 Pro; Redmi Note 12 Pro+),,Redmi
+305,3,[matrix] OCA Glass shared (Samsung Galaxy A01; Samsung Galaxy A02s; Samsung Galaxy A11),,Samsung
+306,3,[matrix] OCA Glass shared (Samsung Galaxy A53; Samsung Galaxy A03; Samsung Galaxy A03 Core (+6)),,Samsung
+307,3,[matrix] OCA Glass shared (Samsung Galaxy A20; Samsung Galaxy A20e; Samsung Galaxy A20s),,Samsung
+308,3,[matrix] OCA Glass shared (Samsung Galaxy A50; Samsung Galaxy A50s),,Samsung
+309,3,[matrix] OCA Glass shared (Vivo Y12s; Vivo Y20s),,Vivo
+310,3,[matrix] OCA Glass shared (Redmi 10X 5G; Redmi 10X Pro 5G),,Redmi
+311,3,[matrix] OCA Glass shared (Redmi 12; Redmi 12 5G),,Redmi
+312,3,[matrix] OCA Glass shared (Redmi A1; Redmi A1+; Redmi A2 (+1)),,Redmi
+313,3,[matrix] OCA Glass shared (Redmi Note 10; Redmi Note 10s),,Redmi
+314,3,[matrix] OCA Glass shared (Apple iPhone 13; Apple iPhone 13 Pro),,Apple
+315,4,[matrix] Pouch shared (Samsung Galaxy A03; Samsung Galaxy A03 Core),,Samsung
+316,4,[matrix] Pouch shared (Samsung Galaxy A20; Samsung Galaxy A20s),,Samsung
+317,5,[matrix] Charging Board shared (Honor 4A; Huawei Y6 2019; Itel A22 (+7)),,Honor
+318,5,[matrix] Charging Board shared (Huawei G8; Honor 7i; Infinix Hot 4 (+7)),,Huawei
+319,5,[matrix] Charging Board shared (Honor 7; Honor Note 8; Huawei Mate 8 (+5)),,Honor
+320,5,[matrix] Charging Board shared (Infinix Hot 10; Infinix Hot 10i; Infinix Hot 11 (+16)),,Infinix
+321,5,[matrix] Charging Board shared (Infinix Hot 5; Infinix Hot 6; Motorola E4 (+4)),,Infinix
+322,5,[matrix] Charging Board shared (Vivo Y21; Realme 9; Realme 10 (+20)),,Vivo
+323,5,[matrix] Charging Board shared (Poco F2 Pro; Poco X3; Vivo V21 (+7)),,Poco
+324,5,[matrix] Charging Board shared (Samsung Galaxy A50; Samsung Galaxy A30; Samsung Galaxy A30s),,Samsung
+325,5,[matrix] Infinix Zero 30 4G Charging Board,,Infinix
+326,2,[matrix] Motorola G5 Plus Battery,,Motorola
+327,2,[matrix] OnePlus 7T Battery,,OnePlus
+328,2,[matrix] Oppo Reno Battery,,Oppo
+329,2,[matrix] Oppo Reno2 Battery,,Oppo
+330,2,[matrix] Realme C3 Battery,,Realme
+331,5,[matrix] Realme P1 Charging Board,,Realme
+332,2,[matrix] Realme X50 Pro 5G Battery,,Realme
+333,1,[matrix] Samsung Galaxy A02 Display,,Samsung
+334,3,[matrix] Samsung Galaxy A02 OCA Glass,,Samsung
+335,1,[matrix] Samsung Galaxy A04 Display,,Samsung
+336,3,[matrix] Samsung Galaxy A04 OCA Glass,,Samsung
+337,2,[matrix] Vivo X100 Ultra Battery,,Vivo
+338,2,[matrix] Vivo X200 Pro Battery,,Vivo
+339,1,[matrix] Redmi Note 8 Display,,Xiaomi
+340,3,[matrix] Redmi Note 8 OCA Glass,,Xiaomi
+341,2,[matrix] Apple iPhone 6s Battery,,Apple
+342,2,[matrix] Apple iPhone X Battery,,Apple

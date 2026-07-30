@@ -4,4 +4,6 @@ export const RECENT_MODEL_IDS = [46, 45, 24, 41, 14];
 
 export const BRAND_ALIASES: Record<string, readonly string[]> = {
   xiaomi: ['Redmi', 'Poco'],
+  redmi: ['Xiaomi', 'Poco'],
+  poco: ['Xiaomi', 'Redmi'],
 };
