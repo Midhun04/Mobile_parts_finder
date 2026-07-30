@@ -62,49 +62,50 @@ export function HomeScreen({ navigation }: Props) {
 
   return (
     <SafeAreaView style={styles.safe} edges={['top']}>
-      <ScrollView
-        contentContainerStyle={styles.content}
-        keyboardShouldPersistTaps="handled"
-        showsVerticalScrollIndicator={false}
-        stickyHeaderIndices={[0]}
-      >
-        <View style={styles.stickyHeader}>
-          <Image
-            source={require('../../assets/logo.png')}
-            style={styles.logo}
-            resizeMode="cover"
-            accessibilityLabel="Parts Finder"
-          />
-          <View style={styles.headerContent}>
-            <View style={styles.brandText}>
-              <View style={styles.brandName}>
-                <Text style={[styles.brandWord, styles.brandParts]}>PARTS</Text>
-                <Text style={[styles.brandWord, styles.brandFinder]}>FINDER</Text>
-              </View>
-              <Text style={styles.brandTagline} numberOfLines={1}>
-                Find. Match. Repair.
-              </Text>
+      <View style={styles.stickyHeader}>
+        <Image
+          source={require('../../assets/logo.png')}
+          style={styles.logo}
+          resizeMode="cover"
+          accessibilityLabel="Parts Finder"
+        />
+        <View style={styles.headerContent}>
+          <View style={styles.brandText}>
+            <View style={styles.brandName}>
+              <Text style={[styles.brandWord, styles.brandParts]}>PARTS</Text>
+              <Text style={[styles.brandWord, styles.brandFinder]}>FINDER</Text>
             </View>
-            <View style={styles.headerActions}>
-              <Pressable
-                onPress={toggleTheme}
-                style={({ pressed }) => [
-                  styles.themeToggle,
-                  pressed && styles.themeTogglePressed,
-                ]}
-                accessibilityRole="button"
-                accessibilityLabel={`Switch to ${isDark ? 'light' : 'dark'} mode`}
-              >
-                <Text style={styles.themeIcon}>{isDark ? '☀' : '☾'}</Text>
-              </Pressable>
-              <View style={styles.headerBadge}>
-                <View style={styles.headerBadgeDot} />
-                <Text style={styles.headerBadgeText}>LIVE</Text>
-              </View>
+            <Text style={styles.brandTagline} numberOfLines={1}>
+              Find. Match. Repair.
+            </Text>
+          </View>
+          <View style={styles.headerActions}>
+            <Pressable
+              onPress={toggleTheme}
+              hitSlop={10}
+              style={({ pressed }) => [
+                styles.themeToggle,
+                pressed && styles.themeTogglePressed,
+              ]}
+              accessibilityRole="button"
+              accessibilityLabel={`Switch to ${isDark ? 'light' : 'dark'} mode`}
+            >
+              <Text style={styles.themeIcon}>{isDark ? '☀' : '☾'}</Text>
+            </Pressable>
+            <View style={styles.headerBadge}>
+              <View style={styles.headerBadgeDot} />
+              <Text style={styles.headerBadgeText}>LIVE</Text>
             </View>
           </View>
         </View>
+      </View>
 
+      <ScrollView
+        style={styles.scroll}
+        contentContainerStyle={styles.content}
+        keyboardShouldPersistTaps="handled"
+        showsVerticalScrollIndicator={false}
+      >
         <View style={styles.hero}>
           <View style={styles.heroGlow} />
           <View style={styles.heroLabel}>
@@ -190,6 +191,9 @@ const createStyles = (colors: AppColors) => StyleSheet.create({
   safe: {
     flex: 1,
     backgroundColor: colors.hero,
+  },
+  scroll: {
+    flex: 1,
   },
   content: {
     paddingBottom: 32,
