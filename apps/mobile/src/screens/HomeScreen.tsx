@@ -74,10 +74,10 @@ export function HomeScreen({ navigation }: Props) {
           />
           <View style={styles.headerContent}>
             <View style={styles.brandText}>
-              <Text style={styles.brandName} numberOfLines={1}>
-                <Text style={styles.brandParts}>PARTS</Text>
-                <Text style={styles.brandFinder}> FINDER</Text>
-              </Text>
+              <View style={styles.brandName}>
+                <Text style={[styles.brandWord, styles.brandParts]}>PARTS</Text>
+                <Text style={[styles.brandWord, styles.brandFinder]}>FINDER</Text>
+              </View>
               <Text style={styles.brandTagline} numberOfLines={1}>
                 Find. Match. Repair.
               </Text>
@@ -197,12 +197,8 @@ const styles = StyleSheet.create({
     opacity: 0.72,
   },
   stickyHeader: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 12,
-    paddingHorizontal: 20,
-    paddingTop: 10,
-    paddingBottom: 12,
+    position: 'relative',
+    height: 70,
     backgroundColor: colors.hero,
     borderBottomWidth: StyleSheet.hairlineWidth,
     borderBottomColor: 'rgba(255,255,255,0.1)',
@@ -214,6 +210,9 @@ const styles = StyleSheet.create({
     zIndex: 10,
   },
   logo: {
+    position: 'absolute',
+    left: 20,
+    top: 10,
     width: 48,
     height: 48,
     borderRadius: 13,
@@ -221,8 +220,11 @@ const styles = StyleSheet.create({
     borderColor: 'rgba(255,255,255,0.16)',
   },
   headerContent: {
-    flex: 1,
-    minWidth: 0,
+    position: 'absolute',
+    left: 80,
+    right: 20,
+    top: 10,
+    height: 48,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
@@ -233,6 +235,11 @@ const styles = StyleSheet.create({
     minWidth: 0,
   },
   brandName: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 5,
+  },
+  brandWord: {
     fontSize: 17,
     fontWeight: '900',
     letterSpacing: 0.7,
