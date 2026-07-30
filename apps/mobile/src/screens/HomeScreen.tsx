@@ -62,64 +62,108 @@ export function HomeScreen({ navigation }: Props) {
       <ScrollView
         contentContainerStyle={styles.content}
         keyboardShouldPersistTaps="handled"
+        showsVerticalScrollIndicator={false}
+        stickyHeaderIndices={[0]}
       >
-        <View style={styles.brandRowHeader}>
+        <View style={styles.stickyHeader}>
           <Image
             source={require('../../assets/logo.png')}
             style={styles.logo}
             resizeMode="cover"
             accessibilityLabel="Parts Finder"
           />
-          <View style={styles.brandText}>
-            <Text style={styles.brandName}>
-              <Text style={styles.brandParts}>PARTS</Text>
-              <Text style={styles.brandFinder}> FINDER</Text>
-            </Text>
-            <Text style={styles.brandTagline}>Find. Match. Repair.</Text>
+          <View style={styles.headerContent}>
+            <View style={styles.brandText}>
+              <Text style={styles.brandName} numberOfLines={1}>
+                <Text style={styles.brandParts}>PARTS</Text>
+                <Text style={styles.brandFinder}> FINDER</Text>
+              </Text>
+              <Text style={styles.brandTagline} numberOfLines={1}>
+                Find. Match. Repair.
+              </Text>
+            </View>
+            <View style={styles.headerBadge}>
+              <View style={styles.headerBadgeDot} />
+              <Text style={styles.headerBadgeText}>LIVE</Text>
+            </View>
           </View>
         </View>
 
-        <Text style={styles.heading}>Find compatible{'\n'}spare parts</Text>
-        <Text style={styles.lede}>
-          Search by phone model or part number — works both ways.
-        </Text>
+        <View style={styles.hero}>
+          <View style={styles.heroGlow} />
+          <View style={styles.heroLabel}>
+            <View style={styles.heroLabelLine} />
+            <Text style={styles.heroLabelText}>SMART PARTS MATCHING</Text>
+          </View>
 
-        <View style={styles.searchBlock}>
-          <SearchBar value={query} onChangeText={setQuery} onSubmit={handleSearch} />
+          <View style={styles.searchBlock}>
+            <SearchBar value={query} onChangeText={setQuery} onSubmit={handleSearch} />
+          </View>
+          <View style={styles.searchHintRow}>
+            <Text style={styles.searchHint}>Try “Galaxy A50”</Text>
+            <View style={styles.hintDot} />
+            <Text style={styles.searchHint}>or “BN-59”</Text>
+          </View>
         </View>
 
-        <Text style={styles.sectionTitle}>Popular brands</Text>
-        <View style={styles.brandRow}>
-          {popularBrands.map((brand) => (
-            <Pressable
-              key={brand.id}
-              onPress={() =>
-                navigation.navigate('BrandModels', {
-                  brandId: brand.id,
-                  brandName: brand.name,
-                })
-              }
-              style={({ pressed }) => [styles.brandChip, pressed && styles.pressed]}
-            >
-              <Text style={styles.brandChipText}>{brand.name}</Text>
-            </Pressable>
+        <View style={styles.body}>
+          <View style={styles.sectionHeader}>
+            <View>
+              <Text style={styles.sectionEyebrow}>QUICK ACCESS</Text>
+              <Text style={styles.sectionTitle}>Popular brands</Text>
+            </View>
+            <View style={styles.countPill}>
+              <Text style={styles.countPillText}>{popularBrands.length}</Text>
+            </View>
+          </View>
+          <View style={styles.brandRow}>
+            {popularBrands.map((brand) => (
+              <Pressable
+                key={brand.id}
+                onPress={() =>
+                  navigation.navigate('BrandModels', {
+                    brandId: brand.id,
+                    brandName: brand.name,
+                  })
+                }
+                style={({ pressed }) => [styles.brandChip, pressed && styles.pressed]}
+                accessibilityRole="button"
+                accessibilityLabel={`Browse ${brand.name} models`}
+              >
+                <View style={styles.brandInitial}>
+                  <Text style={styles.brandInitialText}>{brand.name.charAt(0)}</Text>
+                </View>
+                <Text style={styles.brandChipText}>{brand.name}</Text>
+              </Pressable>
+            ))}
+          </View>
+
+          <View style={[styles.sectionHeader, styles.modelsHeader]}>
+            <View>
+              <Text style={styles.sectionEyebrow}>FRESH IN THE CATALOG</Text>
+              <Text style={styles.sectionTitle}>Recently added</Text>
+            </View>
+            <Text style={styles.resultCount}>{recentModels.length} models</Text>
+          </View>
+          {recentModels.map((model) => (
+            <ModelCard
+              key={model.id}
+              model={model}
+              onPress={() => navigation.navigate('ModelDetails', { modelId: model.id })}
+            />
           ))}
-        </View>
 
-        <Text style={styles.sectionTitle}>Recently added</Text>
-        {recentModels.map((model) => (
-          <ModelCard
-            key={model.id}
-            model={model}
-            onPress={() => navigation.navigate('ModelDetails', { modelId: model.id })}
-          />
-        ))}
-
-        <View style={styles.tip}>
-          <Text style={styles.tipTitle}>Two-way search</Text>
-          <Text style={styles.tipBody}>
-            Try “A50” for models, or “BN-59” for a battery and its compatible phones.
-          </Text>
+          <View style={styles.tip}>
+            <View style={styles.tipIcon}>
+              <Text style={styles.tipIconText}>↔</Text>
+            </View>
+            <View style={styles.tipContent}>
+              <Text style={styles.tipTitle}>Search works both ways</Text>
+              <Text style={styles.tipBody}>
+                Find parts for a phone, or discover every model compatible with a part.
+              </Text>
+            </View>
+          </View>
         </View>
       </ScrollView>
     </SafeAreaView>
@@ -129,31 +173,69 @@ export function HomeScreen({ navigation }: Props) {
 const styles = StyleSheet.create({
   safe: {
     flex: 1,
-    backgroundColor: colors.background,
+    backgroundColor: colors.hero,
   },
   content: {
-    paddingHorizontal: 20,
     paddingBottom: 32,
-    paddingTop: 8,
+    backgroundColor: colors.background,
   },
-  brandRowHeader: {
+  hero: {
+    overflow: 'hidden',
+    paddingHorizontal: 20,
+    paddingTop: 22,
+    paddingBottom: 28,
+    backgroundColor: colors.hero,
+  },
+  heroGlow: {
+    position: 'absolute',
+    width: 240,
+    height: 240,
+    borderRadius: 120,
+    right: -100,
+    top: -100,
+    backgroundColor: colors.heroSoft,
+    opacity: 0.72,
+  },
+  stickyHeader: {
     flexDirection: 'row',
     alignItems: 'center',
     gap: 12,
-    marginBottom: 20,
+    paddingHorizontal: 20,
+    paddingTop: 10,
+    paddingBottom: 12,
+    backgroundColor: colors.hero,
+    borderBottomWidth: StyleSheet.hairlineWidth,
+    borderBottomColor: 'rgba(255,255,255,0.1)',
+    shadowColor: colors.shadow,
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.18,
+    shadowRadius: 8,
+    elevation: 8,
+    zIndex: 10,
   },
   logo: {
-    width: 56,
-    height: 56,
-    borderRadius: 14,
+    width: 48,
+    height: 48,
+    borderRadius: 13,
+    borderWidth: 1,
+    borderColor: 'rgba(255,255,255,0.16)',
+  },
+  headerContent: {
+    flex: 1,
+    minWidth: 0,
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    gap: 10,
   },
   brandText: {
     flex: 1,
+    minWidth: 0,
   },
   brandName: {
-    fontSize: 18,
-    fontWeight: '800',
-    letterSpacing: 0.5,
+    fontSize: 17,
+    fontWeight: '900',
+    letterSpacing: 0.7,
   },
   brandParts: {
     color: colors.brandBlue,
@@ -163,71 +245,203 @@ const styles = StyleSheet.create({
   },
   brandTagline: {
     marginTop: 2,
-    fontSize: 12,
-    fontWeight: '600',
-    letterSpacing: 1,
+    fontSize: 9,
+    fontWeight: '700',
+    letterSpacing: 1.5,
     textTransform: 'uppercase',
-    color: colors.textMuted,
+    color: 'rgba(255,255,255,0.55)',
   },
-  heading: {
-    fontSize: 32,
+  headerBadge: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 5,
+    paddingHorizontal: 9,
+    paddingVertical: 6,
+    borderRadius: 20,
+    backgroundColor: 'rgba(255,255,255,0.09)',
+  },
+  headerBadgeDot: {
+    width: 6,
+    height: 6,
+    borderRadius: 3,
+    backgroundColor: colors.brandGreen,
+  },
+  headerBadgeText: {
+    color: colors.white,
+    fontSize: 9,
     fontWeight: '800',
-    color: colors.text,
-    lineHeight: 38,
+    letterSpacing: 0.8,
   },
-  lede: {
-    marginTop: 8,
-    fontSize: 15,
-    color: colors.textSecondary,
-    lineHeight: 22,
+  heroLabel: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+    marginBottom: 12,
+  },
+  heroLabelLine: {
+    width: 22,
+    height: 2,
+    borderRadius: 1,
+    backgroundColor: colors.primaryLight,
+  },
+  heroLabelText: {
+    color: colors.primaryLight,
+    fontSize: 10,
+    fontWeight: '800',
+    letterSpacing: 1.6,
   },
   searchBlock: {
-    marginTop: 20,
-    marginBottom: 28,
+    marginTop: 26,
+  },
+  searchHintRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: 7,
+    marginTop: 12,
+  },
+  searchHint: {
+    color: 'rgba(255,255,255,0.52)',
+    fontSize: 11,
+    fontWeight: '600',
+  },
+  hintDot: {
+    width: 3,
+    height: 3,
+    borderRadius: 2,
+    backgroundColor: 'rgba(255,255,255,0.35)',
+  },
+  body: {
+    marginTop: -1,
+    paddingHorizontal: 20,
+    paddingTop: 30,
+    paddingBottom: 12,
+    borderTopLeftRadius: 26,
+    borderTopRightRadius: 26,
+    backgroundColor: colors.background,
+  },
+  sectionHeader: {
+    flexDirection: 'row',
+    alignItems: 'flex-end',
+    justifyContent: 'space-between',
+    marginBottom: 15,
+  },
+  sectionEyebrow: {
+    marginBottom: 4,
+    color: colors.primary,
+    fontSize: 9,
+    fontWeight: '900',
+    letterSpacing: 1.4,
   },
   sectionTitle: {
-    fontSize: 17,
-    fontWeight: '700',
+    fontSize: 21,
+    fontWeight: '900',
     color: colors.text,
-    marginBottom: 12,
+    letterSpacing: -0.3,
+  },
+  countPill: {
+    minWidth: 29,
+    height: 29,
+    paddingHorizontal: 8,
+    borderRadius: 15,
+    backgroundColor: colors.mint,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  countPillText: {
+    color: colors.primary,
+    fontSize: 12,
+    fontWeight: '900',
   },
   brandRow: {
     flexDirection: 'row',
     flexWrap: 'wrap',
-    gap: 8,
-    marginBottom: 28,
+    gap: 10,
+    marginBottom: 34,
   },
   brandChip: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
     backgroundColor: colors.surface,
     borderWidth: 1,
     borderColor: colors.border,
-    borderRadius: 10,
-    paddingHorizontal: 14,
-    paddingVertical: 10,
+    borderRadius: 14,
+    paddingLeft: 7,
+    paddingRight: 13,
+    paddingVertical: 7,
+    shadowColor: colors.shadow,
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.04,
+    shadowRadius: 8,
+    elevation: 1,
+  },
+  brandInitial: {
+    width: 28,
+    height: 28,
+    borderRadius: 9,
+    backgroundColor: colors.surfaceMuted,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  brandInitialText: {
+    color: colors.primary,
+    fontSize: 12,
+    fontWeight: '900',
   },
   brandChipText: {
-    fontSize: 14,
-    fontWeight: '600',
-    color: colors.primary,
+    fontSize: 13,
+    fontWeight: '800',
+    color: colors.text,
   },
   pressed: {
-    opacity: 0.8,
+    opacity: 0.72,
+    transform: [{ scale: 0.98 }],
+  },
+  modelsHeader: {
+    marginBottom: 16,
+  },
+  resultCount: {
+    marginBottom: 3,
+    color: colors.textMuted,
+    fontSize: 12,
+    fontWeight: '600',
   },
   tip: {
-    marginTop: 12,
-    backgroundColor: colors.primary,
-    borderRadius: 16,
-    padding: 16,
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 14,
+    marginTop: 10,
+    backgroundColor: colors.hero,
+    borderRadius: 20,
+    padding: 18,
+    overflow: 'hidden',
+  },
+  tipIcon: {
+    width: 42,
+    height: 42,
+    borderRadius: 13,
+    backgroundColor: 'rgba(255,255,255,0.1)',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  tipIconText: {
+    color: colors.brandGreen,
+    fontSize: 22,
+    fontWeight: '700',
+  },
+  tipContent: {
+    flex: 1,
   },
   tipTitle: {
     color: colors.white,
-    fontWeight: '700',
+    fontWeight: '800',
     fontSize: 15,
-    marginBottom: 6,
+    marginBottom: 5,
   },
   tipBody: {
-    color: 'rgba(255,255,255,0.85)',
-    fontSize: 14,
-    lineHeight: 20,
+    color: 'rgba(255,255,255,0.66)',
+    fontSize: 12,
+    lineHeight: 18,
   },
 });

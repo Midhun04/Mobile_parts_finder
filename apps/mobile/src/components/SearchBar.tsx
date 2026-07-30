@@ -18,21 +18,30 @@ export function SearchBar({
 }: Props) {
   return (
     <View style={styles.wrap}>
-      <TextInput
-        value={value}
-        onChangeText={onChangeText}
-        onSubmitEditing={onSubmit}
-        placeholder={placeholder}
-        placeholderTextColor={colors.textMuted}
-        returnKeyType="search"
-        autoCorrect={false}
-        autoCapitalize="none"
-        autoFocus={autoFocus}
-        style={styles.input}
-      />
+      <View style={styles.inputWrap}>
+        <View style={styles.searchIcon} accessibilityElementsHidden>
+          <View style={styles.searchIconCircle} />
+          <View style={styles.searchIconHandle} />
+        </View>
+        <TextInput
+          value={value}
+          onChangeText={onChangeText}
+          onSubmitEditing={onSubmit}
+          placeholder={placeholder}
+          placeholderTextColor={colors.textMuted}
+          returnKeyType="search"
+          autoCorrect={false}
+          autoCapitalize="none"
+          autoFocus={autoFocus}
+          style={styles.input}
+          accessibilityLabel={placeholder}
+        />
+      </View>
       <Pressable
         onPress={onSubmit}
         style={({ pressed }) => [styles.button, pressed && styles.buttonPressed]}
+        accessibilityRole="button"
+        accessibilityLabel="Search"
       >
         <Text style={styles.buttonText}>Search</Text>
       </Pressable>
@@ -44,31 +53,68 @@ const styles = StyleSheet.create({
   wrap: {
     flexDirection: 'row',
     alignItems: 'center',
-    gap: 8,
+    gap: 10,
+    padding: 6,
+    borderRadius: 18,
+    backgroundColor: colors.surface,
+    shadowColor: colors.shadow,
+    shadowOffset: { width: 0, height: 8 },
+    shadowOpacity: 0.16,
+    shadowRadius: 20,
+    elevation: 8,
+  },
+  inputWrap: {
+    flex: 1,
+    minWidth: 0,
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingLeft: 12,
   },
   input: {
     flex: 1,
-    backgroundColor: colors.surface,
-    borderWidth: 1,
-    borderColor: colors.border,
-    borderRadius: 12,
-    paddingHorizontal: 14,
-    paddingVertical: 12,
-    fontSize: 16,
+    paddingHorizontal: 10,
+    paddingVertical: 13,
+    fontSize: 15,
     color: colors.text,
+  },
+  searchIcon: {
+    width: 20,
+    height: 20,
+  },
+  searchIconCircle: {
+    position: 'absolute',
+    left: 1,
+    top: 1,
+    width: 13,
+    height: 13,
+    borderWidth: 2,
+    borderColor: colors.primary,
+    borderRadius: 7,
+  },
+  searchIconHandle: {
+    position: 'absolute',
+    width: 8,
+    height: 2,
+    left: 12,
+    top: 14,
+    borderRadius: 1,
+    backgroundColor: colors.primary,
+    transform: [{ rotate: '45deg' }],
   },
   button: {
     backgroundColor: colors.primary,
-    borderRadius: 12,
-    paddingHorizontal: 16,
-    paddingVertical: 12,
+    borderRadius: 13,
+    minHeight: 48,
+    paddingHorizontal: 18,
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   buttonPressed: {
     backgroundColor: colors.primaryDark,
   },
   buttonText: {
     color: colors.white,
-    fontWeight: '700',
+    fontWeight: '800',
     fontSize: 15,
   },
 });
