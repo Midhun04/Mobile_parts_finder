@@ -17,6 +17,8 @@ export const metadata: Metadata = {
     'Find compatible spare parts for mobile phone models — search by model or part number.',
   icons: {
     icon: '/favicon.png',
+    shortcut: '/favicon.png',
+    apple: '/apple-touch-icon.png',
   },
 };
 
