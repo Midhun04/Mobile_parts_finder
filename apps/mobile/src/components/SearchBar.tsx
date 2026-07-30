@@ -40,6 +40,20 @@ export function SearchBar({
           style={styles.input}
           accessibilityLabel={placeholder}
         />
+        {value.length > 0 ? (
+          <Pressable
+            onPress={() => onChangeText('')}
+            style={({ pressed }) => [styles.clearButton, pressed && styles.clearButtonPressed]}
+            accessibilityRole="button"
+            accessibilityLabel="Clear search"
+            hitSlop={8}
+          >
+            <View style={styles.clearIcon}>
+              <View style={[styles.clearLine, styles.clearLineA]} />
+              <View style={[styles.clearLine, styles.clearLineB]} />
+            </View>
+          </Pressable>
+        ) : null}
       </View>
       <Pressable
         onPress={onSubmit}
@@ -80,6 +94,37 @@ const createStyles = (colors: AppColors) => StyleSheet.create({
     paddingVertical: 13,
     fontSize: 15,
     color: colors.text,
+  },
+  clearButton: {
+    width: 28,
+    height: 28,
+    borderRadius: 14,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginRight: 4,
+    backgroundColor: colors.surfaceMuted,
+  },
+  clearButtonPressed: {
+    opacity: 0.7,
+  },
+  clearIcon: {
+    width: 12,
+    height: 12,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  clearLine: {
+    position: 'absolute',
+    width: 12,
+    height: 2,
+    borderRadius: 1,
+    backgroundColor: colors.textMuted,
+  },
+  clearLineA: {
+    transform: [{ rotate: '45deg' }],
+  },
+  clearLineB: {
+    transform: [{ rotate: '-45deg' }],
   },
   searchIcon: {
     width: 20,
