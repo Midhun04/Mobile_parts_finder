@@ -377,6 +377,8 @@ const createStyles = (colors: AppColors) => StyleSheet.create({
     marginBottom: 34,
   },
   brandChip: {
+    flexBasis: '48%',
+    flexGrow: 1,
     flexDirection: 'row',
     alignItems: 'center',
     gap: 8,
