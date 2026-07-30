@@ -22,14 +22,15 @@ PART_COLS = [
     ("OCA_Glass", "OCA Glass"),
     ("Pouch_BackPanel", "Pouch"),
     ("Charging_Board", "Charging Board"),
+    ("Tempered_Glass", "Tempered Glass"),
 ]
 
 KNOWN_BRANDS = [
     "Samsung", "Apple", "Xiaomi", "Redmi", "Realme", "Oppo", "Vivo", "OnePlus",
     "Nokia", "Motorola", "Google", "Huawei", "Honor", "Infinix", "Tecno", "Lava",
     "Nothing", "Asus", "Sony", "Lenovo", "Poco", "POCO", "Itel", "Micromax",
+    "iQOO", "IQOO",
 ]
-
 
 class UnionFind:
     def __init__(self) -> None:
@@ -111,6 +112,13 @@ def normalize_label(label: str) -> tuple[str, str, str | None]:
     if brand == "Motorola" and model.lower().startswith("moto "):
         model = model[5:].strip()
 
+    if brand.lower() in ("iqoo",):
+        brand = "iQOO"
+
+    if brand == "Samsung":
+        if not model.lower().startswith("galaxy "):
+            model = f"Galaxy {model}"
+
     # Catalog-friendly aliases
     model = re.sub(r"\b(Y\d+)S\b", lambda mm: mm.group(1) + "s", model)
     aliases = {
@@ -165,7 +173,7 @@ def main() -> None:
         brand_by_name[key] = row
         return row
 
-    for extra in ("Poco", "Itel", "Micromax"):
+    for extra in ("Poco", "Itel", "Micromax", "iQOO"):
         ensure_brand(extra)
 
     type_by_name = {t["name"]: t for t in part_types}

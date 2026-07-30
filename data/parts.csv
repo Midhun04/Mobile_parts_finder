@@ -341,3 +341,44 @@ id,part_type_id,part_name,part_number,manufacturer
 340,3,[matrix] Redmi Note 8 OCA Glass,,Xiaomi
 341,2,[matrix] Apple iPhone 6s Battery,,Apple
 342,2,[matrix] Apple iPhone X Battery,,Apple
+343,16,[matrix] Tempered Glass shared (Apple iPhone 13; Apple iPhone 13 Pro; Apple iPhone 14),,Apple
+344,16,[matrix] Tempered Glass shared (Asus Zenfone MAX Pro M1; Honor 7C; Huawei Y7 Pro 2018 (+26)),,Asus
+345,16,[matrix] Tempered Glass shared (Oppo A54 5G; Oppo A72 5G; Oppo A73 5G (+43)),,Oppo
+346,16,[matrix] Tempered Glass shared (Poco F2 Pro; Poco X3; Redmi K30 (+35)),,Poco
+347,16,[matrix] Tempered Glass shared (Huawei NOVA Y70; iQOO Z10 LITE; Realme C51 (+16)),,Huawei
+348,16,[matrix] Tempered Glass shared (Infinix Hot 10; Infinix Hot 12 Play; Tecno Pova (+12)),,Infinix
+349,16,[matrix] Tempered Glass shared (Infinix Hot 10 PLAY; Infinix Hot 10S; Infinix Hot 10S NFC (+10)),,Infinix
+350,16,[matrix] Tempered Glass shared (Oppo A57; Oppo A78; Oppo A17 (+136)),,Oppo
+351,16,[matrix] Tempered Glass shared (Tecno Camon 17; Tecno Spark 7 Pro; Infinix Hot 40i (+24)),,Tecno
+352,16,[matrix] Tempered Glass shared (Realme C55; iQOO Z10X; iQOO Z9X (+64)),,Realme
+353,16,[matrix] Tempered Glass shared (Realme C2; Itel A48; Oppo A1k (+1)),,Realme
+354,16,[matrix] Tempered Glass shared (Poco C31; Samsung Galaxy A13; Samsung Galaxy A23 (+19)),,Poco
+355,16,[matrix] Tempered Glass shared (OnePlus 6T; OnePlus 7; Oppo F9 Pro (+10)),,OnePlus
+356,16,[matrix] Tempered Glass shared (OnePlus 7T; Oppo F9; Oppo F11 (+6)),,OnePlus
+357,16,[matrix] Tempered Glass shared (OnePlus Ace Racing 5G; OnePlus Nord CE2 Lite 5G; Oppo A11S (+32)),,OnePlus
+358,16,[matrix] Tempered Glass shared (OnePlus Nord; Vivo X21S; Redmi 9 Pro 4G (+1)),,OnePlus
+359,16,[matrix] Tempered Glass shared (OnePlus Nord 2 5G; OnePlus Nord 2T 5G; OnePlus Nord CE 5G (+13)),,OnePlus
+360,16,[matrix] Tempered Glass shared (OnePlus Nord CE2; Oppo A74 4G; Oppo A93 (+40)),,OnePlus
+361,16,[matrix] Tempered Glass shared (Oppo A5S; Oppo A7N; Vivo V11 (+22)),,Oppo
+362,16,[matrix] Tempered Glass shared (Oppo A12e; Oppo A3s; Oppo A5 (+3)),,Oppo
+363,16,[matrix] Tempered Glass shared (Samsung Galaxy A33 5G; Oppo A73; Oppo A91 (+29)),,Samsung
+364,16,[matrix] Tempered Glass shared (Samsung Galaxy A51; Redmi Note 10; Samsung Galaxy A52 (+31)),,Samsung
+365,16,[matrix] Tempered Glass shared (Oppo F11 Pro; Vivo V15; Oppo K3 (+15)),,Oppo
+366,16,[matrix] Tempered Glass shared (Oppo F5; Oppo F5 Plus; Realme 1 (+3)),,Oppo
+367,16,[matrix] Tempered Glass shared (Poco C55; Redmi 11A; Redmi 12C (+9)),,Poco
+368,16,[matrix] Tempered Glass shared (Poco C65; Poco M6 5g; Samsung Galaxy A06s (+5)),,Poco
+369,16,[matrix] Tempered Glass shared (Poco C71; Poco C75; Poco M7 (+5)),,Poco
+370,16,[matrix] Tempered Glass shared (Samsung Galaxy A20s; Poco M2; Redmi 9 Prime),,Samsung
+371,16,[matrix] Tempered Glass shared (Poco M6 4G; Poco M6 Plus; Poco M6 Pro 5G (+7)),,Poco
+372,16,[matrix] Tempered Glass shared (Samsung Galaxy A01; Samsung Galaxy M01),,Samsung
+373,16,[matrix] Tempered Glass shared (Samsung Galaxy A01 Core; Samsung Galaxy M01 Core),,Samsung
+374,16,[matrix] Tempered Glass shared (Samsung Galaxy A14; Samsung Galaxy M14; Samsung Galaxy A14 5G (+1)),,Samsung
+375,16,[matrix] Tempered Glass shared (Samsung Galaxy A31; Samsung Galaxy F22; Samsung Galaxy M22),,Samsung
+376,16,[matrix] Tempered Glass shared (Samsung Galaxy A530; Samsung Galaxy A6 2018; Samsung Galaxy A8 (+2)),,Samsung
+377,16,[matrix] Tempered Glass shared (Samsung Galaxy J7; Samsung Galaxy J7 2016; Samsung Galaxy J7 2018 (+7)),,Samsung
+378,16,[matrix] Tempered Glass shared (Tecno LC7; Tecno LC7S; Tecno Pouvoir 4 (+5)),,Tecno
+379,16,[matrix] Tempered Glass shared (Vivo S1; Vivo S1 Pro; Vivo Y9s (+7)),,Vivo
+380,16,[matrix] Tempered Glass shared (Vivo Y11; Vivo Y12; Vivo Y15 (+3)),,Vivo
+381,16,[matrix] Tempered Glass shared (Redmi 4x; Redmi 5a; Redmi Go),,Redmi
+382,16,[matrix] Tempered Glass shared (Redmi 6; Redmi 6a; Redmi 7a),,Redmi
+383,16,[matrix] Tempered Glass shared (Redmi 6 Pro; Redmi A2 Lite),,Redmi

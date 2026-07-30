@@ -34,6 +34,7 @@ const PART_TYPE_CODES: Record<string, string> = {
   'Volume Flex': 'VOLUME_FLEX',
   'Power Flex': 'POWER_FLEX',
   Vibrator: 'VIBRATOR',
+  'Tempered Glass': 'TEMPERED_GLASS',
 };
 
 function parseCsv(fileName: string): Record<string, string>[] {
