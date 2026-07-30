@@ -116,11 +116,6 @@ export function HomeScreen({ navigation }: Props) {
           <View style={styles.searchBlock}>
             <SearchBar value={query} onChangeText={setQuery} onSubmit={handleSearch} />
           </View>
-          <View style={styles.searchHintRow}>
-            <Text style={styles.searchHint}>Try “Galaxy A50”</Text>
-            <View style={styles.hintDot} />
-            <Text style={styles.searchHint}>or “BN-59”</Text>
-          </View>
         </View>
 
         <View style={styles.body}>
@@ -169,18 +164,6 @@ export function HomeScreen({ navigation }: Props) {
               onPress={() => navigation.navigate('ModelDetails', { modelId: model.id })}
             />
           ))}
-
-          <View style={styles.tip}>
-            <View style={styles.tipIcon}>
-              <Text style={styles.tipIconText}>↔</Text>
-            </View>
-            <View style={styles.tipContent}>
-              <Text style={styles.tipTitle}>Search works both ways</Text>
-              <Text style={styles.tipBody}>
-                Find parts for a phone, or discover every model compatible with a part.
-              </Text>
-            </View>
-          </View>
         </View>
       </ScrollView>
     </SafeAreaView>
@@ -345,24 +328,6 @@ const createStyles = (colors: AppColors) => StyleSheet.create({
   searchBlock: {
     marginTop: 26,
   },
-  searchHintRow: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-    gap: 7,
-    marginTop: 12,
-  },
-  searchHint: {
-    color: 'rgba(255,255,255,0.52)',
-    fontSize: 11,
-    fontWeight: '600',
-  },
-  hintDot: {
-    width: 3,
-    height: 3,
-    borderRadius: 2,
-    backgroundColor: 'rgba(255,255,255,0.35)',
-  },
   body: {
     marginTop: -1,
     paddingHorizontal: 20,
@@ -458,42 +423,5 @@ const createStyles = (colors: AppColors) => StyleSheet.create({
     color: colors.textMuted,
     fontSize: 12,
     fontWeight: '600',
-  },
-  tip: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 14,
-    marginTop: 10,
-    backgroundColor: colors.hero,
-    borderRadius: 20,
-    padding: 18,
-    overflow: 'hidden',
-  },
-  tipIcon: {
-    width: 42,
-    height: 42,
-    borderRadius: 13,
-    backgroundColor: 'rgba(255,255,255,0.1)',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  tipIconText: {
-    color: colors.brandGreen,
-    fontSize: 22,
-    fontWeight: '700',
-  },
-  tipContent: {
-    flex: 1,
-  },
-  tipTitle: {
-    color: colors.white,
-    fontWeight: '800',
-    fontSize: 15,
-    marginBottom: 5,
-  },
-  tipBody: {
-    color: 'rgba(255,255,255,0.66)',
-    fontSize: 12,
-    lineHeight: 18,
   },
 });
