@@ -1,7 +1,8 @@
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import type { MobileModelWithBrand } from '@mpf/shared';
 import { formatModelName } from '../utils/format';
-import { colors } from '../theme/colors';
+import type { AppColors } from '../theme/colors';
+import { useTheme } from '../theme/ThemeContext';
 
 type Props = {
   model: MobileModelWithBrand;
@@ -9,6 +10,9 @@ type Props = {
 };
 
 export function ModelCard({ model, onPress }: Props) {
+  const { colors } = useTheme();
+  const styles = createStyles(colors);
+
   return (
     <Pressable
       onPress={onPress}
@@ -37,7 +41,7 @@ export function ModelCard({ model, onPress }: Props) {
   );
 }
 
-const styles = StyleSheet.create({
+const createStyles = (colors: AppColors) => StyleSheet.create({
   card: {
     flexDirection: 'row',
     alignItems: 'center',

@@ -11,11 +11,14 @@ import {
 import { ErrorState, LoadingState } from '../components/QueryState';
 import type { RootStackParamList } from '../navigation/types';
 import { formatModelName } from '../utils/format';
-import { colors } from '../theme/colors';
+import type { AppColors } from '../theme/colors';
+import { useTheme } from '../theme/ThemeContext';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Compatibility'>;
 
 export function CompatibilityScreen({ navigation, route }: Props) {
+  const { colors } = useTheme();
+  const styles = createStyles(colors);
   const { modelId, partType } = route.params;
 
   const modelQuery = useQuery({
@@ -120,7 +123,7 @@ export function CompatibilityScreen({ navigation, route }: Props) {
   );
 }
 
-const styles = StyleSheet.create({
+const createStyles = (colors: AppColors) => StyleSheet.create({
   safe: {
     flex: 1,
     backgroundColor: colors.background,

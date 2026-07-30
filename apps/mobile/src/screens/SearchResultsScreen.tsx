@@ -9,11 +9,14 @@ import { PartCard } from '../components/PartCard';
 import { ErrorState, LoadingState } from '../components/QueryState';
 import { SearchBar } from '../components/SearchBar';
 import type { RootStackParamList } from '../navigation/types';
-import { colors } from '../theme/colors';
+import type { AppColors } from '../theme/colors';
+import { useTheme } from '../theme/ThemeContext';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'SearchResults'>;
 
 export function SearchResultsScreen({ navigation, route }: Props) {
+  const { colors } = useTheme();
+  const styles = createStyles(colors);
   const [query, setQuery] = useState(route.params.query);
   const [activeQuery, setActiveQuery] = useState(route.params.query);
 
@@ -92,7 +95,7 @@ export function SearchResultsScreen({ navigation, route }: Props) {
   );
 }
 
-const styles = StyleSheet.create({
+const createStyles = (colors: AppColors) => StyleSheet.create({
   safe: {
     flex: 1,
     backgroundColor: colors.background,

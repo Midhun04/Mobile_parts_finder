@@ -1,4 +1,8 @@
-import { NavigationContainer } from '@react-navigation/native';
+import {
+  DarkTheme as NavigationDarkTheme,
+  DefaultTheme as NavigationLightTheme,
+  NavigationContainer,
+} from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import type { RootStackParamList } from './types';
 import { BrandModelsScreen } from '../screens/BrandModelsScreen';
@@ -9,13 +13,28 @@ import { PartDetailsScreen } from '../screens/PartDetailsScreen';
 import { SearchResultsScreen } from '../screens/SearchResultsScreen';
 import { SplashScreen } from '../screens/SplashScreen';
 import { getPartTypeLabel } from '@mpf/shared';
-import { colors } from '../theme/colors';
+import { useTheme } from '../theme/ThemeContext';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
 export function RootNavigator() {
+  const { colors, isDark } = useTheme();
+  const baseTheme = isDark ? NavigationDarkTheme : NavigationLightTheme;
+  const navigationTheme = {
+    ...baseTheme,
+    colors: {
+      ...baseTheme.colors,
+      primary: colors.primary,
+      background: colors.background,
+      card: colors.background,
+      text: colors.text,
+      border: colors.border,
+      notification: colors.accent,
+    },
+  };
+
   return (
-    <NavigationContainer>
+    <NavigationContainer theme={navigationTheme}>
       <Stack.Navigator
         initialRouteName="Splash"
         screenOptions={{
@@ -24,17 +43,18 @@ export function RootNavigator() {
           headerTitleStyle: { fontWeight: '700', color: colors.text },
           headerShadowVisible: false,
           contentStyle: { backgroundColor: colors.background },
+          statusBarStyle: isDark ? 'light' : 'dark',
         }}
       >
         <Stack.Screen
           name="Splash"
           component={SplashScreen}
-          options={{ headerShown: false }}
+          options={{ headerShown: false, statusBarStyle: 'light' }}
         />
         <Stack.Screen
           name="Home"
           component={HomeScreen}
-          options={{ headerShown: false }}
+          options={{ headerShown: false, statusBarStyle: 'light' }}
         />
         <Stack.Screen
           name="SearchResults"

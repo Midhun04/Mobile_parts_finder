@@ -6,11 +6,14 @@ import { getModelsByBrand } from '../api/compatibilityApi';
 import { ModelCard } from '../components/ModelCard';
 import { ErrorState, LoadingState } from '../components/QueryState';
 import type { RootStackParamList } from '../navigation/types';
-import { colors } from '../theme/colors';
+import type { AppColors } from '../theme/colors';
+import { useTheme } from '../theme/ThemeContext';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'BrandModels'>;
 
 export function BrandModelsScreen({ navigation, route }: Props) {
+  const { colors } = useTheme();
+  const styles = createStyles(colors);
   const { brandId, brandName } = route.params;
 
   const modelsQuery = useQuery({
@@ -50,7 +53,7 @@ export function BrandModelsScreen({ navigation, route }: Props) {
   );
 }
 
-const styles = StyleSheet.create({
+const createStyles = (colors: AppColors) => StyleSheet.create({
   safe: {
     flex: 1,
     backgroundColor: colors.background,

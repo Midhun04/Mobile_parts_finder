@@ -1,6 +1,7 @@
 import { Pressable, StyleSheet, Text } from 'react-native';
 import { getPartTypeIcon, getPartTypeLabel, type PartType } from '@mpf/shared';
-import { colors } from '../theme/colors';
+import type { AppColors } from '../theme/colors';
+import { useTheme } from '../theme/ThemeContext';
 
 type Props = {
   type: PartType;
@@ -9,6 +10,9 @@ type Props = {
 };
 
 export function PartCategoryRow({ type, count, onPress }: Props) {
+  const { colors } = useTheme();
+  const styles = createStyles(colors);
+
   return (
     <Pressable
       onPress={onPress}
@@ -22,7 +26,7 @@ export function PartCategoryRow({ type, count, onPress }: Props) {
   );
 }
 
-const styles = StyleSheet.create({
+const createStyles = (colors: AppColors) => StyleSheet.create({
   row: {
     flexDirection: 'row',
     alignItems: 'center',

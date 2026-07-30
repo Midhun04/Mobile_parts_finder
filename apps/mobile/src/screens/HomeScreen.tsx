@@ -15,11 +15,14 @@ import { ModelCard } from '../components/ModelCard';
 import { ErrorState, LoadingState } from '../components/QueryState';
 import { SearchBar } from '../components/SearchBar';
 import type { RootStackParamList } from '../navigation/types';
-import { colors } from '../theme/colors';
+import type { AppColors } from '../theme/colors';
+import { useTheme } from '../theme/ThemeContext';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'Home'>;
 
 export function HomeScreen({ navigation }: Props) {
+  const { colors, isDark, toggleTheme } = useTheme();
+  const styles = createStyles(colors);
   const [query, setQuery] = useState('');
 
   const brandsQuery = useQuery({
@@ -82,9 +85,22 @@ export function HomeScreen({ navigation }: Props) {
                 Find. Match. Repair.
               </Text>
             </View>
-            <View style={styles.headerBadge}>
-              <View style={styles.headerBadgeDot} />
-              <Text style={styles.headerBadgeText}>LIVE</Text>
+            <View style={styles.headerActions}>
+              <Pressable
+                onPress={toggleTheme}
+                style={({ pressed }) => [
+                  styles.themeToggle,
+                  pressed && styles.themeTogglePressed,
+                ]}
+                accessibilityRole="button"
+                accessibilityLabel={`Switch to ${isDark ? 'light' : 'dark'} mode`}
+              >
+                <Text style={styles.themeIcon}>{isDark ? '☀' : '☾'}</Text>
+              </Pressable>
+              <View style={styles.headerBadge}>
+                <View style={styles.headerBadgeDot} />
+                <Text style={styles.headerBadgeText}>LIVE</Text>
+              </View>
             </View>
           </View>
         </View>
@@ -170,7 +186,7 @@ export function HomeScreen({ navigation }: Props) {
   );
 }
 
-const styles = StyleSheet.create({
+const createStyles = (colors: AppColors) => StyleSheet.create({
   safe: {
     flex: 1,
     backgroundColor: colors.hero,
@@ -257,6 +273,31 @@ const styles = StyleSheet.create({
     letterSpacing: 1.5,
     textTransform: 'uppercase',
     color: 'rgba(255,255,255,0.55)',
+  },
+  headerActions: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 8,
+  },
+  themeToggle: {
+    width: 32,
+    height: 32,
+    borderRadius: 16,
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: 'rgba(255,255,255,0.09)',
+    borderWidth: 1,
+    borderColor: 'rgba(255,255,255,0.1)',
+  },
+  themeTogglePressed: {
+    opacity: 0.65,
+    transform: [{ scale: 0.94 }],
+  },
+  themeIcon: {
+    color: colors.white,
+    fontSize: 18,
+    fontWeight: '700',
+    lineHeight: 21,
   },
   headerBadge: {
     flexDirection: 'row',

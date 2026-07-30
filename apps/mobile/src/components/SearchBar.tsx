@@ -1,5 +1,6 @@
 import { StyleSheet, TextInput, View, Pressable, Text } from 'react-native';
-import { colors } from '../theme/colors';
+import type { AppColors } from '../theme/colors';
+import { useTheme } from '../theme/ThemeContext';
 
 type Props = {
   value: string;
@@ -16,6 +17,9 @@ export function SearchBar({
   placeholder = 'Search model or part number',
   autoFocus = false,
 }: Props) {
+  const { colors } = useTheme();
+  const styles = createStyles(colors);
+
   return (
     <View style={styles.wrap}>
       <View style={styles.inputWrap}>
@@ -49,7 +53,7 @@ export function SearchBar({
   );
 }
 
-const styles = StyleSheet.create({
+const createStyles = (colors: AppColors) => StyleSheet.create({
   wrap: {
     flexDirection: 'row',
     alignItems: 'center',

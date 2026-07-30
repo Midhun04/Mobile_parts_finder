@@ -1,5 +1,6 @@
 import { ActivityIndicator, StyleSheet, Text, View } from 'react-native';
-import { colors } from '../theme/colors';
+import type { AppColors } from '../theme/colors';
+import { useTheme } from '../theme/ThemeContext';
 import { API_BASE_URL } from '../api/client';
 
 type Props = {
@@ -7,6 +8,9 @@ type Props = {
 };
 
 export function LoadingState({ message = 'Loading…' }: Props) {
+  const { colors } = useTheme();
+  const styles = createStyles(colors);
+
   return (
     <View style={styles.center}>
       <ActivityIndicator color={colors.primary} size="large" />
@@ -16,6 +20,9 @@ export function LoadingState({ message = 'Loading…' }: Props) {
 }
 
 export function ErrorState({ message }: Props) {
+  const { colors } = useTheme();
+  const styles = createStyles(colors);
+
   return (
     <View style={styles.center}>
       <Text style={styles.title}>Couldn’t load data</Text>
@@ -27,7 +34,7 @@ export function ErrorState({ message }: Props) {
   );
 }
 
-const styles = StyleSheet.create({
+const createStyles = (colors: AppColors) => StyleSheet.create({
   center: {
     flex: 1,
     alignItems: 'center',

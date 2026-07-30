@@ -8,11 +8,14 @@ import { ErrorState, LoadingState } from '../components/QueryState';
 import { PartCategoryRow } from '../components/PartCategoryRow';
 import type { RootStackParamList } from '../navigation/types';
 import { formatModelName } from '../utils/format';
-import { colors } from '../theme/colors';
+import type { AppColors } from '../theme/colors';
+import { useTheme } from '../theme/ThemeContext';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'ModelDetails'>;
 
 export function ModelDetailsScreen({ navigation, route }: Props) {
+  const { colors } = useTheme();
+  const styles = createStyles(colors);
   const modelId = route.params.modelId;
 
   const modelQuery = useQuery({
@@ -94,7 +97,7 @@ export function ModelDetailsScreen({ navigation, route }: Props) {
   );
 }
 
-const styles = StyleSheet.create({
+const createStyles = (colors: AppColors) => StyleSheet.create({
   safe: {
     flex: 1,
     backgroundColor: colors.background,

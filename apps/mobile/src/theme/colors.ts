@@ -1,4 +1,4 @@
-export const colors = {
+export const lightColors = {
   background: '#F6F8F7',
   surface: '#FFFFFF',
   surfaceMuted: '#EAF2EF',
@@ -26,3 +26,37 @@ export const colors = {
   shadow: '#071F1A',
   overlay: 'rgba(18, 64, 54, 0.55)',
 };
+
+export type AppColors = typeof lightColors;
+
+export const darkColors: AppColors = {
+  background: '#071D19',
+  surface: '#102A25',
+  surfaceMuted: '#183B34',
+  primary: '#45B897',
+  primaryDark: '#2A8E73',
+  primaryLight: '#6FD0B3',
+  hero: '#041713',
+  heroSoft: '#103A32',
+  mint: '#173F36',
+  accent: '#E5834E',
+  brandNavy: '#020B13',
+  brandBlue: '#38ACFA',
+  brandGreen: '#86DC5C',
+  text: '#F1F7F5',
+  textSecondary: '#AEC1BB',
+  textMuted: '#7F9A92',
+  border: '#24483F',
+  borderStrong: '#356157',
+  verified: '#65D49A',
+  verifiedBg: '#163D2C',
+  unverified: '#F0C36B',
+  unverifiedBg: '#493A1D',
+  danger: '#FF8A80',
+  white: '#FFFFFF',
+  shadow: '#000000',
+  overlay: 'rgba(0, 10, 8, 0.72)',
+};
+
+// Kept for non-React modules; UI components should use the theme context.
+export const colors = lightColors;
