@@ -1,8 +1,11 @@
 # Catalog data (CSV)
 
-Source of truth for brands, models, part types, parts, and compatibility.
+**Bootstrap / import source.** Day-to-day edits should go through the **admin dashboard** (`apps/admin`) — PostgreSQL is the live catalog.
 
-Loaded by `apps/api/prisma/seed.ts` via `npm run db:seed`.
+CSVs are still used by `apps/api/prisma/seed.ts`:
+
+- Empty database → seed loads CSVs automatically
+- Existing catalog → seed **skips wipe** unless `SEED_WIPE=1`
 
 ```text
 data/

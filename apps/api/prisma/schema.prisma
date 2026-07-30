@@ -14,37 +14,41 @@ model Brand {
 }
 
 model MobileModel {
-  id              Int             @id
+  id              Int                         @id
   name            String
   modelNumber     String?
   releaseYear     Int?
   brandId         Int
-  brand           Brand           @relation(fields: [brandId], references: [id])
+  brand           Brand                       @relation(fields: [brandId], references: [id])
   compatibilities Compatibility[]
-  createdAt       DateTime        @default(now())
-  updatedAt       DateTime        @updatedAt
+  aliases         ModelAlias[]
+  groupMembers    CompatibilityGroupMember[]
+  createdAt       DateTime                    @default(now())
+  updatedAt       DateTime                    @updatedAt
 }
 
 model PartCategory {
-  id    Int    @id
-  name  String @unique
-  code  String @unique
-  parts Part[]
+  id     Int                  @id
+  name   String               @unique
+  code   String               @unique
+  parts  Part[]
+  groups CompatibilityGroup[]
 
   @@map("PartType")
 }
 
 model Part {
-  id              Int             @id
-  name            String
-  partTypeId      Int
-  partCategory    PartCategory    @relation(fields: [partTypeId], references: [id])
-  partNumber      String?
-  manufacturer    String?
-  description     String?
-  compatibilities Compatibility[]
-  createdAt       DateTime        @default(now())
-  updatedAt       DateTime        @updatedAt
+  id                 Int                  @id
+  name               String
+  partTypeId         Int
+  partCategory       PartCategory         @relation(fields: [partTypeId], references: [id])
+  partNumber         String?
+  manufacturer       String?
+  description        String?
+  compatibilities    Compatibility[]
+  compatibilityGroup CompatibilityGroup?
+  createdAt          DateTime             @default(now())
+  updatedAt          DateTime             @updatedAt
 }
 
 model Compatibility {
@@ -58,4 +62,44 @@ model Compatibility {
   createdAt     DateTime    @default(now())
 
   @@unique([mobileModelId, partId])
+}
+
+model AdminUser {
+  id           Int      @id @default(autoincrement())
+  email        String   @unique
+  passwordHash String
+  role         String   @default("ADMIN")
+  createdAt    DateTime @default(now())
+}
+
+model ModelAlias {
+  id            Int         @id @default(autoincrement())
+  mobileModelId Int
+  mobileModel   MobileModel @relation(fields: [mobileModelId], references: [id], onDelete: Cascade)
+  alias         String      @unique
+  createdAt     DateTime    @default(now())
+}
+
+model CompatibilityGroup {
+  id           Int                         @id @default(autoincrement())
+  name         String
+  partTypeId   Int
+  partType     PartCategory                @relation(fields: [partTypeId], references: [id])
+  supplierCode String?
+  notes        String?
+  partId       Int?                        @unique
+  part         Part?                       @relation(fields: [partId], references: [id])
+  members      CompatibilityGroupMember[]
+  createdAt    DateTime                    @default(now())
+  updatedAt    DateTime                    @updatedAt
+}
+
+model CompatibilityGroupMember {
+  id      Int                @id @default(autoincrement())
+  groupId Int
+  group   CompatibilityGroup @relation(fields: [groupId], references: [id], onDelete: Cascade)
+  modelId Int
+  model   MobileModel        @relation(fields: [modelId], references: [id], onDelete: Cascade)
+
+  @@unique([groupId, modelId])
 }

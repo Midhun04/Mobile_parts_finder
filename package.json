@@ -13,6 +13,8 @@
     "mobile:web": "npm run web --workspace=@mpf/mobile",
     "web": "npm run dev --workspace=@mpf/web",
     "web:build": "npm run build --workspace=@mpf/web",
+    "admin": "npm run dev --workspace=@mpf/admin",
+    "admin:build": "npm run build --workspace=@mpf/admin",
     "api": "npm run dev --workspace=@mpf/api",
     "db:up": "docker compose up -d postgres",
     "db:down": "docker compose down",

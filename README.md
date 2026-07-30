@@ -179,7 +179,12 @@ npm run mobile
 
 # or — web app (http://localhost:3000)
 npm run web
+
+# or — admin dashboard (http://localhost:3002)
+npm run admin
 ```
+
+Admin default login: `admin@mpf.local` / `admin123` (set `ADMIN_EMAIL` / `ADMIN_PASSWORD` in `apps/api/.env`).
 
 For a physical phone, set `EXPO_PUBLIC_API_URL` in `apps/mobile/.env` to your PC LAN IP (e.g. `http://192.168.0.86:3001`).
 
@@ -195,7 +200,7 @@ For a physical phone, set `EXPO_PUBLIC_API_URL` in `apps/mobile/.env` to your PC
 | Web app (API-backed) | `apps/web` | Done |
 | Backend API (PostgreSQL) | `apps/api` | Done |
 | PostgreSQL (Docker) | `docker-compose.yml` | Done |
-| Admin dashboard | `apps/admin` | Planned |
+| Admin dashboard | `apps/admin` | Done (MVP) |
 
 ---
 
@@ -299,8 +304,8 @@ GET /api/parts/:id/compatible-models
 ## MVP Phases
 
 1. **Basic mobile app + API** — search, model/part details, PostgreSQL seed ✅
-2. **Database management** — API + admin CRUD
-3. **More part types** — pouch, charging board, camera, speaker, etc.
+2. **Database management** — API + admin CRUD ✅
+3. **More part types** — pouch, charging board, camera, speaker, etc. ✅ (catalog)
 4. **Advanced** — barcode scanner, offline, favourites, submissions
 
 ---

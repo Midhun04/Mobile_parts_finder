@@ -1,6 +1,7 @@
 import { existsSync, readFileSync } from 'node:fs';
 import path from 'node:path';
 import { PrismaClient } from '@prisma/client';
+import bcrypt from 'bcryptjs';
 
 const prisma = new PrismaClient();
 
@@ -100,14 +101,36 @@ function parseBool(value: string): boolean {
   return ['true', '1', 'yes'].includes(value.trim().toLowerCase());
 }
 
-async function main() {
+async function ensureAdminUser(): Promise<void> {
+  const email = (process.env.ADMIN_EMAIL ?? 'admin@mpf.local').trim().toLowerCase();
+  const password = process.env.ADMIN_PASSWORD ?? 'admin123';
+  const existing = await prisma.adminUser.findUnique({ where: { email } });
+  if (existing) {
+    console.log(`Admin user already exists: ${email}`);
+    return;
+  }
+  await prisma.adminUser.create({
+    data: {
+      email,
+      passwordHash: await bcrypt.hash(password, 10),
+      role: 'ADMIN',
+    },
+  });
+  console.log(`Created admin user: ${email} (password from ADMIN_PASSWORD or default)`);
+}
+
+async function seedCatalogFromCsv(): Promise<void> {
   const brands = parseCsv('brands.csv');
   const models = parseCsv('mobile_models.csv');
   const partTypes = parseCsv('part_types.csv');
   const parts = parseCsv('parts.csv');
   const compatibilities = parseCsv('compatibility.csv');
 
+  // Wipe catalog only (keep AdminUser). Groups depend on parts/models.
+  await prisma.compatibilityGroupMember.deleteMany();
+  await prisma.compatibilityGroup.deleteMany();
   await prisma.compatibility.deleteMany();
+  await prisma.modelAlias.deleteMany();
   await prisma.part.deleteMany();
   await prisma.partCategory.deleteMany();
   await prisma.mobileModel.deleteMany();
@@ -176,6 +199,24 @@ async function main() {
   console.log(
     `Seeded from data/: ${brands.length} brands, ${models.length} models, ${partTypes.length} part types, ${parts.length} parts, ${compatibilities.length} compatibilities`,
   );
+}
+
+async function main() {
+  const brandCount = await prisma.brand.count();
+  const forceWipe = process.env.SEED_WIPE === '1';
+
+  if (forceWipe || brandCount === 0) {
+    if (forceWipe && brandCount > 0) {
+      console.log('SEED_WIPE=1 — reloading catalog from CSV (admin users kept)');
+    }
+    await seedCatalogFromCsv();
+  } else {
+    console.log(
+      `Catalog already has ${brandCount} brands — skipping CSV wipe. Set SEED_WIPE=1 to force reload.`,
+    );
+  }
+
+  await ensureAdminUser();
 }
 
 main()
