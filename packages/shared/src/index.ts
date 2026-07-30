@@ -15,6 +15,7 @@ export type PartType =
   | 'POWER_FLEX'
   | 'VIBRATOR'
   | 'TEMPERED_GLASS'
+  | 'UV_GLASS'
   | 'OTHER';
 
 export interface Brand {
@@ -78,6 +79,7 @@ export const PART_TYPE_LABELS: Record<PartType, string> = {
   POWER_FLEX: 'Power Flex',
   VIBRATOR: 'Vibrator',
   TEMPERED_GLASS: 'Tempered Glass',
+  UV_GLASS: 'UV Glass',
   OTHER: 'Other',
 };
 
@@ -98,6 +100,7 @@ export const PART_TYPE_ICONS: Record<PartType, string> = {
   POWER_FLEX: '⚡',
   VIBRATOR: '📳',
   TEMPERED_GLASS: '🛡️',
+  UV_GLASS: '💠',
   OTHER: '🔧',
 };
 

@@ -1,11 +1,15 @@
-"""Parse Universal Tempered Glass list into model_part_matrix.csv.
+"""Apply Universal Tempered / UV / OCA Glass supplier lists into model_part_matrix.csv.
 
-Adds Tempered_Glass_* columns. Each model is assigned to at most one group
-(first listing wins) so overlapping supplier lists do not union-find merge.
+Each model is assigned to at most one group per glass kind (first listing wins)
+so overlapping supplier lists do not union-find merge.
+
+OCA groups are loaded from data/universal_oca_glass.json (built by
+scripts/_build_oca_groups.py).
 """
 from __future__ import annotations
 
 import csv
+import json
 import re
 from collections import defaultdict
 from pathlib import Path
@@ -13,10 +17,12 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DATA = ROOT / "data"
 MATRIX = DATA / "model_part_matrix.csv"
+OCA_JSON = DATA / "universal_oca_glass.json"
 
-# Source groups from supplier "Universal Tempered Glass List".
-# Keys are stable group ids (list numbers; duplicates disambiguated).
-RAW_GROUPS: dict[str, str] = {
+NOT_RESEARCHED = "Not researched yet — add from supplier catalog"
+
+# Tempered Glass — keys are list numbers (duplicates disambiguated).
+TEMPERED_GROUPS: dict[str, str] = {
     "2": "Vivo Y91 = Samsung A10 = Samsung A10S = Samsung M10 = Samsung M01S = Oppo A5S = Oppo A7 = Oppo A7N = Oppo A12 = Oppo A11K = Oppo A12S = Vivo Y90 = Vivo Y91C = Vivo Y91i = Vivo Y93 = Vivo Y93S = Vivo Y95 = Vivo Y97 = Vivo Y1S = Vivo V11 = Vivo V11i = Vivo Z3 = Vivo Z3i = Realme 3 = Realme 3i",
     "3": "Redmi 9 = Redmi 9A = Redmi 9C = Redmi 10A = Samsung F13 = Samsung M13 = Poco C3 = Poco C31 = Realme C31 = Redmi A2 = Samsung F23 5G = Samsung M23 = Samsung A23 = Samsung A13 = Realme C20 = Realme C21 = Redmi A2 Plus = Redmi A1 = Redmi A1 plus = Moto E13 = Poco C50 = Poco C51",
     "4": "Redmi 10C = Redmi 10 2022 = Redmi 11A = Redmi 10 POWER = Redmi 12C = Redmi A3 4G = Redmi A3 5G = Redmi A3X 4G = Redmi A3X 5G = Poco C40 = Poco C55 = Poco C61",
@@ -60,11 +66,48 @@ RAW_GROUPS: dict[str, str] = {
     "4b": "Redmi 9 Prime = Poco M2 = Redmi 9 = Samsung A20s",
 }
 
+# UV Glass — Universal UV Glass List.
+UV_GROUPS: dict[str, str] = {
+    "2": "Oneplus 11R = Oneplus ACE 2 = Oneplus ACE 2 Pro = Oppo Find X6 = Oppo Reno 10 = Oppo Reno 10 Pro = Oppo Reno 10 Pro Plus = Oppo Reno 11 = Oppo Reno 11 Pro = Oppo A3 Pro = Oppo F27 Pro Plus",
+    "3": "Vivo S19 Pro = Vivo V40 = Vivo V40 Pro",
+    "4": "Realme 10 Pro Plus = Realme 11 Pro = Realme 11 Pro Plus = Realme Narzo 60 Pro = Realme 14 Pro Lite",
+    "5": "Realme 12 Pro = Realme 12 Pro Plus = Realme P1 Pro = Oppo Reno 9 = Oppo Reno 9 Pro = Oppo A1 Pro = Oppo A2 Pro",
+    "6": "Realme 13 Pro = Realme 13 Pro Plus",
+    "7": "Realme 14 Pro = Realme Narzo 80 Pro",
+    "8": "Oppo Reno 12 Global = Realme P2 Pro",
+    "9": "Vivo X90 = Vivo X90S = Vivo X90 Pro = Vivo S17 = Vivo S17T = Vivo S17 Pro = Vivo V29 = Vivo V29 Pro = Infinix Note 40 Pro = Infinix Note 50S = Infinix Zero 40 = Infinix Hot 50 Pro Plus = Tecno Spark 20 Pro Plus = Tecno Camon 30S = Tecno Camon 30S Pro = Tecno Camon 40 Pro 4G = HTC U24 Pro",
+    "10": "Vivo X70 Pro Plus = Vivo X80 = Vivo X80 Pro = Vivo X90 Pro Plus = Vivo S16 = Vivo S16 Pro = Vivo S17E = Vivo T2 Pro = Vivo V27 = Vivo V27 Pro = Vivo V29E = Vivo V29 Lite = Vivo V30E = Vivo V40 Lite = Vivo Y78 Plus = Vivo Y100 = Vivo Y200 = Vivo Y200 Pro = Vivo Y300 Plus = iQOO 8 Pro = iQOO 9 Pro = iQOO 10 Pro = iQOO 11 Pro = iQOO 12 Pro",
+    "11": "Oneplus 12R = Oneplus ACE 3 = Oneplus ACE 3 Pro = Oppo Find X7 = Realme GT5 Pro = Realme GT 6T = Realme GT Neo 6 = Realme GT Neo 6 SE = Honor X60 Pro",
+    "12": "Vivo X200 = Vivo S20 Pro = Vivo T4 Ultra",
+    "13": "Moto EDGE 40 = Moto EDGE 40 NEO",
+    "14": "Oneplus 13 = Vivo X200 Ultra",
+    "15": "Moto EDGE 50 = Moto EDGE 50 Pro = Moto EDGE 50 Ultra = Moto X50 Ultra",
+    "16": "Vivo Y300 Pro = Vivo Y300 Pro Plus = Vivo V50 = Vivo V50 Pro = Vivo T4 = Vivo T4 Pro = Vivo T4R = iQOO Z10 5G = iQOO Z10R = Honor Power",
+    "17": "Realme 15 = Realme 15 Pro = Realme P4 Pro",
+    "18": "Oppo Reno 13 Pro = Realme 14 Pro Plus = Realme P3 Pro = Realme P3 Ultra = Vivo V50E",
+    "19": "iQOO Z9S = iQOO Z9S Pro = Vivo T3 Pro = Vivo V40E",
+    "20": "Moto EDGE 50 Fusion = Moto G85 = Moto S50 Neo",
+    "21": "Moto EDGE 60 Fusion = Moto EDGE 60 Pro",
+    "22": "Vivo X100 = Vivo X100 Pro = Vivo X100S Pro = Vivo S18 = Vivo S18 Pro = Vivo S19 Pro = Vivo V30 = Vivo V30 Pro = Vivo T3 Ultra",
+    "23": "Oppo Reno 3 Pro 5G = Oppo Reno 4 Pro 5G = Oneplus 8 = Oppo Find X2 Neo 5G",
+    "24": "Realme 10 Pro Plus 5G = Realme 11 Pro 5G = Realme 11 Pro Plus 5G = Realme 12 Pro 5G = Realme 12 Pro Plus 5G = Realme P1 Pro 5G = Oppo F27 Pro Plus 5G = Oppo Reno 11 5G = Oppo Reno 10 5G = Oppo Reno 10 Pro 5G = Oppo Reno 11 Pro 5G = Oppo Reno 8T 5G = Realme Narzo 60 Pro 5G = Oppo Reno 9 5G = Oppo Reno 9 Pro 5G = Oppo A1 Pro 5G",
+    "25": "Oneplus 10R 5G = Oneplus 10T 5G = Oppo Reno 8 Pro 5G = Oneplus ACE = Realme GT Neo 3",
+    "26": "Oppo Find X6 = Oneplus 11R = Oneplus ACE 2",
+    "27": "Oppo Reno 6 Pro = Oppo Reno 5 Pro",
+    "28": "Vivo V40E = Vivo T3 Pro = iQOO Z9S = iQOO Z9S Pro",
+    "29": "Vivo V30 = Vivo V30 Pro = Vivo S18 = Vivo S18 Pro = Vivo V40 = Vivo V40 Pro",
+}
+
+GLASS_KINDS: list[tuple[str, dict[str, str], dict[str, str] | None]] = [
+    ("Tempered_Glass", TEMPERED_GROUPS, None),
+    ("UV_Glass", UV_GROUPS, None),
+]
+
 KNOWN_BRANDS = [
     "Samsung", "Apple", "Xiaomi", "Redmi", "Realme", "Oppo", "Vivo", "OnePlus",
     "Oneplus", "Nokia", "Motorola", "Google", "Huawei", "Honor", "Infinix", "Tecno",
     "Lava", "Nothing", "Asus", "Sony", "Lenovo", "Poco", "POCO", "Itel", "Micromax",
-    "iQOO", "IQOO", "Moto", "iPhone", "IPhone",
+    "iQOO", "IQOO", "Moto", "iPhone", "IPhone", "HTC", "ZTE",
 ]
 
 SKIP_TOKENS = {
@@ -75,11 +118,11 @@ SKIP_TOKENS = {
 
 
 def clean_token(tok: str) -> str | None:
-    s = re.sub(r"\s+", " ", tok.strip())
+    s = re.sub(r"\([^)]*\)", " ", tok)  # strip shop-name notes
+    s = re.sub(r"\s+", " ", s.strip())
     s = s.strip(" =/")
     if not s or s in SKIP_TOKENS:
         return None
-    # Drop obvious garbage / bare codes without brand context already handled
     if re.fullmatch(r"\d{2,4}", s):
         return None
     return s
@@ -101,7 +144,7 @@ def split_group(raw: str) -> list[str]:
     return out
 
 
-def infer_brand_model(label: str) -> tuple[str, str]:
+def infer_brand_model(label: str, default_brand: str | None = None) -> tuple[str, str]:
     s = re.sub(r"\s+", " ", label.strip())
     # Typo / alias fixes
     aliases = {
@@ -130,10 +173,42 @@ def infer_brand_model(label: str) -> tuple[str, str]:
         "vivo t15g": "Vivo T1 5G",
         "redmi 11prime": "Redmi 11 Prime",
         "vivo y2001": "Vivo Y200",
+        "iqoo 29x": "iQOO Z9x",
+        "vivo iqoo 007": "iQOO 7",
+        "vovo s15": "Vivo S15",
+        "ivo y52s": "Vivo Y52s",
+        "samaung a04": "Samsung A04",
+        "samaung f04": "Samsung F04",
+        "samaung f02s": "Samsung F02s",
+        "oneplus 4 lite": "OnePlus Nord CE4 Lite",
+        "realme find x3 lite 5g": "Oppo Find X3 Lite 5G",
+        "oppo fing x5 lite 5g": "Oppo Find X5 Lite 5G",
+        "findx 2 lite": "Oppo Find X2 Lite",
+        "narzo 70 turbo": "Realme Narzo 70 Turbo",
+        "mi 10a": "Xiaomi Mi 10A",
+        "mi 10 5g": "Xiaomi Mi 10 5G",
+        "mi 10i": "Xiaomi Mi 10i",
+        "mi11i 5g": "Xiaomi Mi 11i 5G",
+        "mi 9t": "Xiaomi Mi 9T",
+        "mi 9t pro": "Xiaomi Mi 9T Pro",
+        "mi 10t": "Xiaomi Mi 10T",
+        "mi 10t pro": "Xiaomi Mi 10T Pro",
+        "mi10 4g global": "Xiaomi Mi 10 4G Global",
+        "pocox4pro 5g": "Poco X4 Pro 5G",
+        "povo neo": "Tecno Pova Neo",
+        "pova 1": "Tecno Pova 1",
+        "pova": "Tecno Pova",
+        "camon 16": "Tecno Camon 16",
+        "hot30i": "Infinix Hot 30i",
     }
     low = s.lower()
     if low in aliases:
         s = aliases[low]
+
+    # "Vivo iQOO …" / "Vivo iQoo …" → iQOO brand
+    m_iqoo = re.match(r"^vivo\s+iqoo\s+(.+)$", s, flags=re.I)
+    if m_iqoo:
+        s = f"iQOO {m_iqoo.group(1)}"
 
     brand = None
     model = s
@@ -150,6 +225,12 @@ def infer_brand_model(label: str) -> tuple[str, str]:
     if brand is None:
         if s.lower().startswith("iphone"):
             brand, model = "Apple", s
+        elif re.match(r"^x\d", s, flags=re.I):
+            brand, model = "Infinix", s
+        elif re.match(r"^l(xx|zx|zg)\d", s, flags=re.I):
+            brand, model = "Lava", s
+        elif default_brand:
+            brand, model = default_brand, s
         else:
             brand, model = "Unknown", s
 
@@ -163,8 +244,6 @@ def infer_brand_model(label: str) -> tuple[str, str]:
     }
     brand = brand_map.get(brand.lower(), brand)
     if brand == "Apple" and model.lower().startswith("iphone"):
-        # keep iPhone casing
-        model = "iPhone" + model[6:] if model.lower().startswith("iphone") else model
         model = re.sub(r"^i[Pp]hone", "iPhone", model)
 
     if brand == "Motorola" and model.lower().startswith("moto "):
@@ -189,6 +268,12 @@ def infer_brand_model(label: str) -> tuple[str, str]:
     if brand == "Apple":
         return "Apple", model if model.lower().startswith("iphone") else f"iPhone {model}"
 
+    if brand == "Xiaomi" and not model.lower().startswith("xiaomi"):
+        # Mi / Redmi under Xiaomi brand in matrix
+        if model.lower().startswith("mi ") or model.lower().startswith("redmi "):
+            return "Xiaomi", f"Xiaomi {model}"
+        return "Xiaomi", f"Xiaomi {model}"
+
     # Default matrix style: Brand + "Brand Model"
     if not model.lower().startswith(brand.lower()):
         display_model = f"{brand} {model}"
@@ -201,26 +286,22 @@ def matrix_key(brand: str, model: str) -> tuple[str, str]:
     return brand.lower(), model.lower()
 
 
-def main() -> None:
-    parsed: dict[str, list[tuple[str, str, str]]] = {}
-    for gid, raw in RAW_GROUPS.items():
-        labels = split_group(raw)
-        entries: list[tuple[str, str, str]] = []
-        for lab in labels:
-            brand, model = infer_brand_model(lab)
-            if brand == "Unknown":
-                print(f"WARN skip unknown brand: {lab!r} (group {gid})")
-                continue
-            entries.append((brand, model, lab))
-        parsed[gid] = entries
-
-    # Assign each matrix model to first group only
+def parse_groups(
+    raw_groups: dict[str, str],
+    default_brands: dict[str, str] | None = None,
+) -> tuple[dict[str, list[tuple[str, str]]], list[str]]:
     assignment: dict[tuple[str, str], str] = {}
     group_members: dict[str, list[tuple[str, str]]] = defaultdict(list)
     conflicts: list[str] = []
+    default_brands = default_brands or {}
 
-    for gid, entries in parsed.items():
-        for brand, model, _lab in entries:
+    for gid, raw in raw_groups.items():
+        default_brand = default_brands.get(gid)
+        for lab in split_group(raw):
+            brand, model = infer_brand_model(lab, default_brand)
+            if brand == "Unknown":
+                print(f"WARN skip unknown brand: {lab!r} (group {gid})")
+                continue
             key = matrix_key(brand, model)
             if key in assignment:
                 if assignment[key] != gid:
@@ -231,7 +312,6 @@ def main() -> None:
             assignment[key] = gid
             group_members[gid].append((brand, model))
 
-    # Deduplicate within group
     for gid in list(group_members):
         seen: set[tuple[str, str]] = set()
         uniq: list[tuple[str, str]] = []
@@ -243,73 +323,122 @@ def main() -> None:
             uniq.append((b, m))
         group_members[gid] = uniq
 
-    with MATRIX.open(encoding="utf-8-sig", newline="") as f:
-        rows = list(csv.DictReader(f))
-        fieldnames = list(rows[0].keys()) if rows else []
+    return group_members, conflicts
 
-    for col in ("Tempered_Glass_Count", "Tempered_Glass_SharedWith"):
+
+def ensure_blank_row(fieldnames: list[str]) -> dict[str, str]:
+    row = {c: "" for c in fieldnames}
+    for prefix in (
+        "Display_Combo",
+        "Battery",
+        "OCA_Glass",
+        "Pouch_BackPanel",
+        "Charging_Board",
+        "Tempered_Glass",
+        "UV_Glass",
+    ):
+        count_col = f"{prefix}_Count"
+        shared_col = f"{prefix}_SharedWith"
+        if count_col in fieldnames:
+            row[count_col] = "-"
+        if shared_col in fieldnames:
+            row[shared_col] = NOT_RESEARCHED
+    row["Pouch_BackPanel_Count"] = "1"
+    row["Pouch_BackPanel_SharedWith"] = (
+        "Not shared — model-specific part (default assumption)"
+    )
+    return row
+
+
+def apply_kind(
+    prefix: str,
+    raw_groups: dict[str, str],
+    rows: list[dict[str, str]],
+    fieldnames: list[str],
+    index: dict[tuple[str, str], dict[str, str]],
+    default_brands: dict[str, str] | None = None,
+) -> tuple[int, int, int, list[str]]:
+    count_col = f"{prefix}_Count"
+    shared_col = f"{prefix}_SharedWith"
+    for col in (count_col, shared_col):
         if col not in fieldnames:
             fieldnames.append(col)
 
-    index = {matrix_key(r["Brand"], r["Model"]): r for r in rows}
-
-    not_researched = "Not researched yet — add from supplier catalog"
-
-    # Ensure columns on existing rows
     for r in rows:
-        r.setdefault("Tempered_Glass_Count", "-")
-        r.setdefault("Tempered_Glass_SharedWith", not_researched)
-        if not r.get("Tempered_Glass_SharedWith"):
-            r["Tempered_Glass_SharedWith"] = not_researched
-            r["Tempered_Glass_Count"] = "-"
+        r.setdefault(count_col, "-")
+        r.setdefault(shared_col, NOT_RESEARCHED)
+        r[count_col] = "-"
+        r[shared_col] = NOT_RESEARCHED
 
-    # Reset tempered columns then fill from groups
-    for r in rows:
-        r["Tempered_Glass_Count"] = "-"
-        r["Tempered_Glass_SharedWith"] = not_researched
-
+    group_members, conflicts = parse_groups(raw_groups, default_brands)
     added_models = 0
     updated = 0
     for gid, members in group_members.items():
         if len(members) < 2:
-            print(f"WARN group {gid} has <2 models after cleanup: {members}")
+            print(f"WARN {prefix} group {gid} has <2 models: {members}")
             continue
         count = str(len(members))
         for brand, model in members:
-            # SharedWith uses full Model strings (same style as existing matrix rows)
             shared = "; ".join(
                 om
-                for ob, om in members
-                if matrix_key(ob, om) != matrix_key(brand, model)
+                for _ob, om in members
+                if matrix_key(_ob, om) != matrix_key(brand, model)
             )
             key = matrix_key(brand, model)
             if key not in index:
-                row = {c: "" for c in fieldnames}
+                row = ensure_blank_row(fieldnames)
                 row["Brand"] = brand
                 row["Model"] = model
-                for prefix in (
-                    "Display_Combo",
-                    "Battery",
-                    "OCA_Glass",
-                    "Pouch_BackPanel",
-                    "Charging_Board",
-                ):
-                    row[f"{prefix}_Count"] = "-"
-                    row[f"{prefix}_SharedWith"] = not_researched
-                # Default pouch assumption used elsewhere
-                row["Pouch_BackPanel_Count"] = "1"
-                row["Pouch_BackPanel_SharedWith"] = (
-                    "Not shared — model-specific part (default assumption)"
-                )
                 rows.append(row)
                 index[key] = row
                 added_models += 1
             row = index[key]
-            row["Tempered_Glass_Count"] = count
-            row["Tempered_Glass_SharedWith"] = shared
+            row[count_col] = count
+            row[shared_col] = shared
             updated += 1
 
-    # Sort for stability
+    return len(group_members), updated, added_models, conflicts
+
+
+def load_oca_groups() -> tuple[dict[str, str], dict[str, str]]:
+    raw = json.loads(OCA_JSON.read_text(encoding="utf-8"))
+    groups: dict[str, str] = {}
+    brands: dict[str, str] = {}
+    for item in raw:
+        gid = item["id"]
+        groups[gid] = item["models"]
+        brands[gid] = item["brand"]
+    return groups, brands
+
+
+def main() -> None:
+    if not OCA_JSON.exists():
+        raise SystemExit(
+            f"Missing {OCA_JSON}. Run: python scripts/_build_oca_groups.py"
+        )
+
+    oca_groups, oca_brands = load_oca_groups()
+    kinds = list(GLASS_KINDS) + [("OCA_Glass", oca_groups, oca_brands)]
+
+    with MATRIX.open(encoding="utf-8-sig", newline="") as f:
+        rows = list(csv.DictReader(f))
+        fieldnames = list(rows[0].keys()) if rows else []
+
+    index = {matrix_key(r["Brand"], r["Model"]): r for r in rows}
+
+    for prefix, groups, default_brands in kinds:
+        n_groups, updated, added, conflicts = apply_kind(
+            prefix, groups, rows, fieldnames, index, default_brands
+        )
+        print(
+            f"OK {prefix} groups={n_groups} updated_rows={updated} "
+            f"added_models={added} conflicts={len(conflicts)}"
+        )
+        if conflicts:
+            print(f"--- {prefix} first {min(20, len(conflicts))} conflicts ---")
+            for line in conflicts[:20]:
+                print(line)
+
     rows.sort(key=lambda r: (r["Brand"].lower(), r["Model"].lower()))
 
     with MATRIX.open("w", encoding="utf-8", newline="") as f:
@@ -318,15 +447,7 @@ def main() -> None:
         for r in rows:
             w.writerow({k: r.get(k, "") for k in fieldnames})
 
-    print(
-        f"OK groups={len(group_members)} updated_rows={updated} "
-        f"added_models={added_models} conflicts={len(conflicts)} "
-        f"matrix_rows={len(rows)}"
-    )
-    if conflicts:
-        print(f"--- first {min(40, len(conflicts))} conflicts ---")
-        for line in conflicts[:40]:
-            print(line)
+    print(f"OK matrix_rows={len(rows)}")
 
 
 if __name__ == "__main__":
