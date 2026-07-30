@@ -1,5 +1,6 @@
+import type { Prisma } from '@prisma/client';
 import { Router } from 'express';
-import { POPULAR_BRAND_IDS, RECENT_MODEL_IDS } from '../constants.js';
+import { BRAND_ALIASES, POPULAR_BRAND_IDS, RECENT_MODEL_IDS } from '../constants.js';
 import { prisma } from '../db.js';
 import { mapCompatibilityMeta, mapModel, mapPart } from '../mappers.js';
 
@@ -7,9 +8,28 @@ export const apiRouter = Router();
 
 const partInclude = { partCategory: true } as const;
 
+const MAX_SEARCH_TERMS = 8;
+
+/**
+ * A query spans several columns ("samsung a50" = brand + model name), so each
+ * word is matched on its own and every word has to land somewhere.
+ */
+function toSearchTerms(q: string): string[] {
+  return q
+    .split(/[\s,/]+/)
+    .map((term) => term.trim())
+    .filter(Boolean)
+    .slice(0, MAX_SEARCH_TERMS);
+}
+
+function aliasedBrands(term: string): readonly string[] {
+  return BRAND_ALIASES[term.toLowerCase()] ?? [];
+}
+
 apiRouter.get('/search', async (req, res) => {
   const q = String(req.query.q ?? '').trim();
-  if (!q) {
+  const terms = toSearchTerms(q);
+  if (!terms.length) {
     res.json({ models: [], parts: [] });
     return;
   }
@@ -24,28 +44,50 @@ apiRouter.get('/search', async (req, res) => {
     },
   });
 
+  const modelWhere: Prisma.MobileModelWhereInput = {
+    AND: terms.map((term): Prisma.MobileModelWhereInput => ({
+      OR: [
+        { name: { contains: term, mode: 'insensitive' } },
+        { modelNumber: { contains: term, mode: 'insensitive' } },
+        { brand: { name: { contains: term, mode: 'insensitive' } } },
+        ...aliasedBrands(term).map(
+          (brand): Prisma.MobileModelWhereInput => ({
+            brand: { name: { equals: brand, mode: 'insensitive' } },
+          }),
+        ),
+      ],
+    })),
+  };
+
+  const partWhere: Prisma.PartWhereInput = {
+    OR: [
+      {
+        AND: terms.map((term): Prisma.PartWhereInput => ({
+          OR: [
+            { name: { contains: term, mode: 'insensitive' } },
+            { partNumber: { contains: term, mode: 'insensitive' } },
+            { description: { contains: term, mode: 'insensitive' } },
+            { manufacturer: { contains: term, mode: 'insensitive' } },
+            { partCategory: { name: { contains: term, mode: 'insensitive' } } },
+            ...aliasedBrands(term).flatMap((brand): Prisma.PartWhereInput[] => [
+              { name: { contains: brand, mode: 'insensitive' } },
+              { manufacturer: { equals: brand, mode: 'insensitive' } },
+            ]),
+          ],
+        })),
+      },
+      ...(matchedType ? [{ partTypeId: matchedType.id }] : []),
+    ],
+  };
+
   const [models, parts] = await Promise.all([
     prisma.mobileModel.findMany({
-      where: {
-        OR: [
-          { name: { contains: q, mode: 'insensitive' } },
-          { modelNumber: { contains: q, mode: 'insensitive' } },
-          { brand: { name: { contains: q, mode: 'insensitive' } } },
-        ],
-      },
+      where: modelWhere,
       include: { brand: true },
       orderBy: [{ brand: { name: 'asc' } }, { name: 'asc' }],
     }),
     prisma.part.findMany({
-      where: {
-        OR: [
-          { name: { contains: q, mode: 'insensitive' } },
-          { partNumber: { contains: q, mode: 'insensitive' } },
-          { description: { contains: q, mode: 'insensitive' } },
-          { manufacturer: { contains: q, mode: 'insensitive' } },
-          ...(matchedType ? [{ partTypeId: matchedType.id }] : []),
-        ],
-      },
+      where: partWhere,
       include: partInclude,
       orderBy: { name: 'asc' },
     }),
