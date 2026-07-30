@@ -5,3 +5,268 @@ id,mobile_model_id,part_id,verified,notes
 4,1,4,TRUE,Back panel
 5,1,5,TRUE,Charging board
 6,2,1,TRUE,Same display as A50
+7,11,6,TRUE,A52 display
+8,11,7,TRUE,A52 battery
+9,11,8,TRUE,A52 charging board
+10,11,9,TRUE,A52 back glass
+11,11,10,TRUE,A52 rear camera
+12,12,11,TRUE,A53 display
+13,12,12,TRUE,A53 battery
+14,12,13,TRUE,A53 charging board
+15,12,14,TRUE,A53 back glass
+16,12,15,TRUE,A53 rear camera
+17,13,16,TRUE,A14 display
+18,13,17,TRUE,A14 battery
+19,13,18,TRUE,A14 charging board
+20,13,19,TRUE,A14 back glass
+21,13,20,TRUE,A14 rear camera
+22,14,21,TRUE,A15 display
+23,14,22,TRUE,A15 battery
+24,14,23,TRUE,A15 charging board
+25,14,24,TRUE,A15 back glass
+26,14,25,TRUE,A15 rear camera
+27,15,26,TRUE,M14 display
+28,15,27,TRUE,M14 battery
+29,15,28,TRUE,M14 charging board
+30,15,29,TRUE,M14 back glass
+31,15,30,TRUE,M14 rear camera
+32,16,31,TRUE,M34 display
+33,16,32,TRUE,M34 battery
+34,16,33,TRUE,M34 charging board
+35,16,34,TRUE,M34 back glass
+36,16,35,TRUE,M34 rear camera
+37,17,36,TRUE,S21 FE display
+38,17,37,TRUE,S21 FE battery
+39,17,38,TRUE,S21 FE charging board
+40,17,39,TRUE,S21 FE back glass
+41,17,40,TRUE,S21 FE rear camera
+42,18,41,TRUE,S23 display
+43,18,42,TRUE,S23 battery
+44,18,43,TRUE,S23 charging board
+45,18,44,TRUE,S23 back glass
+46,18,45,TRUE,S23 rear camera
+47,19,46,TRUE,F23 display
+48,19,47,TRUE,F23 battery
+49,19,48,TRUE,F23 charging board
+50,19,49,TRUE,F23 back glass
+51,19,50,TRUE,F23 rear camera
+52,20,51,TRUE,Note 11 display
+53,20,52,TRUE,Note 11 battery
+54,20,53,TRUE,Note 11 charging board
+55,20,54,TRUE,Note 11 back glass
+56,20,55,TRUE,Note 11 rear camera
+57,21,56,TRUE,Note 11 Pro display
+58,21,57,TRUE,Note 11 Pro battery
+59,21,58,TRUE,Note 11 Pro charging board
+60,21,59,TRUE,Note 11 Pro back glass
+61,21,60,TRUE,Note 11 Pro rear camera
+62,22,61,TRUE,Note 12 display
+63,22,62,TRUE,Note 12 battery
+64,22,63,TRUE,Note 12 charging board
+65,22,64,TRUE,Note 12 back glass
+66,22,65,TRUE,Note 12 rear camera
+67,23,66,TRUE,Note 12 Pro display
+68,23,67,TRUE,Note 12 Pro battery
+69,23,68,TRUE,Note 12 Pro charging board
+70,23,69,TRUE,Note 12 Pro back glass
+71,23,70,TRUE,Note 12 Pro rear camera
+72,24,71,TRUE,Note 13 display
+73,24,72,TRUE,Note 13 battery
+74,24,73,TRUE,Note 13 charging board
+75,24,74,TRUE,Note 13 back glass
+76,24,75,TRUE,Note 13 rear camera
+77,25,76,TRUE,Redmi 12 display
+78,25,77,TRUE,Redmi 12 battery
+79,25,78,TRUE,Redmi 12 charging board
+80,25,79,TRUE,Redmi 12 back glass
+81,25,80,TRUE,Redmi 12 rear camera
+82,26,81,TRUE,Redmi 13C display
+83,26,82,TRUE,Redmi 13C battery
+84,26,83,TRUE,Redmi 13C charging board
+85,26,84,TRUE,Redmi 13C back glass
+86,26,85,TRUE,Redmi 13C rear camera
+87,27,86,TRUE,Narzo 50 display
+88,27,87,TRUE,Narzo 50 battery
+89,27,88,TRUE,Narzo 50 charging board
+90,27,89,TRUE,Narzo 50 back glass
+91,27,90,TRUE,Narzo 50 rear camera
+92,28,91,TRUE,Realme 9 display
+93,28,92,TRUE,Realme 9 battery
+94,28,93,TRUE,Realme 9 charging board
+95,28,94,TRUE,Realme 9 back glass
+96,28,95,TRUE,Realme 9 rear camera
+97,29,96,TRUE,Realme 10 display
+98,29,97,TRUE,Realme 10 battery
+99,29,98,TRUE,Realme 10 charging board
+100,29,99,TRUE,Realme 10 back glass
+101,29,100,TRUE,Realme 10 rear camera
+102,30,101,TRUE,Realme 11 display
+103,30,102,TRUE,Realme 11 battery
+104,30,103,TRUE,Realme 11 charging board
+105,30,104,TRUE,Realme 11 back glass
+106,30,105,TRUE,Realme 11 rear camera
+107,31,106,TRUE,C55 display
+108,31,107,TRUE,C55 battery
+109,31,108,TRUE,C55 charging board
+110,31,109,TRUE,C55 back glass
+111,31,110,TRUE,C55 rear camera
+112,32,111,TRUE,A78 display
+113,32,112,TRUE,A78 battery
+114,32,113,TRUE,A78 charging board
+115,32,114,TRUE,A78 back glass
+116,32,115,TRUE,A78 rear camera
+117,33,116,TRUE,Reno8 display
+118,33,117,TRUE,Reno8 battery
+119,33,118,TRUE,Reno8 charging board
+120,33,119,TRUE,Reno8 back glass
+121,33,120,TRUE,Reno8 rear camera
+122,34,121,TRUE,A17 display
+123,34,122,TRUE,A17 battery
+124,34,123,TRUE,A17 charging board
+125,34,124,TRUE,A17 back glass
+126,34,125,TRUE,A17 rear camera
+127,35,126,TRUE,Y22 display
+128,35,127,TRUE,Y22 battery
+129,35,128,TRUE,Y22 charging board
+130,35,129,TRUE,Y22 back glass
+131,35,130,TRUE,Y22 rear camera
+132,36,131,TRUE,Y16 display
+133,36,132,TRUE,Y16 battery
+134,36,133,TRUE,Y16 charging board
+135,36,134,TRUE,Y16 back glass
+136,36,135,TRUE,Y16 rear camera
+137,37,136,TRUE,V25 display
+138,37,137,TRUE,V25 battery
+139,37,138,TRUE,V25 charging board
+140,37,139,TRUE,V25 back glass
+141,37,140,TRUE,V25 rear camera
+142,38,141,TRUE,T2x display
+143,38,142,TRUE,T2x battery
+144,38,143,TRUE,T2x charging board
+145,38,144,TRUE,T2x back glass
+146,38,145,TRUE,T2x rear camera
+147,39,146,TRUE,Nord CE 2 display
+148,39,147,TRUE,Nord CE 2 battery
+149,39,148,TRUE,Nord CE 2 charging board
+150,39,149,TRUE,Nord CE 2 back glass
+151,39,150,TRUE,Nord CE 2 rear camera
+152,40,151,TRUE,Nord CE 3 Lite display
+153,40,152,TRUE,Nord CE 3 Lite battery
+154,40,153,TRUE,Nord CE 3 Lite charging board
+155,40,154,TRUE,Nord CE 3 Lite back glass
+156,40,155,TRUE,Nord CE 3 Lite rear camera
+157,41,156,TRUE,11R display
+158,41,157,TRUE,11R battery
+159,41,158,TRUE,11R charging board
+160,41,159,TRUE,11R back glass
+161,41,160,TRUE,11R rear camera
+162,4,161,TRUE,iPhone 11 display
+163,4,162,TRUE,iPhone 11 battery
+164,4,163,TRUE,iPhone 11 charging board
+165,4,164,TRUE,iPhone 11 back glass
+166,4,165,TRUE,iPhone 11 rear camera
+167,5,166,TRUE,iPhone 12 display
+168,5,167,TRUE,iPhone 12 battery
+169,5,168,TRUE,iPhone 12 charging board
+170,5,169,TRUE,iPhone 12 back glass
+171,5,170,TRUE,iPhone 12 rear camera
+172,42,171,TRUE,iPhone XR display
+173,42,172,TRUE,iPhone XR battery
+174,42,173,TRUE,iPhone XR charging board
+175,42,174,TRUE,iPhone XR back glass
+176,42,175,TRUE,iPhone XR rear camera
+177,43,176,TRUE,iPhone 13 display
+178,43,177,TRUE,iPhone 13 battery
+179,43,178,TRUE,iPhone 13 charging board
+180,43,179,TRUE,iPhone 13 back glass
+181,43,180,TRUE,iPhone 13 rear camera
+182,44,181,TRUE,iPhone 13 Pro display
+183,44,182,TRUE,iPhone 13 Pro battery
+184,44,183,TRUE,iPhone 13 Pro charging board
+185,44,184,TRUE,iPhone 13 Pro back glass
+186,44,185,TRUE,iPhone 13 Pro rear camera
+187,45,186,TRUE,iPhone 14 display
+188,45,187,TRUE,iPhone 14 battery
+189,45,188,TRUE,iPhone 14 charging board
+190,45,189,TRUE,iPhone 14 back glass
+191,45,190,TRUE,iPhone 14 rear camera
+192,46,191,TRUE,iPhone 15 display
+193,46,192,TRUE,iPhone 15 battery
+194,46,193,TRUE,iPhone 15 charging board
+195,46,194,TRUE,iPhone 15 back glass
+196,46,195,TRUE,iPhone 15 rear camera
+197,11,196,TRUE,A52 OCA glass
+198,11,197,TRUE,A52 speaker
+199,11,198,TRUE,A52 earpiece
+200,11,199,TRUE,A52 housing
+201,11,200,TRUE,A52 vibrator
+202,12,201,TRUE,A53 OCA glass
+203,12,202,TRUE,A53 speaker
+204,12,203,TRUE,A53 earpiece
+205,12,204,TRUE,A53 housing
+206,12,205,TRUE,A53 vibrator
+207,14,206,TRUE,A15 OCA glass
+208,14,207,TRUE,A15 speaker
+209,14,208,TRUE,A15 earpiece
+210,14,209,TRUE,A15 housing
+211,14,210,TRUE,A15 vibrator
+212,18,211,TRUE,S23 OCA glass
+213,18,212,TRUE,S23 speaker
+214,18,213,TRUE,S23 earpiece
+215,18,214,TRUE,S23 housing
+216,18,215,TRUE,S23 vibrator
+217,20,216,TRUE,Note 11 OCA glass
+218,20,217,TRUE,Note 11 speaker
+219,20,218,TRUE,Note 11 earpiece
+220,20,219,TRUE,Note 11 housing
+221,20,220,TRUE,Note 11 vibrator
+222,22,221,TRUE,Note 12 OCA glass
+223,22,222,TRUE,Note 12 speaker
+224,22,223,TRUE,Note 12 earpiece
+225,22,224,TRUE,Note 12 housing
+226,22,225,TRUE,Note 12 vibrator
+227,24,226,TRUE,Note 13 OCA glass
+228,24,227,TRUE,Note 13 speaker
+229,24,228,TRUE,Note 13 earpiece
+230,24,229,TRUE,Note 13 housing
+231,24,230,TRUE,Note 13 vibrator
+232,26,231,TRUE,13C OCA glass
+233,26,232,TRUE,13C speaker
+234,26,233,TRUE,13C earpiece
+235,26,234,TRUE,13C housing
+236,26,235,TRUE,13C vibrator
+237,30,236,TRUE,Realme 11 OCA glass
+238,30,237,TRUE,Realme 11 speaker
+239,30,238,TRUE,Realme 11 earpiece
+240,30,239,TRUE,Realme 11 housing
+241,30,240,TRUE,Realme 11 vibrator
+242,32,241,TRUE,A78 OCA glass
+243,32,242,TRUE,A78 speaker
+244,32,243,TRUE,A78 earpiece
+245,32,244,TRUE,A78 housing
+246,32,245,TRUE,A78 vibrator
+247,35,246,TRUE,Y22 OCA glass
+248,35,247,TRUE,Y22 speaker
+249,35,248,TRUE,Y22 earpiece
+250,35,249,TRUE,Y22 housing
+251,35,250,TRUE,Y22 vibrator
+252,40,251,TRUE,Nord CE 3 Lite OCA glass
+253,40,252,TRUE,Nord CE 3 Lite speaker
+254,40,253,TRUE,Nord CE 3 Lite earpiece
+255,40,254,TRUE,Nord CE 3 Lite housing
+256,40,255,TRUE,Nord CE 3 Lite vibrator
+257,41,256,TRUE,11R OCA glass
+258,41,257,TRUE,11R speaker
+259,41,258,TRUE,11R earpiece
+260,41,259,TRUE,11R housing
+261,41,260,TRUE,11R vibrator
+262,45,261,TRUE,iPhone 14 OCA glass
+263,45,262,TRUE,iPhone 14 speaker
+264,45,263,TRUE,iPhone 14 earpiece
+265,45,264,TRUE,iPhone 14 housing
+266,45,265,TRUE,iPhone 14 vibrator
+267,46,266,TRUE,iPhone 15 OCA glass
+268,46,267,TRUE,iPhone 15 speaker
+269,46,268,TRUE,iPhone 15 earpiece
+270,46,269,TRUE,iPhone 15 housing
+271,46,270,TRUE,iPhone 15 vibrator

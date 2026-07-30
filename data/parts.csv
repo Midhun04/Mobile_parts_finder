@@ -4,3 +4,268 @@ id,part_type_id,part_name,part_number,manufacturer
 3,3,Galaxy A50 OCA Glass,A50-OCA-01,Generic
 4,4,Galaxy A50 Back Panel,A50-PCH-01,Generic
 5,5,Galaxy A50 Charging Board,A50-CB-01,Samsung
+6,1,Samsung Galaxy A52 AMOLED Display,A52-DISP-01,Samsung
+7,2,Galaxy A52 Battery,A52-BAT-01,Samsung
+8,5,Galaxy A52 Charging Board,A52-CB-01,Samsung
+9,6,Galaxy A52 Back Glass,A52-BG-01,Generic
+10,7,Galaxy A52 Rear Camera,A52-CAM-01,Samsung
+11,1,Samsung Galaxy A53 AMOLED Display,A53-DISP-01,Samsung
+12,2,Galaxy A53 Battery,A53-BAT-01,Samsung
+13,5,Galaxy A53 Charging Board,A53-CB-01,Samsung
+14,6,Galaxy A53 Back Glass,A53-BG-01,Generic
+15,7,Galaxy A53 Rear Camera,A53-CAM-01,Samsung
+16,1,Samsung Galaxy A14 LCD Display,A14-DISP-01,Samsung
+17,2,Galaxy A14 Battery,A14-BAT-01,Samsung
+18,5,Galaxy A14 Charging Board,A14-CB-01,Samsung
+19,6,Galaxy A14 Back Glass,A14-BG-01,Generic
+20,7,Galaxy A14 Rear Camera,A14-CAM-01,Samsung
+21,1,Samsung Galaxy A15 LCD Display,A15-DISP-01,Samsung
+22,2,Galaxy A15 Battery,A15-BAT-01,Samsung
+23,5,Galaxy A15 Charging Board,A15-CB-01,Samsung
+24,6,Galaxy A15 Back Glass,A15-BG-01,Generic
+25,7,Galaxy A15 Rear Camera,A15-CAM-01,Samsung
+26,1,Samsung Galaxy M14 LCD Display,M14-DISP-01,Samsung
+27,2,Galaxy M14 Battery,M14-BAT-01,Samsung
+28,5,Galaxy M14 Charging Board,M14-CB-01,Samsung
+29,6,Galaxy M14 Back Glass,M14-BG-01,Generic
+30,7,Galaxy M14 Rear Camera,M14-CAM-01,Samsung
+31,1,Samsung Galaxy M34 AMOLED Display,M34-DISP-01,Samsung
+32,2,Galaxy M34 Battery,M34-BAT-01,Samsung
+33,5,Galaxy M34 Charging Board,M34-CB-01,Samsung
+34,6,Galaxy M34 Back Glass,M34-BG-01,Generic
+35,7,Galaxy M34 Rear Camera,M34-CAM-01,Samsung
+36,1,Samsung Galaxy S21 FE AMOLED Display,S21FE-DISP-01,Samsung
+37,2,Galaxy S21 FE Battery,S21FE-BAT-01,Samsung
+38,5,Galaxy S21 FE Charging Board,S21FE-CB-01,Samsung
+39,6,Galaxy S21 FE Back Glass,S21FE-BG-01,Generic
+40,7,Galaxy S21 FE Rear Camera,S21FE-CAM-01,Samsung
+41,1,Samsung Galaxy S23 AMOLED Display,S23-DISP-01,Samsung
+42,2,Galaxy S23 Battery,S23-BAT-01,Samsung
+43,5,Galaxy S23 Charging Board,S23-CB-01,Samsung
+44,6,Galaxy S23 Back Glass,S23-BG-01,Generic
+45,7,Galaxy S23 Rear Camera,S23-CAM-01,Samsung
+46,1,Samsung Galaxy F23 LCD Display,F23-DISP-01,Samsung
+47,2,Galaxy F23 Battery,F23-BAT-01,Samsung
+48,5,Galaxy F23 Charging Board,F23-CB-01,Samsung
+49,6,Galaxy F23 Back Glass,F23-BG-01,Generic
+50,7,Galaxy F23 Rear Camera,F23-CAM-01,Samsung
+51,1,Redmi Note 11 AMOLED Display,N11-DISP-01,Xiaomi
+52,2,Redmi Note 11 Battery,N11-BAT-01,Xiaomi
+53,5,Redmi Note 11 Charging Board,N11-CB-01,Xiaomi
+54,6,Redmi Note 11 Back Glass,N11-BG-01,Generic
+55,7,Redmi Note 11 Rear Camera,N11-CAM-01,Xiaomi
+56,1,Redmi Note 11 Pro AMOLED Display,N11P-DISP-01,Xiaomi
+57,2,Redmi Note 11 Pro Battery,N11P-BAT-01,Xiaomi
+58,5,Redmi Note 11 Pro Charging Board,N11P-CB-01,Xiaomi
+59,6,Redmi Note 11 Pro Back Glass,N11P-BG-01,Generic
+60,7,Redmi Note 11 Pro Rear Camera,N11P-CAM-01,Xiaomi
+61,1,Redmi Note 12 AMOLED Display,N12-DISP-01,Xiaomi
+62,2,Redmi Note 12 Battery,N12-BAT-01,Xiaomi
+63,5,Redmi Note 12 Charging Board,N12-CB-01,Xiaomi
+64,6,Redmi Note 12 Back Glass,N12-BG-01,Generic
+65,7,Redmi Note 12 Rear Camera,N12-CAM-01,Xiaomi
+66,1,Redmi Note 12 Pro AMOLED Display,N12P-DISP-01,Xiaomi
+67,2,Redmi Note 12 Pro Battery,N12P-BAT-01,Xiaomi
+68,5,Redmi Note 12 Pro Charging Board,N12P-CB-01,Xiaomi
+69,6,Redmi Note 12 Pro Back Glass,N12P-BG-01,Generic
+70,7,Redmi Note 12 Pro Rear Camera,N12P-CAM-01,Xiaomi
+71,1,Redmi Note 13 AMOLED Display,N13-DISP-01,Xiaomi
+72,2,Redmi Note 13 Battery,N13-BAT-01,Xiaomi
+73,5,Redmi Note 13 Charging Board,N13-CB-01,Xiaomi
+74,6,Redmi Note 13 Back Glass,N13-BG-01,Generic
+75,7,Redmi Note 13 Rear Camera,N13-CAM-01,Xiaomi
+76,1,Redmi 12 LCD Display,R12-DISP-01,Xiaomi
+77,2,Redmi 12 Battery,R12-BAT-01,Xiaomi
+78,5,Redmi 12 Charging Board,R12-CB-01,Xiaomi
+79,6,Redmi 12 Back Glass,R12-BG-01,Generic
+80,7,Redmi 12 Rear Camera,R12-CAM-01,Xiaomi
+81,1,Redmi 13C LCD Display,R13C-DISP-01,Xiaomi
+82,2,Redmi 13C Battery,R13C-BAT-01,Xiaomi
+83,5,Redmi 13C Charging Board,R13C-CB-01,Xiaomi
+84,6,Redmi 13C Back Glass,R13C-BG-01,Generic
+85,7,Redmi 13C Rear Camera,R13C-CAM-01,Xiaomi
+86,1,Realme Narzo 50 LCD Display,NZ50-DISP-01,Realme
+87,2,Realme Narzo 50 Battery,NZ50-BAT-01,Realme
+88,5,Realme Narzo 50 Charging Board,NZ50-CB-01,Realme
+89,6,Realme Narzo 50 Back Glass,NZ50-BG-01,Generic
+90,7,Realme Narzo 50 Rear Camera,NZ50-CAM-01,Realme
+91,1,Realme 9 AMOLED Display,RM9-DISP-01,Realme
+92,2,Realme 9 Battery,RM9-BAT-01,Realme
+93,5,Realme 9 Charging Board,RM9-CB-01,Realme
+94,6,Realme 9 Back Glass,RM9-BG-01,Generic
+95,7,Realme 9 Rear Camera,RM9-CAM-01,Realme
+96,1,Realme 10 AMOLED Display,RM10-DISP-01,Realme
+97,2,Realme 10 Battery,RM10-BAT-01,Realme
+98,5,Realme 10 Charging Board,RM10-CB-01,Realme
+99,6,Realme 10 Back Glass,RM10-BG-01,Generic
+100,7,Realme 10 Rear Camera,RM10-CAM-01,Realme
+101,1,Realme 11 AMOLED Display,RM11-DISP-01,Realme
+102,2,Realme 11 Battery,RM11-BAT-01,Realme
+103,5,Realme 11 Charging Board,RM11-CB-01,Realme
+104,6,Realme 11 Back Glass,RM11-BG-01,Generic
+105,7,Realme 11 Rear Camera,RM11-CAM-01,Realme
+106,1,Realme C55 LCD Display,C55-DISP-01,Realme
+107,2,Realme C55 Battery,C55-BAT-01,Realme
+108,5,Realme C55 Charging Board,C55-CB-01,Realme
+109,6,Realme C55 Back Glass,C55-BG-01,Generic
+110,7,Realme C55 Rear Camera,C55-CAM-01,Realme
+111,1,Oppo A78 LCD Display,A78-DISP-01,Oppo
+112,2,Oppo A78 Battery,A78-BAT-01,Oppo
+113,5,Oppo A78 Charging Board,A78-CB-01,Oppo
+114,6,Oppo A78 Back Glass,A78-BG-01,Generic
+115,7,Oppo A78 Rear Camera,A78-CAM-01,Oppo
+116,1,Oppo Reno8 AMOLED Display,RENO8-DISP-01,Oppo
+117,2,Oppo Reno8 Battery,RENO8-BAT-01,Oppo
+118,5,Oppo Reno8 Charging Board,RENO8-CB-01,Oppo
+119,6,Oppo Reno8 Back Glass,RENO8-BG-01,Generic
+120,7,Oppo Reno8 Rear Camera,RENO8-CAM-01,Oppo
+121,1,Oppo A17 LCD Display,A17-DISP-01,Oppo
+122,2,Oppo A17 Battery,A17-BAT-01,Oppo
+123,5,Oppo A17 Charging Board,A17-CB-01,Oppo
+124,6,Oppo A17 Back Glass,A17-BG-01,Generic
+125,7,Oppo A17 Rear Camera,A17-CAM-01,Oppo
+126,1,Vivo Y22 LCD Display,Y22-DISP-01,Vivo
+127,2,Vivo Y22 Battery,Y22-BAT-01,Vivo
+128,5,Vivo Y22 Charging Board,Y22-CB-01,Vivo
+129,6,Vivo Y22 Back Glass,Y22-BG-01,Generic
+130,7,Vivo Y22 Rear Camera,Y22-CAM-01,Vivo
+131,1,Vivo Y16 LCD Display,Y16-DISP-01,Vivo
+132,2,Vivo Y16 Battery,Y16-BAT-01,Vivo
+133,5,Vivo Y16 Charging Board,Y16-CB-01,Vivo
+134,6,Vivo Y16 Back Glass,Y16-BG-01,Generic
+135,7,Vivo Y16 Rear Camera,Y16-CAM-01,Vivo
+136,1,Vivo V25 AMOLED Display,V25-DISP-01,Vivo
+137,2,Vivo V25 Battery,V25-BAT-01,Vivo
+138,5,Vivo V25 Charging Board,V25-CB-01,Vivo
+139,6,Vivo V25 Back Glass,V25-BG-01,Generic
+140,7,Vivo V25 Rear Camera,V25-CAM-01,Vivo
+141,1,Vivo T2x LCD Display,T2X-DISP-01,Vivo
+142,2,Vivo T2x Battery,T2X-BAT-01,Vivo
+143,5,Vivo T2x Charging Board,T2X-CB-01,Vivo
+144,6,Vivo T2x Back Glass,T2X-BG-01,Generic
+145,7,Vivo T2x Rear Camera,T2X-CAM-01,Vivo
+146,1,OnePlus Nord CE 2 AMOLED Display,NCE2-DISP-01,OnePlus
+147,2,OnePlus Nord CE 2 Battery,NCE2-BAT-01,OnePlus
+148,5,OnePlus Nord CE 2 Charging Board,NCE2-CB-01,OnePlus
+149,6,OnePlus Nord CE 2 Back Glass,NCE2-BG-01,Generic
+150,7,OnePlus Nord CE 2 Rear Camera,NCE2-CAM-01,OnePlus
+151,1,OnePlus Nord CE 3 Lite LCD Display,NCE3L-DISP-01,OnePlus
+152,2,OnePlus Nord CE 3 Lite Battery,NCE3L-BAT-01,OnePlus
+153,5,OnePlus Nord CE 3 Lite Charging Board,NCE3L-CB-01,OnePlus
+154,6,OnePlus Nord CE 3 Lite Back Glass,NCE3L-BG-01,Generic
+155,7,OnePlus Nord CE 3 Lite Rear Camera,NCE3L-CAM-01,OnePlus
+156,1,OnePlus 11R AMOLED Display,11R-DISP-01,OnePlus
+157,2,OnePlus 11R Battery,11R-BAT-01,OnePlus
+158,5,OnePlus 11R Charging Board,11R-CB-01,OnePlus
+159,6,OnePlus 11R Back Glass,11R-BG-01,Generic
+160,7,OnePlus 11R Rear Camera,11R-CAM-01,OnePlus
+161,1,iPhone 11 LCD Display,IP11-DISP-01,Apple
+162,2,iPhone 11 Battery,IP11-BAT-01,Apple
+163,5,iPhone 11 Charging Board,IP11-CB-01,Apple
+164,6,iPhone 11 Back Glass,IP11-BG-01,Generic
+165,7,iPhone 11 Rear Camera,IP11-CAM-01,Apple
+166,1,iPhone 12 OLED Display,IP12-DISP-01,Apple
+167,2,iPhone 12 Battery,IP12-BAT-01,Apple
+168,5,iPhone 12 Charging Board,IP12-CB-01,Apple
+169,6,iPhone 12 Back Glass,IP12-BG-01,Generic
+170,7,iPhone 12 Rear Camera,IP12-CAM-01,Apple
+171,1,iPhone XR LCD Display,IPXR-DISP-01,Apple
+172,2,iPhone XR Battery,IPXR-BAT-01,Apple
+173,5,iPhone XR Charging Board,IPXR-CB-01,Apple
+174,6,iPhone XR Back Glass,IPXR-BG-01,Generic
+175,7,iPhone XR Rear Camera,IPXR-CAM-01,Apple
+176,1,iPhone 13 OLED Display,IP13-DISP-01,Apple
+177,2,iPhone 13 Battery,IP13-BAT-01,Apple
+178,5,iPhone 13 Charging Board,IP13-CB-01,Apple
+179,6,iPhone 13 Back Glass,IP13-BG-01,Generic
+180,7,iPhone 13 Rear Camera,IP13-CAM-01,Apple
+181,1,iPhone 13 Pro OLED Display,IP13P-DISP-01,Apple
+182,2,iPhone 13 Pro Battery,IP13P-BAT-01,Apple
+183,5,iPhone 13 Pro Charging Board,IP13P-CB-01,Apple
+184,6,iPhone 13 Pro Back Glass,IP13P-BG-01,Generic
+185,7,iPhone 13 Pro Rear Camera,IP13P-CAM-01,Apple
+186,1,iPhone 14 OLED Display,IP14-DISP-01,Apple
+187,2,iPhone 14 Battery,IP14-BAT-01,Apple
+188,5,iPhone 14 Charging Board,IP14-CB-01,Apple
+189,6,iPhone 14 Back Glass,IP14-BG-01,Generic
+190,7,iPhone 14 Rear Camera,IP14-CAM-01,Apple
+191,1,iPhone 15 OLED Display,IP15-DISP-01,Apple
+192,2,iPhone 15 Battery,IP15-BAT-01,Apple
+193,5,iPhone 15 Charging Board,IP15-CB-01,Apple
+194,6,iPhone 15 Back Glass,IP15-BG-01,Generic
+195,7,iPhone 15 Rear Camera,IP15-CAM-01,Apple
+196,3,Galaxy A52 OCA Glass,A52-OCA-01,Generic
+197,8,Galaxy A52 Speaker,A52-SPK-01,Samsung
+198,9,Galaxy A52 Earpiece,A52-EAR-01,Samsung
+199,12,Galaxy A52 Housing,A52-HSG-01,Generic
+200,15,Galaxy A52 Vibrator,A52-VIB-01,Samsung
+201,3,Galaxy A53 OCA Glass,A53-OCA-01,Generic
+202,8,Galaxy A53 Speaker,A53-SPK-01,Samsung
+203,9,Galaxy A53 Earpiece,A53-EAR-01,Samsung
+204,12,Galaxy A53 Housing,A53-HSG-01,Generic
+205,15,Galaxy A53 Vibrator,A53-VIB-01,Samsung
+206,3,Galaxy A15 OCA Glass,A15-OCA-01,Generic
+207,8,Galaxy A15 Speaker,A15-SPK-01,Samsung
+208,9,Galaxy A15 Earpiece,A15-EAR-01,Samsung
+209,12,Galaxy A15 Housing,A15-HSG-01,Generic
+210,15,Galaxy A15 Vibrator,A15-VIB-01,Samsung
+211,3,Galaxy S23 OCA Glass,S23-OCA-01,Generic
+212,8,Galaxy S23 Speaker,S23-SPK-01,Samsung
+213,9,Galaxy S23 Earpiece,S23-EAR-01,Samsung
+214,12,Galaxy S23 Housing,S23-HSG-01,Generic
+215,15,Galaxy S23 Vibrator,S23-VIB-01,Samsung
+216,3,Redmi Note 11 OCA Glass,N11-OCA-01,Generic
+217,8,Redmi Note 11 Speaker,N11-SPK-01,Xiaomi
+218,9,Redmi Note 11 Earpiece,N11-EAR-01,Xiaomi
+219,12,Redmi Note 11 Housing,N11-HSG-01,Generic
+220,15,Redmi Note 11 Vibrator,N11-VIB-01,Xiaomi
+221,3,Redmi Note 12 OCA Glass,N12-OCA-01,Generic
+222,8,Redmi Note 12 Speaker,N12-SPK-01,Xiaomi
+223,9,Redmi Note 12 Earpiece,N12-EAR-01,Xiaomi
+224,12,Redmi Note 12 Housing,N12-HSG-01,Generic
+225,15,Redmi Note 12 Vibrator,N12-VIB-01,Xiaomi
+226,3,Redmi Note 13 OCA Glass,N13-OCA-01,Generic
+227,8,Redmi Note 13 Speaker,N13-SPK-01,Xiaomi
+228,9,Redmi Note 13 Earpiece,N13-EAR-01,Xiaomi
+229,12,Redmi Note 13 Housing,N13-HSG-01,Generic
+230,15,Redmi Note 13 Vibrator,N13-VIB-01,Xiaomi
+231,3,Redmi 13C OCA Glass,R13C-OCA-01,Generic
+232,8,Redmi 13C Speaker,R13C-SPK-01,Xiaomi
+233,9,Redmi 13C Earpiece,R13C-EAR-01,Xiaomi
+234,12,Redmi 13C Housing,R13C-HSG-01,Generic
+235,15,Redmi 13C Vibrator,R13C-VIB-01,Xiaomi
+236,3,Realme 11 OCA Glass,RM11-OCA-01,Generic
+237,8,Realme 11 Speaker,RM11-SPK-01,Realme
+238,9,Realme 11 Earpiece,RM11-EAR-01,Realme
+239,12,Realme 11 Housing,RM11-HSG-01,Generic
+240,15,Realme 11 Vibrator,RM11-VIB-01,Realme
+241,3,Oppo A78 OCA Glass,A78-OCA-01,Generic
+242,8,Oppo A78 Speaker,A78-SPK-01,Oppo
+243,9,Oppo A78 Earpiece,A78-EAR-01,Oppo
+244,12,Oppo A78 Housing,A78-HSG-01,Generic
+245,15,Oppo A78 Vibrator,A78-VIB-01,Oppo
+246,3,Vivo Y22 OCA Glass,Y22-OCA-01,Generic
+247,8,Vivo Y22 Speaker,Y22-SPK-01,Vivo
+248,9,Vivo Y22 Earpiece,Y22-EAR-01,Vivo
+249,12,Vivo Y22 Housing,Y22-HSG-01,Generic
+250,15,Vivo Y22 Vibrator,Y22-VIB-01,Vivo
+251,3,OnePlus Nord CE 3 Lite OCA Glass,NCE3L-OCA-01,Generic
+252,8,OnePlus Nord CE 3 Lite Speaker,NCE3L-SPK-01,OnePlus
+253,9,OnePlus Nord CE 3 Lite Earpiece,NCE3L-EAR-01,OnePlus
+254,12,OnePlus Nord CE 3 Lite Housing,NCE3L-HSG-01,Generic
+255,15,OnePlus Nord CE 3 Lite Vibrator,NCE3L-VIB-01,OnePlus
+256,3,OnePlus 11R OCA Glass,11R-OCA-01,Generic
+257,8,OnePlus 11R Speaker,11R-SPK-01,OnePlus
+258,9,OnePlus 11R Earpiece,11R-EAR-01,OnePlus
+259,12,OnePlus 11R Housing,11R-HSG-01,Generic
+260,15,OnePlus 11R Vibrator,11R-VIB-01,OnePlus
+261,3,iPhone 14 OCA Glass,IP14-OCA-01,Generic
+262,8,iPhone 14 Speaker,IP14-SPK-01,Apple
+263,9,iPhone 14 Earpiece,IP14-EAR-01,Apple
+264,12,iPhone 14 Housing,IP14-HSG-01,Generic
+265,15,iPhone 14 Vibrator,IP14-VIB-01,Apple
+266,3,iPhone 15 OCA Glass,IP15-OCA-01,Generic
+267,8,iPhone 15 Speaker,IP15-SPK-01,Apple
+268,9,iPhone 15 Earpiece,IP15-EAR-01,Apple
+269,12,iPhone 15 Housing,IP15-HSG-01,Generic
+270,15,iPhone 15 Vibrator,IP15-VIB-01,Apple
