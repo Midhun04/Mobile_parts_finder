@@ -9,21 +9,9 @@
 
 ## Why this exists
 
-Today the catalog is managed by:
+Today the catalog is managed in **Postgres via the Admin dashboard** (CRUD + CSV import/export).
 
-```text
-Python builders → JSON groups → model_part_matrix.csv → relational CSVs → wipe-seed DB
-```
-
-That was fine for bootstrapping (~2.5k models, ~1.7k parts). It is a bad long-term approach:
-
-- Hardcoded supplier lists in Python scripts
-- Full DB wipe on every seed
-- No way to fix one model/part without re-running the whole pipeline
-- No verification workflow in the UI
-- Shared-part “groups” are opaque names like `[matrix] Display shared (…)`
-
-**Goal:** Postgres + Admin becomes the source of truth. CSVs become import/export only.
+Older bootstrap (Python builders → matrix CSV → wipe-seed) has been removed.
 
 ---
 
@@ -76,9 +64,7 @@ Admin Dashboard
 │   └── Group detail → member models + linked Part
 ├── Compatibility links
 │   └── Verify / notes / remove
-└── Import / Export (optional Phase 2)
-    ├── Import CSV / JSON groups
-    └── Export snapshot CSV
+└── Catalog CSV (Overview) — export snapshot / merge upload
 ```
 
 ---
@@ -293,17 +279,8 @@ Public GET routes for mobile/web remain unchanged.
 
 ## Migration from CSV / scripts
 
-| Step | Action |
-|------|--------|
-| 1 | One final seed from current CSVs into Postgres (baseline) |
-| 2 | Create first `AdminUser` |
-| 3 | Stop day-to-day edits to `data/*.csv` and `_build_*.py` |
-| 4 | Ship admin CRUD for brands/models/parts/compatibility |
-| 5 | Change `seed.ts` to **upsert / empty-DB only** (no delete-all) |
-| 6 | Add `CompatibilityGroup`; optional script to parse `[matrix] …` parts into groups |
-| 7 | Keep `data/` CSVs as optional export snapshots in git |
-
-`data/README.md` should eventually say: **Postgres + admin is source of truth; CSV is bootstrap/export.**
+Historical bootstrap (Python builders → CSVs → wipe-seed) has been removed.
+**Postgres + Admin CSV import/export** is the catalog source of truth.
 
 ---
 
@@ -396,6 +373,6 @@ npm run admin          # next dev for apps/admin
 ## Related docs
 
 - Root roadmap: `README.md` → MVP Phase 2 (Database management)
-- Catalog bootstrap: `data/README.md`
+- Catalog notes: `data/README.md`
 - Shared types: `packages/shared`
 - API: `apps/api`

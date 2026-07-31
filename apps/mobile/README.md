@@ -28,7 +28,6 @@ apps/mobile/
 └── src/
     ├── api/                 # Axios client + endpoints
     ├── components/
-    ├── data/mockData.ts     # seed reference only
     ├── navigation/
     ├── screens/
     ├── theme/

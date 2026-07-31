@@ -17,7 +17,7 @@ Mobile_parts_finder/
 │   └── api/             # Node.js / Express API (@mpf/api) — PostgreSQL
 ├── packages/
 │   └── shared/          # Shared types & constants (@mpf/shared)
-├── data/                # CSV catalog (seeded into Postgres)
+├── data/                # Notes only — catalog lives in Postgres (Admin CSV import/export)
 ├── package.json         # npm workspaces root
 └── README.md
 ```
