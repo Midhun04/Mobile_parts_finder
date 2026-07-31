@@ -2,6 +2,7 @@ import { Router } from 'express';
 import { prisma } from '../db.js';
 import { nextId } from '../ids.js';
 import { mapModel, mapPart } from '../mappers.js';
+import { exportCatalogCsv, importCatalogCsv } from '../catalogCsv.js';
 import {
   requireAdmin,
   signAdminToken,
@@ -102,6 +103,39 @@ adminRouter.get('/stats', async (_req, res) => {
     ]);
 
   res.json({ brands, models, parts, compatibilities, unverified, groups, partTypes });
+});
+
+// ── Catalog CSV import / export ──────────────────────────────────────────────
+
+adminRouter.get('/export/catalog', async (_req, res) => {
+  const csv = await exportCatalogCsv();
+  const stamp = new Date().toISOString().slice(0, 10);
+  res.setHeader('Content-Type', 'text/csv; charset=utf-8');
+  res.setHeader(
+    'Content-Disposition',
+    `attachment; filename="mpf-catalog-${stamp}.csv"`,
+  );
+  res.send(csv);
+});
+
+adminRouter.post('/import/csv', async (req, res) => {
+  const csv = typeof req.body?.csv === 'string' ? req.body.csv : '';
+  if (!csv.trim()) {
+    res.status(400).json({ error: 'csv string is required' });
+    return;
+  }
+  const dryRun = req.body?.dryRun !== false && req.body?.dryRun !== 'false';
+  try {
+    const result = await importCatalogCsv(csv, { dryRun });
+    if (result.errors.length && result.counts.rows === 0) {
+      res.status(400).json(result);
+      return;
+    }
+    res.json(result);
+  } catch (err) {
+    const message = err instanceof Error ? err.message : 'Import failed';
+    res.status(500).json({ error: message });
+  }
 });
 
 // ── Brands ───────────────────────────────────────────────────────────────────

@@ -85,6 +85,56 @@ export type GroupRow = {
   memberCount: number;
 };
 
+export type ImportCounts = {
+  brandsCreated: number;
+  brandsUpdated: number;
+  modelsCreated: number;
+  modelsUpdated: number;
+  partTypesCreated: number;
+  partsCreated: number;
+  partsUpdated: number;
+  compatCreated: number;
+  compatUpdated: number;
+  rows: number;
+  skipped: number;
+};
+
+export type ImportPreview = {
+  dryRun: boolean;
+  counts: ImportCounts;
+  errors: string[];
+  sampleCreates: string[];
+  sampleUpdates: string[];
+};
+
+async function downloadCatalogCsv(): Promise<void> {
+  const token = getToken();
+  const res = await fetch(`${API_URL}/api/admin/export/catalog`, {
+    headers: token ? { Authorization: `Bearer ${token}` } : undefined,
+  });
+  if (res.status === 401) {
+    clearToken();
+    if (typeof window !== 'undefined') window.location.href = '/login';
+    throw new ApiError(401, 'Unauthorized');
+  }
+  if (!res.ok) {
+    const data = await res.json().catch(() => ({}));
+    throw new ApiError(res.status, (data as { error?: string }).error ?? res.statusText);
+  }
+  const blob = await res.blob();
+  const disposition = res.headers.get('Content-Disposition') ?? '';
+  const match = /filename="([^"]+)"/.exec(disposition);
+  const filename = match?.[1] ?? 'mpf-catalog.csv';
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = filename;
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  URL.revokeObjectURL(url);
+}
+
 export const api = {
   login: (email: string, password: string) =>
     request<{ token: string; user: AdminUser }>('/api/admin/auth/login', {
@@ -208,4 +258,16 @@ export const api = {
     }),
   removeGroupMember: (id: number, modelId: number) =>
     request<GroupRow>(`/api/admin/groups/${id}/members/${modelId}`, { method: 'DELETE' }),
+
+  exportCatalog: () => downloadCatalogCsv(),
+  importCatalogPreview: (csv: string) =>
+    request<ImportPreview>('/api/admin/import/csv', {
+      method: 'POST',
+      body: JSON.stringify({ csv, dryRun: true }),
+    }),
+  importCatalogApply: (csv: string) =>
+    request<ImportPreview>('/api/admin/import/csv', {
+      method: 'POST',
+      body: JSON.stringify({ csv, dryRun: false }),
+    }),
 };

@@ -1,20 +1,25 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import Link from 'next/link';
 import { api, type Stats } from '@/lib/api';
+import { CatalogCsvPanel } from '@/components/CatalogCsvPanel';
 import { Card, ErrorBanner, PageHeader } from '@/components/ui';
 
 export default function OverviewPage() {
   const [stats, setStats] = useState<Stats | null>(null);
   const [error, setError] = useState<string | null>(null);
 
-  useEffect(() => {
+  const loadStats = useCallback(() => {
     api
       .stats()
       .then(setStats)
       .catch((e) => setError(e instanceof Error ? e.message : 'Failed to load'));
   }, []);
+
+  useEffect(() => {
+    loadStats();
+  }, [loadStats]);
 
   const tiles = stats
     ? [
@@ -55,6 +60,8 @@ export default function OverviewPage() {
           Review unverified →
         </Link>
       </div>
+
+      <CatalogCsvPanel onApplied={loadStats} />
     </div>
   );
 }
