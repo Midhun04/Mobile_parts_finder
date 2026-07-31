@@ -34,10 +34,6 @@ export default async function HomePage() {
           <br />
           spare parts
         </h1>
-        <p className="mt-2 text-[15px] leading-6 text-text-secondary">
-          Search by phone model or part number — works both ways.
-        </p>
-
         <div className="mt-5 mb-7">
           <SearchBar />
         </div>
@@ -59,13 +55,6 @@ export default async function HomePage() {
         {recentModels.map((model) => (
           <ModelCard key={model.id} model={model} />
         ))}
-
-        <div className="mt-3 rounded-2xl bg-primary p-4 text-white">
-          <p className="mb-1.5 text-[15px] font-bold">Two-way search</p>
-          <p className="text-sm leading-5 text-white/85">
-            Try “A50” for models, or “BN-59” for a battery and its compatible phones.
-          </p>
-        </div>
       </main>
     </>
   );
