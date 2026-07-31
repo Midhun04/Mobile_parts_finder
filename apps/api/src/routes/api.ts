@@ -4,7 +4,7 @@ import {
   BRAND_ALIASES,
   MAX_POPULAR_BRANDS,
   POPULAR_BRAND_IDS,
-  RECENT_MODEL_IDS,
+  RECENT_MODEL_LIMIT,
 } from '../constants.js';
 import { prisma } from '../db.js';
 import { mapCompatibilityMeta, mapModel, mapPart } from '../mappers.js';
@@ -149,15 +149,12 @@ apiRouter.get('/brands/:id/models', async (req, res) => {
 
 apiRouter.get('/mobile-models/recent', async (_req, res) => {
   const models = await prisma.mobileModel.findMany({
-    where: { id: { in: RECENT_MODEL_IDS } },
     include: { brand: true },
+    orderBy: [{ createdAt: 'desc' }, { id: 'desc' }],
+    take: RECENT_MODEL_LIMIT,
   });
 
-  const ordered = RECENT_MODEL_IDS.map((id) => models.find((m) => m.id === id)).filter(
-    (m): m is NonNullable<typeof m> => Boolean(m),
-  );
-
-  res.json(ordered.map(mapModel));
+  res.json(models.map(mapModel));
 });
 
 apiRouter.get('/mobile-models/:id', async (req, res) => {
