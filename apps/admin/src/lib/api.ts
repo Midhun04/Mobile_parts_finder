@@ -187,11 +187,6 @@ export const api = {
     request<void>(`/api/admin/models/${id}/aliases/${aliasId}`, { method: 'DELETE' }),
 
   partTypes: () => request<PartTypeRow[]>('/api/admin/part-types'),
-  createPartType: (name: string, code: string) =>
-    request('/api/admin/part-types', {
-      method: 'POST',
-      body: JSON.stringify({ name, code }),
-    }),
 
   parts: (params?: { q?: string; partTypeId?: number }) => {
     const sp = new URLSearchParams();

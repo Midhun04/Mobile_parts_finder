@@ -42,20 +42,8 @@ export interface Part {
   description?: string;
 }
 
-export interface Compatibility {
-  id: number;
-  mobileModelId: number;
-  partId: number;
-  verified: boolean;
-  notes?: string;
-}
-
 export interface MobileModelWithBrand extends MobileModel {
   brand: Brand;
-}
-
-export interface PartWithModels extends Part {
-  compatibleModels: MobileModelWithBrand[];
 }
 
 export interface SearchResult {

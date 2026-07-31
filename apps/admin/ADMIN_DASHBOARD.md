@@ -372,7 +372,5 @@ npm run admin          # next dev for apps/admin
 
 ## Related docs
 
-- Root roadmap: `README.md` → MVP Phase 2 (Database management)
-- Catalog notes: `data/README.md`
 - Shared types: `packages/shared`
 - API: `apps/api`

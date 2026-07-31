@@ -2,14 +2,6 @@ type Props = {
   message?: string;
 };
 
-export function LoadingState({ message = 'Loading…' }: Props) {
-  return (
-    <div className="flex flex-1 items-center justify-center px-5 py-16 text-text-secondary">
-      {message}
-    </div>
-  );
-}
-
 export function ErrorState({ message = 'Something went wrong.' }: Props) {
   return (
     <div className="mx-auto max-w-3xl px-5 py-10">

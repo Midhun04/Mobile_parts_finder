@@ -57,6 +57,3 @@ export const darkColors: AppColors = {
   shadow: '#000000',
   overlay: 'rgba(0, 9, 16, 0.74)',
 };
-
-// Kept for non-React modules; UI components should use the theme context.
-export const colors = lightColors;
