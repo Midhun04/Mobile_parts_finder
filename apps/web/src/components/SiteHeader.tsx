@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { ThemeToggle } from '@/components/ThemeToggle';
 
 type Props = {
   title?: string;
@@ -40,6 +41,7 @@ export function SiteHeader({ title, backHref }: Props) {
             </span>
           </Link>
         )}
+        <ThemeToggle />
       </div>
     </header>
   );

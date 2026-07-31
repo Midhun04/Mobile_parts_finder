@@ -33,7 +33,7 @@ export function SearchBar({ initialQuery = '', autoFocus = false, className = ''
       />
       <button
         type="submit"
-        className="shrink-0 rounded-xl bg-primary px-5 py-3 text-[15px] font-bold text-white transition hover:bg-primary-dark"
+        className="shrink-0 rounded-xl bg-primary px-5 py-3 text-[15px] font-bold text-white transition hover:bg-primary-dark dark:bg-primary-dark dark:hover:bg-primary"
       >
         Search
       </button>

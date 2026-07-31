@@ -1,26 +1,67 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
-  --background: #f4f7f5;
+  color-scheme: light;
+  --background: #f4f9fc;
   --surface: #ffffff;
-  --surface-muted: #e8eeea;
-  --primary: #1b5e4b;
-  --primary-dark: #124036;
-  --primary-light: #2a8f72;
-  --accent: #c45c26;
+  --surface-muted: #e7f3fa;
+  --primary: #008ccf;
+  --primary-dark: #005f91;
+  --primary-light: #32b8f2;
+  --hero: #001d2e;
+  --hero-soft: #063a55;
+  --mint: #ddf3fc;
+  --accent: #00aeef;
   --brand-navy: #000f22;
   --brand-blue: #0099ff;
-  --brand-green: #66cc33;
-  --text: #1a2421;
-  --text-secondary: #5a6b64;
-  --text-muted: #8a9a93;
-  --border: #d5ded9;
+  --brand-green: #00d1ff;
+  --text: #102431;
+  --text-secondary: #506875;
+  --text-muted: #7c929e;
+  --border: #d8e7ef;
+  --border-strong: #bdd5e2;
   --verified: #1b7a4e;
   --verified-bg: #e3f5eb;
   --unverified: #9a6b1f;
   --unverified-bg: #fff4de;
   --danger: #b42318;
-  --white: #ffffff;
+  --shadow: rgba(0, 29, 46, 0.16);
+  --overlay: rgba(0, 29, 46, 0.58);
+  --glow-blue: rgba(0, 153, 255, 0.08);
+  --glow-cyan: rgba(0, 209, 255, 0.1);
+}
+
+.dark {
+  color-scheme: dark;
+  --background: #031722;
+  --surface: #0b2635;
+  --surface-muted: #12384b;
+  --primary: #24b8f2;
+  --primary-dark: #078ac4;
+  --primary-light: #62cdf7;
+  --hero: #000d16;
+  --hero-soft: #082e43;
+  --mint: #0e3b50;
+  --accent: #38c6fa;
+  --brand-navy: #020b13;
+  --brand-blue: #38acfa;
+  --brand-green: #38d7fa;
+  --text: #f1f7f5;
+  --text-secondary: #b0c6d1;
+  --text-muted: #819eac;
+  --border: #20495e;
+  --border-strong: #32657c;
+  --verified: #65d49a;
+  --verified-bg: #163d2c;
+  --unverified: #f0c36b;
+  --unverified-bg: #493a1d;
+  --danger: #ff8a80;
+  --shadow: rgba(0, 0, 0, 0.45);
+  --overlay: rgba(0, 9, 16, 0.74);
+  --glow-blue: rgba(56, 172, 250, 0.1);
+  --glow-cyan: rgba(56, 215, 250, 0.08);
 }
 
 @theme inline {
@@ -30,6 +71,9 @@
   --color-primary: var(--primary);
   --color-primary-dark: var(--primary-dark);
   --color-primary-light: var(--primary-light);
+  --color-hero: var(--hero);
+  --color-hero-soft: var(--hero-soft);
+  --color-mint: var(--mint);
   --color-accent: var(--accent);
   --color-brand-navy: var(--brand-navy);
   --color-brand-blue: var(--brand-blue);
@@ -38,6 +82,7 @@
   --color-text-secondary: var(--text-secondary);
   --color-text-muted: var(--text-muted);
   --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
   --color-verified: var(--verified);
   --color-verified-bg: var(--verified-bg);
   --color-unverified: var(--unverified);
@@ -48,8 +93,8 @@
 
 body {
   background:
-    radial-gradient(ellipse 80% 50% at 100% -20%, rgba(0, 153, 255, 0.08), transparent),
-    radial-gradient(ellipse 60% 40% at -10% 10%, rgba(102, 204, 51, 0.1), transparent),
+    radial-gradient(ellipse 80% 50% at 100% -20%, var(--glow-blue), transparent),
+    radial-gradient(ellipse 60% 40% at -10% 10%, var(--glow-cyan), transparent),
     var(--background);
   color: var(--text);
   font-family: var(--font-plus-jakarta), system-ui, sans-serif;
