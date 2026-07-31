@@ -38,8 +38,8 @@ export async function searchAll(query: string): Promise<SearchResult> {
   return apiFetch<SearchResult>(`/api/search?q=${q}`, { cache: 'no-store' });
 }
 
-export async function getPopularBrands(): Promise<Brand[]> {
-  return apiFetch<Brand[]>('/api/brands/popular');
+export async function getPopularBrands(limit = 8): Promise<Brand[]> {
+  return apiFetch<Brand[]>(`/api/brands/popular?limit=${limit}`);
 }
 
 export async function getRecentlyAddedModels(): Promise<MobileModelWithBrand[]> {

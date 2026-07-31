@@ -1,6 +1,11 @@
 import type { Prisma } from '@prisma/client';
 import { Router } from 'express';
-import { BRAND_ALIASES, POPULAR_BRAND_IDS, RECENT_MODEL_IDS } from '../constants.js';
+import {
+  BRAND_ALIASES,
+  MAX_POPULAR_BRANDS,
+  POPULAR_BRAND_IDS,
+  RECENT_MODEL_IDS,
+} from '../constants.js';
 import { prisma } from '../db.js';
 import { mapCompatibilityMeta, mapModel, mapPart } from '../mappers.js';
 
@@ -99,14 +104,23 @@ apiRouter.get('/search', async (req, res) => {
   });
 });
 
-apiRouter.get('/brands/popular', async (_req, res) => {
+apiRouter.get('/brands/popular', async (req, res) => {
+  const requested = Number(req.query.limit);
+  const limit = Number.isInteger(requested)
+    ? Math.min(Math.max(requested, 1), MAX_POPULAR_BRANDS)
+    : POPULAR_BRAND_IDS.length;
+
   const brands = await prisma.brand.findMany({
-    where: { id: { in: POPULAR_BRAND_IDS } },
+    include: { _count: { select: { models: true } } },
+    orderBy: [{ models: { _count: 'desc' } }, { name: 'asc' }],
   });
 
-  const ordered = POPULAR_BRAND_IDS.map((id) => brands.find((b) => b.id === id)).filter(
+  const curated = POPULAR_BRAND_IDS.map((id) => brands.find((b) => b.id === id)).filter(
     (b): b is NonNullable<typeof b> => Boolean(b),
   );
+  const fillers = brands.filter((b) => !POPULAR_BRAND_IDS.includes(b.id));
+
+  const ordered = [...curated, ...fillers].slice(0, limit).map(({ _count, ...brand }) => brand);
 
   res.json(ordered);
 });
