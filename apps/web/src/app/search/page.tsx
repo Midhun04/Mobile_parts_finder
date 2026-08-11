@@ -34,7 +34,7 @@ export default async function SearchPage({ searchParams }: Props) {
 
   return (
     <>
-      <SiteHeader title="Search results" backHref="/" />
+      <SiteHeader title={query ? 'Search results' : undefined} backHref={query ? '/' : undefined} />
       <main className="page-content">
         <SearchBar initialQuery={query} autoFocus />
 
@@ -64,7 +64,7 @@ export default async function SearchPage({ searchParams }: Props) {
             {results.models.length > 0 ? (
               <>
                 <h2 className="mb-3 text-lg font-bold text-foreground">Mobile models</h2>
-                <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                <div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                   {results.models.map((model) => (
                     <ModelCard key={model.id} model={model} />
                   ))}
@@ -81,7 +81,7 @@ export default async function SearchPage({ searchParams }: Props) {
                 >
                   Spare parts
                 </h2>
-                <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                <div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                   {results.parts.map((part) => (
                     <PartCard key={part.id} part={part} />
                   ))}

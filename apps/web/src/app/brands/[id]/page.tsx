@@ -51,7 +51,7 @@ export default async function BrandModelsPage({ params, searchParams }: Props) {
         {models.length === 0 ? (
           <EmptyState title="No models" body="No models for this brand yet." />
         ) : (
-          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          <div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {models.map((model) => (
               <ModelCard key={model.id} model={model} />
             ))}

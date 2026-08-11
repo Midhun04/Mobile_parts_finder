@@ -75,7 +75,7 @@ export default async function PartDetailsPage({ params }: Props) {
         {rows.length === 0 ? (
           <EmptyState title="No models" body="No compatible models linked yet." />
         ) : (
-          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          <div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {rows.map((row) => (
               <div key={row.model.id}>
                 <ModelCard model={row.model} />

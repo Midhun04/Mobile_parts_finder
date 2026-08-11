@@ -21,7 +21,7 @@ export function SearchBar({ initialQuery = '', autoFocus = false, className = ''
   };
 
   return (
-    <form onSubmit={handleSubmit} className={`flex gap-2.5 ${className}`}>
+    <form onSubmit={handleSubmit} className={`flex flex-col gap-2.5 md:flex-row ${className}`}>
       <div className="relative min-w-0 flex-1">
         <svg
           aria-hidden="true"
@@ -48,7 +48,7 @@ export function SearchBar({ initialQuery = '', autoFocus = false, className = ''
       </div>
       <button
         type="submit"
-        className="shrink-0 rounded-xl bg-primary px-6 py-3 text-[15px] font-bold text-white transition hover:bg-primary-dark dark:bg-[#4ecfff] dark:text-[#071018] dark:hover:bg-[#7adfff]"
+        className="w-full shrink-0 rounded-xl bg-primary px-6 py-3 text-[15px] font-bold text-white transition hover:bg-primary-dark md:w-auto dark:bg-[#4ecfff] dark:text-[#071018] dark:hover:bg-[#7adfff]"
       >
         Search
       </button>

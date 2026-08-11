@@ -1,13 +1,17 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getPopularBrands, getRecentlyAddedModels } from '@/lib/api';
 import { ModelCard } from '@/components/ModelCard';
 import { ErrorState } from '@/components/QueryState';
-import { SearchBar } from '@/components/SearchBar';
 import { SiteHeader } from '@/components/SiteHeader';
+
+export const metadata: Metadata = {
+  title: 'Inventory',
+};
 
 export const dynamic = 'force-dynamic';
 
-export default async function HomePage() {
+export default async function InventoryPage() {
   let brands;
   let recentModels;
 
@@ -19,7 +23,7 @@ export default async function HomePage() {
   } catch (err) {
     return (
       <>
-        <SiteHeader />
+        <SiteHeader title="Inventory" backHref="/" />
         <ErrorState message={err instanceof Error ? err.message : 'Unable to reach the API.'} />
       </>
     );
@@ -27,29 +31,26 @@ export default async function HomePage() {
 
   return (
     <>
-      <SiteHeader />
+      <SiteHeader title="Inventory" backHref="/" />
       <main className="page-content">
-        <h1 className="text-[1.65rem] leading-tight font-extrabold tracking-tight text-foreground md:text-[2.15rem]">
-          Find compatible spare parts
+        <h1 className="mb-4 text-[1.65rem] font-extrabold tracking-tight text-foreground">
+          Inventory
         </h1>
-        <div className="mt-5 mb-9">
-          <SearchBar />
-        </div>
 
-        <h2 className="mb-3.5 text-lg font-bold text-foreground">Popular brands</h2>
-        <div className="-mx-5 mb-8 flex gap-2.5 overflow-x-auto px-5 pb-1 [scrollbar-width:none] md:mx-0 md:flex-wrap md:overflow-visible md:px-0 [&::-webkit-scrollbar]:hidden">
+        <h2 className="mb-3.5 text-lg font-bold text-foreground">Brands</h2>
+        <div className="mb-8 flex flex-wrap gap-2.5">
           {brands.map((brand) => (
             <Link
               key={brand.id}
               href={`/brands/${brand.id}?name=${encodeURIComponent(brand.name)}`}
-              className="shrink-0 rounded-xl border border-border bg-surface-muted/60 px-3.5 py-2 text-sm font-semibold text-text-secondary transition hover:border-primary hover:text-primary dark:border-white/8 dark:bg-[#161b24] dark:hover:border-primary dark:hover:text-primary"
+              className="rounded-xl border border-border bg-surface-muted/60 px-3.5 py-2 text-sm font-semibold text-text-secondary transition hover:border-primary hover:text-primary dark:border-white/8 dark:bg-[#161b24]"
             >
               {brand.name}
             </Link>
           ))}
         </div>
 
-        <h2 className="mb-3.5 text-lg font-bold text-foreground">Recently added</h2>
+        <h2 className="mb-3.5 text-lg font-bold text-foreground">Latest models</h2>
         <div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {recentModels.map((model) => (
             <ModelCard key={model.id} model={model} />

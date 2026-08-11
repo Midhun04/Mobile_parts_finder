@@ -8,8 +8,8 @@ type Props = {
 
 export function SiteHeader({ title, backHref }: Props) {
   return (
-    <header>
-      <div className="flex items-center gap-3 px-5 py-5 sm:px-8 lg:px-12">
+    <header className="border-b border-border/80 dark:border-white/8">
+      <div className="flex items-center gap-3 px-5 py-4 sm:px-8 sm:py-5 lg:px-12">
         {backHref ? (
           <Link
             href={backHref}
@@ -31,10 +31,10 @@ export function SiteHeader({ title, backHref }: Props) {
               className="h-10 w-10 rounded-[10px] object-cover"
             />
             <span className="leading-tight">
-              <span className="block text-[17px] font-extrabold tracking-[0.14em] text-foreground">
+              <span className="block text-[16px] font-extrabold tracking-[0.12em] text-primary sm:text-[17px] sm:tracking-[0.14em] sm:text-foreground">
                 PARTS FINDER
               </span>
-              <span className="block text-[11px] font-semibold tracking-[0.18em] text-text-muted uppercase">
+              <span className="block text-[10px] font-semibold tracking-[0.16em] text-primary/70 uppercase sm:text-[11px] sm:tracking-[0.18em] sm:text-text-muted">
                 Find. Match. Repair.
               </span>
             </span>

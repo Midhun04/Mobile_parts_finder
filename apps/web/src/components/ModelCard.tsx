@@ -13,7 +13,7 @@ export function ModelCard({ model, className = '' }: Props) {
       href={`/models/${model.id}`}
       className={`flex items-center gap-3 rounded-xl border border-border bg-surface p-3.5 transition hover:border-primary/50 hover:bg-surface-muted/40 dark:border-white/8 dark:bg-[#161b24] dark:hover:border-primary/40 ${className}`}
     >
-      <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-surface-muted text-text-secondary dark:bg-[#222833]">
+      <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-surface-muted text-primary dark:bg-[#222833]">
         <svg
           aria-hidden="true"
           viewBox="0 0 24 24"

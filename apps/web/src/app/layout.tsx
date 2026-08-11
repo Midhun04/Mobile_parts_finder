@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Plus_Jakarta_Sans } from 'next/font/google';
+import { BottomNav } from '@/components/BottomNav';
 import './globals.css';
 
 const plusJakarta = Plus_Jakarta_Sans({
@@ -35,7 +36,10 @@ export default function RootLayout({
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
       <body className={`${plusJakarta.variable} antialiased`}>
-        <div className="home-canvas home-frame min-h-screen">{children}</div>
+        <div className="home-canvas home-frame min-h-screen pb-20 md:pb-0">
+          {children}
+          <BottomNav />
+        </div>
       </body>
     </html>
   );
