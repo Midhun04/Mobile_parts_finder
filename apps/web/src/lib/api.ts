@@ -33,9 +33,10 @@ async function apiFetch<T>(path: string, init?: RequestInit): Promise<T> {
   return res.json() as Promise<T>;
 }
 
-export async function searchAll(query: string): Promise<SearchResult> {
+export async function searchAll(query: string, limit?: number): Promise<SearchResult> {
   const q = encodeURIComponent(query);
-  return apiFetch<SearchResult>(`/api/search?q=${q}`, { cache: 'no-store' });
+  const extra = limit ? `&limit=${limit}` : '';
+  return apiFetch<SearchResult>(`/api/search?q=${q}${extra}`, { cache: 'no-store' });
 }
 
 export async function getPopularBrands(limit = 8): Promise<Brand[]> {

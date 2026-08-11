@@ -85,16 +85,23 @@ apiRouter.get('/search', async (req, res) => {
     ],
   };
 
+  const requestedLimit = Number(req.query.limit);
+  const take = Number.isInteger(requestedLimit)
+    ? Math.min(Math.max(requestedLimit, 1), 20)
+    : undefined;
+
   const [models, parts] = await Promise.all([
     prisma.mobileModel.findMany({
       where: modelWhere,
       include: { brand: true },
       orderBy: [{ brand: { name: 'asc' } }, { name: 'asc' }],
+      ...(take ? { take } : {}),
     }),
     prisma.part.findMany({
       where: partWhere,
       include: partInclude,
       orderBy: { name: 'asc' },
+      ...(take ? { take } : {}),
     }),
   ]);
 
