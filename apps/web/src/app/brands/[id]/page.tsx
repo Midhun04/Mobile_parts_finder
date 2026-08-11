@@ -46,12 +46,16 @@ export default async function BrandModelsPage({ params, searchParams }: Props) {
   return (
     <>
       <SiteHeader title={brandName} backHref="/" />
-      <main className="mx-auto max-w-3xl px-5 py-5 pb-12">
+      <main className="page-content">
         <h1 className="mb-4 text-[22px] font-extrabold text-foreground">{brandName} models</h1>
         {models.length === 0 ? (
           <EmptyState title="No models" body="No models for this brand yet." />
         ) : (
-          models.map((model) => <ModelCard key={model.id} model={model} />)
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            {models.map((model) => (
+              <ModelCard key={model.id} model={model} />
+            ))}
+          </div>
         )}
       </main>
     </>

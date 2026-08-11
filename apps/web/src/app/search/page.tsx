@@ -35,57 +35,62 @@ export default async function SearchPage({ searchParams }: Props) {
   return (
     <>
       <SiteHeader title="Search results" backHref="/" />
-      <div className="border-b border-border bg-background px-5 py-3">
-        <div className="mx-auto max-w-3xl">
-          <SearchBar initialQuery={query} autoFocus />
-        </div>
-      </div>
+      <main className="page-content">
+        <SearchBar initialQuery={query} autoFocus />
 
-      {error ? (
-        <ErrorState message={error} />
-      ) : (
-        <main className="mx-auto max-w-3xl px-5 py-5 pb-12">
-          {query ? (
-            <p className="mb-4 text-sm text-text-secondary">Results for “{query}”</p>
-          ) : (
-            <EmptyState
-              title="Enter a search"
-              body="Try a brand, model name, model number, or part number like BN-59."
-            />
-          )}
+        {error ? (
+          <div className="mt-6 rounded-2xl border border-danger/30 bg-surface p-5">
+            <p className="font-bold text-danger">Unable to load data</p>
+            <p className="mt-2 text-sm text-text-secondary">{error}</p>
+          </div>
+        ) : (
+          <div className="mt-6">
+            {query ? (
+              <p className="mb-4 text-sm text-text-secondary">Results for “{query}”</p>
+            ) : (
+              <EmptyState
+                title="Enter a search"
+                body="Try a brand, model name, model number, or part number like BN-59."
+              />
+            )}
 
-          {query && results.models.length === 0 && results.parts.length === 0 ? (
-            <EmptyState
-              title="No matches found"
-              body="Try a brand, model name, model number, or part number like BN-59."
-            />
-          ) : null}
+            {query && results.models.length === 0 && results.parts.length === 0 ? (
+              <EmptyState
+                title="No matches found"
+                body="Try a brand, model name, model number, or part number like BN-59."
+              />
+            ) : null}
 
-          {results.models.length > 0 ? (
-            <>
-              <h2 className="mb-3 text-[17px] font-bold text-foreground">Mobile models</h2>
-              {results.models.map((model) => (
-                <ModelCard key={model.id} model={model} />
-              ))}
-            </>
-          ) : null}
+            {results.models.length > 0 ? (
+              <>
+                <h2 className="mb-3 text-lg font-bold text-foreground">Mobile models</h2>
+                <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                  {results.models.map((model) => (
+                    <ModelCard key={model.id} model={model} />
+                  ))}
+                </div>
+              </>
+            ) : null}
 
-          {results.parts.length > 0 ? (
-            <>
-              <h2
-                className={`mb-3 text-[17px] font-bold text-foreground ${
-                  results.models.length > 0 ? 'mt-[18px]' : ''
-                }`}
-              >
-                Spare parts
-              </h2>
-              {results.parts.map((part) => (
-                <PartCard key={part.id} part={part} />
-              ))}
-            </>
-          ) : null}
-        </main>
-      )}
+            {results.parts.length > 0 ? (
+              <>
+                <h2
+                  className={`mb-3 text-lg font-bold text-foreground ${
+                    results.models.length > 0 ? 'mt-8' : ''
+                  }`}
+                >
+                  Spare parts
+                </h2>
+                <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                  {results.parts.map((part) => (
+                    <PartCard key={part.id} part={part} />
+                  ))}
+                </div>
+              </>
+            ) : null}
+          </div>
+        )}
+      </main>
     </>
   );
 }

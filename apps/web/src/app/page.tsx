@@ -28,33 +28,33 @@ export default async function HomePage() {
   return (
     <>
       <SiteHeader />
-      <main className="mx-auto max-w-3xl px-5 pb-12 pt-6">
-        <h1 className="text-[2rem] font-extrabold leading-[1.15] tracking-tight text-foreground">
-          Find compatible
-          <br />
-          spare parts
+      <main className="page-content">
+        <h1 className="text-[2rem] leading-tight font-extrabold tracking-tight text-foreground md:text-[2.15rem]">
+          Find compatible spare parts
         </h1>
-        <div className="mt-5 mb-7">
+        <div className="mt-5 mb-9">
           <SearchBar />
         </div>
 
-        <h2 className="mb-3 text-[17px] font-bold text-foreground">Popular brands</h2>
-        <div className="mb-7 flex flex-wrap gap-2">
+        <h2 className="mb-3.5 text-lg font-bold text-foreground">Popular brands</h2>
+        <div className="mb-9 flex flex-wrap gap-2.5">
           {brands.map((brand) => (
             <Link
               key={brand.id}
               href={`/brands/${brand.id}?name=${encodeURIComponent(brand.name)}`}
-              className="rounded-[10px] border border-border bg-surface px-3.5 py-2.5 text-sm font-semibold text-primary transition hover:border-primary/40"
+              className="rounded-lg border border-border bg-surface-muted/60 px-3.5 py-2 text-sm font-semibold text-foreground transition hover:border-primary hover:text-primary dark:border-white/8 dark:bg-[#161b24] dark:hover:border-primary"
             >
               {brand.name}
             </Link>
           ))}
         </div>
 
-        <h2 className="mb-3 text-[17px] font-bold text-foreground">Recently added</h2>
-        {recentModels.map((model) => (
-          <ModelCard key={model.id} model={model} />
-        ))}
+        <h2 className="mb-3.5 text-lg font-bold text-foreground">Recently added</h2>
+        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          {recentModels.map((model) => (
+            <ModelCard key={model.id} model={model} />
+          ))}
+        </div>
       </main>
     </>
   );

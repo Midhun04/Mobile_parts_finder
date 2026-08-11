@@ -4,7 +4,7 @@ type Props = {
 
 export function ErrorState({ message = 'Something went wrong.' }: Props) {
   return (
-    <div className="mx-auto max-w-3xl px-5 py-10">
+    <div className="page-content">
       <div className="rounded-2xl border border-danger/30 bg-surface p-5">
         <p className="font-bold text-danger">Unable to load data</p>
         <p className="mt-2 text-sm text-text-secondary">{message}</p>

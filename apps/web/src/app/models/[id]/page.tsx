@@ -55,7 +55,7 @@ export default async function ModelDetailsPage({ params }: Props) {
   return (
     <>
       <SiteHeader title="Model details" backHref="/" />
-      <main className="mx-auto max-w-3xl px-5 py-5 pb-12">
+      <main className="page-content">
         <div className="mb-6 rounded-[18px] bg-primary p-5 text-white dark:bg-primary-dark">
           <p className="mb-1.5 text-[13px] font-bold uppercase tracking-wider text-white/75">
             {model.brand.name}

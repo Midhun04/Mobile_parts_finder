@@ -100,3 +100,41 @@ body {
   font-family: var(--font-plus-jakarta), system-ui, sans-serif;
   min-height: 100vh;
 }
+
+.home-canvas {
+  min-height: 100vh;
+  background-color: #e8eef3;
+  background-image: radial-gradient(rgba(16, 36, 49, 0.14) 1.1px, transparent 1.1px);
+  background-size: 22px 22px;
+}
+
+.dark .home-canvas {
+  background-color: #07090d;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.13) 1.1px, transparent 1.1px);
+}
+
+.home-frame {
+  background: color-mix(in srgb, var(--surface) 88%, var(--background));
+}
+
+.dark .home-frame {
+  background: #0c1017;
+}
+
+.page-content {
+  padding: 0.5rem 1.25rem 3rem;
+}
+
+@media (min-width: 640px) {
+  .page-content {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page-content {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}

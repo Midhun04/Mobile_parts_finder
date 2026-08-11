@@ -51,7 +51,7 @@ export default async function PartDetailsPage({ params }: Props) {
   return (
     <>
       <SiteHeader title="Part details" backHref="/" />
-      <main className="mx-auto max-w-3xl px-5 py-5 pb-12">
+      <main className="page-content">
         <div className="mb-6 rounded-[18px] border border-border bg-surface p-5">
           <p className="mb-2 text-[28px]">{getPartTypeIcon(part.type)}</p>
           <p className="mb-1.5 text-[13px] font-bold uppercase tracking-wider text-accent">
@@ -75,23 +75,25 @@ export default async function PartDetailsPage({ params }: Props) {
         {rows.length === 0 ? (
           <EmptyState title="No models" body="No compatible models linked yet." />
         ) : (
-          rows.map((row) => (
-            <div key={row.model.id}>
-              <ModelCard model={row.model} />
-              <div
-                className={`-mt-1 mb-3 rounded-[10px] px-3 py-2 text-xs font-semibold ${
-                  row.verified
-                    ? 'bg-verified-bg text-verified'
-                    : 'bg-unverified-bg text-unverified'
-                }`}
-              >
-                {row.verified
-                  ? 'Verified compatibility'
-                  : 'Unverified — review recommended'}
-                {row.notes ? ` · ${row.notes}` : ''}
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            {rows.map((row) => (
+              <div key={row.model.id}>
+                <ModelCard model={row.model} />
+                <div
+                  className={`mt-1.5 rounded-[10px] px-3 py-2 text-xs font-semibold ${
+                    row.verified
+                      ? 'bg-verified-bg text-verified'
+                      : 'bg-unverified-bg text-unverified'
+                  }`}
+                >
+                  {row.verified
+                    ? 'Verified compatibility'
+                    : 'Unverified — review recommended'}
+                  {row.notes ? ` · ${row.notes}` : ''}
+                </div>
               </div>
-            </div>
-          ))
+            ))}
+          </div>
         )}
       </main>
     </>

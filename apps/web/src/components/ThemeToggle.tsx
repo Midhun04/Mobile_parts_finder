@@ -31,7 +31,7 @@ export function ThemeToggle() {
       onClick={toggle}
       aria-label="Toggle dark mode"
       title="Toggle dark mode"
-      className="ml-auto flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-border bg-surface text-base text-text-secondary transition hover:border-primary/40 hover:text-primary"
+      className="ml-auto flex h-9 w-9 shrink-0 items-center justify-center rounded-lg text-text-secondary transition hover:bg-surface-muted hover:text-foreground"
     >
       <span className="dark:hidden">☾</span>
       <span className="hidden dark:inline">☀</span>

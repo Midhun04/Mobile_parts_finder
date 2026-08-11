@@ -34,7 +34,9 @@ export default function RootLayout({
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
-      <body className={`${plusJakarta.variable} antialiased`}>{children}</body>
+      <body className={`${plusJakarta.variable} antialiased`}>
+        <div className="home-canvas home-frame min-h-screen">{children}</div>
+      </body>
     </html>
   );
 }
