@@ -4,16 +4,19 @@ import { ThemeToggle } from '@/components/ThemeToggle';
 type Props = {
   title?: string;
   backHref?: string;
+  hideBackOnMobile?: boolean;
 };
 
-export function SiteHeader({ title, backHref }: Props) {
+export function SiteHeader({ title, backHref, hideBackOnMobile = false }: Props) {
   return (
     <header className="border-b border-border/80 dark:border-white/8">
       <div className="flex items-center gap-3 px-5 py-4 sm:px-8 sm:py-5 lg:px-12">
         {backHref ? (
           <Link
             href={backHref}
-            className="rounded-lg px-2 py-1 text-sm font-semibold text-primary transition hover:bg-surface-muted"
+            className={`rounded-lg px-2 py-1 text-sm font-semibold text-primary transition hover:bg-surface-muted ${
+              hideBackOnMobile ? 'hidden md:inline-flex' : ''
+            }`}
           >
             ← Back
           </Link>

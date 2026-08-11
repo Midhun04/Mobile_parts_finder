@@ -23,7 +23,7 @@ export default async function InventoryPage() {
   } catch (err) {
     return (
       <>
-        <SiteHeader title="Inventory" backHref="/" />
+        <SiteHeader title="Inventory" backHref="/" hideBackOnMobile />
         <ErrorState message={err instanceof Error ? err.message : 'Unable to reach the API.'} />
       </>
     );
@@ -31,7 +31,7 @@ export default async function InventoryPage() {
 
   return (
     <>
-      <SiteHeader title="Inventory" backHref="/" />
+      <SiteHeader title="Inventory" backHref="/" hideBackOnMobile />
       <main className="page-content">
         <h1 className="mb-4 text-[1.65rem] font-extrabold tracking-tight text-foreground">
           Inventory

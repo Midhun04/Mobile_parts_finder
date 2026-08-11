@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 export default function ProfilePage() {
   return (
     <>
-      <SiteHeader title="Profile" backHref="/" />
+      <SiteHeader title="Profile" backHref="/" hideBackOnMobile />
       <main className="page-content">
         <h1 className="mb-5 text-[1.65rem] font-extrabold tracking-tight text-foreground">
           Profile
