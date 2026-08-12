@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { getPartTypeIcon, getPartTypeLabel, type Part } from '@mpf/shared';
+import { isMatrixPartName } from '@/lib/format';
 
 type Props = {
   part: Part;
@@ -7,6 +8,8 @@ type Props = {
 };
 
 export function PartCard({ part, className = '' }: Props) {
+  if (isMatrixPartName(part.name)) return null;
+
   return (
     <Link
       href={`/parts/${part.id}`}

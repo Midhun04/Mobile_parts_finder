@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { searchAll } from '@/lib/api';
+import { isMatrixPartName } from '@/lib/format';
 import { ModelCard } from '@/components/ModelCard';
 import { PartCard } from '@/components/PartCard';
 import { EmptyState, ErrorState } from '@/components/QueryState';
@@ -32,6 +33,9 @@ export default async function SearchPage({ searchParams }: Props) {
     }
   }
 
+  const parts = results.parts.filter((part) => !isMatrixPartName(part.name));
+  const models = results.models;
+
   return (
     <>
       <SiteHeader title={query ? 'Search results' : undefined} backHref={query ? '/' : undefined} />
@@ -54,35 +58,35 @@ export default async function SearchPage({ searchParams }: Props) {
               />
             )}
 
-            {query && results.models.length === 0 && results.parts.length === 0 ? (
+            {query && models.length === 0 && parts.length === 0 ? (
               <EmptyState
                 title="No matches found"
                 body="Try a brand, model name, model number, or part number like BN-59."
               />
             ) : null}
 
-            {results.models.length > 0 ? (
+            {models.length > 0 ? (
               <>
                 <h2 className="mb-3 text-lg font-bold text-foreground">Mobile models</h2>
                 <div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-                  {results.models.map((model) => (
+                  {models.map((model) => (
                     <ModelCard key={model.id} model={model} />
                   ))}
                 </div>
               </>
             ) : null}
 
-            {results.parts.length > 0 ? (
+            {parts.length > 0 ? (
               <>
                 <h2
                   className={`mb-3 text-lg font-bold text-foreground ${
-                    results.models.length > 0 ? 'mt-8' : ''
+                    models.length > 0 ? 'mt-8' : ''
                   }`}
                 >
                   Spare parts
                 </h2>
                 <div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-                  {results.parts.map((part) => (
+                  {parts.map((part) => (
                     <PartCard key={part.id} part={part} />
                   ))}
                 </div>

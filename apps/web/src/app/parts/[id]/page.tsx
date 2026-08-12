@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { getPartTypeIcon, getPartTypeLabel } from '@mpf/shared';
 import { getCompatibleModelsForPart, getPartById } from '@/lib/api';
+import { isMatrixPartName } from '@/lib/format';
 import { EmptyState, ErrorState } from '@/components/QueryState';
 import { ModelCard } from '@/components/ModelCard';
 import { SiteHeader } from '@/components/SiteHeader';
@@ -13,7 +14,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { id } = await params;
   try {
     const part = await getPartById(Number(id));
-    return { title: part.name };
+    return {
+      title: isMatrixPartName(part.name) ? getPartTypeLabel(part.type) : part.name,
+    };
   } catch {
     return { title: 'Part details' };
   }
@@ -48,6 +51,8 @@ export default async function PartDetailsPage({ params }: Props) {
     );
   }
 
+  const hideMatrixHeading = isMatrixPartName(part.name);
+
   return (
     <>
       <SiteHeader title="Part details" backHref="/" />
@@ -57,7 +62,9 @@ export default async function PartDetailsPage({ params }: Props) {
           <p className="mb-1.5 text-[13px] font-bold uppercase tracking-wider text-accent">
             {getPartTypeLabel(part.type)}
           </p>
-          <h1 className="text-[22px] font-extrabold text-foreground">{part.name}</h1>
+          {!hideMatrixHeading ? (
+            <h1 className="text-[22px] font-extrabold text-foreground">{part.name}</h1>
+          ) : null}
           {part.partNumber ? (
             <p className="mt-2 text-sm text-text-secondary">Part number: {part.partNumber}</p>
           ) : null}
@@ -66,7 +73,7 @@ export default async function PartDetailsPage({ params }: Props) {
               Manufacturer: {part.manufacturer}
             </p>
           ) : null}
-          {part.description ? (
+          {part.description && !hideMatrixHeading ? (
             <p className="mt-3 text-sm leading-5 text-text-secondary">{part.description}</p>
           ) : null}
         </div>

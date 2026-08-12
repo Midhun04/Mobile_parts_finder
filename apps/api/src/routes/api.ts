@@ -13,6 +13,11 @@ export const apiRouter = Router();
 
 const partInclude = { partCategory: true } as const;
 
+/** Synthetic catalog rows like "[matrix] Display shared (...)" — hide from search only. */
+const notMatrixPart: Prisma.PartWhereInput = {
+  NOT: { name: { startsWith: '[matrix]' } },
+};
+
 const MAX_SEARCH_TERMS = 8;
 
 /**
@@ -65,23 +70,28 @@ apiRouter.get('/search', async (req, res) => {
   };
 
   const partWhere: Prisma.PartWhereInput = {
-    OR: [
+    AND: [
+      notMatrixPart,
       {
-        AND: terms.map((term): Prisma.PartWhereInput => ({
-          OR: [
-            { name: { contains: term, mode: 'insensitive' } },
-            { partNumber: { contains: term, mode: 'insensitive' } },
-            { description: { contains: term, mode: 'insensitive' } },
-            { manufacturer: { contains: term, mode: 'insensitive' } },
-            { partCategory: { name: { contains: term, mode: 'insensitive' } } },
-            ...aliasedBrands(term).flatMap((brand): Prisma.PartWhereInput[] => [
-              { name: { contains: brand, mode: 'insensitive' } },
-              { manufacturer: { equals: brand, mode: 'insensitive' } },
-            ]),
-          ],
-        })),
+        OR: [
+          {
+            AND: terms.map((term): Prisma.PartWhereInput => ({
+              OR: [
+                { name: { contains: term, mode: 'insensitive' } },
+                { partNumber: { contains: term, mode: 'insensitive' } },
+                { description: { contains: term, mode: 'insensitive' } },
+                { manufacturer: { contains: term, mode: 'insensitive' } },
+                { partCategory: { name: { contains: term, mode: 'insensitive' } } },
+                ...aliasedBrands(term).flatMap((brand): Prisma.PartWhereInput[] => [
+                  { name: { contains: brand, mode: 'insensitive' } },
+                  { manufacturer: { equals: brand, mode: 'insensitive' } },
+                ]),
+              ],
+            })),
+          },
+          ...(matchedType ? [{ partTypeId: matchedType.id }] : []),
+        ],
       },
-      ...(matchedType ? [{ partTypeId: matchedType.id }] : []),
     ],
   };
 
