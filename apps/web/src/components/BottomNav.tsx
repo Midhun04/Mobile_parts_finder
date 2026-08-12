@@ -11,7 +11,6 @@ const items = [
     label: 'Inventory',
     match: (path: string) => path.startsWith('/inventory') || path.startsWith('/brands'),
   },
-  { href: '/profile', label: 'Profile', match: (path: string) => path.startsWith('/profile') },
 ] as const;
 
 function NavIcon({ label, active }: { label: string; active: boolean }) {
@@ -34,20 +33,11 @@ function NavIcon({ label, active }: { label: string; active: boolean }) {
     );
   }
 
-  if (label === 'Inventory') {
-    return (
-      <svg viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="1.9">
-        <path d="M4 8h16v11a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8Z" />
-        <path d="M4 8 6.5 4h11L20 8" strokeLinejoin="round" />
-        <path d="M10 12h4" strokeLinecap="round" />
-      </svg>
-    );
-  }
-
   return (
     <svg viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="1.9">
-      <circle cx="12" cy="8" r="3.2" />
-      <path d="M5.5 19.2c.8-3 3.3-4.7 6.5-4.7s5.7 1.7 6.5 4.7" strokeLinecap="round" />
+      <path d="M4 8h16v11a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V8Z" />
+      <path d="M4 8 6.5 4h11L20 8" strokeLinejoin="round" />
+      <path d="M10 12h4" strokeLinecap="round" />
     </svg>
   );
 }
@@ -60,7 +50,7 @@ export function BottomNav() {
       aria-label="Primary"
       className="fixed inset-x-0 bottom-0 z-20 border-t border-border bg-surface/95 backdrop-blur-md md:hidden dark:border-white/8 dark:bg-[#0c1017]/95"
     >
-      <ul className="grid grid-cols-4 px-2 pt-1.5 pb-[max(0.5rem,env(safe-area-inset-bottom))]">
+      <ul className="grid grid-cols-3 px-2 pt-1.5 pb-[max(0.5rem,env(safe-area-inset-bottom))]">
         {items.map((item) => {
           const active = item.match(pathname);
           return (

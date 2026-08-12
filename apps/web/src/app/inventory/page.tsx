@@ -33,10 +33,6 @@ export default async function InventoryPage() {
     <>
       <SiteHeader title="Inventory" backHref="/" hideBackOnMobile />
       <main className="page-content">
-        <h1 className="mb-4 text-[1.65rem] font-extrabold tracking-tight text-foreground">
-          Inventory
-        </h1>
-
         <h2 className="mb-3.5 text-lg font-bold text-foreground">Brands</h2>
         <div className="mb-8 flex flex-wrap gap-2.5">
           {brands.map((brand) => (
