@@ -19,7 +19,10 @@ Optional — set the API URL in `apps/web/.env.local`:
 
 ```env
 NEXT_PUBLIC_API_URL=http://localhost:3001
+NEXT_PUBLIC_SITE_URL=http://localhost:3000
 ```
+
+In production, set `NEXT_PUBLIC_SITE_URL` to the public catalog origin (used for canonical URLs, Open Graph, robots.txt, and the sitemap).
 
 ## Structure
 

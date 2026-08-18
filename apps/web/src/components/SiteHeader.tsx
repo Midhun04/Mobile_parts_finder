@@ -22,13 +22,13 @@ export function SiteHeader({ title, backHref, hideBackOnMobile = false }: Props)
           </Link>
         ) : null}
         {title ? (
-          <h1 className="truncate text-base font-bold text-foreground">{title}</h1>
+          <p className="truncate text-base font-bold text-foreground">{title}</p>
         ) : (
           <Link href="/" className="flex items-center gap-3">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/logo.png"
-              alt=""
+              alt="Parts Finder"
               width={40}
               height={40}
               className="h-10 w-10 rounded-[10px] object-cover"

@@ -1,53 +1,100 @@
 import type { Metadata } from 'next';
-import { getModelsByBrand } from '@/lib/api';
+import { notFound } from 'next/navigation';
+import {
+  getBrandById,
+  getModelsByBrand,
+  isNotFoundError,
+} from '@/lib/api';
+import { absoluteUrl, buildPageMetadata } from '@/lib/seo';
+import { JsonLd } from '@/components/JsonLd';
 import { ModelCard } from '@/components/ModelCard';
 import { EmptyState, ErrorState } from '@/components/QueryState';
 import { SiteHeader } from '@/components/SiteHeader';
 
 type Props = {
   params: Promise<{ id: string }>;
-  searchParams: Promise<{ name?: string }>;
 };
 
-export async function generateMetadata({ params, searchParams }: Props): Promise<Metadata> {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { id } = await params;
-  const { name } = await searchParams;
-  return { title: name || `Brand ${id}` };
-}
-
-export default async function BrandModelsPage({ params, searchParams }: Props) {
-  const { id } = await params;
-  const { name } = await searchParams;
   const brandId = Number(id);
-
   if (Number.isNaN(brandId)) {
-    return (
-      <>
-        <SiteHeader title="Brand" backHref="/" />
-        <ErrorState message="Invalid brand id" />
-      </>
-    );
+    return { title: 'Brand not found' };
   }
 
+  try {
+    const brand = await getBrandById(brandId);
+    return buildPageMetadata({
+      title: `${brand.name} models and spare parts`,
+      description: `Browse ${brand.name} mobile models and find compatible spare parts in Parts Finder.`,
+      path: `/brands/${brand.id}`,
+    });
+  } catch (error) {
+    if (isNotFoundError(error)) notFound();
+    return { title: 'Brand' };
+  }
+}
+
+export default async function BrandModelsPage({ params }: Props) {
+  const { id } = await params;
+  const brandId = Number(id);
+
+  if (Number.isNaN(brandId)) notFound();
+
+  let brand;
   let models;
   try {
-    models = await getModelsByBrand(brandId);
+    [brand, models] = await Promise.all([getBrandById(brandId), getModelsByBrand(brandId)]);
   } catch (err) {
+    if (isNotFoundError(err)) notFound();
     return (
       <>
-        <SiteHeader title={name || 'Brand'} backHref="/" />
+        <SiteHeader title="Brand" backHref="/inventory" />
         <ErrorState message={err instanceof Error ? err.message : 'Failed to load models.'} />
       </>
     );
   }
 
-  const brandName = name || models[0]?.brand.name || 'Brand';
-
   return (
     <>
-      <SiteHeader title={brandName} backHref="/" />
+      <JsonLd
+        data={[
+          {
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Home',
+                item: absoluteUrl('/'),
+              },
+              {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'Inventory',
+                item: absoluteUrl('/inventory'),
+              },
+              {
+                '@type': 'ListItem',
+                position: 3,
+                name: brand.name,
+                item: absoluteUrl(`/brands/${brand.id}`),
+              },
+            ],
+          },
+          {
+            '@context': 'https://schema.org',
+            '@type': 'CollectionPage',
+            name: `${brand.name} models`,
+            url: absoluteUrl(`/brands/${brand.id}`),
+            description: `Browse ${brand.name} mobile models and find compatible spare parts.`,
+          },
+        ]}
+      />
+      <SiteHeader title={brand.name} backHref="/inventory" />
       <main className="page-content">
-        <h1 className="mb-4 text-[22px] font-extrabold text-foreground">{brandName} models</h1>
+        <h1 className="mb-4 text-[22px] font-extrabold text-foreground">{brand.name} models</h1>
         {models.length === 0 ? (
           <EmptyState title="No models" body="No models for this brand yet." />
         ) : (

@@ -28,7 +28,10 @@ Postgres runs in Docker on host port **5433** (avoids clashing with a local Post
 
 - `GET /health`
 - `GET /api/search?q=`
+- `GET /api/catalog-index`
+- `GET /api/brands`
 - `GET /api/brands/popular?limit=`
+- `GET /api/brands/:id`
 - `GET /api/brands/:id/models`
 - `GET /api/mobile-models/recent`
 - `GET /api/mobile-models/:id`

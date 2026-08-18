@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     template: '%s · MPF Admin',
   },
   description: 'Manage brands, models, parts, and compatibility groups',
+  robots: { index: false, follow: false },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

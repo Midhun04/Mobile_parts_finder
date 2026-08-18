@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { searchAll } from '@/lib/api';
 import { isMatrixPartName } from '@/lib/format';
+import { buildPageMetadata } from '@/lib/seo';
 import { ModelCard } from '@/components/ModelCard';
 import { PartCard } from '@/components/PartCard';
 import { EmptyState, ErrorState } from '@/components/QueryState';
@@ -13,9 +14,15 @@ type Props = {
 
 export async function generateMetadata({ searchParams }: Props): Promise<Metadata> {
   const { q } = await searchParams;
-  return {
-    title: q ? `Search: ${q}` : 'Search results',
-  };
+  const query = q?.trim();
+  return buildPageMetadata({
+    title: query ? `Search: ${query}` : 'Search results',
+    description: query
+      ? `Search results for “${query}” in the Parts Finder catalog.`
+      : 'Search mobile models and spare parts by brand, model, or part number.',
+    path: '/search',
+    robots: { index: false, follow: true },
+  });
 }
 
 export default async function SearchPage({ searchParams }: Props) {

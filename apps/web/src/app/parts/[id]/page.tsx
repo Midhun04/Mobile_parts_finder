@@ -1,8 +1,15 @@
 import type { Metadata } from 'next';
-import { getPartTypeIcon, getPartTypeLabel } from '@mpf/shared';
-import { getCompatibleModelsForPart, getPartById } from '@/lib/api';
+import { getPartTypeIcon, getPartTypeLabel, type Part } from '@mpf/shared';
+import { notFound } from 'next/navigation';
+import {
+  getCompatibleModelsForPart,
+  getPartById,
+  isNotFoundError,
+} from '@/lib/api';
 import { isMatrixPartName } from '@/lib/format';
+import { absoluteUrl, buildPageMetadata } from '@/lib/seo';
 import { EmptyState, ErrorState } from '@/components/QueryState';
+import { JsonLd } from '@/components/JsonLd';
 import { ModelCard } from '@/components/ModelCard';
 import { SiteHeader } from '@/components/SiteHeader';
 
@@ -10,14 +17,28 @@ type Props = {
   params: Promise<{ id: string }>;
 };
 
+function partDisplayName(part: Part): string {
+  return isMatrixPartName(part.name) ? getPartTypeLabel(part.type) : part.name;
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { id } = await params;
+  const partId = Number(id);
+  if (Number.isNaN(partId)) {
+    return { title: 'Part not found' };
+  }
+
   try {
-    const part = await getPartById(Number(id));
-    return {
-      title: isMatrixPartName(part.name) ? getPartTypeLabel(part.type) : part.name,
-    };
-  } catch {
+    const part = await getPartById(partId);
+    const name = partDisplayName(part);
+    const numberBit = part.partNumber ? ` (${part.partNumber})` : '';
+    return buildPageMetadata({
+      title: `${name}${numberBit} compatible models`,
+      description: `See which mobile models are compatible with ${name}${numberBit}. Part type: ${getPartTypeLabel(part.type)}.`,
+      path: `/parts/${part.id}`,
+    });
+  } catch (error) {
+    if (isNotFoundError(error)) notFound();
     return { title: 'Part details' };
   }
 }
@@ -26,14 +47,7 @@ export default async function PartDetailsPage({ params }: Props) {
   const { id } = await params;
   const partId = Number(id);
 
-  if (Number.isNaN(partId)) {
-    return (
-      <>
-        <SiteHeader title="Part details" backHref="/" />
-        <ErrorState message="Invalid part id" />
-      </>
-    );
-  }
+  if (Number.isNaN(partId)) notFound();
 
   let part;
   let rows;
@@ -43,6 +57,7 @@ export default async function PartDetailsPage({ params }: Props) {
       getCompatibleModelsForPart(partId),
     ]);
   } catch (err) {
+    if (isNotFoundError(err)) notFound();
     return (
       <>
         <SiteHeader title="Part details" backHref="/" />
@@ -52,9 +67,46 @@ export default async function PartDetailsPage({ params }: Props) {
   }
 
   const hideMatrixHeading = isMatrixPartName(part.name);
+  const name = partDisplayName(part);
 
   return (
     <>
+      <JsonLd
+        data={[
+          {
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Home',
+                item: absoluteUrl('/'),
+              },
+              {
+                '@type': 'ListItem',
+                position: 2,
+                name,
+                item: absoluteUrl(`/parts/${part.id}`),
+              },
+            ],
+          },
+          {
+            '@context': 'https://schema.org',
+            '@type': 'Product',
+            name,
+            category: getPartTypeLabel(part.type),
+            ...(part.partNumber ? { sku: part.partNumber, mpn: part.partNumber } : {}),
+            ...(part.manufacturer
+              ? { brand: { '@type': 'Brand', name: part.manufacturer } }
+              : {}),
+            description:
+              part.description ||
+              `Compatible mobile models for ${name}${part.partNumber ? ` (${part.partNumber})` : ''}.`,
+            url: absoluteUrl(`/parts/${part.id}`),
+          },
+        ]}
+      />
       <SiteHeader title="Part details" backHref="/" />
       <main className="page-content">
         <div className="mb-6 rounded-[18px] border border-border bg-surface p-5">
@@ -64,7 +116,9 @@ export default async function PartDetailsPage({ params }: Props) {
           </p>
           {!hideMatrixHeading ? (
             <h1 className="text-[22px] font-extrabold text-foreground">{part.name}</h1>
-          ) : null}
+          ) : (
+            <h1 className="text-[22px] font-extrabold text-foreground">{getPartTypeLabel(part.type)}</h1>
+          )}
           {part.partNumber ? (
             <p className="mt-2 text-sm text-text-secondary">Part number: {part.partNumber}</p>
           ) : null}

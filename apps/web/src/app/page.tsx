@@ -1,11 +1,22 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getPopularBrands, getRecentlyAddedModels } from '@/lib/api';
+import { absoluteUrl, buildPageMetadata } from '@/lib/seo';
+import { getSiteUrl } from '@/lib/site';
+import { JsonLd } from '@/components/JsonLd';
 import { ModelCard } from '@/components/ModelCard';
 import { ErrorState } from '@/components/QueryState';
 import { SearchBar } from '@/components/SearchBar';
 import { SiteHeader } from '@/components/SiteHeader';
 
-export const dynamic = 'force-dynamic';
+export const revalidate = 30;
+
+export const metadata: Metadata = buildPageMetadata({
+  title: 'Find compatible mobile spare parts',
+  description:
+    'Search by brand, model name, model number, or part number to find compatible batteries, displays, and other spare parts.',
+  path: '/',
+});
 
 export default async function HomePage() {
   let brands;
@@ -25,8 +36,28 @@ export default async function HomePage() {
     );
   }
 
+  const siteUrl = getSiteUrl();
+
   return (
     <>
+      <JsonLd
+        data={{
+          '@context': 'https://schema.org',
+          '@type': 'WebSite',
+          name: 'Parts Finder',
+          url: siteUrl,
+          description:
+            'Find compatible spare parts for mobile phones by brand, model, or part number.',
+          potentialAction: {
+            '@type': 'SearchAction',
+            target: {
+              '@type': 'EntryPoint',
+              urlTemplate: `${absoluteUrl('/search')}?q={search_term_string}`,
+            },
+            'query-input': 'required name=search_term_string',
+          },
+        }}
+      />
       <SiteHeader />
       <main className="page-content">
         <h1 className="text-[1.65rem] leading-tight font-extrabold tracking-tight text-foreground md:text-[2.15rem]">
@@ -41,7 +72,7 @@ export default async function HomePage() {
           {brands.map((brand) => (
             <Link
               key={brand.id}
-              href={`/brands/${brand.id}?name=${encodeURIComponent(brand.name)}`}
+              href={`/brands/${brand.id}`}
               className="shrink-0 rounded-xl border border-border bg-surface-muted/60 px-3.5 py-2 text-sm font-semibold text-text-secondary transition hover:border-primary hover:text-primary dark:border-white/8 dark:bg-[#161b24] dark:hover:border-primary dark:hover:text-primary"
             >
               {brand.name}

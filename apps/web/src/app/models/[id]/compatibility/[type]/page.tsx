@@ -1,37 +1,58 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getPartTypeLabel, type PartType } from '@mpf/shared';
+import { getPartTypeLabel, PART_TYPE_LABELS, type PartType } from '@mpf/shared';
+import { notFound } from 'next/navigation';
 import {
   getCompatibleModelsForPart,
   getModelById,
   getPartsForModel,
+  isNotFoundError,
 } from '@/lib/api';
 import { formatModelName, isMatrixPartName } from '@/lib/format';
+import { absoluteUrl, buildPageMetadata } from '@/lib/seo';
 import { ErrorState } from '@/components/QueryState';
+import { JsonLd } from '@/components/JsonLd';
 import { SiteHeader } from '@/components/SiteHeader';
 
 type Props = {
   params: Promise<{ id: string; type: string }>;
 };
 
+function parsePartType(value: string): PartType | null {
+  const code = value.toUpperCase();
+  if (code in PART_TYPE_LABELS) return code as PartType;
+  return null;
+}
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { type } = await params;
-  return { title: getPartTypeLabel(type.toUpperCase()) };
+  const { id, type } = await params;
+  const modelId = Number(id);
+  const partType = parsePartType(type);
+  if (Number.isNaN(modelId) || !partType) {
+    return { title: 'Compatibility' };
+  }
+
+  try {
+    const model = await getModelById(modelId);
+    const name = formatModelName(model);
+    const typeLabel = getPartTypeLabel(partType);
+    return buildPageMetadata({
+      title: `${typeLabel} for ${name}`,
+      description: `Compatible ${typeLabel.toLowerCase()} options for the ${name}, including part numbers and other models that share the same part.`,
+      path: `/models/${model.id}/compatibility/${partType}`,
+    });
+  } catch (error) {
+    if (isNotFoundError(error)) notFound();
+    return { title: getPartTypeLabel(partType) };
+  }
 }
 
 export default async function CompatibilityPage({ params }: Props) {
   const { id, type: typeParam } = await params;
   const modelId = Number(id);
-  const partType = typeParam.toUpperCase() as PartType;
+  const partType = parsePartType(typeParam);
 
-  if (Number.isNaN(modelId)) {
-    return (
-      <>
-        <SiteHeader title="Compatibility" backHref="/" />
-        <ErrorState message="Invalid model id" />
-      </>
-    );
-  }
+  if (Number.isNaN(modelId) || !partType) notFound();
 
   let model;
   let parts;
@@ -41,6 +62,7 @@ export default async function CompatibilityPage({ params }: Props) {
       getPartsForModel(modelId, partType),
     ]);
   } catch (err) {
+    if (isNotFoundError(err)) notFound();
     return (
       <>
         <SiteHeader title={getPartTypeLabel(partType)} backHref={`/models/${modelId}`} />
@@ -56,15 +78,51 @@ export default async function CompatibilityPage({ params }: Props) {
     })),
   );
 
+  const name = formatModelName(model);
+  const typeLabel = getPartTypeLabel(partType);
+  const path = `/models/${model.id}/compatibility/${partType}`;
+
   return (
     <>
-      <SiteHeader title={getPartTypeLabel(partType)} backHref={`/models/${modelId}`} />
+      <JsonLd
+        data={{
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            {
+              '@type': 'ListItem',
+              position: 1,
+              name: 'Home',
+              item: absoluteUrl('/'),
+            },
+            {
+              '@type': 'ListItem',
+              position: 2,
+              name: model.brand.name,
+              item: absoluteUrl(`/brands/${model.brand.id}`),
+            },
+            {
+              '@type': 'ListItem',
+              position: 3,
+              name,
+              item: absoluteUrl(`/models/${model.id}`),
+            },
+            {
+              '@type': 'ListItem',
+              position: 4,
+              name: typeLabel,
+              item: absoluteUrl(path),
+            },
+          ],
+        }}
+      />
+      <SiteHeader title={typeLabel} backHref={`/models/${modelId}`} />
       <main className="page-content">
         <p className="mb-1.5 text-[13px] font-bold uppercase tracking-wider text-accent">
-          {getPartTypeLabel(partType)} compatibility
+          {typeLabel} compatibility
         </p>
         <h1 className="mb-[18px] text-xl font-extrabold text-foreground">
-          Selected: {formatModelName(model)}
+          {typeLabel} for {name}
         </h1>
 
         {rows.map(({ part, compatibleModels }) => {

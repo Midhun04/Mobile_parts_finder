@@ -121,6 +121,46 @@ apiRouter.get('/search', async (req, res) => {
   });
 });
 
+apiRouter.get('/catalog-index', async (_req, res) => {
+  const [brands, models, parts, links] = await Promise.all([
+    prisma.brand.findMany({ select: { id: true }, orderBy: { id: 'asc' } }),
+    prisma.mobileModel.findMany({
+      select: { id: true, updatedAt: true },
+      orderBy: { id: 'asc' },
+    }),
+    prisma.part.findMany({
+      where: notMatrixPart,
+      select: { id: true, updatedAt: true },
+      orderBy: { id: 'asc' },
+    }),
+    prisma.compatibility.findMany({
+      select: {
+        mobileModelId: true,
+        part: { select: { partCategory: { select: { code: true } } } },
+      },
+    }),
+  ]);
+
+  const seen = new Set<string>();
+  const compatibility: { modelId: number; type: string }[] = [];
+  for (const link of links) {
+    const type = link.part.partCategory.code;
+    const key = `${link.mobileModelId}:${type}`;
+    if (seen.has(key)) continue;
+    seen.add(key);
+    compatibility.push({ modelId: link.mobileModelId, type });
+  }
+
+  res.json({ brands, models, parts, compatibility });
+});
+
+apiRouter.get('/brands', async (_req, res) => {
+  const brands = await prisma.brand.findMany({
+    orderBy: { name: 'asc' },
+  });
+  res.json(brands);
+});
+
 apiRouter.get('/brands/popular', async (req, res) => {
   const requested = Number(req.query.limit);
   const limit = Number.isInteger(requested)
@@ -140,6 +180,22 @@ apiRouter.get('/brands/popular', async (req, res) => {
   const ordered = [...curated, ...fillers].slice(0, limit).map(({ _count, ...brand }) => brand);
 
   res.json(ordered);
+});
+
+apiRouter.get('/brands/:id', async (req, res) => {
+  const brandId = Number(req.params.id);
+  if (Number.isNaN(brandId)) {
+    res.status(400).json({ error: 'Invalid brand id' });
+    return;
+  }
+
+  const brand = await prisma.brand.findUnique({ where: { id: brandId } });
+  if (!brand) {
+    res.status(404).json({ error: 'Brand not found' });
+    return;
+  }
+
+  res.json(brand);
 });
 
 apiRouter.get('/brands/:id/models', async (req, res) => {
